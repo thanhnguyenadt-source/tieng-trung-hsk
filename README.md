@@ -11,7 +11,7 @@ Link: https://thanhnguyenadt-source.github.io/tieng-trung-hsk/
 
 ## Giai đoạn 0 và Anki
 - **Giai đoạn 0: Phát âm** (nút ở cột trái, hoặc `pinyin.html`): 12 bài luyện thanh điệu, thanh mẫu, vận mẫu, biến điệu, bảng pinyin tương tác. Giọng đọc của trình duyệt có thể đọc sai thanh của chữ đơn; nhận dạng giọng nói không chấm được thanh điệu.
-- **Anki từ vựng lũy kế** (bảng ở cột trái): 4.316 thẻ ôn theo thuật toán SM-2 rút gọn, từ bài 1.1A tới bài bạn đang học; tiến độ lưu trong trình duyệt, có xuất/nhập file JSON để sao lưu.
+- **Anki từ vựng lũy kế kiểu "4000 Essential"** (bảng ở cột trái): 4.316 từ × 3 loại thẻ (nhận diện, điền từ, nghe), SM-2 riêng từng loại; mặt sau có pinyin + Hán Việt, ví dụ và chuỗi âm thanh; tiến độ lưu trong trình duyệt, có xuất/nhập JSON.
 
 ## Nguồn dữ liệu
 - Danh sách từ HSK theo chuẩn GF0025-2021, lấy qua [ivankra/hsk30](https://github.com/ivankra/hsk30) (giấy phép MIT).

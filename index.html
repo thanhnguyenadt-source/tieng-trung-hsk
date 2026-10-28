@@ -2525,6 +2525,18 @@
   </script>
   <!-- Anki từ vựng lũy kế (SM-2): dữ liệu từ + engine; thiếu file thì bỏ qua -->
   <script src="data/anki_words.js"></script>
+  <script>
+    /* Cấu hình engine Anki dùng chung (docs/anki/anki_engine.js): khóa tiếng Trung */
+    window.ANKI_CONFIG = {
+      app: 'zh-anki', prefix: 'zh_anki_', dataName: 'ZH_ANKI_WORDS', globalName: 'ZH_ANKI',
+      voiceLangs: ['zh-CN'], wordLang: 'zh-CN', defLang: 'zh-CN', exportName: 'anki-tieng-trung',
+      imeStep: true, checkMode: 'pinyin', typePlaceholder: 'Gõ pinyin (không dấu hoặc có số thanh), rồi Enter', typedLabel: 'pinyin',
+      map: function (w) {
+        return { id: w.id, lesson: w.lesson, level: w.level, text: w.han, read: w.py, hv: w.hv, pos: w.pos, vi: w.vi, def: w.def || '', ico: w.ico,
+                 forms: w.forms, ex: w.ex ? { t: w.ex.han, read: w.ex.py, vi: w.ex.vi } : null, cloze: w.cloze, dis: w.dis || [] };
+      }
+    };
+  </script>
   <script src="data/anki_engine.js"></script>
   <script>try { if (window.ankiMarkOpened) window.ankiMarkOpened(); } catch (e) {}</script>
 </body>
