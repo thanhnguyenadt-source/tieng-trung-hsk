@@ -119,7 +119,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🪑",
          "c": "s",
          "py": "zhuōzi shàng",
-         "hv": "_ tí thượng"
+         "hv": "trác tử thượng"
         },
         {
          "t": "有",
@@ -133,12 +133,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "o",
          "py": "sān cè shū hé yī duī wénjiàn",
-         "hv": "tam sách thư hoà nhất đôi văn kiện"
+         "hv": "tam sách thư hòa nhất đôi văn kiện"
         }
        ],
        "traceWord": "册",
        "py": "Zhuōzi shàng yǒu sān cè shū hé yī duī wénjiàn",
-       "traceKey": "ce"
+       "traceKey": "ce",
+       "traceInfo": [
+        {
+         "c": "册",
+         "py": "cè",
+         "hv": "sách"
+        }
+       ]
       },
       {
        "scene": "🌸🏡",
@@ -150,7 +157,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏡",
          "c": "s",
          "py": "huāyuán lǐ",
-         "hv": "hoa viên lịa"
+         "hv": "hoa viên lý"
         },
         {
          "t": "开了",
@@ -164,12 +171,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌺",
          "c": "o",
          "py": "yī duǒ hóngsè de huā",
-         "hv": "nhất đoá hồng sắc đích hoa"
+         "hv": "nhất đóa hồng sắc đích hoa"
         }
        ],
        "traceWord": "朵",
        "py": "Huāyuán lǐ kāi le yī duǒ hóngsè de huā",
-       "traceKey": "duo"
+       "traceKey": "duo",
+       "traceInfo": [
+        {
+         "c": "朵",
+         "py": "duǒ",
+         "hv": "đóa"
+        }
+       ]
       },
       {
        "scene": "🖼️🧱",
@@ -188,19 +202,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📌",
          "c": "v",
          "py": "guà zhe",
-         "hv": "quẩy trứ"
+         "hv": "quải trước"
         },
         {
          "t": "一幅很漂亮的画儿",
          "ico": "🖼️",
          "c": "o",
          "py": "yī fú hěn piàoliang de huàr",
-         "hv": "nhất bức _ phều _ đích hoạ _"
+         "hv": "nhất bức ngận phiêu lượng đích họa nhi"
         }
        ],
        "traceWord": "幅",
        "py": "Qiáng shàng guà zhe yī fú hěn piàoliang de huàr",
-       "traceKey": "fu"
+       "traceKey": "fu",
+       "traceInfo": [
+        {
+         "c": "幅",
+         "py": "fú",
+         "hv": "bức"
+        }
+       ]
       },
       {
        "scene": "🏛️🌍👥",
@@ -212,7 +233,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "参加了",
@@ -226,12 +247,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌍",
          "c": "o",
          "py": "dì sān jiè guójì huìyì",
-         "hv": "đệ tam _ quốc _ hội nghị"
+         "hv": "đệ tam giới quốc tế hội nghị"
         }
        ],
        "traceWord": "届",
        "py": "Wǒmen cānjiā le dì sān jiè guójì huìyì",
-       "traceKey": "jie"
+       "traceKey": "jie",
+       "traceInfo": [
+        {
+         "c": "届",
+         "py": "jiè",
+         "hv": "giới"
+        }
+       ]
       },
       {
        "scene": "🍬🎁🙂",
@@ -257,12 +285,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🍬",
          "c": "o",
          "py": "wǒ yī kē hěn tián de táng",
-         "hv": "ngã nhất _ _ _ đích đường"
+         "hv": "ngã nhất khỏa ngận điềm đích đường"
         }
        ],
        "traceWord": "颗",
        "py": "Tā sòng gěi wǒ yī kē hěn tián de táng",
-       "traceKey": "ke"
+       "traceKey": "ke",
+       "traceInfo": [
+        {
+         "c": "颗",
+         "py": "kē",
+         "hv": "khỏa"
+        }
+       ]
       },
       {
        "scene": "🐎🌿",
@@ -293,7 +328,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "匹",
        "py": "Cǎo dìshang yǒu yī pǐ báisè de mǎ",
-       "traceKey": "pi"
+       "traceKey": "pi",
+       "traceInfo": [
+        {
+         "c": "匹",
+         "py": "pǐ",
+         "hv": "thất"
+        }
+       ]
       },
       {
        "scene": "🚪🙂",
@@ -319,12 +361,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚪",
          "c": "o",
          "py": "nà shān hěn zhòng de mén",
-         "hv": "na phiến _ trọng đích môn"
+         "hv": "na phiến ngận trọng đích môn"
         }
        ],
        "traceWord": "扇",
        "py": "Tā guānshang le nà shān hěn zhòng de mén",
-       "traceKey": "shan"
+       "traceKey": "shan",
+       "traceInfo": [
+        {
+         "c": "扇",
+         "py": "shān",
+         "hv": "phiến"
+        }
+       ]
       },
       {
        "scene": "🚚📦⚖️",
@@ -336,7 +385,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚚",
          "c": "s",
          "py": "zhè liàng chē",
-         "hv": "_ _ xa"
+         "hv": "giá lượng xa"
         },
         {
          "t": "一次能运输",
@@ -350,12 +399,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📦",
          "c": "o",
          "py": "wǔ dūn huò",
-         "hv": "ngũ đồn hoá"
+         "hv": "ngũ đốn hóa"
         }
        ],
        "traceWord": "吨",
        "py": "Zhè liàng chē yī cì néng yùnshū wǔ dūn huò",
-       "traceKey": "dun"
+       "traceKey": "dun",
+       "traceInfo": [
+        {
+         "c": "吨",
+         "py": "dūn",
+         "hv": "đốn"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -421,7 +477,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "他是我们的长辈",
          "ico": "👴",
-         "py": "Tā shì wǒmen de cháng bèi"
+         "py": "Tā shì wǒmen de zhǎng bèi"
         },
         {
          "txt": "它只有三寸长",
@@ -488,26 +544,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "彼此信任",
          "ico": "🤝",
          "c": "v",
          "py": "bǐcǐ xìnrèn",
-         "hv": "bỉ thử tín nhậm"
+         "hv": "bỉ thử tín nhiệm"
         },
         {
          "t": "所以合作得很顺利",
          "ico": "✅",
          "c": "o",
-         "py": "suǒyǐ hézuò dé hěn shùnlì",
-         "hv": "sỡ _ hợp tác đắc _ thuận lợi"
+         "py": "suǒyǐ hézuò de hěn shùnlì",
+         "hv": "sở dĩ hợp tác đắc ngận thuận lợi"
         }
        ],
        "traceWord": "彼此",
-       "py": "Wǒmen bǐcǐ xìnrèn suǒyǐ hézuò dé hěn shùnlì",
-       "traceKey": "bici"
+       "py": "Wǒmen bǐcǐ xìnrèn suǒyǐ hézuò de hěn shùnlì",
+       "traceKey": "bici",
+       "traceInfo": [
+        {
+         "c": "彼",
+         "py": "bǐ",
+         "hv": "bỉ"
+        },
+        {
+         "c": "此",
+         "py": "cǐ",
+         "hv": "thử"
+        }
+       ]
       },
       {
        "scene": "⚠️📉🏃",
@@ -533,12 +601,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏃",
          "c": "o",
          "py": "dàhuǒr bìxū mǎshàng xíngdòng",
-         "hv": "đại _ _ tất tua mã thượng hàng động"
+         "hv": "đại hỏa nhi tất tu mã thượng hành động"
         }
        ],
        "traceWord": "如此",
        "py": "Qíngkuàng rúcǐ yánzhòng dàhuǒr bìxū mǎshàng xíngdòng",
-       "traceKey": "ruci"
+       "traceKey": "ruci",
+       "traceInfo": [
+        {
+         "c": "如",
+         "py": "rú",
+         "hv": "như"
+        },
+        {
+         "c": "此",
+         "py": "cǐ",
+         "hv": "thử"
+        }
+       ]
       },
       {
        "scene": "🙋📋👍",
@@ -564,12 +644,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📋",
          "c": "o",
          "py": "zhè gè xiàng mùdì ānpái",
-         "hv": "_ cá hạng mục đích an bài"
+         "hv": "giá cá hạng mục đích an bài"
         }
        ],
        "traceWord": "本人",
        "py": "Běnrén tóngyì zhè gè xiàng mùdì ānpái",
-       "traceKey": "benren"
+       "traceKey": "benren",
+       "traceInfo": [
+        {
+         "c": "本",
+         "py": "běn",
+         "hv": "bản"
+        },
+        {
+         "c": "人",
+         "py": "rén",
+         "hv": "nhân"
+        }
+       ]
       },
       {
        "scene": "🏠📍📆",
@@ -595,12 +687,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📆",
          "c": "o",
          "py": "zhè yīdài yǐjīng shí duō nián le",
-         "hv": "_ nhất đai dĩ kinh thập đa nên liễu"
+         "hv": "giá nhất đới dĩ kinh thập đa niên liễu"
         }
        ],
        "traceWord": "一带",
        "py": "Běnrén zhù zài zhè yīdài yǐjīng shí duō nián le",
-       "traceKey": "yidai"
+       "traceKey": "yidai",
+       "traceInfo": [
+        {
+         "c": "一",
+         "py": "yī",
+         "hv": "nhất"
+        },
+        {
+         "c": "带",
+         "py": "dài",
+         "hv": "đới"
+        }
+       ]
       },
       {
        "scene": "💡✅🔧",
@@ -612,7 +716,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💡",
          "c": "s",
          "py": "zhè gè bànfǎ",
-         "hv": "_ cá _ pháp"
+         "hv": "giá cá biện pháp"
         },
         {
          "t": "虽然简单",
@@ -626,12 +730,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌟",
          "c": "o",
          "py": "dànshì qí xiàoguǒ fēicháng hǎo",
-         "hv": "_ thị kì hiệu quả phi thường háo"
+         "hv": "đãn thị kỳ hiệu quả phi thường hảo"
         }
        ],
        "traceWord": "其",
        "py": "Zhè gè bànfǎ suīrán jiǎndān dànshì qí xiàoguǒ fēicháng hǎo",
-       "traceKey": "qi"
+       "traceKey": "qi",
+       "traceInfo": [
+        {
+         "c": "其",
+         "py": "qí",
+         "hv": "kỳ"
+        }
+       ]
       },
       {
        "scene": "🚪🙂👀",
@@ -662,7 +773,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "四周",
        "py": "Tā zhàn zài mén páng kàn le kàn sìzhōu",
-       "traceKey": "sizhou"
+       "traceKey": "sizhou",
+       "traceInfo": [
+        {
+         "c": "四",
+         "py": "sì",
+         "hv": "tứ"
+        },
+        {
+         "c": "周",
+         "py": "zhōu",
+         "hv": "chu"
+        }
+       ]
       },
       {
        "scene": "📝📆⏳",
@@ -674,26 +797,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "必须在三天之内完成",
          "ico": "⏳",
          "c": "v",
          "py": "bìxū zài sān tiān zhīnèi wánchéng",
-         "hv": "tất tua tại tam thiên chi nội hoàn thành"
+         "hv": "tất tu tại tam thiên chi nội hoàn thành"
         },
         {
          "t": "这份报告",
          "ico": "📝",
          "c": "o",
          "py": "zhè fèn bàogào",
-         "hv": "_ phần báo _"
+         "hv": "giá phần báo cáo"
         }
        ],
        "traceWord": "之内",
        "py": "Wǒmen bìxū zài sān tiān zhīnèi wánchéng zhè fèn bàogào",
-       "traceKey": "zhinei"
+       "traceKey": "zhinei",
+       "traceInfo": [
+        {
+         "c": "之",
+         "py": "zhī",
+         "hv": "chi"
+        },
+        {
+         "c": "内",
+         "py": "nèi",
+         "hv": "nội"
+        }
+       ]
       },
       {
        "scene": "🏢👥💪",
@@ -712,7 +847,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💪",
          "c": "v",
          "py": "yīqǐ nǔlì",
-         "hv": "nhất khởi _ lực"
+         "hv": "nhất khởi nỗ lực"
         },
         {
          "t": "才能取得成功",
@@ -724,7 +859,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "上下",
        "py": "Quán gōngsī shàngxià yīqǐ nǔlì cáinéng qǔdé chénggōng",
-       "traceKey": "shangxia"
+       "traceKey": "shangxia",
+       "traceInfo": [
+        {
+         "c": "上",
+         "py": "shàng",
+         "hv": "thượng"
+        },
+        {
+         "c": "下",
+         "py": "xià",
+         "hv": "hạ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -857,26 +1004,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📋",
          "c": "s",
          "py": "zhè gè jìhuà",
-         "hv": "_ cá kể _"
+         "hv": "giá cá kế hoạch"
         },
         {
          "t": "过于复杂",
          "ico": "🌀",
          "c": "v",
          "py": "guòyú fùzá",
-         "hv": "quá vu hạ tạp"
+         "hv": "quá vu phục tạp"
         },
         {
          "t": "大家很难马上理解",
          "ico": "🤯",
          "c": "o",
          "py": "dàjiā hěn nán mǎshàng lǐjiě",
-         "hv": "đại gia _ nan mã thượng lí giải"
+         "hv": "đại gia ngận nan mã thượng lý giải"
         }
        ],
        "traceWord": "过于",
        "py": "Zhè gè jìhuà guòyú fùzá dàjiā hěn nán mǎshàng lǐjiě",
-       "traceKey": "guoyu"
+       "traceKey": "guoyu",
+       "traceInfo": [
+        {
+         "c": "过",
+         "py": "guò",
+         "hv": "quá"
+        },
+        {
+         "c": "于",
+         "py": "yú",
+         "hv": "vu"
+        }
+       ]
       },
       {
        "scene": "😮💬🧩",
@@ -888,7 +1047,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📌",
          "c": "s",
          "py": "zhè jiàn shì",
-         "hv": "_ kiện sự"
+         "hv": "giá kiện sự"
         },
         {
          "t": "可不是",
@@ -902,12 +1061,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧩",
          "c": "o",
          "py": "nǐ xiǎng de nàme jiǎndān",
-         "hv": "nể tưởng đích na _ giản đơn"
+         "hv": "nễ tưởng đích na ma giản đơn"
         }
        ],
        "traceWord": "可",
        "py": "Zhè jiàn shì kě bú shì nǐ xiǎng de nàme jiǎndān",
-       "traceKey": "ke"
+       "traceKey": "ke",
+       "traceInfo": [
+        {
+         "c": "可",
+         "py": "kě",
+         "hv": "khả"
+        }
+       ]
       },
       {
        "scene": "🏠🔍📍",
@@ -919,26 +1085,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "s",
          "py": "zhè gè fángjiān",
-         "hv": "_ cá phòng gian"
+         "hv": "giá cá phòng gian"
         },
         {
          "t": "稍小",
          "ico": "📐",
          "c": "v",
          "py": "shāo xiǎo",
-         "hv": "_ tiểu"
+         "hv": "sảo tiểu"
         },
         {
          "t": "但是位置很好",
          "ico": "📍",
          "c": "o",
          "py": "dànshì wèizhì hěn hǎo",
-         "hv": "_ thị vị trí _ háo"
+         "hv": "đãn thị vị trí ngận hảo"
         }
        ],
        "traceWord": "稍",
        "py": "Zhè gè fángjiān shāo xiǎo dànshì wèizhì hěn hǎo",
-       "traceKey": "shao"
+       "traceKey": "shao",
+       "traceInfo": [
+        {
+         "c": "稍",
+         "py": "shāo",
+         "hv": "sảo"
+        }
+       ]
       },
       {
        "scene": "☕😌🪑",
@@ -950,26 +1123,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "nǐ",
-         "hv": "nể"
+         "hv": "nễ"
         },
         {
          "t": "稍微休息",
          "ico": "☕",
          "c": "v",
          "py": "shāowēi xiūxi",
-         "hv": "_ vi hưu tức"
+         "hv": "sảo vi hưu tức"
         },
         {
          "t": "一下再继续工作吧",
          "ico": "💼",
          "c": "o",
          "py": "yī xià zài jìxù gōngzuò ba",
-         "hv": "nhất hạ tái kế tục công tác và"
+         "hv": "nhất hạ tái kế tục công tác ba"
         }
        ],
        "traceWord": "稍微",
        "py": "Nǐ shāowēi xiūxi yī xià zài jìxù gōngzuò ba",
-       "traceKey": "shaowei"
+       "traceKey": "shaowei",
+       "traceInfo": [
+        {
+         "c": "稍",
+         "py": "shāo",
+         "hv": "sảo"
+        },
+        {
+         "c": "微",
+         "py": "wēi",
+         "hv": "vi"
+        }
+       ]
       },
       {
        "scene": "🏢😓📈",
@@ -988,19 +1173,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😓",
          "c": "v",
          "py": "zuìjìn hěn máng",
-         "hv": "tối cận _ mang"
+         "hv": "tối cận ngận mang"
         },
         {
          "t": "尤其是销售部门",
          "ico": "📈",
          "c": "o",
          "py": "yóuqí shì xiāoshòu bùmén",
-         "hv": "_ kì thị tiu _ bộ môn"
+         "hv": "vưu kỳ thị tiêu thụ bộ môn"
         }
        ],
        "traceWord": "尤其",
        "py": "Gōngsī zuìjìn hěn máng yóuqí shì xiāoshòu bùmén",
-       "traceKey": "youqi"
+       "traceKey": "youqi",
+       "traceInfo": [
+        {
+         "c": "尤",
+         "py": "yóu",
+         "hv": "vưu"
+        },
+        {
+         "c": "其",
+         "py": "qí",
+         "hv": "kỳ"
+        }
+       ]
       },
       {
        "scene": "⏰😫💻",
@@ -1019,19 +1216,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚡",
          "c": "v",
          "py": "huì ràng",
-         "hv": "hội nhường"
+         "hv": "hội nhượng"
         },
         {
          "t": "人感觉累得厉害",
          "ico": "😫",
          "c": "o",
-         "py": "rén gǎnjué lèi dé lìhai",
-         "hv": "nhân cảm giác luỵ đắc lẹ hại"
+         "py": "rén gǎnjué lèi de lìhai",
+         "hv": "nhân cảm giác lụy đắc lệ hại"
         }
        ],
        "traceWord": "过度",
-       "py": "Guòdù jiābān huì ràng rén gǎnjué lèi dé lìhai",
-       "traceKey": "guodu"
+       "py": "Guòdù jiābān huì ràng rén gǎnjué lèi de lìhai",
+       "traceKey": "guodu",
+       "traceInfo": [
+        {
+         "c": "过",
+         "py": "guò",
+         "hv": "quá"
+        },
+        {
+         "c": "度",
+         "py": "dù",
+         "hv": "độ"
+        }
+       ]
       },
       {
        "scene": "😎✊🎯",
@@ -1050,19 +1259,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✊",
          "c": "v",
          "py": "xìnxīn shízú de jǐnjǐn zhuāzhù le",
-         "hv": "tín tâm thập túc địa khẩn khẩn co trú liễu"
+         "hv": "tín tâm thập túc địa khẩn khẩn trảo trú liễu"
         },
         {
          "t": "这次机会",
          "ico": "🎯",
          "c": "o",
          "py": "zhè cì jīhuì",
-         "hv": "_ thứ cơ hội"
+         "hv": "giá thứ cơ hội"
         }
        ],
        "traceWord": "十足",
        "py": "Tā xìnxīn shízú de jǐnjǐn zhuāzhù le zhè cì jīhuì",
-       "traceKey": "shizu"
+       "traceKey": "shizu",
+       "traceInfo": [
+        {
+         "c": "十",
+         "py": "shí",
+         "hv": "thập"
+        },
+        {
+         "c": "足",
+         "py": "zú",
+         "hv": "túc"
+        }
+       ]
       },
       {
        "scene": "🚗⏰🌅",
@@ -1074,26 +1295,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "尽可能早点出发",
          "ico": "🚗",
          "c": "v",
          "py": "jìn kěnéng zǎo diǎn chūfā",
-         "hv": "tận khả năng tảo điểm xuất _"
+         "hv": "tận khả năng tảo điểm xuất phát"
         },
         {
          "t": "起码提前一个小时",
          "ico": "⏰",
          "c": "o",
          "py": "qǐmǎ tíqián yī gè xiǎoshí",
-         "hv": "khởi _ đề tiền nhất cá tiểu thì"
+         "hv": "khởi mã đề tiền nhất cá tiểu thời"
         }
        ],
        "traceWord": "尽可能",
        "py": "Wǒmen jìn kěnéng zǎo diǎn chūfā qǐmǎ tíqián yī gè xiǎoshí",
-       "traceKey": "jinkeneng"
+       "traceKey": "jinkeneng",
+       "traceInfo": [
+        {
+         "c": "尽",
+         "py": "jìn",
+         "hv": "tận"
+        },
+        {
+         "c": "可",
+         "py": "kě",
+         "hv": "khả"
+        },
+        {
+         "c": "能",
+         "py": "néng",
+         "hv": "năng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -1135,7 +1373,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "一共有二十个人",
          "ico": "👥",
-         "py": "Yī gòngyǒu èr shí gèrén"
+         "py": "Yī gòngyǒu èr shí gè rén"
         },
         {
          "txt": "大致需要三个月",
@@ -1229,7 +1467,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📦",
          "c": "s",
          "py": "wǒmen gōngsī de chǎnpǐn",
-         "hv": "ngã món công ti đích _ phẩm"
+         "hv": "ngã môn công ti đích sản phẩm"
         },
         {
          "t": "大都",
@@ -1242,13 +1480,25 @@ window.CURRICULUM_STAGES[5] = {
          "t": "卖得很好",
          "ico": "👍",
          "c": "o",
-         "py": "mài dé hěn hǎo",
-         "hv": "mại đắc _ háo"
+         "py": "mài de hěn hǎo",
+         "hv": "mại đắc ngận hảo"
         }
        ],
        "traceWord": "大都",
-       "py": "Wǒmen gōngsī de chǎnpǐn dàdū mài dé hěn hǎo",
-       "traceKey": "dadu"
+       "py": "Wǒmen gōngsī de chǎnpǐn dàdū mài de hěn hǎo",
+       "traceKey": "dadu",
+       "traceInfo": [
+        {
+         "c": "大",
+         "py": "dà",
+         "hv": "đại"
+        },
+        {
+         "c": "都",
+         "py": "dū",
+         "hv": "đô"
+        }
+       ]
       },
       {
        "scene": "👥🗓️✅",
@@ -1260,7 +1510,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen bùmén de yuángōng",
-         "hv": "ngã món bộ môn đích viên công"
+         "hv": "ngã môn bộ môn đích viên công"
         },
         {
          "t": "全都",
@@ -1279,7 +1529,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "全都",
        "py": "Wǒmen bùmén de yuángōng quándōu cānjiā le huìyì",
-       "traceKey": "quandou"
+       "traceKey": "quandou",
+       "traceInfo": [
+        {
+         "c": "全",
+         "py": "quán",
+         "hv": "toàn"
+        },
+        {
+         "c": "都",
+         "py": "dōu",
+         "hv": "đô"
+        }
+       ]
       },
       {
        "scene": "📅📊👍",
@@ -1291,26 +1553,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📅",
          "c": "s",
          "py": "jīnnián de zǒngtǐ qíngkuàng",
-         "hv": "kim nên đích tổng thể tình huống"
+         "hv": "kim niên đích tổng thể tình huống"
         },
         {
          "t": "比",
          "ico": "⚖️",
          "c": "v",
          "py": "bǐ",
-         "hv": "tỉ"
+         "hv": "tỷ"
         },
         {
          "t": "去年好得多",
          "ico": "📈",
          "c": "o",
-         "py": "qùnián hǎo dé duō",
-         "hv": "khứ nên háo đắc đa"
+         "py": "qùnián hǎo de duō",
+         "hv": "khứ niên hảo đắc đa"
         }
        ],
        "traceWord": "总体",
-       "py": "Jīnnián de zǒngtǐ qíngkuàng bǐ qùnián hǎo dé duō",
-       "traceKey": "zongti"
+       "py": "Jīnnián de zǒngtǐ qíngkuàng bǐ qùnián hǎo de duō",
+       "traceKey": "zongti",
+       "traceInfo": [
+        {
+         "c": "总",
+         "py": "zǒng",
+         "hv": "tổng"
+        },
+        {
+         "c": "体",
+         "py": "tǐ",
+         "hv": "thể"
+        }
+       ]
       },
       {
        "scene": "🏢👥🔢",
@@ -1341,7 +1615,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "总数",
        "py": "Gōngsī de yuángōng zǒngshù yǐjīng chāoguò le wǔ bǎi rén",
-       "traceKey": "zongshu"
+       "traceKey": "zongshu",
+       "traceInfo": [
+        {
+         "c": "总",
+         "py": "zǒng",
+         "hv": "tổng"
+        },
+        {
+         "c": "数",
+         "py": "shù",
+         "hv": "số"
+        }
+       ]
       },
       {
        "scene": "💰🏠🧾",
@@ -1367,12 +1653,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧾",
          "c": "o",
          "py": "gòngjì yī wàn yuán",
-         "hv": "cộng kể nhất vạn nguyên"
+         "hv": "cộng kế nhất vạn nguyên"
         }
        ],
        "traceWord": "在内",
        "py": "Quánbù fèiyong bāokuò fángzū zàinèi gòngjì yī wàn yuán",
-       "traceKey": "zainei"
+       "traceKey": "zainei",
+       "traceInfo": [
+        {
+         "c": "在",
+         "py": "zài",
+         "hv": "tại"
+        },
+        {
+         "c": "内",
+         "py": "nèi",
+         "hv": "nội"
+        }
+       ]
       },
       {
        "scene": "📄❌🔢",
@@ -1384,7 +1682,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📄",
          "c": "s",
          "py": "zhè gè cuòwù",
-         "hv": "_ cá thó _"
+         "hv": "giá cá thác ngộ"
         },
         {
          "t": "不严重",
@@ -1398,12 +1696,29 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔢",
          "c": "o",
          "py": "zhǐbùguò shì shùmù xiě cuò le",
-         "hv": "chỉ bất quá thị số mục tả thó liễu"
+         "hv": "chỉ bất quá thị số mục tả thác liễu"
         }
        ],
        "traceWord": "只不过",
        "py": "Zhè gè cuòwù bù yánzhòng zhǐbùguò shì shùmù xiě cuò le",
-       "traceKey": "zhibuguo"
+       "traceKey": "zhibuguo",
+       "traceInfo": [
+        {
+         "c": "只",
+         "py": "zhǐ",
+         "hv": "chỉ"
+        },
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "过",
+         "py": "guò",
+         "hv": "quá"
+        }
+       ]
       },
       {
        "scene": "📅💹⬆️",
@@ -1415,7 +1730,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💹",
          "c": "s",
          "py": "jīnnián xiāoshòu zēngzhǎng de fúdù",
-         "hv": "kim nên tiu _ tăng trường đích bức độ"
+         "hv": "kim niên tiêu thụ tăng trưởng đích bức độ"
         },
         {
          "t": "大于",
@@ -1429,12 +1744,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📅",
          "c": "o",
          "py": "qùnián",
-         "hv": "khứ nên"
+         "hv": "khứ niên"
         }
        ],
        "traceWord": "幅度",
        "py": "Jīnnián xiāoshòu zēngzhǎng de fúdù dàyú qùnián",
-       "traceKey": "fudu"
+       "traceKey": "fudu",
+       "traceInfo": [
+        {
+         "c": "幅",
+         "py": "fú",
+         "hv": "bức"
+        },
+        {
+         "c": "度",
+         "py": "dù",
+         "hv": "độ"
+        }
+       ]
       },
       {
        "scene": "🌐🛒🏪",
@@ -1446,7 +1773,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌐",
          "c": "s",
          "py": "wǎng shang xiāoshòu de bǐzhòng",
-         "hv": "võng thượng tiu _ đích tỉ trọng"
+         "hv": "võng thượng tiêu thụ đích tỷ trọng"
         },
         {
          "t": "已经高于",
@@ -1460,12 +1787,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏪",
          "c": "o",
          "py": "shāngdiàn xiāoshòu",
-         "hv": "thương điếm tiu _"
+         "hv": "thương điếm tiêu thụ"
         }
        ],
        "traceWord": "比重",
        "py": "Wǎng shang xiāoshòu de bǐzhòng yǐjīng gāoyú shāngdiàn xiāoshòu",
-       "traceKey": "bizhong"
+       "traceKey": "bizhong",
+       "traceInfo": [
+        {
+         "c": "比",
+         "py": "bǐ",
+         "hv": "tỷ"
+        },
+        {
+         "c": "重",
+         "py": "zhòng",
+         "hv": "trọng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -1560,7 +1899,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "我们部门共有十个人",
          "ico": "🔟",
-         "py": "Wǒmen bùmén gòngyǒu shí gèrén"
+         "py": "Wǒmen bùmén gòngyǒu shí gè rén"
         }
        ],
        "qpy": "Nǐmen bùmén yī gòngyǒu duōshao rén?"
@@ -1604,19 +1943,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏳",
          "c": "v",
          "py": "ǒu'ěr",
-         "hv": "ngẫu nhãi"
+         "hv": "ngẫu nhĩ"
         },
         {
          "t": "会在周末去公园跑步",
          "ico": "🏃",
          "c": "o",
          "py": "huì zài zhōumò qù gōngyuán pǎobù",
-         "hv": "hội tại chu mạt khứ công viên _ bộ"
+         "hv": "hội tại chu mạt khứ công viên bào bộ"
         }
        ],
        "traceWord": "偶尔",
        "py": "Wǒ ǒu'ěr huì zài zhōumò qù gōngyuán pǎobù",
-       "traceKey": "ouer"
+       "traceKey": "ouer",
+       "traceInfo": [
+        {
+         "c": "偶",
+         "py": "ǒu",
+         "hv": "ngẫu"
+        },
+        {
+         "c": "尔",
+         "py": "ěr",
+         "hv": "nhĩ"
+        }
+       ]
       },
       {
        "scene": "🧑📄📤",
@@ -1635,19 +1986,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📄",
          "c": "v",
          "py": "huítóu bǎ zhè fèn bàogào",
-         "hv": "hồi đầu bã _ phần báo _"
+         "hv": "hồi đầu bả giá phần báo cáo"
         },
         {
          "t": "发给你",
          "ico": "📤",
          "c": "o",
          "py": "fā gěi nǐ",
-         "hv": "_ cấp nể"
+         "hv": "phát cấp nễ"
         }
        ],
        "traceWord": "回头",
        "py": "Wǒ huítóu bǎ zhè fèn bàogào fā gěi nǐ",
-       "traceKey": "huitou"
+       "traceKey": "huitou",
+       "traceInfo": [
+        {
+         "c": "回",
+         "py": "huí",
+         "hv": "hồi"
+        },
+        {
+         "c": "头",
+         "py": "tóu",
+         "hv": "đầu"
+        }
+       ]
       },
       {
        "scene": "👥🔁💬",
@@ -1659,26 +2022,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "需要再次讨论",
          "ico": "🔁",
          "c": "v",
          "py": "xūyào zàicì tǎolùn",
-         "hv": "_ yếu tái thứ thảo luận"
+         "hv": "nhu yếu tái thứ thảo luận"
         },
         {
          "t": "这个方案",
          "ico": "📋",
          "c": "o",
          "py": "zhè gè fāng'àn",
-         "hv": "_ cá phương án"
+         "hv": "giá cá phương án"
         }
        ],
        "traceWord": "再次",
        "py": "Wǒmen xūyào zàicì tǎolùn zhè gè fāng'àn",
-       "traceKey": "zaici"
+       "traceKey": "zaici",
+       "traceInfo": [
+        {
+         "c": "再",
+         "py": "zài",
+         "hv": "tái"
+        },
+        {
+         "c": "次",
+         "py": "cì",
+         "hv": "thứ"
+        }
+       ]
       },
       {
        "scene": "🧑💻✅📊",
@@ -1697,19 +2072,36 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💨",
          "c": "v",
          "py": "yīkǒuqì jiǎnchá le",
-         "hv": "nhất khẩu khí ghém tra liễu"
+         "hv": "nhất khẩu khí kiểm tra liễu"
         },
         {
          "t": "所有的数据",
          "ico": "📊",
          "c": "o",
          "py": "suǒ yǒude shùjù",
-         "hv": "sỡ hữu đích số cớ"
+         "hv": "sở hữu đích số cứ"
         }
        ],
        "traceWord": "一口气",
        "py": "Tā yīkǒuqì jiǎnchá le suǒ yǒude shùjù",
-       "traceKey": "yikouqi"
+       "traceKey": "yikouqi",
+       "traceInfo": [
+        {
+         "c": "一",
+         "py": "yī",
+         "hv": "nhất"
+        },
+        {
+         "c": "口",
+         "py": "kǒu",
+         "hv": "khẩu"
+        },
+        {
+         "c": "气",
+         "py": "qì",
+         "hv": "khí"
+        }
+       ]
       },
       {
        "scene": "👩📚🆕",
@@ -1721,7 +2113,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👩",
          "c": "s",
          "py": "tā",
-         "hv": "_"
+         "hv": "tha"
         },
         {
          "t": "接连参加了",
@@ -1735,12 +2127,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "o",
          "py": "sān cì guānyú xīn chǎnpǐn de péixùn",
-         "hv": "tam thứ quan vu tân _ phẩm đích bồi huấn"
+         "hv": "tam thứ quan vu tân sản phẩm đích bồi huấn"
         }
        ],
        "traceWord": "接连",
        "py": "Tā jiēlián cānjiā le sān cì guānyú xīn chǎnpǐn de péixùn",
-       "traceKey": "jielian"
+       "traceKey": "jielian",
+       "traceInfo": [
+        {
+         "c": "接",
+         "py": "jiē",
+         "hv": "tiếp"
+        },
+        {
+         "c": "连",
+         "py": "lián",
+         "hv": "liên"
+        }
+       ]
       },
       {
        "scene": "👥🚪🏢",
@@ -1752,14 +2156,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "zhè gè xiàng mùdì jǐ wèi tóngshì",
-         "hv": "_ cá hạng mục đích kỉ vị đồng sự"
+         "hv": "giá cá hạng mục đích kỷ vị đồng sự"
         },
         {
          "t": "先后离开了",
          "ico": "🚶",
          "c": "v",
          "py": "xiānhòu líkāi le",
-         "hv": "tiên hậu li khai liễu"
+         "hv": "tiên hậu ly khai liễu"
         },
         {
          "t": "公司",
@@ -1771,7 +2175,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "先后",
        "py": "Zhè gè xiàng mùdì jǐ wèi tóngshì xiānhòu líkāi le gōngsī",
-       "traceKey": "xianhou"
+       "traceKey": "xianhou",
+       "traceInfo": [
+        {
+         "c": "先",
+         "py": "xiān",
+         "hv": "tiên"
+        },
+        {
+         "c": "后",
+         "py": "hòu",
+         "hv": "hậu"
+        }
+       ]
       },
       {
        "scene": "👨‍💼📝🗣️",
@@ -1783,14 +2199,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👨‍💼",
          "c": "s",
          "py": "jīnglǐ xiān jièshào le jìhuà",
-         "hv": "kinh lí tiên giới thiệu liễu kể _"
+         "hv": "kinh lý tiên giới thiệu liễu kế hoạch"
         },
         {
          "t": "随后",
          "ico": "➡️",
          "c": "v",
          "py": "suíhòu",
-         "hv": "tuỳ hậu"
+         "hv": "tùy hậu"
         },
         {
          "t": "大家提出了意见",
@@ -1802,7 +2218,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "随后",
        "py": "Jīnglǐ xiān jièshào le jìhuà suíhòu dàjiā tíchū le yìjiàn",
-       "traceKey": "suihou"
+       "traceKey": "suihou",
+       "traceInfo": [
+        {
+         "c": "随",
+         "py": "suí",
+         "hv": "tùy"
+        },
+        {
+         "c": "后",
+         "py": "hòu",
+         "hv": "hậu"
+        }
+       ]
       },
       {
        "scene": "🗓️👨‍💼🚪",
@@ -1814,7 +2242,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗓️",
          "c": "s",
          "py": "wǒmen zhèngzài kāihuì",
-         "hv": "ngã món chính tại khai hội"
+         "hv": "ngã môn chính tại khai hội"
         },
         {
          "t": "只见",
@@ -1828,12 +2256,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚪",
          "c": "o",
          "py": "jīnglǐ tūrán zǒu le jìnlái",
-         "hv": "kinh lí đột nhiên tẩu liễu tiến lai"
+         "hv": "kinh lý đột nhiên tẩu liễu tiến lai"
         }
        ],
        "traceWord": "只见",
        "py": "Wǒmen zhèngzài kāihuì zhǐ jiàn jīnglǐ tūrán zǒu le jìnlái",
-       "traceKey": "zhijian"
+       "traceKey": "zhijian",
+       "traceInfo": [
+        {
+         "c": "只",
+         "py": "zhǐ",
+         "hv": "chỉ"
+        },
+        {
+         "c": "见",
+         "py": "jiàn",
+         "hv": "kiến"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -1965,14 +2405,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🕵️",
          "c": "s",
          "py": "zuótiān yǒu rén",
-         "hv": "_ thiên hữu nhân"
+         "hv": "tạc thiên hữu nhân"
         },
         {
          "t": "偷偷",
          "ico": "🤫",
          "c": "v",
          "py": "tōutōu",
-         "hv": "_ _"
+         "hv": "thâu thâu"
         },
         {
          "t": "拿走了我的手机",
@@ -1984,7 +2424,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "偷偷",
        "py": "Zuótiān yǒu rén tōutōu ná zǒu le wǒ de shǒujī",
-       "traceKey": "toutou"
+       "traceKey": "toutou",
+       "traceInfo": [
+        {
+         "c": "偷",
+         "py": "tōu",
+         "hv": "thâu"
+        },
+        {
+         "c": "偷",
+         "py": "tōu",
+         "hv": "thâu"
+        }
+       ]
       },
       {
        "scene": "🧑🤫🚪",
@@ -1996,26 +2448,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "zuótiān xiàwǔ tā",
-         "hv": "_ thiên hạ ngọ tha"
+         "hv": "tạc thiên hạ ngọ tha"
         },
         {
          "t": "悄悄地离开了",
          "ico": "🤫",
          "c": "v",
          "py": "qiāoqiāo de líkāi le",
-         "hv": "_ _ địa li khai liễu"
+         "hv": "tiễu tiễu địa ly khai liễu"
         },
         {
          "t": "办公室",
          "ico": "🏢",
          "c": "o",
          "py": "bàngōngshì",
-         "hv": "_ công thất"
+         "hv": "biện công thất"
         }
        ],
        "traceWord": "悄悄",
        "py": "Zuótiān xiàwǔ tā qiāoqiāo de líkāi le bàngōngshì",
-       "traceKey": "qiaoqiao"
+       "traceKey": "qiaoqiao",
+       "traceInfo": [
+        {
+         "c": "悄",
+         "py": "qiāo",
+         "hv": "tiễu"
+        },
+        {
+         "c": "悄",
+         "py": "qiāo",
+         "hv": "tiễu"
+        }
+       ]
       },
       {
        "scene": "🚇🦹👛",
@@ -2027,14 +2491,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🦹",
          "c": "s",
          "py": "dìtiě lǐ yǒu gè xiǎotōur",
-         "hv": "địa thiết lịa hữu cá tiểu _ _"
+         "hv": "địa thiết lý hữu cá tiểu thâu nhi"
         },
         {
          "t": "想偷",
          "ico": "🤏",
          "c": "v",
          "py": "xiǎng tōu",
-         "hv": "tưởng _"
+         "hv": "tưởng thâu"
         },
         {
          "t": "我的钱包",
@@ -2046,7 +2510,24 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "小偷儿",
        "py": "Dìtiě lǐ yǒu gè xiǎotōur xiǎng tōu wǒ de qiánbāo",
-       "traceKey": "xiaotour"
+       "traceKey": "xiaotour",
+       "traceInfo": [
+        {
+         "c": "小",
+         "py": "xiǎo",
+         "hv": "tiểu"
+        },
+        {
+         "c": "偷",
+         "py": "tōu",
+         "hv": "thâu"
+        },
+        {
+         "c": "儿",
+         "py": "ér",
+         "hv": "nhi"
+        }
+       ]
       },
       {
        "scene": "🌐📞👴",
@@ -2058,26 +2539,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌐",
          "c": "s",
          "py": "wǎng shang de piànzi",
-         "hv": "võng thượng đích _ tí"
+         "hv": "võng thượng đích phiến tử"
         },
         {
          "t": "常常打电话",
          "ico": "📞",
          "c": "v",
          "py": "chángcháng dǎ diànhuà",
-         "hv": "thường thường đả _ thoại"
+         "hv": "thường thường đả điện thoại"
         },
         {
          "t": "骗老人的钱",
          "ico": "👴",
          "c": "o",
          "py": "piàn lǎorén de qián",
-         "hv": "_ lão nhân đích tiền"
+         "hv": "phiến lão nhân đích tiền"
         }
        ],
        "traceWord": "骗子",
        "py": "Wǎng shang de piànzi chángcháng dǎ diànhuà piàn lǎorén de qián",
-       "traceKey": "pianzi"
+       "traceKey": "pianzi",
+       "traceInfo": [
+        {
+         "c": "骗",
+         "py": "piàn",
+         "hv": "phiến"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "🧑😟📞🚓",
@@ -2096,19 +2589,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😟",
          "c": "v",
          "py": "fāxiàn zìjǐ bèi piàn le",
-         "hv": "_ hiện tự kỉ bị _ liễu"
+         "hv": "phát hiện tự kỷ bị phiến liễu"
         },
         {
          "t": "马上就报警了",
          "ico": "🚓",
          "c": "o",
          "py": "mǎshàng jiù bàojǐng le",
-         "hv": "mã thượng _ báo khểnh liễu"
+         "hv": "mã thượng tựu báo cảnh liễu"
         }
        ],
        "traceWord": "报警",
        "py": "Tā fāxiàn zìjǐ bèi piàn le mǎshàng jiù bàojǐng le",
-       "traceKey": "baojing"
+       "traceKey": "baojing",
+       "traceInfo": [
+        {
+         "c": "报",
+         "py": "bào",
+         "hv": "báo"
+        },
+        {
+         "c": "警",
+         "py": "jǐng",
+         "hv": "cảnh"
+        }
+       ]
       },
       {
        "scene": "🦹🏃👮",
@@ -2120,26 +2625,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🦹",
          "c": "s",
          "py": "xiǎotōur",
-         "hv": "tiểu _ _"
+         "hv": "tiểu thâu nhi"
         },
         {
          "t": "想逃跑",
          "ico": "🏃",
          "c": "v",
          "py": "xiǎng táopǎo",
-         "hv": "tưởng đào _"
+         "hv": "tưởng đào bào"
         },
         {
          "t": "但是被警察抓住了",
          "ico": "👮",
          "c": "o",
          "py": "dànshì bèi jǐngchá zhuāzhù le",
-         "hv": "_ thị bị khểnh sát co trú liễu"
+         "hv": "đãn thị bị cảnh sát trảo trú liễu"
         }
        ],
        "traceWord": "逃跑",
        "py": "Xiǎotōur xiǎng táopǎo dànshì bèi jǐngchá zhuāzhù le",
-       "traceKey": "taopao"
+       "traceKey": "taopao",
+       "traceInfo": [
+        {
+         "c": "逃",
+         "py": "táo",
+         "hv": "đào"
+        },
+        {
+         "c": "跑",
+         "py": "pǎo",
+         "hv": "bào"
+        }
+       ]
       },
       {
        "scene": "🧒🚪🙈",
@@ -2158,19 +2675,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙈",
          "c": "v",
          "py": "duǒ zài",
-         "hv": "_ tại"
+         "hv": "đóa tại"
         },
         {
          "t": "门后边一直不敢出来",
          "ico": "🚪",
          "c": "o",
          "py": "mén hòubian yīzhí bù gǎn chūlái",
-         "hv": "môn hậu biên nhất _ bất cám xuất lai"
+         "hv": "môn hậu biên nhất trực bất cảm xuất lai"
         }
        ],
        "traceWord": "躲",
        "py": "Tā duǒ zài mén hòubian yīzhí bù gǎn chūlái",
-       "traceKey": "duo"
+       "traceKey": "duo",
+       "traceInfo": [
+        {
+         "c": "躲",
+         "py": "duǒ",
+         "hv": "đóa"
+        }
+       ]
       },
       {
        "scene": "👮📍🔫",
@@ -2182,26 +2706,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👮",
          "c": "s",
          "py": "jǐngchá",
-         "hv": "khểnh sát"
+         "hv": "cảnh sát"
         },
         {
          "t": "在现场发现了",
          "ico": "🔍",
          "c": "v",
          "py": "zài xiànchǎng fāxiàn le",
-         "hv": "tại hiện trường _ hiện liễu"
+         "hv": "tại hiện trường phát hiện liễu"
         },
         {
          "t": "一把枪和几颗子弹",
          "ico": "🔫",
          "c": "o",
          "py": "yī bǎ qiāng hé jǐ kē zǐdàn",
-         "hv": "nhất bã thương hoà kỉ _ tí đàn"
+         "hv": "nhất bả thương hòa kỷ khỏa tử đạn"
         }
        ],
        "traceWord": "子弹",
        "py": "Jǐngchá zài xiànchǎng fāxiàn le yī bǎ qiāng hé jǐ kē zǐdàn",
-       "traceKey": "zidan"
+       "traceKey": "zidan",
+       "traceInfo": [
+        {
+         "c": "子",
+         "py": "zǐ",
+         "hv": "tử"
+        },
+        {
+         "c": "弹",
+         "py": "dàn",
+         "hv": "đạn"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -2299,7 +2835,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Tā jīnnián èr shí suì"
         }
        ],
-       "qpy": "Nǐ kànjiàn nà gèrén wǎng nǎr táo le?"
+       "qpy": "Nǐ kànjiàn nà gè rén wǎng nǎr táo le?"
       }
      ],
      "realTask": {
@@ -2338,14 +2874,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "wǒmen gōngsī",
-         "hv": "ngã món công ti"
+         "hv": "ngã môn công ti"
         },
         {
          "t": "近来不时开会",
          "ico": "📋",
          "c": "v",
          "py": "jìnlái bùshí kāihuì",
-         "hv": "cận lai bất thì khai hội"
+         "hv": "cận lai bất thời khai hội"
         },
         {
          "t": "讨论新项目",
@@ -2357,7 +2893,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "不时",
        "py": "Wǒmen gōngsī jìnlái bùshí kāihuì tǎolùn xīn xiàngmù",
-       "traceKey": "bushi"
+       "traceKey": "bushi",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "时",
+         "py": "shí",
+         "hv": "thời"
+        }
+       ]
       },
       {
        "scene": "👔👍👂",
@@ -2369,14 +2917,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         },
         {
          "t": "一向很重视",
          "ico": "👍",
          "c": "v",
          "py": "yīxiàng hěn zhòngshì",
-         "hv": "nhất hướng _ trọng thị"
+         "hv": "nhất hướng ngận trọng thị"
         },
         {
          "t": "顾客的意见",
@@ -2388,7 +2936,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "一向",
        "py": "Jīnglǐ yīxiàng hěn zhòngshì gùkè de yìjiàn",
-       "traceKey": "yixiang"
+       "traceKey": "yixiang",
+       "traceInfo": [
+        {
+         "c": "一",
+         "py": "yī",
+         "hv": "nhất"
+        },
+        {
+         "c": "向",
+         "py": "xiàng",
+         "hv": "hướng"
+        }
+       ]
       },
       {
        "scene": "🏢🕰️🛠️",
@@ -2400,26 +2960,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "zhè jiā gōngsī",
-         "hv": "_ gia công ti"
+         "hv": "giá gia công ti"
         },
         {
          "t": "仍旧使用",
          "ico": "🛠️",
          "c": "v",
          "py": "réngjiù shǐyòng",
-         "hv": "nhưng _ sứ dụng"
+         "hv": "nhưng cựu sử dụng"
         },
         {
          "t": "以往的老办法",
          "ico": "🕰️",
          "c": "o",
          "py": "yǐwǎng de lǎo bànfǎ",
-         "hv": "_ vãng đích lão _ pháp"
+         "hv": "dĩ vãng đích lão biện pháp"
         }
        ],
        "traceWord": "仍旧",
        "py": "Zhè jiā gōngsī réngjiù shǐyòng yǐwǎng de lǎo bànfǎ",
-       "traceKey": "rengjiu"
+       "traceKey": "rengjiu",
+       "traceInfo": [
+        {
+         "c": "仍",
+         "py": "réng",
+         "hv": "nhưng"
+        },
+        {
+         "c": "旧",
+         "py": "jiù",
+         "hv": "cựu"
+        }
+       ]
       },
       {
        "scene": "🏠⏳🏭",
@@ -2431,14 +3003,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "s",
          "py": "dāngnián de xiǎo gōngsī",
-         "hv": "đương nên đích tiểu công ti"
+         "hv": "đương niên đích tiểu công ti"
         },
         {
          "t": "此刻已经成为",
          "ico": "⏳",
          "c": "v",
          "py": "cǐkè yǐjīng chéngwéi",
-         "hv": "thử khắc dĩ kinh thành _"
+         "hv": "thử khắc dĩ kinh thành vi"
         },
         {
          "t": "有名的企业",
@@ -2450,7 +3022,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "此刻",
        "py": "Dāngnián de xiǎo gōngsī cǐkè yǐjīng chéngwéi yǒumíng de qǐyè",
-       "traceKey": "cike"
+       "traceKey": "cike",
+       "traceInfo": [
+        {
+         "c": "此",
+         "py": "cǐ",
+         "hv": "thử"
+        },
+        {
+         "c": "刻",
+         "py": "kè",
+         "hv": "khắc"
+        }
+       ]
       },
       {
        "scene": "📅📈🔄",
@@ -2462,26 +3046,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📅",
          "c": "s",
          "py": "yuánxiān de jìhuà",
-         "hv": "nguyên tiên đích kể _"
+         "hv": "nguyên tiên đích kế hoạch"
         },
         {
          "t": "将要",
          "ico": "⏳",
          "c": "v",
          "py": "jiāngyào",
-         "hv": "tướng yếu"
+         "hv": "tương yếu"
         },
         {
          "t": "根据市场的变化进行调整",
          "ico": "📈",
          "c": "o",
          "py": "gēnjù shìchǎng de biànhuà jìnxíng tiáozhěng",
-         "hv": "căn cớ thị trường đích biến hoá tiến hàng điều chỉnh"
+         "hv": "căn cứ thị trường đích biến hóa tiến hành điều chỉnh"
         }
        ],
        "traceWord": "将要",
        "py": "Yuánxiān de jìhuà jiāngyào gēnjù shìchǎng de biànhuà jìnxíng tiáozhěng",
-       "traceKey": "jiangyao"
+       "traceKey": "jiangyao",
+       "traceInfo": [
+        {
+         "c": "将",
+         "py": "jiāng",
+         "hv": "tương"
+        },
+        {
+         "c": "要",
+         "py": "yào",
+         "hv": "yếu"
+        }
+       ]
       },
       {
        "scene": "🧑‍💼📍🏢",
@@ -2500,19 +3096,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📍",
          "c": "v",
          "py": "yīzhí zài",
-         "hv": "nhất _ tại"
+         "hv": "nhất trực tại"
         },
         {
          "t": "北京的一家大公司工作",
          "ico": "🏢",
          "c": "o",
          "py": "Běijīng de yī jiā dà gōngsī gōngzuò",
-         "hv": "_ kinh đích nhất gia đại công ti công tác"
+         "hv": "bắc kinh đích nhất gia đại công ti công tác"
         }
        ],
        "traceWord": "此后",
        "py": "Cǐhòu tā yīzhí zài Běijīng de yī jiā dà gōngsī gōngzuò",
-       "traceKey": "cihou"
+       "traceKey": "cihou",
+       "traceInfo": [
+        {
+         "c": "此",
+         "py": "cǐ",
+         "hv": "thử"
+        },
+        {
+         "c": "后",
+         "py": "hòu",
+         "hv": "hậu"
+        }
+       ]
       },
       {
        "scene": "📱💬🛍️",
@@ -2524,26 +3132,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📱",
          "c": "s",
          "py": "cǐshí wǒ de shǒujī",
-         "hv": "thử thì ngã đích thủ cơ"
+         "hv": "thử thời ngã đích thủ cơ"
         },
         {
          "t": "不时收到",
          "ico": "📩",
          "c": "v",
          "py": "bùshí shōudào",
-         "hv": "bất thì thu đáo"
+         "hv": "bất thời thu đáo"
         },
         {
          "t": "顾客发来的新消息",
          "ico": "💬",
          "c": "o",
          "py": "gùkè fā lái de xīn xiāoxi",
-         "hv": "cố khách _ lai đích tân tiêu tức"
+         "hv": "cố khách phát lai đích tân tiêu tức"
         }
        ],
        "traceWord": "此时",
        "py": "Cǐshí wǒ de shǒujī bùshí shōudào gùkè fā lái de xīn xiāoxi",
-       "traceKey": "cishi"
+       "traceKey": "cishi",
+       "traceInfo": [
+        {
+         "c": "此",
+         "py": "cǐ",
+         "hv": "thử"
+        },
+        {
+         "c": "时",
+         "py": "shí",
+         "hv": "thời"
+        }
+       ]
       },
       {
        "scene": "🛒💰🙂",
@@ -2562,19 +3182,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💰",
          "c": "v",
          "py": "bǐ yǐwǎng gāo",
-         "hv": "tỉ _ vãng cao"
+         "hv": "tỷ dĩ vãng cao"
         },
         {
          "t": "但是顾客仍旧愿意购买",
          "ico": "🙂",
          "c": "o",
          "py": "dànshì gùkè réngjiù yuànyì gòumǎi",
-         "hv": "_ thị cố khách nhưng _ nguyện ý _ mãi"
+         "hv": "đãn thị cố khách nhưng cựu nguyện ý cấu mãi"
         }
        ],
        "traceWord": "当前",
        "py": "Dāngqián shìchǎng de jiàgé bǐ yǐwǎng gāo dànshì gùkè réngjiù yuànyì gòumǎi",
-       "traceKey": "dangqian"
+       "traceKey": "dangqian",
+       "traceInfo": [
+        {
+         "c": "当",
+         "py": "dāng",
+         "hv": "đương"
+        },
+        {
+         "c": "前",
+         "py": "qián",
+         "hv": "tiền"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -2714,7 +3346,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🆕",
          "c": "v",
          "py": "bìjìng gāng lái gōngsī",
-         "hv": "tất cánh _ lai công ti"
+         "hv": "tất cánh cương lai công ti"
         },
         {
          "t": "不免有些紧张",
@@ -2726,7 +3358,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "毕竟",
        "py": "Tā bìjìng gāng lái gōngsī bùmiǎn yǒuxiē jǐnzhāng",
-       "traceKey": "bijing"
+       "traceKey": "bijing",
+       "traceInfo": [
+        {
+         "c": "毕",
+         "py": "bì",
+         "hv": "tất"
+        },
+        {
+         "c": "竟",
+         "py": "jìng",
+         "hv": "cánh"
+        }
+       ]
       },
       {
        "scene": "📄👀😲",
@@ -2738,26 +3382,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📄",
          "c": "s",
          "py": "zhè gè fāng'àn",
-         "hv": "_ cá phương án"
+         "hv": "giá cá phương án"
         },
         {
          "t": "明明很简单",
          "ico": "👀",
          "c": "v",
          "py": "míngmíng hěn jiǎndān",
-         "hv": "minh minh _ giản đơn"
+         "hv": "minh minh ngận giản đơn"
         },
         {
          "t": "他居然没有做完",
          "ico": "😲",
          "c": "o",
          "py": "tā jūrán méiyǒu zuò wán",
-         "hv": "tha cư nhiên một hữu _ hoàn"
+         "hv": "tha cư nhiên một hữu tố hoàn"
         }
        ],
        "traceWord": "明明",
        "py": "Zhè gè fāng'àn míngmíng hěn jiǎndān tā jūrán méiyǒu zuò wán",
-       "traceKey": "mingming"
+       "traceKey": "mingming",
+       "traceInfo": [
+        {
+         "c": "明",
+         "py": "míng",
+         "hv": "minh"
+        },
+        {
+         "c": "明",
+         "py": "míng",
+         "hv": "minh"
+        }
+       ]
       },
       {
        "scene": "💪📆✅",
@@ -2769,14 +3425,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📁",
          "c": "s",
          "py": "zhè gè xiàngmù",
-         "hv": "_ cá hạng mục"
+         "hv": "giá cá hạng mục"
         },
         {
          "t": "经过一个月的努力总算",
          "ico": "💪",
          "c": "v",
          "py": "jīngguò yī gè yuè de nǔlì zǒngsuàn",
-         "hv": "kinh quá nhất cá nguyệt đích _ lực tổng toán"
+         "hv": "kinh quá nhất cá nguyệt đích nỗ lực tổng toán"
         },
         {
          "t": "完成了",
@@ -2788,7 +3444,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "总算",
        "py": "Zhè gè xiàngmù jīngguò yī gè yuè de nǔlì zǒngsuàn wánchéng le",
-       "traceKey": "zongsuan"
+       "traceKey": "zongsuan",
+       "traceInfo": [
+        {
+         "c": "总",
+         "py": "zǒng",
+         "hv": "tổng"
+        },
+        {
+         "c": "算",
+         "py": "suàn",
+         "hv": "toán"
+        }
+       ]
       },
       {
        "scene": "🗣️⏰🙌",
@@ -2800,26 +3468,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏰",
          "c": "s",
          "py": "huìyì kāi le sān gè xiǎoshí hái méiyǒu jiéguǒ",
-         "hv": "hội nghị khai liễu tam cá tiểu thì hoàn một hữu kết quả"
+         "hv": "hội nghị khai liễu tam cá tiểu thời hoàn một hữu kết quả"
         },
         {
          "t": "干脆",
          "ico": "✂️",
          "c": "v",
          "py": "gāncuì",
-         "hv": "can _"
+         "hv": "can thúy"
         },
         {
          "t": "明天再谈吧",
          "ico": "🙌",
          "c": "o",
          "py": "míngtiān zài tán ba",
-         "hv": "minh thiên tái đàm và"
+         "hv": "minh thiên tái đàm ba"
         }
        ],
        "traceWord": "干脆",
        "py": "Huìyì kāi le sān gè xiǎoshí hái méiyǒu jiéguǒ gāncuì míngtiān zài tán ba",
-       "traceKey": "gancui"
+       "traceKey": "gancui",
+       "traceInfo": [
+        {
+         "c": "干",
+         "py": "gān",
+         "hv": "can"
+        },
+        {
+         "c": "脆",
+         "py": "cuì",
+         "hv": "thúy"
+        }
+       ]
       },
       {
        "scene": "👕💰👎",
@@ -2831,26 +3511,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👕",
          "c": "s",
          "py": "zhè jiàn yīfu de jiàgé",
-         "hv": "_ kiện y phục đích giá cách"
+         "hv": "giá kiện y phục đích giá cách"
         },
         {
          "t": "倒是不贵",
          "ico": "💰",
          "c": "v",
          "py": "dàoshì bú guì",
-         "hv": "đảo thị bất quý"
+         "hv": "đáo thị bất quý"
         },
         {
          "t": "可惜质量不太好",
          "ico": "👎",
          "c": "o",
          "py": "kěxī zhìliàng bù tài hǎo",
-         "hv": "khả tiếc chất _ bất thái háo"
+         "hv": "khả tích chất lượng bất thái hảo"
         }
        ],
        "traceWord": "倒是",
        "py": "Zhè jiàn yīfu de jiàgé dàoshì bú guì kěxī zhìliàng bù tài hǎo",
-       "traceKey": "daoshi"
+       "traceKey": "daoshi",
+       "traceInfo": [
+        {
+         "c": "倒",
+         "py": "dào",
+         "hv": "đáo"
+        },
+        {
+         "c": "是",
+         "py": "shì",
+         "hv": "thị"
+        }
+       ]
       },
       {
        "scene": "🏭⭐👍",
@@ -2862,26 +3554,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "s",
          "py": "zhè jiā gōngsī de chǎnpǐn zhìliàng",
-         "hv": "_ gia công ti đích _ phẩm chất _"
+         "hv": "giá gia công ti đích sản phẩm chất lượng"
         },
         {
          "t": "无疑",
          "ico": "💯",
          "c": "v",
          "py": "wúyí",
-         "hv": "vô _"
+         "hv": "vô nghi"
         },
         {
          "t": "是最好的",
          "ico": "⭐",
          "c": "o",
          "py": "shì zuìhǎo de",
-         "hv": "thị tối háo đích"
+         "hv": "thị tối hảo đích"
         }
        ],
        "traceWord": "无疑",
        "py": "Zhè jiā gōngsī de chǎnpǐn zhìliàng wúyí shì zuìhǎo de",
-       "traceKey": "wuyi"
+       "traceKey": "wuyi",
+       "traceInfo": [
+        {
+         "c": "无",
+         "py": "wú",
+         "hv": "vô"
+        },
+        {
+         "c": "疑",
+         "py": "yí",
+         "hv": "nghi"
+        }
+       ]
       },
       {
        "scene": "💰😞📉",
@@ -2900,19 +3604,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😞",
          "c": "v",
          "py": "gùkè nányǐ jiēshòu",
-         "hv": "cố khách nan _ tiếp thụ"
+         "hv": "cố khách nan dĩ tiếp thụ"
         },
         {
          "t": "公司无奈只好降价",
          "ico": "📉",
          "c": "o",
          "py": "gōngsī wúnài zhǐhǎo jiàngjià",
-         "hv": "công ti vô nại chỉ háo giáng giá"
+         "hv": "công ti vô nại chỉ hảo giáng giá"
         }
        ],
        "traceWord": "无奈",
        "py": "Jiàgé tài gāo gùkè nányǐ jiēshòu gōngsī wúnài zhǐhǎo jiàngjià",
-       "traceKey": "wunai"
+       "traceKey": "wunai",
+       "traceInfo": [
+        {
+         "c": "无",
+         "py": "wú",
+         "hv": "vô"
+        },
+        {
+         "c": "奈",
+         "py": "nài",
+         "hv": "nại"
+        }
+       ]
       },
       {
        "scene": "🧑‍💼🌟⏳",
@@ -2931,19 +3647,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌟",
          "c": "v",
          "py": "kěwàng dédào zhè gè jīhuì",
-         "hv": "khát vọng đắc đáo _ cá cơ hội"
+         "hv": "khát vọng đắc đáo giá cá cơ hội"
         },
         {
          "t": "所以舍得花很多时间练习",
          "ico": "⏳",
          "c": "o",
          "py": "suǒyǐ shěde huā hěn duō shíjiān liànxí",
-         "hv": "sỡ _ xá đắc hoa _ đa thì gian luyện tập"
+         "hv": "sở dĩ xả đắc hoa ngận đa thời gian luyện tập"
         }
        ],
        "traceWord": "渴望",
        "py": "Tā kěwàng dédào zhè gè jīhuì suǒyǐ shěde huā hěn duō shíjiān liànxí",
-       "traceKey": "kewang"
+       "traceKey": "kewang",
+       "traceInfo": [
+        {
+         "c": "渴",
+         "py": "kě",
+         "hv": "khát"
+        },
+        {
+         "c": "望",
+         "py": "wàng",
+         "hv": "vọng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -3076,26 +3804,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📄",
          "c": "s",
          "py": "hétóng yěhǎo xiéyì yěhǎo",
-         "hv": "hợp đồng dã háo hiếp nghị dã háo"
+         "hv": "hợp đồng dã hảo hiệp nghị dã hảo"
         },
         {
          "t": "都必须经过",
          "ico": "✅",
          "c": "v",
          "py": "dōu bìxū jīngguò",
-         "hv": "đô tất tua kinh quá"
+         "hv": "đô tất tu kinh quá"
         },
         {
          "t": "双方签字",
          "ico": "✍️",
          "c": "o",
          "py": "shuāngfāng qiānzì",
-         "hv": "song phương _ tự"
+         "hv": "song phương thiêm tự"
         }
        ],
        "traceWord": "签字",
        "py": "Hétóng yěhǎo xiéyì yěhǎo dōu bìxū jīngguò shuāngfāng qiānzì",
-       "traceKey": "qianzi"
+       "traceKey": "qianzi",
+       "traceInfo": [
+        {
+         "c": "签",
+         "py": "qiān",
+         "hv": "thiêm"
+        },
+        {
+         "c": "字",
+         "py": "zì",
+         "hv": "tự"
+        }
+       ]
       },
       {
        "scene": "🛂📑🗂️",
@@ -3107,26 +3847,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛂",
          "c": "s",
          "py": "qiānyuē yěhǎo qiānzhèng yěhǎo",
-         "hv": "_ ước dã háo _ chứng dã háo"
+         "hv": "thiêm ước dã hảo thiêm chứng dã hảo"
         },
         {
          "t": "都需要提前",
          "ico": "⏰",
          "c": "v",
          "py": "dōu xūyào tíqián",
-         "hv": "đô _ yếu đề tiền"
+         "hv": "đô nhu yếu đề tiền"
         },
         {
          "t": "准备材料",
          "ico": "🗂️",
          "c": "o",
          "py": "zhǔnbèi cáiliào",
-         "hv": "chốn bị _ liệu"
+         "hv": "chuẩn bị tài liệu"
         }
        ],
        "traceWord": "签证",
        "py": "Qiānyuē yěhǎo qiānzhèng yěhǎo dōu xūyào tíqián zhǔnbèi cáiliào",
-       "traceKey": "qianzheng"
+       "traceKey": "qianzheng",
+       "traceInfo": [
+        {
+         "c": "签",
+         "py": "qiān",
+         "hv": "thiêm"
+        },
+        {
+         "c": "证",
+         "py": "zhèng",
+         "hv": "chứng"
+        }
+       ]
       },
       {
        "scene": "⭐🤝🙂",
@@ -3138,26 +3890,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⭐",
          "c": "s",
          "py": "zhìliàng yěhǎo fúwù yěhǎo",
-         "hv": "chất _ dã háo phục vụ dã háo"
+         "hv": "chất lượng dã hảo phục vụ dã hảo"
         },
         {
          "t": "我们双方都已经达成",
          "ico": "🤝",
          "c": "v",
          "py": "wǒmen shuāngfāng dōu yǐjīng dáchéng",
-         "hv": "ngã món song phương đô dĩ kinh đạt thành"
+         "hv": "ngã môn song phương đô dĩ kinh đạt thành"
         },
         {
          "t": "了一致",
          "ico": "🙂",
          "c": "o",
          "py": "le yīzhì",
-         "hv": "liễu nhất nhí"
+         "hv": "liễu nhất trí"
         }
        ],
        "traceWord": "达成",
        "py": "Zhìliàng yěhǎo fúwù yěhǎo wǒmen shuāngfāng dōu yǐjīng dáchéng le yīzhì",
-       "traceKey": "dacheng"
+       "traceKey": "dacheng",
+       "traceInfo": [
+        {
+         "c": "达",
+         "py": "dá",
+         "hv": "đạt"
+        },
+        {
+         "c": "成",
+         "py": "chéng",
+         "hv": "thành"
+        }
+       ]
       },
       {
        "scene": "🧑‍💼📃🖊️",
@@ -3169,26 +3933,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑‍💼",
          "c": "s",
          "py": "jīnglǐ yěhǎo tóngshì yěhǎo",
-         "hv": "kinh lí dã háo đồng sự dã háo"
+         "hv": "kinh lý dã hảo đồng sự dã hảo"
         },
         {
          "t": "都不能随便在",
          "ico": "🚫",
          "c": "v",
          "py": "dōu bù néng suíbiàn zài",
-         "hv": "đô bất năng tuỳ tiện tại"
+         "hv": "đô bất năng tùy tiện tại"
         },
         {
          "t": "协议书上签名",
          "ico": "🖊️",
          "c": "o",
          "py": "xiéyìshū shàng qiānmíng",
-         "hv": "hiếp nghị thư thượng _ danh"
+         "hv": "hiệp nghị thư thượng thiêm danh"
         }
        ],
        "traceWord": "协议书",
        "py": "Jīnglǐ yěhǎo tóngshì yěhǎo dōu bù néng suíbiàn zài xiéyìshū shàng qiānmíng",
-       "traceKey": "xieyishu"
+       "traceKey": "xieyishu",
+       "traceInfo": [
+        {
+         "c": "协",
+         "py": "xié",
+         "hv": "hiệp"
+        },
+        {
+         "c": "议",
+         "py": "yì",
+         "hv": "nghị"
+        },
+        {
+         "c": "书",
+         "py": "shū",
+         "hv": "thư"
+        }
+       ]
       },
       {
        "scene": "📧☎️💬",
@@ -3200,26 +3981,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📧",
          "c": "s",
          "py": "yóujiàn yěhǎo diànhuà yěhǎo",
-         "hv": "_ kiện dã háo _ thoại dã háo"
+         "hv": "bưu kiện dã hảo điện thoại dã hảo"
         },
         {
          "t": "请你尽快给",
          "ico": "⚡",
          "c": "v",
          "py": "qǐng nǐ jǐnkuài gěi",
-         "hv": "thỉnh nể tận khoái cấp"
+         "hv": "thỉnh nễ tẫn khoái cấp"
         },
         {
          "t": "我们一个答复",
          "ico": "💬",
          "c": "o",
          "py": "wǒmen yī gè dáfù",
-         "hv": "ngã món nhất cá đáp hạ"
+         "hv": "ngã môn nhất cá đáp phục"
         }
        ],
        "traceWord": "答复",
        "py": "Yóujiàn yěhǎo diànhuà yěhǎo qǐng nǐ jǐnkuài gěi wǒmen yī gè dáfù",
-       "traceKey": "dafu"
+       "traceKey": "dafu",
+       "traceInfo": [
+        {
+         "c": "答",
+         "py": "dá",
+         "hv": "đáp"
+        },
+        {
+         "c": "复",
+         "py": "fù",
+         "hv": "phục"
+        }
+       ]
       },
       {
        "scene": "🏢⚖️📝",
@@ -3231,26 +4024,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "gōngsī yěhǎo gèrén yěhǎo",
-         "hv": "công ti dã háo cá nhân dã háo"
+         "hv": "công ti dã hảo cá nhân dã hảo"
         },
         {
          "t": "都可以委托律师",
          "ico": "⚖️",
          "c": "v",
          "py": "dōu kěyǐ wěituō lǜshī",
-         "hv": "đô khả _ uỷ thác luật sư"
+         "hv": "đô khả dĩ ủy thác luật sư"
         },
         {
          "t": "代理这件事",
          "ico": "📝",
          "c": "o",
          "py": "dàilǐ zhè jiàn shì",
-         "hv": "đại lí _ kiện sự"
+         "hv": "đại lý giá kiện sự"
         }
        ],
        "traceWord": "委托",
        "py": "Gōngsī yěhǎo gèrén yěhǎo dōu kěyǐ wěituō lǜshī dàilǐ zhè jiàn shì",
-       "traceKey": "weituo"
+       "traceKey": "weituo",
+       "traceInfo": [
+        {
+         "c": "委",
+         "py": "wěi",
+         "hv": "ủy"
+        },
+        {
+         "c": "托",
+         "py": "tuō",
+         "hv": "thác"
+        }
+       ]
       },
       {
        "scene": "💡🔁📃",
@@ -3262,7 +4067,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💡",
          "c": "s",
          "py": "zhuānlì zhuǎnràng yěhǎo shǐyòng xǔkě yěhǎo",
-         "hv": "chuyên lợi chuyển nhường dã háo sứ dụng hứa khả dã háo"
+         "hv": "chuyên lợi chuyển nhượng dã hảo sử dụng hứa khả dã hảo"
         },
         {
          "t": "都要先",
@@ -3276,12 +4081,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📃",
          "c": "o",
          "py": "qiāndìng xiéyì",
-         "hv": "_ đính hiếp nghị"
+         "hv": "thiêm đính hiệp nghị"
         }
        ],
        "traceWord": "转让",
        "py": "Zhuānlì zhuǎnràng yěhǎo shǐyòng xǔkě yěhǎo dōu yào xiān qiāndìng xiéyì",
-       "traceKey": "zhuanrang"
+       "traceKey": "zhuanrang",
+       "traceInfo": [
+        {
+         "c": "转",
+         "py": "zhuǎn",
+         "hv": "chuyển"
+        },
+        {
+         "c": "让",
+         "py": "ràng",
+         "hv": "nhượng"
+        }
+       ]
       },
       {
        "scene": "💰📋🤝",
@@ -3293,26 +4110,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💰",
          "c": "s",
          "py": "jiàgé yěhǎo tiáojiàn yěhǎo",
-         "hv": "giá cách dã háo điều kiện dã háo"
+         "hv": "giá cách dã hảo điều kiện dã hảo"
         },
         {
          "t": "只要达成协议",
          "ico": "🤝",
          "c": "v",
          "py": "zhǐyào dáchéng xiéyì",
-         "hv": "chỉ yếu đạt thành hiếp nghị"
+         "hv": "chỉ yếu đạt thành hiệp nghị"
         },
         {
          "t": "我们就签约",
          "ico": "✍️",
          "c": "o",
          "py": "wǒmen jiù qiānyuē",
-         "hv": "ngã món _ _ ước"
+         "hv": "ngã môn tựu thiêm ước"
         }
        ],
        "traceWord": "签约",
        "py": "Jiàgé yěhǎo tiáojiàn yěhǎo zhǐyào dáchéng xiéyì wǒmen jiù qiānyuē",
-       "traceKey": "qianyue"
+       "traceKey": "qianyue",
+       "traceInfo": [
+        {
+         "c": "签",
+         "py": "qiān",
+         "hv": "thiêm"
+        },
+        {
+         "c": "约",
+         "py": "yuē",
+         "hv": "ước"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -3449,26 +4278,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "rénmen de xiǎngfǎ",
-         "hv": "nhân món đích tưởng pháp"
+         "hv": "nhân môn đích tưởng pháp"
         },
         {
          "t": "随着时间",
          "ico": "⏳",
          "c": "v",
          "py": "suízhe shíjiān",
-         "hv": "tuỳ trứ thì gian"
+         "hv": "tùy trước thời gian"
         },
         {
          "t": "不断变化",
          "ico": "🔄",
          "c": "o",
          "py": "bùduàn biànhuà",
-         "hv": "bất đoạn biến hoá"
+         "hv": "bất đoạn biến hóa"
         }
        ],
        "traceWord": "随着",
        "py": "Rénmen de xiǎngfǎ suízhe shíjiān bùduàn biànhuà",
-       "traceKey": "suizhe"
+       "traceKey": "suizhe",
+       "traceInfo": [
+        {
+         "c": "随",
+         "py": "suí",
+         "hv": "tùy"
+        },
+        {
+         "c": "着",
+         "py": "zhe",
+         "hv": "trước"
+        }
+       ]
       },
       {
        "scene": "🏢🔍📋",
@@ -3480,7 +4321,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "要先了解",
@@ -3499,7 +4340,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "现状",
        "py": "Wǒmen yào xiān liǎojiě gōngsī mùqián de xiànzhuàng",
-       "traceKey": "xianzhuang"
+       "traceKey": "xianzhuang",
+       "traceInfo": [
+        {
+         "c": "现",
+         "py": "xiàn",
+         "hv": "hiện"
+        },
+        {
+         "c": "状",
+         "py": "zhuàng",
+         "hv": "trạng"
+        }
+       ]
       },
       {
        "scene": "🏢👤🏅",
@@ -3518,7 +4371,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚖️",
          "c": "v",
          "py": "bǐ yuányǒu de rényuán",
-         "hv": "tỉ nguyên hữu đích nhân viên"
+         "hv": "tỷ nguyên hữu đích nhân viên"
         },
         {
          "t": "更有经验",
@@ -3530,7 +4383,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "现有",
        "py": "Gōngsī xiànyǒu de rényuán bǐ yuányǒu de rényuán gèng yǒu jīngyàn",
-       "traceKey": "xianyou"
+       "traceKey": "xianyou",
+       "traceInfo": [
+        {
+         "c": "现",
+         "py": "xiàn",
+         "hv": "hiện"
+        },
+        {
+         "c": "有",
+         "py": "yǒu",
+         "hv": "hữu"
+        }
+       ]
       },
       {
        "scene": "🏢⚡🖥️",
@@ -3556,12 +4421,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🖥️",
          "c": "o",
          "py": "jiù de shèbèi",
-         "hv": "_ đích thết bị"
+         "hv": "cựu đích thiết bị"
         }
        ],
        "traceWord": "更新",
        "py": "Gōngsī zhèngzài jiāsù gēngxīn jiù de shèbèi",
-       "traceKey": "gengxin"
+       "traceKey": "gengxin",
+       "traceInfo": [
+        {
+         "c": "更",
+         "py": "gēng",
+         "hv": "canh"
+        },
+        {
+         "c": "新",
+         "py": "xīn",
+         "hv": "tân"
+        }
+       ]
       },
       {
        "scene": "💹🚚👥",
@@ -3573,14 +4450,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💹",
          "c": "s",
          "py": "suízhe jīngjì de fāzhǎn",
-         "hv": "tuỳ trứ kinh _ đích _ triển"
+         "hv": "tùy trước kinh tế đích phát triển"
         },
         {
          "t": "人口流动和商品流通",
          "ico": "🚚",
          "c": "v",
          "py": "rénkǒu liúdòng hé shāngpǐn liútōng",
-         "hv": "nhân khẩu lưu động hoà thương phẩm lưu thông"
+         "hv": "nhân khẩu lưu động hòa thương phẩm lưu thông"
         },
         {
          "t": "都加快了",
@@ -3592,7 +4469,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "流通",
        "py": "Suízhe jīngjì de fāzhǎn rénkǒu liúdòng hé shāngpǐn liútōng dōu jiākuài le",
-       "traceKey": "liutong"
+       "traceKey": "liutong",
+       "traceInfo": [
+        {
+         "c": "流",
+         "py": "liú",
+         "hv": "lưu"
+        },
+        {
+         "c": "通",
+         "py": "tōng",
+         "hv": "thông"
+        }
+       ]
       },
       {
        "scene": "💻🧑‍💼🔓",
@@ -3604,14 +4493,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💻",
          "c": "s",
          "py": "xīn jìshù",
-         "hv": "tân kĩ thuật"
+         "hv": "tân kỹ thuật"
         },
         {
          "t": "把人们从重复的工作中",
          "ico": "🔁",
          "c": "v",
          "py": "bǎ rénmen cóng chóngfù de gōngzuò zhōng",
-         "hv": "bã nhân món tòng trọng hạ đích công tác trung"
+         "hv": "bả nhân môn tòng trùng phục đích công tác trung"
         },
         {
          "t": "解放出来",
@@ -3623,7 +4512,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "解放",
        "py": "Xīn jìshù bǎ rénmen cóng chóngfù de gōngzuò zhōng jiěfàng chūlái",
-       "traceKey": "jiefang"
+       "traceKey": "jiefang",
+       "traceInfo": [
+        {
+         "c": "解",
+         "py": "jiě",
+         "hv": "giải"
+        },
+        {
+         "c": "放",
+         "py": "fàng",
+         "hv": "phóng"
+        }
+       ]
       },
       {
        "scene": "📊🔄ℹ️",
@@ -3635,14 +4536,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "要把这些数据转化成",
          "ico": "🔄",
          "c": "v",
          "py": "yào bǎ zhèxiē shùjù zhuǎnhuà chéng",
-         "hv": "yếu bã _ ta số cớ chuyển hoá thành"
+         "hv": "yếu bả giá ta số cứ chuyển hóa thành"
         },
         {
          "t": "有用的信息",
@@ -3654,7 +4555,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "转化",
        "py": "Wǒmen yào bǎ zhèxiē shùjù zhuǎnhuà chéng yǒuyòng de xìnxī",
-       "traceKey": "zhuanhua"
+       "traceKey": "zhuanhua",
+       "traceInfo": [
+        {
+         "c": "转",
+         "py": "zhuǎn",
+         "hv": "chuyển"
+        },
+        {
+         "c": "化",
+         "py": "huà",
+         "hv": "hóa"
+        }
+       ]
       },
       {
        "scene": "🌐🏭🛎️",
@@ -3666,14 +4579,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌐",
          "c": "s",
          "py": "suízhe hùliánwǎng de fāzhǎn",
-         "hv": "tuỳ trứ hỗ liên võng đích _ triển"
+         "hv": "tùy trước hỗ liên võng đích phát triển"
         },
         {
          "t": "企业的重点从生产",
          "ico": "🏭",
          "c": "v",
          "py": "qǐyè de zhòngdiǎn cóng shēngchǎn",
-         "hv": "xí nghiệp đích trọng điểm tòng sinh _"
+         "hv": "xí nghiệp đích trọng điểm tòng sinh sản"
         },
         {
          "t": "转向了服务",
@@ -3685,7 +4598,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "转向",
        "py": "Suízhe hùliánwǎng de fāzhǎn qǐyè de zhòngdiǎn cóng shēngchǎn zhuǎnxiàng le fúwù",
-       "traceKey": "zhuanxiang"
+       "traceKey": "zhuanxiang",
+       "traceInfo": [
+        {
+         "c": "转",
+         "py": "zhuǎn",
+         "hv": "chuyển"
+        },
+        {
+         "c": "向",
+         "py": "xiàng",
+         "hv": "hướng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -3698,12 +4623,12 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "市场变得越来越小",
          "ico": "📉",
-         "py": "Shìchǎng biàn dé yuè lái yuè xiǎo"
+         "py": "Shìchǎng biàn de yuè lái yuè xiǎo"
         },
         {
          "txt": "市场变得越来越繁荣",
          "ico": "📈",
-         "py": "Shìchǎng biàn dé yuè lái yuè fánróng"
+         "py": "Shìchǎng biàn de yuè lái yuè fánróng"
         },
         {
          "txt": "市场已经关闭了",
@@ -3711,7 +4636,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Shìchǎng yǐjīng guānbì le"
         }
        ],
-       "qpy": "Suízhe gǎigé de shēnrù shìchǎng biàn dé zěnmeyàng?"
+       "qpy": "Suízhe gǎigé de shēnrù shìchǎng biàn de zěnmeyàng?"
       },
       {
        "q": "这个工具可以做什么？",
@@ -3825,7 +4750,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💪",
          "c": "v",
          "py": "píng zìjǐ de nǔlì",
-         "hv": "bằng tự kỉ đích _ lực"
+         "hv": "bằng tự kỷ đích nỗ lực"
         },
         {
          "t": "挣钱养家",
@@ -3837,7 +4762,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "挣钱",
        "py": "Tā píng zìjǐ de nǔlì zhèngqián yǎng jiā",
-       "traceKey": "zhengqian"
+       "traceKey": "zhengqian",
+       "traceInfo": [
+        {
+         "c": "挣",
+         "py": "zhèng",
+         "hv": "tránh"
+        },
+        {
+         "c": "钱",
+         "py": "qián",
+         "hv": "tiền"
+        }
+       ]
       },
       {
        "scene": "🧑📅💴",
@@ -3868,7 +4805,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "挣",
        "py": "Xiǎowáng yī gè yuè néng zhèng yī wàn duō yuán",
-       "traceKey": "zheng"
+       "traceKey": "zheng",
+       "traceInfo": [
+        {
+         "c": "挣",
+         "py": "zhèng",
+         "hv": "tránh"
+        }
+       ]
       },
       {
        "scene": "🧑🏅📈",
@@ -3887,7 +4831,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏅",
          "c": "v",
          "py": "xiǎng píng zìjǐ de jīngyàn shēnqǐng",
-         "hv": "tưởng bằng tự kỉ đích kinh nghiệm _ thỉnh"
+         "hv": "tưởng bằng tự kỷ đích kinh nghiệm thân thỉnh"
         },
         {
          "t": "更高的职位",
@@ -3899,7 +4843,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "职位",
        "py": "Wǒ xiǎng píng zìjǐ de jīngyàn shēnqǐng gèng gāo de zhíwèi",
-       "traceKey": "zhiwei"
+       "traceKey": "zhiwei",
+       "traceInfo": [
+        {
+         "c": "职",
+         "py": "zhí",
+         "hv": "chức"
+        },
+        {
+         "c": "位",
+         "py": "wèi",
+         "hv": "vị"
+        }
+       ]
       },
       {
        "scene": "🧑🤝👔",
@@ -3918,19 +4874,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "v",
          "py": "shì zǒngcái zhùlǐ",
-         "hv": "thị tổng trài trợ lí"
+         "hv": "thị tổng tài trợ lý"
         },
         {
          "t": "主要职能是帮助总裁",
          "ico": "🤝",
          "c": "o",
          "py": "zhǔyào zhínéng shì bāngzhù zǒngcái",
-         "hv": "chúa yếu chức năng thị _ trợ tổng trài"
+         "hv": "chủ yếu chức năng thị bang trợ tổng tài"
         }
        ],
        "traceWord": "职务",
        "py": "Tā de zhíwù shì zǒngcái zhùlǐ zhǔyào zhínéng shì bāngzhù zǒngcái",
-       "traceKey": "zhiwu"
+       "traceKey": "zhiwu",
+       "traceInfo": [
+        {
+         "c": "职",
+         "py": "zhí",
+         "hv": "chức"
+        },
+        {
+         "c": "务",
+         "py": "wù",
+         "hv": "vụ"
+        }
+       ]
       },
       {
        "scene": "✈️🧑🌙",
@@ -3956,12 +4924,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌙",
          "c": "o",
          "py": "suǒyǐ yóu wǒ lái zhíbān",
-         "hv": "sỡ _ do ngã lai _ ban"
+         "hv": "sở dĩ do ngã lai trị ban"
         }
        ],
        "traceWord": "出差",
        "py": "Tā xià zhōu yào chūchāi suǒyǐ yóu wǒ lái zhíbān",
-       "traceKey": "chuchai"
+       "traceKey": "chuchai",
+       "traceInfo": [
+        {
+         "c": "出",
+         "py": "chū",
+         "hv": "xuất"
+        },
+        {
+         "c": "差",
+         "py": "chāi",
+         "hv": "sai"
+        }
+       ]
       },
       {
        "scene": "😫🧑📄",
@@ -3973,14 +4953,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😫",
          "c": "s",
          "py": "yīnwèi gōngzuò yālì tài dà",
-         "hv": "nhân _ công tác áp lực thái đại"
+         "hv": "nhân vị công tác áp lực thái đại"
         },
         {
          "t": "他向主管",
          "ico": "🧑",
          "c": "v",
          "py": "tā xiàng zhǔguǎn",
-         "hv": "tha hướng chúa quản"
+         "hv": "tha hướng chủ quản"
         },
         {
          "t": "提出了辞职",
@@ -3992,7 +4972,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "辞职",
        "py": "Yīnwèi gōngzuò yālì tài dà tā xiàng zhǔguǎn tíchū le cízhí",
-       "traceKey": "cizhi"
+       "traceKey": "cizhi",
+       "traceInfo": [
+        {
+         "c": "辞",
+         "py": "cí",
+         "hv": "từ"
+        },
+        {
+         "c": "职",
+         "py": "zhí",
+         "hv": "chức"
+        }
+       ]
       },
       {
        "scene": "🏢📝🛠️",
@@ -4011,19 +5003,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📝",
          "c": "v",
          "py": "měi nián dōu yào kǎohé",
-         "hv": "mỗi nên đô yếu khảo hạch"
+         "hv": "mỗi niên đô yếu khảo hạch"
         },
         {
          "t": "员工的专业技能",
          "ico": "🛠️",
          "c": "o",
          "py": "yuángōng de zhuānyè jìnéng",
-         "hv": "viên công đích chuyên nghiệp kĩ năng"
+         "hv": "viên công đích chuyên nghiệp kỹ năng"
         }
        ],
        "traceWord": "技能",
        "py": "Gōngsī měi nián dōu yào kǎohé yuángōng de zhuānyè jìnéng",
-       "traceKey": "jineng"
+       "traceKey": "jineng",
+       "traceInfo": [
+        {
+         "c": "技",
+         "py": "jì",
+         "hv": "kỹ"
+        },
+        {
+         "c": "能",
+         "py": "néng",
+         "hv": "năng"
+        }
+       ]
       },
       {
        "scene": "📂🧑‍💼🧑‍🏫",
@@ -4035,26 +5039,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📂",
          "c": "s",
          "py": "zhè gè xiàng mùdì fùzérén",
-         "hv": "_ cá hạng mục đích phụ trách nhân"
+         "hv": "giá cá hạng mục đích phụ trách nhân"
         },
         {
          "t": "请了一位顾问",
          "ico": "🧑‍🏫",
          "c": "v",
          "py": "qǐng le yī wèi gùwèn",
-         "hv": "thỉnh liễu nhất vị cố _"
+         "hv": "thỉnh liễu nhất vị cố vấn"
         },
         {
          "t": "和两个助手",
          "ico": "🧑‍💼",
          "c": "o",
          "py": "hé liǎng gè zhùshǒu",
-         "hv": "hoà lưỡng cá trợ thủ"
+         "hv": "hòa lưỡng cá trợ thủ"
         }
        ],
        "traceWord": "负责人",
        "py": "Zhè gè xiàng mùdì fùzérén qǐng le yī wèi gùwèn hé liǎng gè zhùshǒu",
-       "traceKey": "fuzeren"
+       "traceKey": "fuzeren",
+       "traceInfo": [
+        {
+         "c": "负",
+         "py": "fù",
+         "hv": "phụ"
+        },
+        {
+         "c": "责",
+         "py": "zé",
+         "hv": "trách"
+        },
+        {
+         "c": "人",
+         "py": "rén",
+         "hv": "nhân"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -4194,7 +5215,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📜",
          "c": "v",
          "py": "yījù fǎlǜ zuòchū le",
-         "hv": "y cớ pháp luật tác xuất liễu"
+         "hv": "y cứ pháp luật tác xuất liễu"
         },
         {
          "t": "公正的决定",
@@ -4206,7 +5227,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "依据",
        "py": "Fǎyuàn yījù fǎlǜ zuòchū le gōngzhèng de juédìng",
-       "traceKey": "yiju"
+       "traceKey": "yiju",
+       "traceInfo": [
+        {
+         "c": "依",
+         "py": "yī",
+         "hv": "y"
+        },
+        {
+         "c": "据",
+         "py": "jù",
+         "hv": "cứ"
+        }
+       ]
       },
       {
        "scene": "🏢🛡️👥",
@@ -4225,7 +5258,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛡️",
          "c": "v",
          "py": "bìxū yīfǎ bǎohù",
-         "hv": "tất tua y pháp bảo hộ"
+         "hv": "tất tu y pháp bảo hộ"
         },
         {
          "t": "员工的权利",
@@ -4237,7 +5270,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "依法",
        "py": "Gōngsī bìxū yīfǎ bǎohù yuángōng de quánlì",
-       "traceKey": "yifa"
+       "traceKey": "yifa",
+       "traceInfo": [
+        {
+         "c": "依",
+         "py": "yī",
+         "hv": "y"
+        },
+        {
+         "c": "法",
+         "py": "fǎ",
+         "hv": "pháp"
+        }
+       ]
       },
       {
        "scene": "🚫⚖️💸",
@@ -4249,7 +5294,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚫",
          "c": "s",
          "py": "rènhé wéifǎ de xíngwéi",
-         "hv": "nhậm _ vi pháp đích hàng _"
+         "hv": "nhiệm hà vi pháp đích hành vi"
         },
         {
          "t": "都要受到",
@@ -4268,7 +5313,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "违法",
        "py": "Rènhé wéifǎ de xíngwéi dōu yào shòudào chǔfá",
-       "traceKey": "weifa"
+       "traceKey": "weifa",
+       "traceInfo": [
+        {
+         "c": "违",
+         "py": "wéi",
+         "hv": "vi"
+        },
+        {
+         "c": "法",
+         "py": "fǎ",
+         "hv": "pháp"
+        }
+       ]
       },
       {
        "scene": "👷⚠️📄",
@@ -4287,7 +5344,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚠️",
          "c": "v",
          "py": "wéiguī cāozuò",
-         "hv": "vi qui _ tác"
+         "hv": "vi quy thao tác"
         },
         {
          "t": "会受到公司处分",
@@ -4299,7 +5356,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "违规",
        "py": "Yuángōng wéiguī cāozuò huì shòudào gōngsī chǔfèn",
-       "traceKey": "weigui"
+       "traceKey": "weigui",
+       "traceInfo": [
+        {
+         "c": "违",
+         "py": "wéi",
+         "hv": "vi"
+        },
+        {
+         "c": "规",
+         "py": "guī",
+         "hv": "quy"
+        }
+       ]
       },
       {
        "scene": "🚗🚦💸",
@@ -4325,12 +5394,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💸",
          "c": "o",
          "py": "jiāotōng fǎguī yào bèi fákuǎn",
-         "hv": "giao thông pháp qui yếu bị phạt khoản"
+         "hv": "giao thông pháp quy yếu bị phạt khoản"
         }
        ],
        "traceWord": "罚款",
        "py": "Kāichē wéifǎn jiāotōng fǎguī yào bèi fákuǎn",
-       "traceKey": "fakuan"
+       "traceKey": "fakuan",
+       "traceInfo": [
+        {
+         "c": "罚",
+         "py": "fá",
+         "hv": "phạt"
+        },
+        {
+         "c": "款",
+         "py": "kuǎn",
+         "hv": "khoản"
+        }
+       ]
       },
       {
        "scene": "⏰🧑💴",
@@ -4349,7 +5430,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚠️",
          "c": "v",
          "py": "jiùyào fá",
-         "hv": "_ yếu phạt"
+         "hv": "tựu yếu phạt"
         },
         {
          "t": "一百元",
@@ -4361,7 +5442,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "罚",
        "py": "Chídào sān cì jiùyào fá yī bǎi yuán",
-       "traceKey": "fa"
+       "traceKey": "fa",
+       "traceInfo": [
+        {
+         "c": "罚",
+         "py": "fá",
+         "hv": "phạt"
+        }
+       ]
       },
       {
        "scene": "📱💔🆕",
@@ -4380,7 +5468,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙇",
          "c": "v",
          "py": "zhǐhǎo péi",
-         "hv": "chỉ háo _"
+         "hv": "chỉ hảo bồi"
         },
         {
          "t": "我一部新手机",
@@ -4392,12 +5480,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "赔",
        "py": "Tā nòng huài le wǒ de shǒujī zhǐhǎo péi wǒ yī bù xīn shǒujī",
-       "traceKey": "pei"
+       "traceKey": "pei",
+       "traceInfo": [
+        {
+         "c": "赔",
+         "py": "péi",
+         "hv": "bồi"
+        }
+       ]
       },
       {
        "scene": "🏢🤕🎁",
-       "full": "公司应该赔偿受伤的员工并且给他们一些补偿",
-       "vi": "Công ty nên bồi thường cho nhân viên bị thương và cho họ thêm một khoản hỗ trợ",
+       "full": "公司依法给受伤的员工一笔赔偿并且补偿了他的休假时间",
+       "vi": "Công ty theo luật bồi thường cho nhân viên bị thương một khoản tiền và bù thêm thời gian nghỉ cho anh ấy",
        "parts": [
         {
          "t": "公司",
@@ -4407,23 +5502,35 @@ window.CURRICULUM_STAGES[5] = {
          "hv": "công ti"
         },
         {
-         "t": "应该赔偿",
+         "t": "依法给",
          "ico": "💴",
          "c": "v",
-         "py": "yīnggāi péicháng",
-         "hv": "ứng _ _ _"
+         "py": "yīfǎ gěi",
+         "hv": "y pháp cấp"
         },
         {
-         "t": "受伤的员工并且给他们一些补偿",
+         "t": "受伤的员工一笔赔偿并且补偿了他的休假时间",
          "ico": "🤕",
          "c": "o",
-         "py": "shòushāng de yuángōng bìngqiě gěi tāmen yīxiē bǔcháng",
-         "hv": "thụ thương đích viên công _ thả cấp tha món nhất ta bổ _"
+         "py": "shòushāng de yuángōng yī bǐ péicháng bìngqiě bǔcháng le tā de xiūjià shíjiān",
+         "hv": "thụ thương đích viên công nhất bút bồi thường tịnh thả bổ thường liễu tha đích hưu giá thời gian"
         }
        ],
        "traceWord": "赔偿",
-       "py": "Gōngsī yīnggāi péicháng shòushāng de yuángōng bìngqiě gěi tāmen yīxiē bǔcháng",
-       "traceKey": "peichang"
+       "py": "Gōngsī yīfǎ gěi shòushāng de yuángōng yī bǐ péicháng bìngqiě bǔcháng le tā de xiūjià shíjiān",
+       "traceKey": "peichang",
+       "traceInfo": [
+        {
+         "c": "赔",
+         "py": "péi",
+         "hv": "bồi"
+        },
+        {
+         "c": "偿",
+         "py": "cháng",
+         "hv": "thường"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -4508,7 +5615,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "会变得更漂亮",
          "ico": "✨",
-         "py": "Huì biàn dé gèng piàoliang"
+         "py": "Huì biàn de gèng piàoliang"
         },
         {
          "txt": "会得到很多假期",
@@ -4560,7 +5667,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "依照命令",
@@ -4574,12 +5681,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚡",
          "c": "o",
          "py": "zhíxíng xīn guīdìng",
-         "hv": "chấp hàng tân qui định"
+         "hv": "chấp hành tân quy định"
         }
        ],
        "traceWord": "依照",
        "py": "Wǒmen yīzhào mìnglìng zhíxíng xīn guīdìng",
-       "traceKey": "yizhao"
+       "traceKey": "yizhao",
+       "traceInfo": [
+        {
+         "c": "依",
+         "py": "yī",
+         "hv": "y"
+        },
+        {
+         "c": "照",
+         "py": "zhào",
+         "hv": "chiếu"
+        }
+       ]
       },
       {
        "scene": "👔📝🔧",
@@ -4591,7 +5710,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         },
         {
          "t": "依照指示",
@@ -4605,12 +5724,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔧",
          "c": "o",
          "py": "tuīxíng bìng luòshí xīn bànfǎ",
-         "hv": "suy hàng _ lạc thực tân _ pháp"
+         "hv": "thôi hành tịnh lạc thực tân biện pháp"
         }
        ],
        "traceWord": "落实",
        "py": "Jīnglǐ yīzhào zhǐshì tuīxíng bìng luòshí xīn bànfǎ",
-       "traceKey": "luoshi"
+       "traceKey": "luoshi",
+       "traceInfo": [
+        {
+         "c": "落",
+         "py": "luò",
+         "hv": "lạc"
+        },
+        {
+         "c": "实",
+         "py": "shí",
+         "hv": "thực"
+        }
+       ]
       },
       {
        "scene": "🏢📄🤝",
@@ -4636,12 +5767,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "o",
          "py": "yuēshù shuāngfāng de xíngwéi",
-         "hv": "ước thút song phương đích hàng _"
+         "hv": "ước thúc song phương đích hành vi"
         }
        ],
        "traceWord": "约束",
        "py": "Gōngsī yīzhào hétóng yuēshù shuāngfāng de xíngwéi",
-       "traceKey": "yueshu"
+       "traceKey": "yueshu",
+       "traceInfo": [
+        {
+         "c": "约",
+         "py": "yuē",
+         "hv": "ước"
+        },
+        {
+         "c": "束",
+         "py": "shù",
+         "hv": "thúc"
+        }
+       ]
       },
       {
        "scene": "🧑‍💼📕✅",
@@ -4660,19 +5803,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📕",
          "c": "v",
          "py": "bìxū yīzhào gōngsī zhìdù",
-         "hv": "tất tua y chiếu công ti chế độ"
+         "hv": "tất tu y chiếu công ti chế độ"
         },
         {
          "t": "遵守规定",
          "ico": "✅",
          "c": "o",
          "py": "zūnshǒu guīdìng",
-         "hv": "tuân thú qui định"
+         "hv": "tuân thủ quy định"
         }
        ],
        "traceWord": "遵守",
        "py": "Yuángōng bìxū yīzhào gōngsī zhìdù zūnshǒu guīdìng",
-       "traceKey": "zunshou"
+       "traceKey": "zunshou",
+       "traceInfo": [
+        {
+         "c": "遵",
+         "py": "zūn",
+         "hv": "tuân"
+        },
+        {
+         "c": "守",
+         "py": "shǒu",
+         "hv": "thủ"
+        }
+       ]
       },
       {
        "scene": "🏢🚫🙇",
@@ -4698,12 +5853,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙇",
          "c": "o",
          "py": "yuángōng jùjué fúcóng lǐngdǎo de mìnglìng",
-         "hv": "viên công cự _ phục tòng lãnh đạo đích mệnh lệnh"
+         "hv": "viên công cự tuyệt phục tòng lĩnh đạo đích mệnh lệnh"
         }
        ],
        "traceWord": "不许",
        "py": "Gōngsī bùxǔ yuángōng jùjué fúcóng lǐngdǎo de mìnglìng",
-       "traceKey": "buxu"
+       "traceKey": "buxu",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "许",
+         "py": "xǔ",
+         "hv": "hứa"
+        }
+       ]
       },
       {
        "scene": "👥⚖️💼",
@@ -4715,26 +5882,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "应该",
          "ico": "✅",
          "c": "v",
          "py": "yīnggāi",
-         "hv": "ứng _"
+         "hv": "ưng cai"
         },
         {
          "t": "依照公认的道德标准办事",
          "ico": "⚖️",
          "c": "o",
          "py": "yīzhào gōngrèn de dàodé biāozhǔn bànshì",
-         "hv": "y chiếu công nhận đích đạo đức bêu chốn _ sự"
+         "hv": "y chiếu công nhận đích đạo đức tiêu chuẩn biện sự"
         }
        ],
        "traceWord": "道德",
        "py": "Wǒmen yīnggāi yīzhào gōngrèn de dàodé biāozhǔn bànshì",
-       "traceKey": "daode"
+       "traceKey": "daode",
+       "traceInfo": [
+        {
+         "c": "道",
+         "py": "dào",
+         "hv": "đạo"
+        },
+        {
+         "c": "德",
+         "py": "dé",
+         "hv": "đức"
+        }
+       ]
       },
       {
        "scene": "🎓📊🔬",
@@ -4753,19 +5932,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📊",
          "c": "v",
          "py": "yīzhào shùjù",
-         "hv": "y chiếu số cớ"
+         "hv": "y chiếu số cứ"
         },
         {
          "t": "证实了这个方法有效",
          "ico": "🔬",
          "c": "o",
          "py": "zhèngshí le zhè gè fāngfǎ yǒuxiào",
-         "hv": "chứng thực liễu _ cá phương pháp hữu hiệu"
+         "hv": "chứng thực liễu giá cá phương pháp hữu hiệu"
         }
        ],
        "traceWord": "证实",
        "py": "Zhuānjiā yīzhào shùjù zhèngshí le zhè gè fāngfǎ yǒuxiào",
-       "traceKey": "zhengshi"
+       "traceKey": "zhengshi",
+       "traceInfo": [
+        {
+         "c": "证",
+         "py": "zhèng",
+         "hv": "chứng"
+        },
+        {
+         "c": "实",
+         "py": "shí",
+         "hv": "thực"
+        }
+       ]
       },
       {
        "scene": "🏢⚖️💿",
@@ -4784,19 +5975,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "❗",
          "c": "v",
          "py": "bìxū",
-         "hv": "tất tua"
+         "hv": "tất tu"
         },
         {
          "t": "依照法律和道德的要求使用正版产品",
          "ico": "💿",
          "c": "o",
          "py": "yīzhào fǎlǜ hé dàodé de yāoqiú shǐyòng zhèngbǎn chǎnpǐn",
-         "hv": "y chiếu pháp luật hoà đạo đức đích yếu cầu sứ dụng chính bản _ phẩm"
+         "hv": "y chiếu pháp luật hòa đạo đức đích yêu cầu sử dụng chính bản sản phẩm"
         }
        ],
        "traceWord": "正版",
        "py": "Gōngsī bìxū yīzhào fǎlǜ hé dàodé de yāoqiú shǐyòng zhèngbǎn chǎnpǐn",
-       "traceKey": "zhengban"
+       "traceKey": "zhengban",
+       "traceInfo": [
+        {
+         "c": "正",
+         "py": "zhèng",
+         "hv": "chính"
+        },
+        {
+         "c": "版",
+         "py": "bǎn",
+         "hv": "bản"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -4929,26 +6132,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎤",
          "c": "s",
          "py": "zhè cì huìyì",
-         "hv": "_ thứ hội nghị"
+         "hv": "giá thứ hội nghị"
         },
         {
          "t": "由我们公司",
          "ico": "🏢",
          "c": "o",
          "py": "yóu wǒmen gōngsī",
-         "hv": "do ngã món công ti"
+         "hv": "do ngã môn công ti"
         },
         {
          "t": "主办",
          "ico": "📅",
          "c": "v",
          "py": "zhǔbàn",
-         "hv": "chúa _"
+         "hv": "chủ biện"
         }
        ],
        "traceWord": "主办",
        "py": "Zhè cì huìyì yóu wǒmen gōngsī zhǔbàn",
-       "traceKey": "zhuban"
+       "traceKey": "zhuban",
+       "traceInfo": [
+        {
+         "c": "主",
+         "py": "zhǔ",
+         "hv": "chủ"
+        },
+        {
+         "c": "办",
+         "py": "bàn",
+         "hv": "biện"
+        }
+       ]
       },
       {
        "scene": "🎪👔🏢",
@@ -4960,26 +6175,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎪",
          "c": "s",
          "py": "zhè gè huódòng",
-         "hv": "_ cá hoạt động"
+         "hv": "giá cá hoạt động"
         },
         {
          "t": "由王经理的公司",
          "ico": "👔",
          "c": "o",
          "py": "yóu wáng jīnglǐ de gōngsī",
-         "hv": "do vương kinh lí đích công ti"
+         "hv": "do vương kinh lý đích công ti"
         },
         {
          "t": "承办",
          "ico": "🤝",
          "c": "v",
          "py": "chéngbàn",
-         "hv": "thừa _"
+         "hv": "thừa biện"
         }
        ],
        "traceWord": "承办",
        "py": "Zhè gè huódòng yóu wáng jīnglǐ de gōngsī chéngbàn",
-       "traceKey": "chengban"
+       "traceKey": "chengban",
+       "traceInfo": [
+        {
+         "c": "承",
+         "py": "chéng",
+         "hv": "thừa"
+        },
+        {
+         "c": "办",
+         "py": "bàn",
+         "hv": "biện"
+        }
+       ]
       },
       {
        "scene": "📁👔🚫",
@@ -4998,19 +6225,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "v",
          "py": "yóu jīnglǐ zhǔdǎo",
-         "hv": "do kinh lí chúa đạo"
+         "hv": "do kinh lý chủ đạo"
         },
         {
          "t": "而不是由别人支配",
          "ico": "🚫",
          "c": "o",
          "py": "ér bú shì yóu biérén zhīpèi",
-         "hv": "_ bất thị do _ nhân chi phối"
+         "hv": "nhi bất thị do biệt nhân chi phối"
         }
        ],
        "traceWord": "主导",
        "py": "Zhěnggè xiàngmù yóu jīnglǐ zhǔdǎo ér bú shì yóu biérén zhīpèi",
-       "traceKey": "zhudao"
+       "traceKey": "zhudao",
+       "traceInfo": [
+        {
+         "c": "主",
+         "py": "zhǔ",
+         "hv": "chủ"
+        },
+        {
+         "c": "导",
+         "py": "dǎo",
+         "hv": "đạo"
+        }
+       ]
       },
       {
        "scene": "😟👥🙅",
@@ -5022,7 +6261,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😟",
          "c": "s",
          "py": "zhè cì de cuòwù",
-         "hv": "_ thứ đích thó _"
+         "hv": "giá thứ đích thác ngộ"
         },
         {
          "t": "由大家一起承担",
@@ -5036,12 +6275,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙅",
          "c": "o",
          "py": "bù yīnggāi zhǐzé xīn yuángōng",
-         "hv": "bất ứng _ chỉ trách tân viên công"
+         "hv": "bất ưng cai chỉ trách tân viên công"
         }
        ],
        "traceWord": "指责",
        "py": "Zhè cì de cuòwù yóu dàjiā yīqǐ chéngdān bù yīnggāi zhǐzé xīn yuángōng",
-       "traceKey": "zhize"
+       "traceKey": "zhize",
+       "traceInfo": [
+        {
+         "c": "指",
+         "py": "zhǐ",
+         "hv": "chỉ"
+        },
+        {
+         "c": "责",
+         "py": "zé",
+         "hv": "trách"
+        }
+       ]
       },
       {
        "scene": "🚨👔🧑‍🤝‍🧑",
@@ -5060,7 +6311,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "v",
          "py": "yóu jīnglǐ yōuxiān diàodòng",
-         "hv": "do kinh lí _ tiên điều động"
+         "hv": "do kinh lý ưu tiên điệu động"
         },
         {
          "t": "各部门的人员",
@@ -5072,7 +6323,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "调动",
        "py": "Yùdào jǐnjí qíngkuàng yóu jīnglǐ yōuxiān diàodòng gè bùmén de rényuán",
-       "traceKey": "diaodong"
+       "traceKey": "diaodong",
+       "traceInfo": [
+        {
+         "c": "调",
+         "py": "diào",
+         "hv": "điệu"
+        },
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        }
+       ]
       },
       {
        "scene": "📋📣👥",
@@ -5084,14 +6347,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📋",
          "c": "s",
          "py": "zhè xiàng gōngzuò",
-         "hv": "_ hạng công tác"
+         "hv": "giá hạng công tác"
         },
         {
          "t": "由部长动员全体员工",
          "ico": "📣",
          "c": "v",
          "py": "yóu bùzhǎng dòngyuán quántǐ yuángōng",
-         "hv": "do bộ trường động viên toàn thể viên công"
+         "hv": "do bộ trưởng động viên toàn thể viên công"
         },
         {
          "t": "一起完成",
@@ -5103,7 +6366,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "动员",
        "py": "Zhè xiàng gōngzuò yóu bùzhǎng dòngyuán quántǐ yuángōng yīqǐ wánchéng",
-       "traceKey": "dongyuan"
+       "traceKey": "dongyuan",
+       "traceInfo": [
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        },
+        {
+         "c": "员",
+         "py": "yuán",
+         "hv": "viên"
+        }
+       ]
       },
       {
        "scene": "🏙️🗑️🏛️",
@@ -5115,26 +6390,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗑️",
          "c": "s",
          "py": "chéngshì de lājī wèntí",
-         "hv": "thành thị đích lắp _ _ _"
+         "hv": "thành thị đích lạp ngập vấn đề"
         },
         {
          "t": "由政府负责治理",
          "ico": "🏛️",
          "c": "v",
          "py": "yóu zhèngfǔ fùzé zhìlǐ",
-         "hv": "do chính phủ phụ trách trị lí"
+         "hv": "do chính phủ phụ trách trị lý"
         },
         {
          "t": "并严格控制",
          "ico": "🔒",
          "c": "o",
          "py": "bìng yángé kòngzhì",
-         "hv": "_ nghiêm cách khống chế"
+         "hv": "tịnh nghiêm cách khống chế"
         }
        ],
        "traceWord": "治理",
        "py": "Chéngshì de lājī wèntí yóu zhèngfǔ fùzé zhìlǐ bìng yángé kòngzhì",
-       "traceKey": "zhili"
+       "traceKey": "zhili",
+       "traceInfo": [
+        {
+         "c": "治",
+         "py": "zhì",
+         "hv": "trị"
+        },
+        {
+         "c": "理",
+         "py": "lǐ",
+         "hv": "lý"
+        }
+       ]
       },
       {
        "scene": "📄🛑🤝",
@@ -5146,26 +6433,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📄",
          "c": "s",
          "py": "yīnwèi zhè fèn hétóng",
-         "hv": "nhân _ _ phần hợp đồng"
+         "hv": "nhân vị giá phần hợp đồng"
         },
         {
          "t": "由对方终止",
          "ico": "🛑",
          "c": "v",
          "py": "yóu duìfāng zhōngzhǐ",
-         "hv": "do đỗi phương chung chỉ"
+         "hv": "do đối phương chung chỉ"
         },
         {
          "t": "所以我们的工作被迫中断",
          "ico": "⏸️",
          "c": "o",
          "py": "suǒyǐ wǒmen de gōngzuò bèipò zhōngduàn",
-         "hv": "sỡ _ ngã món đích công tác bị bách trung đoạn"
+         "hv": "sở dĩ ngã môn đích công tác bị bách trung đoạn"
         }
        ],
        "traceWord": "终止",
        "py": "Yīnwèi zhè fèn hétóng yóu duìfāng zhōngzhǐ suǒyǐ wǒmen de gōngzuò bèipò zhōngduàn",
-       "traceKey": "zhongzhi"
+       "traceKey": "zhongzhi",
+       "traceInfo": [
+        {
+         "c": "终",
+         "py": "zhōng",
+         "hv": "chung"
+        },
+        {
+         "c": "止",
+         "py": "zhǐ",
+         "hv": "chỉ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -5305,19 +6604,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📢",
          "c": "o",
          "py": "jiāng xīn de gōnggào",
-         "hv": "tướng tân đích công _"
+         "hv": "tương tân đích công cáo"
         },
         {
          "t": "发布到网站上",
          "ico": "🌐",
          "c": "v",
          "py": "fābù dào wǎngzhàn shàng",
-         "hv": "_ bố đáo võng trạm thượng"
+         "hv": "phát bố đáo võng trạm thượng"
         }
        ],
        "traceWord": "公告",
        "py": "Gōngsī jiāng xīn de gōnggào fābù dào wǎngzhàn shàng",
-       "traceKey": "gonggao"
+       "traceKey": "gonggao",
+       "traceInfo": [
+        {
+         "c": "公",
+         "py": "gōng",
+         "hv": "công"
+        },
+        {
+         "c": "告",
+         "py": "gào",
+         "hv": "cáo"
+        }
+       ]
       },
       {
        "scene": "👔🪧🖨️",
@@ -5329,14 +6640,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         },
         {
          "t": "要求将这份启事",
          "ico": "🪧",
          "c": "o",
          "py": "yāoqiú jiāng zhè fèn qǐshì",
-         "hv": "yếu cầu tướng _ phần _ sự"
+         "hv": "yêu cầu tương giá phần khải sự"
         },
         {
          "t": "印刷五百份",
@@ -5348,7 +6659,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "启事",
        "py": "Jīnglǐ yāoqiú jiāng zhè fèn qǐshì yìnshuā wǔ bǎi fèn",
-       "traceKey": "qishi"
+       "traceKey": "qishi",
+       "traceInfo": [
+        {
+         "c": "启",
+         "py": "qǐ",
+         "hv": "khải"
+        },
+        {
+         "c": "事",
+         "py": "shì",
+         "hv": "sự"
+        }
+       ]
       },
       {
        "scene": "🏭📚🚚",
@@ -5360,26 +6683,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "s",
          "py": "zhè jiā gōngsī",
-         "hv": "_ gia công ti"
+         "hv": "giá gia công ti"
         },
         {
          "t": "将去年出版的新书",
          "ico": "📚",
          "c": "o",
          "py": "jiāng qùnián chūbǎn de xīn shū",
-         "hv": "tướng khứ nên xuất bản đích tân thư"
+         "hv": "tương khứ niên xuất bản đích tân thư"
         },
         {
          "t": "发行到全国",
          "ico": "🚚",
          "c": "v",
          "py": "fāxíng dào quánguó",
-         "hv": "_ hàng đáo toàn quốc"
+         "hv": "phát hành đáo toàn quốc"
         }
        ],
        "traceWord": "出版",
        "py": "Zhè jiā gōngsī jiāng qùnián chūbǎn de xīn shū fāxíng dào quánguó",
-       "traceKey": "chuban"
+       "traceKey": "chuban",
+       "traceInfo": [
+        {
+         "c": "出",
+         "py": "chū",
+         "hv": "xuất"
+        },
+        {
+         "c": "版",
+         "py": "bǎn",
+         "hv": "bản"
+        }
+       ]
       },
       {
        "scene": "✍️📖💻",
@@ -5391,26 +6726,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✍️",
          "c": "s",
          "py": "biānjí",
-         "hv": "biên _"
+         "hv": "biên tập"
         },
         {
          "t": "将这本书的电子版",
          "ico": "💻",
          "c": "o",
          "py": "jiāng zhè běn shū de diànzǐbǎn",
-         "hv": "tướng _ bản thư đích _ tí bản"
+         "hv": "tương giá bản thư đích điện tử bản"
         },
         {
          "t": "发给了我们",
          "ico": "📤",
          "c": "v",
          "py": "fā gěi le wǒmen",
-         "hv": "_ cấp liễu ngã món"
+         "hv": "phát cấp liễu ngã môn"
         }
        ],
        "traceWord": "电子版",
        "py": "Biānjí jiāng zhè běn shū de diànzǐbǎn fā gěi le wǒmen",
-       "traceKey": "dianziban"
+       "traceKey": "dianziban",
+       "traceInfo": [
+        {
+         "c": "电",
+         "py": "diàn",
+         "hv": "điện"
+        },
+        {
+         "c": "子",
+         "py": "zǐ",
+         "hv": "tử"
+        },
+        {
+         "c": "版",
+         "py": "bǎn",
+         "hv": "bản"
+        }
+       ]
       },
       {
        "scene": "👥📖✏️",
@@ -5422,26 +6774,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "将这一版",
          "ico": "📖",
          "c": "o",
          "py": "jiāng zhè yī bǎn",
-         "hv": "tướng _ nhất bản"
+         "hv": "tương giá nhất bản"
         },
         {
          "t": "再认真编辑一下",
          "ico": "✏️",
          "c": "v",
          "py": "zài rènzhēn biānjí yī xià",
-         "hv": "tái nhận chân biên _ nhất hạ"
+         "hv": "tái nhận chân biên tập nhất hạ"
         }
        ],
        "traceWord": "版",
        "py": "Wǒmen jiāng zhè yī bǎn zài rènzhēn biānjí yī xià",
-       "traceKey": "ban"
+       "traceKey": "ban",
+       "traceInfo": [
+        {
+         "c": "版",
+         "py": "bǎn",
+         "hv": "bản"
+        }
+       ]
       },
       {
        "scene": "👩‍💼📠📝",
@@ -5453,26 +6812,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👩‍💼",
          "c": "s",
          "py": "mìshū",
-         "hv": "_ thư"
+         "hv": "bí thư"
         },
         {
          "t": "将传真和便条",
          "ico": "📠",
          "c": "o",
          "py": "jiāng chuánzhēn hé biàntiáo",
-         "hv": "tướng truyền chân hoà tiện điều"
+         "hv": "tương truyền chân hòa tiện điều"
         },
         {
          "t": "交给了经理",
          "ico": "👔",
          "c": "v",
          "py": "jiāo gěi le jīnglǐ",
-         "hv": "giao cấp liễu kinh lí"
+         "hv": "giao cấp liễu kinh lý"
         }
        ],
        "traceWord": "便条",
        "py": "Mìshū jiāng chuánzhēn hé biàntiáo jiāo gěi le jīnglǐ",
-       "traceKey": "biantiao"
+       "traceKey": "biantiao",
+       "traceInfo": [
+        {
+         "c": "便",
+         "py": "biàn",
+         "hv": "tiện"
+        },
+        {
+         "c": "条",
+         "py": "tiáo",
+         "hv": "điều"
+        }
+       ]
       },
       {
        "scene": "👔📎📣",
@@ -5484,14 +6855,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         },
         {
          "t": "将附件里的重要内容",
          "ico": "📎",
          "c": "o",
          "py": "jiāng fùjiàn lǐ de zhòngyào nèiróng",
-         "hv": "tướng phò kiện lịa đích trọng yếu nội dung"
+         "hv": "tương phụ kiện lý đích trọng yếu nội dung"
         },
         {
          "t": "传达给各位同事",
@@ -5503,7 +6874,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "附件",
        "py": "Jīnglǐ jiāng fùjiàn lǐ de zhòngyào nèiróng chuándá gěi gèwèi tóngshì",
-       "traceKey": "fujian"
+       "traceKey": "fujian",
+       "traceInfo": [
+        {
+         "c": "附",
+         "py": "fù",
+         "hv": "phụ"
+        },
+        {
+         "c": "件",
+         "py": "jiàn",
+         "hv": "kiện"
+        }
+       ]
       },
       {
        "scene": "👴ℹ️🏢",
@@ -5515,26 +6898,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👴",
          "c": "s",
          "py": "lǎobǎn",
-         "hv": "lão ván"
+         "hv": "lão bản"
         },
         {
          "t": "将最重要的信息",
          "ico": "ℹ️",
          "c": "o",
          "py": "jiāng zuì zhòngyào de xìnxī",
-         "hv": "tướng tối trọng yếu đích tín tức"
+         "hv": "tương tối trọng yếu đích tín tức"
         },
         {
          "t": "传递给各个部门并交代清楚",
          "ico": "🏢",
          "c": "v",
          "py": "chuándì gěi gègè bùmén bìng jiāodài qīngchu",
-         "hv": "truyền đệ cấp các cá bộ môn _ giao đại thanh sở"
+         "hv": "truyền đệ cấp các cá bộ môn tịnh giao đại thanh sở"
         }
        ],
        "traceWord": "传递",
        "py": "Lǎobǎn jiāng zuì zhòngyào de xìnxī chuándì gěi gègè bùmén bìng jiāodài qīngchu",
-       "traceKey": "chuandi"
+       "traceKey": "chuandi",
+       "traceInfo": [
+        {
+         "c": "传",
+         "py": "chuán",
+         "hv": "truyền"
+        },
+        {
+         "c": "递",
+         "py": "dì",
+         "hv": "đệ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -5678,19 +7073,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "v",
          "py": "rènzhēn xuéxí le yī nián",
-         "hv": "nhận chân học tập liễu nhất nên"
+         "hv": "nhận chân học tập liễu nhất niên"
         },
         {
          "t": "从而提高了自己的能力",
          "ico": "📈",
          "c": "o",
          "py": "cóng'ér tígāo le zìjǐ de nénglì",
-         "hv": "tòng _ đề cao liễu tự kỉ đích năng lực"
+         "hv": "tòng nhi đề cao liễu tự kỷ đích năng lực"
         }
        ],
        "traceWord": "从而",
        "py": "Xiǎowáng rènzhēn xuéxí le yī nián cóng'ér tígāo le zìjǐ de nénglì",
-       "traceKey": "conger"
+       "traceKey": "conger",
+       "traceInfo": [
+        {
+         "c": "从",
+         "py": "cóng",
+         "hv": "tòng"
+        },
+        {
+         "c": "而",
+         "py": "ér",
+         "hv": "nhi"
+        }
+       ]
       },
       {
        "scene": "💰🛍️👥",
@@ -5716,12 +7123,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "o",
          "py": "zhìliàng hěn hǎo suǒyǐ mǎi de rén hěn duō",
-         "hv": "chất _ _ háo sỡ _ mãi đích nhân _ đa"
+         "hv": "chất lượng ngận hảo sở dĩ mãi đích nhân ngận đa"
         }
        ],
        "traceWord": "加上",
        "py": "Jiàgé piányi jiāshàng zhìliàng hěn hǎo suǒyǐ mǎi de rén hěn duō",
-       "traceKey": "jiashang"
+       "traceKey": "jiashang",
+       "traceInfo": [
+        {
+         "c": "加",
+         "py": "jiā",
+         "hv": "gia"
+        },
+        {
+         "c": "上",
+         "py": "shàng",
+         "hv": "thượng"
+        }
+       ]
       },
       {
        "scene": "🗓️👥💬",
@@ -5733,7 +7152,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "先开会",
@@ -5747,12 +7166,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📝",
          "c": "o",
          "py": "wánle zài tǎolùn zhè gè fāng'àn",
-         "hv": "hoàn liễu tái thảo luận _ cá phương án"
+         "hv": "hoàn liễu tái thảo luận giá cá phương án"
         }
        ],
        "traceWord": "完了",
        "py": "Wǒmen xiān kāihuì wánle zài tǎolùn zhè gè fāng'àn",
-       "traceKey": "wanle"
+       "traceKey": "wanle",
+       "traceInfo": [
+        {
+         "c": "完",
+         "py": "wán",
+         "hv": "hoàn"
+        },
+        {
+         "c": "了",
+         "py": "le",
+         "hv": "liễu"
+        }
+       ]
       },
       {
        "scene": "🔎⚠️📞",
@@ -5764,26 +7195,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "一旦发现问题就马上通知",
          "ico": "⚠️",
          "c": "v",
          "py": "yīdàn fāxiàn wèntí jiù mǎshàng tōngzhī",
-         "hv": "nhất đán _ hiện _ _ _ mã thượng thông tri"
+         "hv": "nhất đán phát hiện vấn đề tựu mã thượng thông tri"
         },
         {
          "t": "经理",
          "ico": "👔",
          "c": "o",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         }
        ],
        "traceWord": "一旦",
        "py": "Wǒmen yīdàn fāxiàn wèntí jiù mǎshàng tōngzhī jīnglǐ",
-       "traceKey": "yidan"
+       "traceKey": "yidan",
+       "traceInfo": [
+        {
+         "c": "一",
+         "py": "yī",
+         "hv": "nhất"
+        },
+        {
+         "c": "旦",
+         "py": "dàn",
+         "hv": "đán"
+        }
+       ]
       },
       {
        "scene": "🏢📋🔍",
@@ -5802,19 +7245,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📋",
          "c": "v",
          "py": "yīnggāi duì zhè gè xiàngmù jiāyǐ",
-         "hv": "ứng _ đỗi _ cá hạng mục gia _"
+         "hv": "ưng cai đối giá cá hạng mục gia dĩ"
         },
         {
          "t": "评估",
          "ico": "🔍",
          "c": "o",
          "py": "pínggū",
-         "hv": "bình _"
+         "hv": "bình cổ"
         }
        ],
        "traceWord": "评估",
        "py": "Gōngsī yīnggāi duì zhè gè xiàngmù jiāyǐ pínggū",
-       "traceKey": "pinggu"
+       "traceKey": "pinggu",
+       "traceInfo": [
+        {
+         "c": "评",
+         "py": "píng",
+         "hv": "bình"
+        },
+        {
+         "c": "估",
+         "py": "gū",
+         "hv": "cổ"
+        }
+       ]
       },
       {
        "scene": "🧠🧩💬",
@@ -5826,26 +7281,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧠",
          "c": "s",
          "py": "tā de luójí sīwéi",
-         "hv": "tha đích lạ _ tư _"
+         "hv": "tha đích la tập tư duy"
         },
         {
          "t": "很强",
          "ico": "💪",
          "c": "v",
          "py": "hěn qiáng",
-         "hv": "_ càng"
+         "hv": "ngận cường"
         },
         {
          "t": "说话也很有道理",
          "ico": "💬",
          "c": "o",
          "py": "shuōhuà yě hěn yǒu dàolǐ",
-         "hv": "_ thoại dã _ hữu đạo lí"
+         "hv": "thuyết thoại dã ngận hữu đạo lý"
         }
        ],
        "traceWord": "逻辑",
        "py": "Tā de luójí sīwéi hěn qiáng shuōhuà yě hěn yǒu dàolǐ",
-       "traceKey": "luoji"
+       "traceKey": "luoji",
+       "traceInfo": [
+        {
+         "c": "逻",
+         "py": "luó",
+         "hv": "la"
+        },
+        {
+         "c": "辑",
+         "py": "jí",
+         "hv": "tập"
+        }
+       ]
       },
       {
        "scene": "🧑‍🔬⚙️💡",
@@ -5871,12 +7338,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚙️",
          "c": "o",
          "py": "zhè gè yuánlǐ",
-         "hv": "_ cá nguyên lí"
+         "hv": "giá cá nguyên lý"
         }
        ],
        "traceWord": "试图",
        "py": "Zhuānjiā shìtú yòng jiǎndān de fāngfǎ jiěshì zhè gè yuánlǐ",
-       "traceKey": "shitu"
+       "traceKey": "shitu",
+       "traceInfo": [
+        {
+         "c": "试",
+         "py": "shì",
+         "hv": "thí"
+        },
+        {
+         "c": "图",
+         "py": "tú",
+         "hv": "đồ"
+        }
+       ]
       },
       {
        "scene": "💡🗓️✅",
@@ -5895,19 +7374,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💡",
          "c": "v",
          "py": "shèxiǎng le yī gè xīn bànfǎ",
-         "hv": "thết tưởng liễu nhất cá tân _ pháp"
+         "hv": "thiết tưởng liễu nhất cá tân biện pháp"
         },
         {
          "t": "估计下个月就能完成",
          "ico": "✅",
          "c": "o",
          "py": "gūjì xià ge yuè jiù néng wánchéng",
-         "hv": "_ kể hạ cá nguyệt _ năng hoàn thành"
+         "hv": "cổ kế hạ cá nguyệt tựu năng hoàn thành"
         }
        ],
        "traceWord": "设想",
        "py": "Tā shèxiǎng le yī gè xīn bànfǎ gūjì xià ge yuè jiù néng wánchéng",
-       "traceKey": "shexiang"
+       "traceKey": "shexiang",
+       "traceInfo": [
+        {
+         "c": "设",
+         "py": "shè",
+         "hv": "thiết"
+        },
+        {
+         "c": "想",
+         "py": "xiǎng",
+         "hv": "tưởng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -6047,19 +7538,36 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👂",
          "c": "v",
          "py": "tīngdào zhè gè hǎo xiāoxi",
-         "hv": "thính đáo _ cá háo tiêu tức"
+         "hv": "thính đáo giá cá hảo tiêu tức"
         },
         {
          "t": "高兴得不得了",
          "ico": "😄",
          "c": "o",
-         "py": "gāoxìng dé bùdéliǎo",
-         "hv": "cao hưng đắc bất đắc liễu"
+         "py": "gāoxìng de bùdéliǎo",
+         "hv": "cao hứng đắc bất đắc liễu"
         }
        ],
        "traceWord": "不得了",
-       "py": "Tā tīngdào zhè gè hǎo xiāoxi gāoxìng dé bùdéliǎo",
-       "traceKey": "budeliao"
+       "py": "Tā tīngdào zhè gè hǎo xiāoxi gāoxìng de bùdéliǎo",
+       "traceKey": "budeliao",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "得",
+         "py": "dé",
+         "hv": "đắc"
+        },
+        {
+         "c": "了",
+         "py": "le",
+         "hv": "liễu"
+        }
+       ]
       },
       {
        "scene": "⚽📣🎉",
@@ -6071,26 +7579,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚽",
          "c": "s",
          "py": "qiúmí men",
-         "hv": "cầu mê món"
+         "hv": "cầu mê môn"
         },
         {
          "t": "疯狂地庆祝着",
          "ico": "🎉",
          "c": "v",
          "py": "fēngkuáng de qìngzhù zhe",
-         "hv": "phong cuồng địa khánh chúc trứ"
+         "hv": "phong cuồng địa khánh chúc trước"
         },
         {
          "t": "高兴得不得了",
          "ico": "😄",
          "c": "o",
-         "py": "gāoxìng dé bùdéliǎo",
-         "hv": "cao hưng đắc bất đắc liễu"
+         "py": "gāoxìng de bùdéliǎo",
+         "hv": "cao hứng đắc bất đắc liễu"
         }
        ],
        "traceWord": "疯狂",
-       "py": "Qiúmí men fēngkuáng de qìngzhù zhe gāoxìng dé bùdéliǎo",
-       "traceKey": "fengkuang"
+       "py": "Qiúmí men fēngkuáng de qìngzhù zhe gāoxìng de bùdéliǎo",
+       "traceKey": "fengkuang",
+       "traceInfo": [
+        {
+         "c": "疯",
+         "py": "fēng",
+         "hv": "phong"
+        },
+        {
+         "c": "狂",
+         "py": "kuáng",
+         "hv": "cuồng"
+        }
+       ]
       },
       {
        "scene": "💼😵💦",
@@ -6108,7 +7628,7 @@ window.CURRICULUM_STAGES[5] = {
          "t": "最近忙得不得了",
          "ico": "💼",
          "c": "v",
-         "py": "zuìjìn máng dé bùdéliǎo",
+         "py": "zuìjìn máng de bùdéliǎo",
          "hv": "tối cận mang đắc bất đắc liễu"
         },
         {
@@ -6116,12 +7636,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😵",
          "c": "o",
          "py": "kuàiyào lèi fēng le",
-         "hv": "khoái yếu luỵ phong liễu"
+         "hv": "khoái yếu lụy phong liễu"
         }
        ],
        "traceWord": "疯",
-       "py": "Tā zuìjìn máng dé bùdéliǎo kuàiyào lèi fēng le",
-       "traceKey": "feng"
+       "py": "Tā zuìjìn máng de bùdéliǎo kuàiyào lèi fēng le",
+       "traceKey": "feng",
+       "traceInfo": [
+        {
+         "c": "疯",
+         "py": "fēng",
+         "hv": "phong"
+        }
+       ]
       },
       {
        "scene": "🎁😆🔥",
@@ -6139,20 +7666,32 @@ window.CURRICULUM_STAGES[5] = {
          "t": "听说中了奖",
          "ico": "🎁",
          "c": "v",
-         "py": "tīngshuō zhōng le jiǎng",
-         "hv": "thính _ trung liễu _"
+         "py": "tīngshuō zhòng le jiǎng",
+         "hv": "thính thuyết trúng liễu tưởng"
         },
         {
          "t": "高兴得发狂激动得不得了",
          "ico": "😆",
          "c": "o",
-         "py": "gāoxìng dé fā kuáng jīdòng dé bùdéliǎo",
-         "hv": "cao hưng đắc _ cuồng kích động đắc bất đắc liễu"
+         "py": "gāoxìng de fā kuáng jīdòng de bùdéliǎo",
+         "hv": "cao hứng đắc phát cuồng kích động đắc bất đắc liễu"
         }
        ],
        "traceWord": "激动",
-       "py": "Tā tīngshuō zhōng le jiǎng gāoxìng dé fā kuáng jīdòng dé bùdéliǎo",
-       "traceKey": "jidong"
+       "py": "Tā tīngshuō zhòng le jiǎng gāoxìng de fā kuáng jīdòng de bùdéliǎo",
+       "traceKey": "jidong",
+       "traceInfo": [
+        {
+         "c": "激",
+         "py": "jī",
+         "hv": "kích"
+        },
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        }
+       ]
       },
       {
        "scene": "🤦‍♂️😔💔",
@@ -6171,19 +7710,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤦‍♂️",
          "c": "v",
          "py": "tài chōngdòng le zuò le yī jiàn shǎ shì",
-         "hv": "thái _ động liễu _ liễu nhất kiện _ sự"
+         "hv": "thái xung động liễu tố liễu nhất kiện _ sự"
         },
         {
          "t": "现在难过得不得了",
          "ico": "😔",
          "c": "o",
-         "py": "xiànzài nánguò dé bùdéliǎo",
+         "py": "xiànzài nánguò de bùdéliǎo",
          "hv": "hiện tại nan quá đắc bất đắc liễu"
         }
        ],
        "traceWord": "冲动",
-       "py": "Tā tài chōngdòng le zuò le yī jiàn shǎ shì xiànzài nánguò dé bùdéliǎo",
-       "traceKey": "chongdong"
+       "py": "Tā tài chōngdòng le zuò le yī jiàn shǎ shì xiànzài nánguò de bùdéliǎo",
+       "traceKey": "chongdong",
+       "traceInfo": [
+        {
+         "c": "冲",
+         "py": "chōng",
+         "hv": "xung"
+        },
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        }
+       ]
       },
       {
        "scene": "🧑😶👨‍👩‍👧",
@@ -6201,20 +7752,27 @@ window.CURRICULUM_STAGES[5] = {
          "t": "整天一个人发呆",
          "ico": "😶",
          "c": "v",
-         "py": "zhěngtiān yī gèrén fā dāi",
-         "hv": "chỉnh thiên nhất cá nhân _ ngốc"
+         "py": "zhěngtiān yī gè rén fā dāi",
+         "hv": "chỉnh thiên nhất cá nhân phát ngốc"
         },
         {
          "t": "家人担心得不得了",
          "ico": "👨‍👩‍👧",
          "c": "o",
-         "py": "jiārén dānxīn dé bùdéliǎo",
-         "hv": "gia nhân đam tâm đắc bất đắc liễu"
+         "py": "jiārén dānxīn de bùdéliǎo",
+         "hv": "gia nhân đảm tâm đắc bất đắc liễu"
         }
        ],
        "traceWord": "呆",
-       "py": "Tā zhěngtiān yī gèrén fā dāi jiārén dānxīn dé bùdéliǎo",
-       "traceKey": "dai"
+       "py": "Tā zhěngtiān yī gè rén fā dāi jiārén dānxīn de bùdéliǎo",
+       "traceKey": "dai",
+       "traceInfo": [
+        {
+         "c": "呆",
+         "py": "dāi",
+         "hv": "ngốc"
+        }
+       ]
       },
       {
        "scene": "🐭💼🦁",
@@ -6233,19 +7791,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🐭",
          "c": "v",
          "py": "píngshí hěn dǎnxiǎo",
-         "hv": "bình thì _ đảm tiểu"
+         "hv": "bình thời ngận đảm tiểu"
         },
         {
          "t": "可是工作起来大胆得不得了",
          "ico": "🦁",
          "c": "o",
-         "py": "kěshì gōngzuò qǐlái dàdǎn dé bùdéliǎo",
+         "py": "kěshì gōngzuò qǐlái dàdǎn de bùdéliǎo",
          "hv": "khả thị công tác khởi lai đại đảm đắc bất đắc liễu"
         }
        ],
        "traceWord": "胆小",
-       "py": "Tā píngshí hěn dǎnxiǎo kěshì gōngzuò qǐlái dàdǎn dé bùdéliǎo",
-       "traceKey": "danxiao"
+       "py": "Tā píngshí hěn dǎnxiǎo kěshì gōngzuò qǐlái dàdǎn de bùdéliǎo",
+       "traceKey": "danxiao",
+       "traceInfo": [
+        {
+         "c": "胆",
+         "py": "dǎn",
+         "hv": "đảm"
+        },
+        {
+         "c": "小",
+         "py": "xiǎo",
+         "hv": "tiểu"
+        }
+       ]
       },
       {
        "scene": "🔥🏢🏃",
@@ -6257,26 +7827,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔥",
          "c": "s",
          "py": "tā tīngshuō gōngsī zháohuǒ le",
-         "hv": "tha thính _ công ti trứ hoả liễu"
+         "hv": "tha thính thuyết công ti trước hỏa liễu"
         },
         {
          "t": "慌忙跑出办公室",
          "ico": "🏃",
          "c": "v",
          "py": "huāngmáng pǎo chū bàngōngshì",
-         "hv": "hoảng mang _ xuất _ công thất"
+         "hv": "hoảng mang bào xuất biện công thất"
         },
         {
          "t": "吓得不得了",
          "ico": "😱",
          "c": "o",
-         "py": "xià dé bùdéliǎo",
+         "py": "xià de bùdéliǎo",
          "hv": "hách đắc bất đắc liễu"
         }
        ],
        "traceWord": "慌忙",
-       "py": "Tā tīngshuō gōngsī zháohuǒ le huāngmáng pǎo chū bàngōngshì xià dé bùdéliǎo",
-       "traceKey": "huangmang"
+       "py": "Tā tīngshuō gōngsī zháohuǒ le huāngmáng pǎo chū bàngōngshì xià de bùdéliǎo",
+       "traceKey": "huangmang",
+       "traceInfo": [
+        {
+         "c": "慌",
+         "py": "huāng",
+         "hv": "hoảng"
+        },
+        {
+         "c": "忙",
+         "py": "máng",
+         "hv": "mang"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -6294,7 +7876,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "他活泼得不得了",
          "ico": "🏃‍♂️",
-         "py": "Tā huópō dé bùdéliǎo"
+         "py": "Tā huópō de bùdéliǎo"
         },
         {
          "txt": "他的书包是红色的",
@@ -6313,7 +7895,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "我快活得不得了",
          "ico": "😊",
-         "py": "Wǒ kuàihuo dé bùdéliǎo"
+         "py": "Wǒ kuàihuo de bùdéliǎo"
         },
         {
          "txt": "我没有时间去商店",
@@ -6416,19 +7998,36 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👏",
          "c": "v",
          "py": "zhèyàng chēngzàn wǒ",
-         "hv": "_ dạng xưng _ ngã"
+         "hv": "giá dạng xưng tán ngã"
         },
         {
          "t": "我实在不敢当",
          "ico": "🙏",
          "c": "o",
          "py": "wǒ shízài bùgǎndāng",
-         "hv": "ngã thực tại bất cám đương"
+         "hv": "ngã thực tại bất cảm đương"
         }
        ],
        "traceWord": "不敢当",
        "py": "Nín zhèyàng chēngzàn wǒ wǒ shízài bùgǎndāng",
-       "traceKey": "bugandang"
+       "traceKey": "bugandang",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "敢",
+         "py": "gǎn",
+         "hv": "cảm"
+        },
+        {
+         "c": "当",
+         "py": "dāng",
+         "hv": "đương"
+        }
+       ]
       },
       {
        "scene": "🎁😊🙏",
@@ -6454,12 +8053,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎁",
          "c": "o",
          "py": "zhè fèn lǐwù wǒ shízài bùgǎndāng",
-         "hv": "_ phần lễ vật ngã thực tại bất cám đương"
+         "hv": "giá phần lễ vật ngã thực tại bất cảm đương"
         }
        ],
        "traceWord": "客气",
        "py": "Nín tài kèqi le zhè fèn lǐwù wǒ shízài bùgǎndāng",
-       "traceKey": "keqi"
+       "traceKey": "keqi",
+       "traceInfo": [
+        {
+         "c": "客",
+         "py": "kè",
+         "hv": "khách"
+        },
+        {
+         "c": "气",
+         "py": "qi",
+         "hv": "khí"
+        }
+       ]
       },
       {
        "scene": "🙇🧑‍💼👥",
@@ -6471,7 +8082,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙇",
          "c": "s",
          "py": "Xiǎowáng hěn yǒu lǐmào",
-         "hv": "tiểu vương _ hữu lễ _"
+         "hv": "tiểu vương ngận hữu lễ mạo"
         },
         {
          "t": "大家都尊敬他",
@@ -6485,12 +8096,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙏",
          "c": "o",
          "py": "tā què shuō zìjǐ bùgǎndāng",
-         "hv": "tha khước _ tự kỉ bất cám đương"
+         "hv": "tha khước thuyết tự kỷ bất cảm đương"
         }
        ],
        "traceWord": "礼貌",
        "py": "Xiǎowáng hěn yǒu lǐmào dàjiā dōu zūnjìng tā tā què shuō zìjǐ bùgǎndāng",
-       "traceKey": "limao"
+       "traceKey": "limao",
+       "traceInfo": [
+        {
+         "c": "礼",
+         "py": "lǐ",
+         "hv": "lễ"
+        },
+        {
+         "c": "貌",
+         "py": "mào",
+         "hv": "mạo"
+        }
+       ]
       },
       {
        "scene": "👔🤝📣",
@@ -6502,26 +8125,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "Zhāngjīnglǐ",
-         "hv": "trương kinh lí"
+         "hv": "trương kinh lý"
         },
         {
          "t": "很虚心也很尊重别人的意见",
          "ico": "🤝",
          "c": "v",
          "py": "hěn xūxīn yě hěn zūnzhòng biérén de yìjiàn",
-         "hv": "_ hư tâm dã _ tôn trọng _ nhân đích ý kiến"
+         "hv": "ngận hư tâm dã ngận tôn trọng biệt nhân đích ý kiến"
         },
         {
          "t": "他总是说不敢当",
          "ico": "🙏",
          "c": "o",
          "py": "tā zǒngshì shuō bùgǎndāng",
-         "hv": "tha tổng thị _ bất cám đương"
+         "hv": "tha tổng thị thuyết bất cảm đương"
         }
        ],
        "traceWord": "虚心",
        "py": "Zhāngjīnglǐ hěn xūxīn yě hěn zūnzhòng biérén de yìjiàn tā zǒngshì shuō bùgǎndāng",
-       "traceKey": "xuxin"
+       "traceKey": "xuxin",
+       "traceInfo": [
+        {
+         "c": "虚",
+         "py": "xū",
+         "hv": "hư"
+        },
+        {
+         "c": "心",
+         "py": "xīn",
+         "hv": "tâm"
+        }
+       ]
       },
       {
        "scene": "👥🏆💰",
@@ -6533,26 +8168,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "tóngshì men",
-         "hv": "đồng sự món"
+         "hv": "đồng sự môn"
         },
         {
          "t": "祝贺我获得了奖金",
          "ico": "🏆",
          "c": "v",
          "py": "zhùhè wǒ huòdé le jiǎngjīn",
-         "hv": "chúc hạ ngã _ đắc liễu _ kim"
+         "hv": "chúc hạ ngã hoạch đắc liễu tưởng kim"
         },
         {
          "t": "我连忙说不敢当",
          "ico": "🙏",
          "c": "o",
          "py": "wǒ liánmáng shuō bùgǎndāng",
-         "hv": "ngã liên mang _ bất cám đương"
+         "hv": "ngã liên mang thuyết bất cảm đương"
         }
        ],
        "traceWord": "祝贺",
        "py": "Tóngshì men zhùhè wǒ huòdé le jiǎngjīn wǒ liánmáng shuō bùgǎndāng",
-       "traceKey": "zhuhe"
+       "traceKey": "zhuhe",
+       "traceInfo": [
+        {
+         "c": "祝",
+         "py": "zhù",
+         "hv": "chúc"
+        },
+        {
+         "c": "贺",
+         "py": "hè",
+         "hv": "hạ"
+        }
+       ]
       },
       {
        "scene": "🚶‍♂️🏢🙏",
@@ -6578,12 +8225,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙏",
          "c": "o",
          "py": "shízài bùgǎndāng",
-         "hv": "thực tại bất cám đương"
+         "hv": "thực tại bất cảm đương"
         }
        ],
        "traceWord": "拜访",
        "py": "Nín qīnzì lái gōngsī bàifǎng wǒ shízài bùgǎndāng",
-       "traceKey": "baifang"
+       "traceKey": "baifang",
+       "traceInfo": [
+        {
+         "c": "拜",
+         "py": "bài",
+         "hv": "bái"
+        },
+        {
+         "c": "访",
+         "py": "fǎng",
+         "hv": "phỏng"
+        }
+       ]
       },
       {
        "scene": "🎉✉️🙏",
@@ -6595,26 +8254,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "lǎobǎn",
-         "hv": "lão ván"
+         "hv": "lão bản"
         },
         {
          "t": "邀请我参加家庭晚会",
          "ico": "✉️",
          "c": "v",
          "py": "yāoqǐng wǒ cānjiā jiātíng wǎnhuì",
-         "hv": "_ thỉnh ngã tham gia gia đình vãn hội"
+         "hv": "yêu thỉnh ngã tham gia gia đình vãn hội"
         },
         {
          "t": "我怕打扰大家实在不敢当",
          "ico": "🙏",
          "c": "o",
          "py": "wǒ pà dǎrǎo dàjiā shízài bùgǎndāng",
-         "hv": "ngã _ đả nhiễu đại gia thực tại bất cám đương"
+         "hv": "ngã phạ đả nhiễu đại gia thực tại bất cảm đương"
         }
        ],
        "traceWord": "邀请",
        "py": "Lǎobǎn yāoqǐng wǒ cānjiā jiātíng wǎnhuì wǒ pà dǎrǎo dàjiā shízài bùgǎndāng",
-       "traceKey": "yaoqing"
+       "traceKey": "yaoqing",
+       "traceInfo": [
+        {
+         "c": "邀",
+         "py": "yāo",
+         "hv": "yêu"
+        },
+        {
+         "c": "请",
+         "py": "qǐng",
+         "hv": "thỉnh"
+        }
+       ]
       },
       {
        "scene": "🏥💐🙏",
@@ -6626,26 +8297,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "lǐngdǎo",
-         "hv": "lãnh đạo"
+         "hv": "lĩnh đạo"
         },
         {
          "t": "到医院慰问病人",
          "ico": "🏥",
          "c": "v",
          "py": "dào yīyuàn wèiwèn bìngrén",
-         "hv": "đáo y viện uý _ bệnh nhân"
+         "hv": "đáo y viện úy vấn bệnh nhân"
         },
         {
          "t": "病人说这份关怀实在不敢当",
          "ico": "🙏",
          "c": "o",
          "py": "bìngrén shuō zhè fèn guānhuái shízài bùgǎndāng",
-         "hv": "bệnh nhân _ _ phần quan hoài thực tại bất cám đương"
+         "hv": "bệnh nhân thuyết giá phần quan hoài thực tại bất cảm đương"
         }
        ],
        "traceWord": "慰问",
        "py": "Lǐngdǎo dào yīyuàn wèiwèn bìngrén bìngrén shuō zhè fèn guānhuái shízài bùgǎndāng",
-       "traceKey": "weiwen"
+       "traceKey": "weiwen",
+       "traceInfo": [
+        {
+         "c": "慰",
+         "py": "wèi",
+         "hv": "úy"
+        },
+        {
+         "c": "问",
+         "py": "wèn",
+         "hv": "vấn"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -6788,19 +8471,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😤",
          "c": "v",
          "py": "bié zài bàoyuàn le",
-         "hv": "_ tái bão oán liễu"
+         "hv": "biệt tái bão oán liễu"
         },
         {
          "t": "大家都已经很累了",
          "ico": "😩",
          "c": "o",
          "py": "dàjiā dōu yǐjīng hěn lèi le",
-         "hv": "đại gia đô dĩ kinh _ luỵ liễu"
+         "hv": "đại gia đô dĩ kinh ngận lụy liễu"
         }
        ],
        "traceWord": "抱怨",
        "py": "Déle bié zài bàoyuàn le dàjiā dōu yǐjīng hěn lèi le",
-       "traceKey": "baoyuan"
+       "traceKey": "baoyuan",
+       "traceInfo": [
+        {
+         "c": "抱",
+         "py": "bào",
+         "hv": "bão"
+        },
+        {
+         "c": "怨",
+         "py": "yuàn",
+         "hv": "oán"
+        }
+       ]
       },
       {
        "scene": "😔📅🤝",
@@ -6819,19 +8514,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😔",
          "c": "v",
          "py": "hěn hòuhuǐ",
-         "hv": "_ hậu hối"
+         "hv": "ngận hậu hối"
         },
         {
          "t": "昨天没有把这件事告诉我",
          "ico": "🗣️",
          "c": "o",
          "py": "zuótiān méiyǒu bǎ zhè jiàn shì gàosu wǒ",
-         "hv": "_ thiên một hữu bã _ kiện sự _ tố ngã"
+         "hv": "tạc thiên một hữu bả giá kiện sự cáo tố ngã"
         }
        ],
        "traceWord": "后悔",
        "py": "Tā hěn hòuhuǐ zuótiān méiyǒu bǎ zhè jiàn shì gàosu wǒ",
-       "traceKey": "houhui"
+       "traceKey": "houhui",
+       "traceInfo": [
+        {
+         "c": "后",
+         "py": "hòu",
+         "hv": "hậu"
+        },
+        {
+         "c": "悔",
+         "py": "huǐ",
+         "hv": "hối"
+        }
+       ]
       },
       {
        "scene": "🧑💔😢",
@@ -6850,19 +8557,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💔",
          "c": "v",
          "py": "hěn xīnténg",
-         "hv": "_ tâm _"
+         "hv": "ngận tâm đông"
         },
         {
          "t": "他因为这件事变得这么悲伤",
          "ico": "😢",
          "c": "o",
-         "py": "tā yīnwèi zhè jiàn shì biàn dé zhème bēishāng",
-         "hv": "tha nhân _ _ kiện sự biến đắc _ _ bi thương"
+         "py": "tā yīnwèi zhè jiàn shì biàn de zhème bēishāng",
+         "hv": "tha nhân vị giá kiện sự biến đắc giá ma bi thương"
         }
        ],
        "traceWord": "悲伤",
-       "py": "Wǒ hěn xīnténg tā yīnwèi zhè jiàn shì biàn dé zhème bēishāng",
-       "traceKey": "beishang"
+       "py": "Wǒ hěn xīnténg tā yīnwèi zhè jiàn shì biàn de zhème bēishāng",
+       "traceKey": "beishang",
+       "traceInfo": [
+        {
+         "c": "悲",
+         "py": "bēi",
+         "hv": "bi"
+        },
+        {
+         "c": "伤",
+         "py": "shāng",
+         "hv": "thương"
+        }
+       ]
       },
       {
        "scene": "🏢📉😞",
@@ -6874,57 +8593,81 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "tāmen de gōngsī",
-         "hv": "tha món đích công ti"
+         "hv": "tha môn đích công ti"
         },
         {
          "t": "不幸",
          "ico": "😞",
          "c": "v",
          "py": "bùxìng",
-         "hv": "bất _"
+         "hv": "bất hạnh"
         },
         {
          "t": "在去年年底破产了",
          "ico": "📉",
          "c": "o",
          "py": "zài qùnián niándǐ pòchǎn le",
-         "hv": "tại khứ nên nên để phá _ liễu"
+         "hv": "tại khứ niên niên để phá sản liễu"
         }
        ],
        "traceWord": "不幸",
        "py": "Tāmen de gōngsī bùxìng zài qùnián niándǐ pòchǎn le",
-       "traceKey": "buxing"
+       "traceKey": "buxing",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "幸",
+         "py": "xìng",
+         "hv": "hạnh"
+        }
+       ]
       },
       {
        "scene": "👔😠😢",
-       "full": "经理骂了他一顿让他当着大家的面很难过",
-       "vi": "Giám đốc mắng anh ấy một trận khiến anh ấy rất buồn trước mặt mọi người",
+       "full": "随便降价等于商业上的自杀",
+       "vi": "Giảm giá tùy tiện chẳng khác nào tự sát trong kinh doanh",
        "parts": [
         {
-         "t": "经理",
+         "t": "随便降价",
          "ico": "👔",
          "c": "s",
-         "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "py": "suíbiàn jiàngjià",
+         "hv": "tùy tiện giáng giá"
         },
         {
-         "t": "骂了",
+         "t": "等于",
          "ico": "😠",
          "c": "v",
-         "py": "mà le",
-         "hv": "mạ liễu"
+         "py": "děngyú",
+         "hv": "đẳng vu"
         },
         {
-         "t": "他一顿让他当着大家的面很难过",
+         "t": "商业上的自杀",
          "ico": "😢",
          "c": "o",
-         "py": "tā yī dùn ràng tā dāng zhe dàjiā de miàn hěn nánguò",
-         "hv": "tha nhất đốn nhường tha đương trứ đại gia đích _ _ nan quá"
+         "py": "shāngyè shàng de zìshā",
+         "hv": "thương nghiệp thượng đích tự sát"
         }
        ],
-       "traceWord": "骂",
-       "py": "Jīnglǐ mà le tā yī dùn ràng tā dāng zhe dàjiā de miàn hěn nánguò",
-       "traceKey": "ma"
+       "traceWord": "自杀",
+       "py": "Suíbiàn jiàngjià děngyú shāngyè shàng de zìshā",
+       "traceKey": "zisha",
+       "traceInfo": [
+        {
+         "c": "自",
+         "py": "zì",
+         "hv": "tự"
+        },
+        {
+         "c": "杀",
+         "py": "shā",
+         "hv": "sát"
+        }
+       ]
       },
       {
        "scene": "🤔❓🌙",
@@ -6936,7 +8679,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "❓",
          "c": "s",
          "py": "zhè gè wèntí",
-         "hv": "_ cá _ _"
+         "hv": "giá cá vấn đề"
         },
         {
          "t": "已经困扰了",
@@ -6950,12 +8693,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📅",
          "c": "o",
          "py": "wǒ hǎo jǐ tiān",
-         "hv": "ngã háo kỉ thiên"
+         "hv": "ngã hảo kỷ thiên"
         }
        ],
        "traceWord": "困扰",
        "py": "Zhè gè wèntí yǐjīng kùnrǎo le wǒ hǎo jǐ tiān",
-       "traceKey": "kunrao"
+       "traceKey": "kunrao",
+       "traceInfo": [
+        {
+         "c": "困",
+         "py": "kùn",
+         "hv": "khốn"
+        },
+        {
+         "c": "扰",
+         "py": "rǎo",
+         "hv": "nhiễu"
+        }
+       ]
       },
       {
        "scene": "🤷⏳💼",
@@ -6974,19 +8729,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤷",
          "c": "v",
          "py": "yóuyù le",
-         "hv": "_ _ liễu"
+         "hv": "do dự liễu"
         },
         {
          "t": "很久还是没有决定接受这份工作",
          "ico": "💼",
          "c": "o",
          "py": "hěn jiǔ háishi méiyǒu juédìng jiēshòu zhè fèn gōngzuò",
-         "hv": "_ cửu hoàn thị một hữu quyết định tiếp thụ _ phần công tác"
+         "hv": "ngận cửu hoàn thị một hữu quyết định tiếp thụ giá phần công tác"
         }
        ],
        "traceWord": "犹豫",
        "py": "Tā yóuyù le hěn jiǔ háishi méiyǒu juédìng jiēshòu zhè fèn gōngzuò",
-       "traceKey": "youyu"
+       "traceKey": "youyu",
+       "traceInfo": [
+        {
+         "c": "犹",
+         "py": "yóu",
+         "hv": "do"
+        },
+        {
+         "c": "豫",
+         "py": "yù",
+         "hv": "dự"
+        }
+       ]
       },
       {
        "scene": "👥🤝💬",
@@ -7012,12 +8779,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💬",
          "c": "o",
          "py": "bùyào hèn biérén yě bùyào yuàn zìjǐ",
-         "hv": "bất yếu hận _ nhân dã bất yếu oán tự kỉ"
+         "hv": "bất yếu hận biệt nhân dã bất yếu oán tự kỷ"
         }
        ],
        "traceWord": "劝",
        "py": "Dàjiā dōu quàn tā bùyào hèn biérén yě bùyào yuàn zìjǐ",
-       "traceKey": "quan"
+       "traceKey": "quan",
+       "traceInfo": [
+        {
+         "c": "劝",
+         "py": "quàn",
+         "hv": "khuyến"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -7149,26 +8923,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "nǐ",
-         "hv": "nể"
+         "hv": "nễ"
         },
         {
          "t": "用不着",
          "ico": "🙅",
          "c": "v",
          "py": "yòngbuzháo",
-         "hv": "dụng bất trứ"
+         "hv": "dụng bất trước"
         },
         {
          "t": "这么客气这点小事不算什么",
          "ico": "🤝",
          "c": "o",
          "py": "zhème kèqi zhè diǎn xiǎo shì bú suàn shénme",
-         "hv": "_ _ khách khí _ điểm tiểu sự bất toán thập _"
+         "hv": "giá ma khách khí giá điểm tiểu sự bất toán thập ma"
         }
        ],
        "traceWord": "用不着",
        "py": "Nǐ yòngbuzháo zhème kèqi zhè diǎn xiǎo shì bú suàn shénme",
-       "traceKey": "yongbuzhao"
+       "traceKey": "yongbuzhao",
+       "traceInfo": [
+        {
+         "c": "用",
+         "py": "yòng",
+         "hv": "dụng"
+        },
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "着",
+         "py": "zhe",
+         "hv": "trước"
+        }
+       ]
       },
       {
        "scene": "💻🎨📄",
@@ -7180,26 +8971,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💻",
          "c": "s",
          "py": "zhè tái diànnǎo",
-         "hv": "_ thai _ não"
+         "hv": "giá đài điện não"
         },
         {
          "t": "主要用来",
          "ico": "🔧",
          "c": "v",
          "py": "zhǔyào yònglái",
-         "hv": "chúa yếu dụng lai"
+         "hv": "chủ yếu dụng lai"
         },
         {
          "t": "做设计和处理文件",
          "ico": "🎨",
          "c": "o",
          "py": "zuò shèjì hé chǔlǐ wénjiàn",
-         "hv": "_ thết kể hoà xử lí văn kiện"
+         "hv": "tố thiết kế hòa xử lý văn kiện"
         }
        ],
        "traceWord": "用来",
        "py": "Zhè tái diànnǎo zhǔyào yònglái zuò shèjì hé chǔlǐ wénjiàn",
-       "traceKey": "yonglai"
+       "traceKey": "yonglai",
+       "traceInfo": [
+        {
+         "c": "用",
+         "py": "yòng",
+         "hv": "dụng"
+        },
+        {
+         "c": "来",
+         "py": "lái",
+         "hv": "lai"
+        }
+       ]
       },
       {
        "scene": "🔬🏥🏫",
@@ -7211,26 +9014,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔬",
          "c": "s",
          "py": "zhè zhǒng jìshù",
-         "hv": "_ chõng kĩ thuật"
+         "hv": "giá chủng kỹ thuật"
         },
         {
          "t": "主要用于",
          "ico": "🔧",
          "c": "v",
          "py": "zhǔyào yòngyú",
-         "hv": "chúa yếu dụng vu"
+         "hv": "chủ yếu dụng vu"
         },
         {
          "t": "医疗和教育等很多方面",
          "ico": "🏥",
          "c": "o",
          "py": "yīliáo hé jiàoyù děng hěn duō fāngmiàn",
-         "hv": "y liệu hoà giáo dục đẳng _ đa phương _"
+         "hv": "y liệu hòa giáo dục đẳng ngận đa phương diện"
         }
        ],
        "traceWord": "用于",
        "py": "Zhè zhǒng jìshù zhǔyào yòngyú yīliáo hé jiàoyù děng hěn duō fāngmiàn",
-       "traceKey": "yongyu"
+       "traceKey": "yongyu",
+       "traceInfo": [
+        {
+         "c": "用",
+         "py": "yòng",
+         "hv": "dụng"
+        },
+        {
+         "c": "于",
+         "py": "yú",
+         "hv": "vu"
+        }
+       ]
       },
       {
        "scene": "🏃💪😊",
@@ -7256,12 +9071,29 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😊",
          "c": "o",
          "py": "shēntǐ jiànkāng yě néng ràng rén xīnqíng gèng hǎo",
-         "hv": "thân thể kiện khang dã năng nhường nhân tâm tình cánh háo"
+         "hv": "thân thể kiện khang dã năng nhượng nhân tâm tình cánh hảo"
         }
        ],
        "traceWord": "有利于",
        "py": "Duō yùndòng yǒulì yú shēntǐ jiànkāng yě néng ràng rén xīnqíng gèng hǎo",
-       "traceKey": "youliyu"
+       "traceKey": "youliyu",
+       "traceInfo": [
+        {
+         "c": "有",
+         "py": "yǒu",
+         "hv": "hữu"
+        },
+        {
+         "c": "利",
+         "py": "lì",
+         "hv": "lợi"
+        },
+        {
+         "c": "于",
+         "py": "yú",
+         "hv": "vu"
+        }
+       ]
       },
       {
        "scene": "📋⏰🗂️",
@@ -7273,7 +9105,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📋",
          "c": "s",
          "py": "zhè zhāng biǎogé",
-         "hv": "_ trương biểu cách"
+         "hv": "giá trương biểu cách"
         },
         {
          "t": "便于",
@@ -7287,12 +9119,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏰",
          "c": "o",
          "py": "wǒmen suíshí guǎnlǐ gōngzuò de shíjiān",
-         "hv": "ngã món tuỳ thì quản lí công tác đích thì gian"
+         "hv": "ngã môn tùy thời quản lý công tác đích thời gian"
         }
        ],
        "traceWord": "便于",
        "py": "Zhè zhāng biǎogé biànyú wǒmen suíshí guǎnlǐ gōngzuò de shíjiān",
-       "traceKey": "bianyu"
+       "traceKey": "bianyu",
+       "traceInfo": [
+        {
+         "c": "便",
+         "py": "biàn",
+         "hv": "tiện"
+        },
+        {
+         "c": "于",
+         "py": "yú",
+         "hv": "vu"
+        }
+       ]
       },
       {
        "scene": "🏢🚇😊",
@@ -7304,7 +9148,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚇",
          "c": "s",
          "py": "gōngsī fùjìn de jiāotōng",
-         "hv": "công ti phò cận đích giao thông"
+         "hv": "công ti phụ cận đích giao thông"
         },
         {
          "t": "非常",
@@ -7318,12 +9162,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "o",
          "py": "biànlì suǒyǐ dàjiā shàngbān dōu hěn fāngbiàn",
-         "hv": "tiện lợi sỡ _ đại gia thượng ban đô _ phương tiện"
+         "hv": "tiện lợi sở dĩ đại gia thượng ban đô ngận phương tiện"
         }
        ],
        "traceWord": "便利",
        "py": "Gōngsī fùjìn de jiāotōng fēicháng biànlì suǒyǐ dàjiā shàngbān dōu hěn fāngbiàn",
-       "traceKey": "bianli"
+       "traceKey": "bianli",
+       "traceInfo": [
+        {
+         "c": "便",
+         "py": "biàn",
+         "hv": "tiện"
+        },
+        {
+         "c": "利",
+         "py": "lì",
+         "hv": "lợi"
+        }
+       ]
       },
       {
        "scene": "🏢🎁👍",
@@ -7335,26 +9191,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "zhè jiā gōngsī",
-         "hv": "_ gia công ti"
+         "hv": "giá gia công ti"
         },
         {
          "t": "有着",
          "ico": "🎁",
          "c": "v",
          "py": "yǒuzhe",
-         "hv": "hữu trứ"
+         "hv": "hữu trước"
         },
         {
          "t": "很好的福利和不错的工资",
          "ico": "💰",
          "c": "o",
          "py": "hěn hǎo de fúlì hé bùcuò de gōngzī",
-         "hv": "_ háo đích phúc lợi hoà bất thó đích công _"
+         "hv": "ngận hảo đích phúc lợi hòa bất thác đích công tư"
         }
        ],
        "traceWord": "福利",
        "py": "Zhè jiā gōngsī yǒuzhe hěn hǎo de fúlì hé bùcuò de gōngzī",
-       "traceKey": "fuli"
+       "traceKey": "fuli",
+       "traceInfo": [
+        {
+         "c": "福",
+         "py": "fú",
+         "hv": "phúc"
+        },
+        {
+         "c": "利",
+         "py": "lì",
+         "hv": "lợi"
+        }
+       ]
       },
       {
        "scene": "🚬🫁⚠️",
@@ -7366,7 +9234,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚬",
          "c": "s",
          "py": "chōuyān",
-         "hv": "trừu _"
+         "hv": "trừu yên"
         },
         {
          "t": "有害",
@@ -7385,7 +9253,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "有害",
        "py": "Chōuyān yǒu hài jiànkāng yě huì hài le shēnbiān de rén",
-       "traceKey": "youhai"
+       "traceKey": "youhai",
+       "traceInfo": [
+        {
+         "c": "有",
+         "py": "yǒu",
+         "hv": "hữu"
+        },
+        {
+         "c": "害",
+         "py": "hài",
+         "hv": "hại"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -7398,7 +9278,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "价格贵得不得了",
          "ico": "💸",
-         "py": "Jiàgé guì dé bùdéliǎo"
+         "py": "Jiàgé guì de bùdéliǎo"
         },
         {
          "txt": "店在地铁站旁边",
@@ -7524,19 +9404,36 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "v",
          "py": "zài bàngōngshì",
-         "hv": "tại _ công thất"
+         "hv": "tại biện công thất"
         },
         {
          "t": "走来走去想不出办法",
          "ico": "🚶",
          "c": "o",
          "py": "zǒu lái zǒu qù xiǎng bù chū bànfǎ",
-         "hv": "tẩu lai tẩu khứ tưởng bất xuất _ pháp"
+         "hv": "tẩu lai tẩu khứ tưởng bất xuất biện pháp"
         }
        ],
        "traceWord": "办公室",
        "py": "Tā zài bàngōngshì zǒu lái zǒu qù xiǎng bù chū bànfǎ",
-       "traceKey": "bangongshi"
+       "traceKey": "bangongshi",
+       "traceInfo": [
+        {
+         "c": "办",
+         "py": "bàn",
+         "hv": "biện"
+        },
+        {
+         "c": "公",
+         "py": "gōng",
+         "hv": "công"
+        },
+        {
+         "c": "室",
+         "py": "shì",
+         "hv": "thất"
+        }
+       ]
       },
       {
        "scene": "🧑🔍📱",
@@ -7555,19 +9452,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔍",
          "c": "v",
          "py": "zhǎo lái zhǎo qù",
-         "hv": "quơ lai quơ khứ"
+         "hv": "trảo lai trảo khứ"
         },
         {
          "t": "也没有找到我的手机",
          "ico": "📱",
          "c": "o",
          "py": "yě méiyǒu zhǎodào wǒ de shǒujī",
-         "hv": "dã một hữu quơ đáo ngã đích thủ cơ"
+         "hv": "dã một hữu trảo đáo ngã đích thủ cơ"
         }
        ],
        "traceWord": "找到",
        "py": "Wǒ zhǎo lái zhǎo qù yě méiyǒu zhǎodào wǒ de shǒujī",
-       "traceKey": "zhaodao"
+       "traceKey": "zhaodao",
+       "traceInfo": [
+        {
+         "c": "找",
+         "py": "zhǎo",
+         "hv": "trảo"
+        },
+        {
+         "c": "到",
+         "py": "dào",
+         "hv": "đáo"
+        }
+       ]
       },
       {
        "scene": "🧑➡️🚉",
@@ -7579,26 +9488,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📍",
          "c": "s",
          "py": "dǎ zhèr",
-         "hv": "đả _ _"
+         "hv": "đả giá nhi"
         },
         {
          "t": "向前走大约五分钟",
          "ico": "➡️",
          "c": "v",
          "py": "xiàng qián zǒu dàyuē wǔ fēnzhōng",
-         "hv": "hướng tiền tẩu đại ước ngũ phân chuông"
+         "hv": "hướng tiền tẩu đại ước ngũ phân chung"
         },
         {
          "t": "就能看到车站",
          "ico": "🚉",
          "c": "o",
          "py": "jiù néng kàndào chēzhàn",
-         "hv": "_ năng khán đáo xa trạm"
+         "hv": "tựu năng khán đáo xa trạm"
         }
        ],
        "traceWord": "向前",
        "py": "Dǎ zhèr xiàng qián zǒu dàyuē wǔ fēnzhōng jiù néng kàndào chēzhàn",
-       "traceKey": "xiangqian"
+       "traceKey": "xiangqian",
+       "traceInfo": [
+        {
+         "c": "向",
+         "py": "xiàng",
+         "hv": "hướng"
+        },
+        {
+         "c": "前",
+         "py": "qián",
+         "hv": "tiền"
+        }
+       ]
       },
       {
        "scene": "🧑🤔🏢",
@@ -7629,7 +9550,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "返回",
        "py": "Tā xiǎng lái xiǎng qù zuìhòu háishi juédìng fǎnhuí gōngsī gōngzuò",
-       "traceKey": "fanhui"
+       "traceKey": "fanhui",
+       "traceInfo": [
+        {
+         "c": "返",
+         "py": "fǎn",
+         "hv": "phản"
+        },
+        {
+         "c": "回",
+         "py": "huí",
+         "hv": "hồi"
+        }
+       ]
       },
       {
        "scene": "🐦☁️🌍",
@@ -7655,12 +9588,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌍",
          "c": "o",
          "py": "fēi lái fēi qù bù zhīdào yào qù nǎr",
-         "hv": "phi lai phi khứ bất tri đạo yếu khứ ná _"
+         "hv": "phi lai phi khứ bất tri đạo yếu khứ na nhi"
         }
        ],
        "traceWord": "空中",
        "py": "Yī zhǐ niǎo zài kōngzhōng fēi lái fēi qù bù zhīdào yào qù nǎr",
-       "traceKey": "kongzhong"
+       "traceKey": "kongzhong",
+       "traceInfo": [
+        {
+         "c": "空",
+         "py": "kōng",
+         "hv": "không"
+        },
+        {
+         "c": "中",
+         "py": "zhōng",
+         "hv": "trung"
+        }
+       ]
       },
       {
        "scene": "👩‍🏫👦🚗⚠️",
@@ -7679,19 +9624,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚠️",
          "c": "v",
          "py": "jǐnggào",
-         "hv": "khểnh _"
+         "hv": "cảnh cáo"
         },
         {
          "t": "孩子不要靠近马路",
          "ico": "🚗",
          "c": "o",
          "py": "háizi bùyào kàojìn mǎlù",
-         "hv": "hài tí bất yếu _ cận mã lộ"
+         "hv": "hài tử bất yếu kháo cận mã lộ"
         }
        ],
        "traceWord": "警告",
        "py": "Lǎoshī jǐnggào háizi bùyào kàojìn mǎlù",
-       "traceKey": "jinggao"
+       "traceKey": "jinggao",
+       "traceInfo": [
+        {
+         "c": "警",
+         "py": "jǐng",
+         "hv": "cảnh"
+        },
+        {
+         "c": "告",
+         "py": "gào",
+         "hv": "cáo"
+        }
+       ]
       },
       {
        "scene": "🧑🤝👥",
@@ -7722,7 +9679,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "不止",
        "py": "Tā měi tiān jiēchù de kèrén bùzhǐ yī bǎi gè",
-       "traceKey": "buzhi"
+       "traceKey": "buzhi",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "止",
+         "py": "zhǐ",
+         "hv": "chỉ"
+        }
+       ]
       },
       {
        "scene": "🧑✨🔬",
@@ -7748,12 +9717,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✨",
          "c": "o",
          "py": "yī cì dàdǎn de chángshì",
-         "hv": "nhất thứ đại đảm đích _ thí"
+         "hv": "nhất thứ đại đảm đích thường thí"
         }
        ],
        "traceWord": "尝试",
        "py": "Xiǎomíng de jǔdòng shì yī cì dàdǎn de chángshì",
-       "traceKey": "changshi"
+       "traceKey": "changshi",
+       "traceInfo": [
+        {
+         "c": "尝",
+         "py": "cháng",
+         "hv": "thường"
+        },
+        {
+         "c": "试",
+         "py": "shì",
+         "hv": "thí"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -7897,19 +9878,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "v",
          "py": "shuō zhe shuō zhe",
-         "hv": "_ trứ _ trứ"
+         "hv": "thuyết trước thuyết trước"
         },
         {
          "t": "把手机递给了我",
          "ico": "📱",
          "c": "o",
          "py": "bǎ shǒujī dì gěi le wǒ",
-         "hv": "bã thủ cơ đệ cấp liễu ngã"
+         "hv": "bả thủ cơ đệ cấp liễu ngã"
         }
        ],
        "traceWord": "递给",
        "py": "Tā shuō zhe shuō zhe bǎ shǒujī dì gěi le wǒ",
-       "traceKey": "digei"
+       "traceKey": "digei",
+       "traceInfo": [
+        {
+         "c": "递",
+         "py": "dì",
+         "hv": "đệ"
+        },
+        {
+         "c": "给",
+         "py": "gěi",
+         "hv": "cấp"
+        }
+       ]
       },
       {
        "scene": "⚽🔄🪑",
@@ -7928,19 +9921,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔄",
          "c": "v",
          "py": "gǔn zhe gǔn zhe",
-         "hv": "củn trứ củn trứ"
+         "hv": "cổn trước cổn trước"
         },
         {
          "t": "就滚到了桌子下面",
          "ico": "🪑",
          "c": "o",
          "py": "jiù gǔn dào le zhuōzi xiàmiàn",
-         "hv": "_ củn đáo liễu _ tí hạ _"
+         "hv": "tựu cổn đáo liễu trác tử hạ diện"
         }
        ],
        "traceWord": "滚",
        "py": "Qiú gǔn zhe gǔn zhe jiù gǔn dào le zhuōzi xiàmiàn",
-       "traceKey": "gun"
+       "traceKey": "gun",
+       "traceInfo": [
+        {
+         "c": "滚",
+         "py": "gǔn",
+         "hv": "cổn"
+        }
+       ]
       },
       {
        "scene": "💻⌨️💨",
@@ -7952,26 +9952,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💻",
          "c": "s",
          "py": "diànnǎo",
-         "hv": "_ não"
+         "hv": "điện não"
         },
         {
          "t": "用着用着",
          "ico": "⌨️",
          "c": "v",
          "py": "yòng zhe yòng zhe",
-         "hv": "dụng trứ dụng trứ"
+         "hv": "dụng trước dụng trước"
         },
         {
          "t": "突然冒起了烟",
          "ico": "💨",
          "c": "o",
          "py": "tūrán mào qǐ le yān",
-         "hv": "đột nhiên mạo khởi liễu _"
+         "hv": "đột nhiên mạo khởi liễu yên"
         }
        ],
        "traceWord": "冒",
        "py": "Diànnǎo yòng zhe yòng zhe tūrán mào qǐ le yān",
-       "traceKey": "mao"
+       "traceKey": "mao",
+       "traceInfo": [
+        {
+         "c": "冒",
+         "py": "mào",
+         "hv": "mạo"
+        }
+       ]
       },
       {
        "scene": "📋⏳🚶",
@@ -7990,19 +9997,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏳",
          "c": "v",
          "py": "kāi zhe kāi zhe",
-         "hv": "khai trứ khai trứ"
+         "hv": "khai trước khai trước"
         },
         {
          "t": "人就慢慢散了",
          "ico": "🚶",
          "c": "o",
          "py": "rén jiù mànmàn sàn le",
-         "hv": "nhân _ mạn mạn tản liễu"
+         "hv": "nhân tựu mạn mạn tán liễu"
         }
        ],
        "traceWord": "散",
        "py": "Huìyì kāi zhe kāi zhe rén jiù mànmàn sàn le",
-       "traceKey": "san"
+       "traceKey": "san",
+       "traceInfo": [
+        {
+         "c": "散",
+         "py": "sàn",
+         "hv": "tán"
+        }
+       ]
       },
       {
        "scene": "👫🛍️👛",
@@ -8014,14 +10028,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👫",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "逛着逛着",
          "ico": "🛍️",
          "c": "v",
          "py": "guàng zhe guàng zhe",
-         "hv": "_ trứ _ trứ"
+         "hv": "cuống trước cuống trước"
         },
         {
          "t": "在路边拾到了一个钱包",
@@ -8033,7 +10047,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "拾",
        "py": "Wǒmen guàng zhe guàng zhe zài lù biān shí dào le yī gè qiánbāo",
-       "traceKey": "shi"
+       "traceKey": "shi",
+       "traceInfo": [
+        {
+         "c": "拾",
+         "py": "shí",
+         "hv": "thập"
+        }
+       ]
       },
       {
        "scene": "🧑✍️✉️",
@@ -8052,19 +10073,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✍️",
          "c": "v",
          "py": "xiě zhe xiě zhe",
-         "hv": "tả trứ tả trứ"
+         "hv": "tả trước tả trước"
         },
         {
          "t": "就写完了给客户的一封信",
          "ico": "✉️",
          "c": "o",
          "py": "jiù xiě wánle gěi kèhù de yī fēng xìn",
-         "hv": "_ tả hoàn liễu cấp khách hộ đích nhất phong tín"
+         "hv": "tựu tả hoàn liễu cấp khách hộ đích nhất phong tín"
         }
        ],
        "traceWord": "封",
        "py": "Tā xiě zhe xiě zhe jiù xiě wánle gěi kèhù de yī fēng xìn",
-       "traceKey": "feng"
+       "traceKey": "feng",
+       "traceInfo": [
+        {
+         "c": "封",
+         "py": "fēng",
+         "hv": "phong"
+        }
+       ]
       },
       {
        "scene": "👥💬📱",
@@ -8076,26 +10104,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "tāmen",
-         "hv": "tha món"
+         "hv": "tha môn"
         },
         {
          "t": "吵着吵着",
          "ico": "💬",
          "c": "v",
          "py": "chǎo zhe chǎo zhe",
-         "hv": "sảo trứ sảo trứ"
+         "hv": "sảo trước sảo trước"
         },
         {
          "t": "一个人抢走了对方的手机",
          "ico": "📱",
          "c": "o",
-         "py": "yī gèrén qiǎng zǒu le duìfāng de shǒujī",
-         "hv": "nhất cá nhân _ tẩu liễu đỗi phương đích thủ cơ"
+         "py": "yī gè rén qiǎng zǒu le duìfāng de shǒujī",
+         "hv": "nhất cá nhân _ tẩu liễu đối phương đích thủ cơ"
         }
        ],
        "traceWord": "抢",
-       "py": "Tāmen chǎo zhe chǎo zhe yī gèrén qiǎng zǒu le duìfāng de shǒujī",
-       "traceKey": "qiang"
+       "py": "Tāmen chǎo zhe chǎo zhe yī gè rén qiǎng zǒu le duìfāng de shǒujī",
+       "traceKey": "qiang",
+       "traceInfo": [
+        {
+         "c": "抢",
+         "py": "qiǎng",
+         "hv": "_"
+        }
+       ]
       },
       {
        "scene": "🧑🌳📍",
@@ -8107,26 +10142,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌳",
          "c": "s",
          "py": "tā zài gōngyuán lǐ",
-         "hv": "tha tại công viên lịa"
+         "hv": "tha tại công viên lý"
         },
         {
          "t": "绕着绕着",
          "ico": "🔄",
          "c": "v",
          "py": "rào zhe rào zhe",
-         "hv": "nhiễu trứ nhiễu trứ"
+         "hv": "nhiễu trước nhiễu trước"
         },
         {
          "t": "就绕回了原来的地方",
          "ico": "📍",
          "c": "o",
          "py": "jiù rào huí le yuánlái de dìfang",
-         "hv": "_ nhiễu hồi liễu nguyên lai đích địa phương"
+         "hv": "tựu nhiễu hồi liễu nguyên lai đích địa phương"
         }
        ],
        "traceWord": "绕",
        "py": "Tā zài gōngyuán lǐ rào zhe rào zhe jiù rào huí le yuánlái de dìfang",
-       "traceKey": "rao"
+       "traceKey": "rao",
+       "traceInfo": [
+        {
+         "c": "绕",
+         "py": "rào",
+         "hv": "nhiễu"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -8152,7 +10194,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Qǐng bǎ nà fèn wénjiàn dì guòlái"
         }
        ],
-       "qpy": "Nǐ de yá téng dé lìhai ma?"
+       "qpy": "Nǐ de yá téng de lìhai ma?"
       },
       {
        "q": "早上的地铁里人多吗？",
@@ -8173,7 +10215,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "非常多我被挤得几乎站不住",
          "ico": "🚇",
-         "py": "Fēicháng duō wǒ bèi jǐ dé jīhū zhàn bú zhù"
+         "py": "Fēicháng duō wǒ bèi jǐ de jīhū zhàn bú zhù"
         }
        ],
        "qpy": "Zǎoshang de dìtiě lǐ rén duō ma?"
@@ -8273,12 +10315,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😣",
          "c": "o",
          "py": "qíngkuàng fēicháng zāogāo",
-         "hv": "tình huống phi thường _ _"
+         "hv": "tình huống phi thường tao cao"
         }
        ],
        "traceWord": "糟糕",
        "py": "Gōngsī xiànzài méi rén méi qián qíngkuàng fēicháng zāogāo",
-       "traceKey": "zaogao"
+       "traceKey": "zaogao",
+       "traceInfo": [
+        {
+         "c": "糟",
+         "py": "zāo",
+         "hv": "tao"
+        },
+        {
+         "c": "糕",
+         "py": "gāo",
+         "hv": "cao"
+        }
+       ]
       },
       {
        "scene": "👦🗣️🙅",
@@ -8290,7 +10344,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👦",
          "c": "s",
          "py": "háizi shuōhuà méi dà méi xiǎo",
-         "hv": "hài tí _ thoại một đại một tiểu"
+         "hv": "hài tử thuyết thoại một đại một tiểu"
         },
         {
          "t": "是",
@@ -8304,12 +10358,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙅",
          "c": "o",
          "py": "yī zhǒng bùliáng xíguàn",
-         "hv": "nhất chõng bất lương tập quen"
+         "hv": "nhất chủng bất lương tập quán"
         }
        ],
        "traceWord": "不良",
        "py": "Háizi shuōhuà méi dà méi xiǎo shì yī zhǒng bùliáng xíguàn",
-       "traceKey": "buliang"
+       "traceKey": "buliang",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "良",
+         "py": "liáng",
+         "hv": "lương"
+        }
+       ]
       },
       {
        "scene": "🧑🍺😵",
@@ -8328,19 +10394,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🍺",
          "c": "v",
          "py": "méi qīng méi zhòng de hē le hěn duō píjiǔ",
-         "hv": "một khinh một trọng địa hát liễu _ đa _ _"
+         "hv": "một khinh một trọng địa hát liễu ngận đa bi tửu"
         },
         {
          "t": "结果醉了",
          "ico": "😵",
          "c": "o",
          "py": "jiéguǒ zuì le",
-         "hv": "kết quả _ liễu"
+         "hv": "kết quả túy liễu"
         }
        ],
        "traceWord": "醉",
        "py": "Tā méi qīng méi zhòng de hē le hěn duō píjiǔ jiéguǒ zuì le",
-       "traceKey": "zui"
+       "traceKey": "zui",
+       "traceInfo": [
+        {
+         "c": "醉",
+         "py": "zuì",
+         "hv": "túy"
+        }
+       ]
       },
       {
        "scene": "📅😌🕒",
@@ -8359,19 +10432,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😌",
          "c": "v",
          "py": "méi rén guǎn méi rén wèn",
-         "hv": "một nhân quản một nhân _"
+         "hv": "một nhân quản một nhân vấn"
         },
         {
          "t": "我可以随意安排时间",
          "ico": "🕒",
          "c": "o",
          "py": "wǒ kěyǐ suíyì ānpái shíjiān",
-         "hv": "ngã khả _ tuỳ ý an bài thì gian"
+         "hv": "ngã khả dĩ tùy ý an bài thời gian"
         }
        ],
        "traceWord": "随意",
        "py": "Zhōumò méi rén guǎn méi rén wèn wǒ kěyǐ suíyì ānpái shíjiān",
-       "traceKey": "suiyi"
+       "traceKey": "suiyi",
+       "traceInfo": [
+        {
+         "c": "随",
+         "py": "suí",
+         "hv": "tùy"
+        },
+        {
+         "c": "意",
+         "py": "yì",
+         "hv": "ý"
+        }
+       ]
       },
       {
        "scene": "🧑🌙💼",
@@ -8397,12 +10482,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏰",
          "c": "o",
          "py": "lián xiē yīhuìr de shíjiān dōu méiyǒu",
-         "hv": "liên hết nhất hội _ đích thì gian đô một hữu"
+         "hv": "liên hiết nhất hội nhi đích thời gian đô một hữu"
         }
        ],
        "traceWord": "歇",
        "py": "Wǒ méi rì méi yè de gōngzuò lián xiē yīhuìr de shíjiān dōu méiyǒu",
-       "traceKey": "xie"
+       "traceKey": "xie",
+       "traceInfo": [
+        {
+         "c": "歇",
+         "py": "xiē",
+         "hv": "hiết"
+        }
+       ]
       },
       {
        "scene": "🧑🙏👻",
@@ -8428,12 +10520,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙏",
          "c": "o",
          "py": "suǒyǐ cónglái bù míxìn",
-         "hv": "sỡ _ tòng lai bất mê tín"
+         "hv": "sở dĩ tòng lai bất mê tín"
         }
        ],
        "traceWord": "迷信",
        "py": "Tā juéde shìjiè shàng méi guǐ méi shén suǒyǐ cónglái bù míxìn",
-       "traceKey": "mixin"
+       "traceKey": "mixin",
+       "traceInfo": [
+        {
+         "c": "迷",
+         "py": "mí",
+         "hv": "mê"
+        },
+        {
+         "c": "信",
+         "py": "xìn",
+         "hv": "tín"
+        }
+       ]
       },
       {
        "scene": "👥💪🏆",
@@ -8445,7 +10549,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "没钱没经验",
@@ -8459,12 +10563,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏆",
          "c": "o",
          "py": "dànshì dàjiā yīqǐ pīn yī pīn yě huì chénggōng",
-         "hv": "_ thị đại gia nhất khởi phanh nhất phanh dã hội thành công"
+         "hv": "đãn thị đại gia nhất khởi bính nhất bính dã hội thành công"
         }
        ],
        "traceWord": "拼",
        "py": "Wǒmen méi qián méi jīngyàn dànshì dàjiā yīqǐ pīn yī pīn yě huì chénggōng",
-       "traceKey": "pin"
+       "traceKey": "pin",
+       "traceInfo": [
+        {
+         "c": "拼",
+         "py": "pīn",
+         "hv": "bính"
+        }
+       ]
       },
       {
        "scene": "🧑😌🏖️",
@@ -8482,7 +10593,7 @@ window.CURRICULUM_STAGES[5] = {
          "t": "忙得没完没了",
          "ico": "🔁",
          "c": "v",
-         "py": "máng dé méi wán méi le",
+         "py": "máng de méi wán méi le",
          "hv": "mang đắc một hoàn một liễu"
         },
         {
@@ -8490,12 +10601,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏖️",
          "c": "o",
          "py": "nándé xián xiàlái xiǎngshòu yī xià shēnghuó",
-         "hv": "nan đắc _ hạ lai hưởng thụ nhất hạ sinh hoạt"
+         "hv": "nan đắc nhàn hạ lai hưởng thụ nhất hạ sinh hoạt"
         }
        ],
        "traceWord": "享受",
-       "py": "Tā máng dé méi wán méi le nándé xián xiàlái xiǎngshòu yī xià shēnghuó",
-       "traceKey": "xiangshou"
+       "py": "Tā máng de méi wán méi le nándé xián xiàlái xiǎngshòu yī xià shēnghuó",
+       "traceKey": "xiangshou",
+       "traceInfo": [
+        {
+         "c": "享",
+         "py": "xiǎng",
+         "hv": "hưởng"
+        },
+        {
+         "c": "受",
+         "py": "shòu",
+         "hv": "thụ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -8569,7 +10692,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Nǐ zhēn niú"
         }
        ],
-       "qpy": "Wǒ yī gèrén wánchéng le sān gè xiàngmù"
+       "qpy": "Wǒ yī gè rén wánchéng le sān gè xiàngmù"
       },
       {
        "q": "你怎么又回家了？",
@@ -8628,26 +10751,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "说干就干",
          "ico": "💪",
          "c": "v",
-         "py": "shuō gān jiù gān",
-         "hv": "_ can _ can"
+         "py": "shuō gàn jiù gàn",
+         "hv": "thuyết cán tựu cán"
         },
         {
          "t": "一定要把新项目搞好",
          "ico": "📁",
          "c": "o",
          "py": "yīdìng yào bǎ xīn xiàngmù gǎohǎo",
-         "hv": "nhất định yếu bã tân hạng mục cào háo"
+         "hv": "nhất định yếu bả tân hạng mục cảo hảo"
         }
        ],
        "traceWord": "搞好",
-       "py": "Wǒmen shuō gān jiù gān yīdìng yào bǎ xīn xiàngmù gǎohǎo",
-       "traceKey": "gaohao"
+       "py": "Wǒmen shuō gàn jiù gàn yīdìng yào bǎ xīn xiàngmù gǎohǎo",
+       "traceKey": "gaohao",
+       "traceInfo": [
+        {
+         "c": "搞",
+         "py": "gǎo",
+         "hv": "cảo"
+        },
+        {
+         "c": "好",
+         "py": "hǎo",
+         "hv": "hảo"
+        }
+       ]
       },
       {
        "scene": "🌐🔌😮‍💨",
@@ -8659,14 +10794,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌐",
          "c": "s",
          "py": "wǎngluò",
-         "hv": "võng rạc"
+         "hv": "võng lạc"
         },
         {
          "t": "说恢复就恢复",
          "ico": "🔌",
          "c": "v",
          "py": "shuō huīfù jiù huīfù",
-         "hv": "_ _ hạ _ _ hạ"
+         "hv": "thuyết khôi phục tựu khôi phục"
         },
         {
          "t": "大家都松了一口气",
@@ -8678,7 +10813,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "恢复",
        "py": "Wǎngluò shuō huīfù jiù huīfù dàjiā dōu sōng le yīkǒuqì",
-       "traceKey": "huifu"
+       "traceKey": "huifu",
+       "traceInfo": [
+        {
+         "c": "恢",
+         "py": "huī",
+         "hv": "khôi"
+        },
+        {
+         "c": "复",
+         "py": "fù",
+         "hv": "phục"
+        }
+       ]
       },
       {
        "scene": "🙋📦🔙",
@@ -8697,19 +10844,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔙",
          "c": "v",
          "py": "shuō tuì jiù tuì",
-         "hv": "_ thoái _ thoái"
+         "hv": "thuyết thoái tựu thoái"
         },
         {
          "t": "所以我们必须提高服务质量",
          "ico": "📈",
          "c": "o",
          "py": "suǒyǐ wǒmen bìxū tígāo fúwù zhìliàng",
-         "hv": "sỡ _ ngã món tất tua đề cao phục vụ chất _"
+         "hv": "sở dĩ ngã môn tất tu đề cao phục vụ chất lượng"
         }
        ],
        "traceWord": "用户",
        "py": "Yònghù shuō tuì jiù tuì suǒyǐ wǒmen bìxū tígāo fúwù zhìliàng",
-       "traceKey": "yonghu"
+       "traceKey": "yonghu",
+       "traceInfo": [
+        {
+         "c": "用",
+         "py": "yòng",
+         "hv": "dụng"
+        },
+        {
+         "c": "户",
+         "py": "hù",
+         "hv": "hộ"
+        }
+       ]
       },
       {
        "scene": "👥💡🔍",
@@ -8721,26 +10880,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "说试就试",
          "ico": "💡",
          "c": "v",
          "py": "shuō shì jiù shì",
-         "hv": "_ thí _ thí"
+         "hv": "thuyết thí tựu thí"
         },
         {
          "t": "看看这个办法能不能起到作用",
          "ico": "🔍",
          "c": "o",
          "py": "kàn kàn zhè gè bànfǎ néng bu néng qǐdào zuòyòng",
-         "hv": "khán khán _ cá _ pháp năng bất năng khởi đáo tác dụng"
+         "hv": "khán khán giá cá biện pháp năng bất năng khởi đáo tác dụng"
         }
        ],
        "traceWord": "起到",
        "py": "Wǒmen shuō shì jiù shì kàn kàn zhè gè bànfǎ néng bu néng qǐdào zuòyòng",
-       "traceKey": "qidao"
+       "traceKey": "qidao",
+       "traceInfo": [
+        {
+         "c": "起",
+         "py": "qǐ",
+         "hv": "khởi"
+        },
+        {
+         "c": "到",
+         "py": "dào",
+         "hv": "đáo"
+        }
+       ]
       },
       {
        "scene": "👷🔧💻",
@@ -8759,19 +10930,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔧",
          "c": "v",
          "py": "shuō dòngshǒu jiù dòngshǒu",
-         "hv": "_ động thủ _ động thủ"
+         "hv": "thuyết động thủ tựu động thủ"
         },
         {
          "t": "不到十分钟就修好了电脑",
          "ico": "💻",
          "c": "o",
          "py": "bú dào shí fēnzhōng jiù xiū hǎo le diànnǎo",
-         "hv": "bất đáo thập phân chuông _ tu háo liễu _ não"
+         "hv": "bất đáo thập phân chung tựu tu hảo liễu điện não"
         }
        ],
        "traceWord": "动手",
        "py": "Shīfu shuō dòngshǒu jiù dòngshǒu bú dào shí fēnzhōng jiù xiū hǎo le diànnǎo",
-       "traceKey": "dongshou"
+       "traceKey": "dongshou",
+       "traceInfo": [
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        },
+        {
+         "c": "手",
+         "py": "shǒu",
+         "hv": "thủ"
+        }
+       ]
       },
       {
        "scene": "🤝❌📉",
@@ -8783,26 +10966,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "s",
          "py": "zhè wèi kèhù",
-         "hv": "_ vị khách hộ"
+         "hv": "giá vị khách hộ"
         },
         {
          "t": "说取消就取消",
          "ico": "❌",
          "c": "v",
          "py": "shuō qǔxiāo jiù qǔxiāo",
-         "hv": "_ thủ tiêu _ thủ tiêu"
+         "hv": "thuyết thủ tiêu tựu thủ tiêu"
         },
         {
          "t": "我们的业务受到了影响",
          "ico": "📉",
          "c": "o",
          "py": "wǒmen de yèwù shòudào le yǐngxiǎng",
-         "hv": "ngã món đích nghiệp vụ thụ đáo liễu ảnh hướng"
+         "hv": "ngã môn đích nghiệp vụ thụ đáo liễu ảnh hưởng"
         }
        ],
        "traceWord": "业务",
        "py": "Zhè wèi kèhù shuō qǔxiāo jiù qǔxiāo wǒmen de yèwù shòudào le yǐngxiǎng",
-       "traceKey": "yewu"
+       "traceKey": "yewu",
+       "traceInfo": [
+        {
+         "c": "业",
+         "py": "yè",
+         "hv": "nghiệp"
+        },
+        {
+         "c": "务",
+         "py": "wù",
+         "hv": "vụ"
+        }
+       ]
       },
       {
        "scene": "🛒🔄🏢",
@@ -8814,26 +11009,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛒",
          "c": "s",
          "py": "xiāofèizhě",
-         "hv": "tiêu phí _"
+         "hv": "tiêu phí giả"
         },
         {
          "t": "说变就变",
          "ico": "🔄",
          "c": "v",
          "py": "shuō biàn jiù biàn",
-         "hv": "_ biến _ biến"
+         "hv": "thuyết biến tựu biến"
         },
         {
          "t": "所以公司之间的竞争越来越激烈",
          "ico": "🏢",
          "c": "o",
          "py": "suǒyǐ gōngsī zhījiān de jìngzhēng yuè lái yuè jīliè",
-         "hv": "sỡ _ công ti chi gian đích _ tranh việt lai việt kích liệt"
+         "hv": "sở dĩ công ti chi gian đích cạnh tranh việt lai việt kích liệt"
         }
        ],
        "traceWord": "竞争",
        "py": "Xiāofèizhě shuō biàn jiù biàn suǒyǐ gōngsī zhījiān de jìngzhēng yuè lái yuè jīliè",
-       "traceKey": "jingzheng"
+       "traceKey": "jingzheng",
+       "traceInfo": [
+        {
+         "c": "竞",
+         "py": "jìng",
+         "hv": "cạnh"
+        },
+        {
+         "c": "争",
+         "py": "zhēng",
+         "hv": "tranh"
+        }
+       ]
       },
       {
        "scene": "🏢🎁🙌",
@@ -8852,19 +11059,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎁",
          "c": "v",
          "py": "shuō fā jiǎnglì jiù fā jiǎnglì",
-         "hv": "_ _ _ lệ _ _ _ lệ"
+         "hv": "thuyết phát tưởng lệ tựu phát tưởng lệ"
         },
         {
          "t": "在工作日就送到了每个人手里",
          "ico": "🙌",
          "c": "o",
-         "py": "zài gōngzuòrì jiù sòngdào le měi gèrén shǒu li",
-         "hv": "tại công tác nhật _ tống đáo liễu mỗi cá nhân thủ lịa"
+         "py": "zài gōngzuòrì jiù sòngdào le měi gè rén shǒu li",
+         "hv": "tại công tác nhật tựu tống đáo liễu mỗi cá nhân thủ lý"
         }
        ],
        "traceWord": "奖励",
-       "py": "Gōngsī shuō fā jiǎnglì jiù fā jiǎnglì zài gōngzuòrì jiù sòngdào le měi gèrén shǒu li",
-       "traceKey": "jiangli"
+       "py": "Gōngsī shuō fā jiǎnglì jiù fā jiǎnglì zài gōngzuòrì jiù sòngdào le měi gè rén shǒu li",
+       "traceKey": "jiangli",
+       "traceInfo": [
+        {
+         "c": "奖",
+         "py": "jiǎng",
+         "hv": "tưởng"
+        },
+        {
+         "c": "励",
+         "py": "lì",
+         "hv": "lệ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -8954,7 +11173,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "说干就干明天就开始",
          "ico": "💪",
-         "py": "Shuō gān jiù gān míngtiān jiù kāishǐ"
+         "py": "Shuō gàn jiù gàn míngtiān jiù kāishǐ"
         },
         {
          "txt": "他已经吃过早饭了",
@@ -9001,7 +11220,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🪑",
          "c": "s",
          "py": "zhuōzi shàng",
-         "hv": "_ tí thượng"
+         "hv": "trác tử thượng"
         },
         {
          "t": "有梨有桃",
@@ -9015,12 +11234,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✨",
          "c": "o",
          "py": "dōu hěn xīnxiān",
-         "hv": "đô _ tân tiên"
+         "hv": "đô ngận tân tiên"
         }
        ],
        "traceWord": "梨",
        "py": "Zhuōzi shàng yǒu lí yǒu táo dōu hěn xīnxiān",
-       "traceKey": "li"
+       "traceKey": "li",
+       "traceInfo": [
+        {
+         "c": "梨",
+         "py": "lí",
+         "hv": "lê"
+        }
+       ]
       },
       {
        "scene": "🏠🍳🔪",
@@ -9032,26 +11258,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "s",
          "py": "jiā li",
-         "hv": "gia lịa"
+         "hv": "gia lý"
         },
         {
          "t": "有锅有刀",
          "ico": "🍳",
          "c": "v",
          "py": "yǒu guō yǒu dāo",
-         "hv": "hữu _ hữu đao"
+         "hv": "hữu oa hữu đao"
         },
         {
          "t": "杀鱼很方便",
          "ico": "👍",
          "c": "o",
          "py": "shā yú hěn fāngbiàn",
-         "hv": "sát ngư _ phương tiện"
+         "hv": "sát ngư ngận phương tiện"
         }
        ],
        "traceWord": "杀",
        "py": "Jiā li yǒu guō yǒu dāo shā yú hěn fāngbiàn",
-       "traceKey": "sha"
+       "traceKey": "sha",
+       "traceInfo": [
+        {
+         "c": "杀",
+         "py": "shā",
+         "hv": "sát"
+        }
+       ]
       },
       {
        "scene": "🏪🍪🍰",
@@ -9063,26 +11296,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏪",
          "c": "s",
          "py": "chāoshì lǐ",
-         "hv": "siêu thị lịa"
+         "hv": "siêu thị lý"
         },
         {
          "t": "有饼干有蛋糕",
          "ico": "🍰",
          "c": "v",
          "py": "yǒu bǐnggān yǒu dàngāo",
-         "hv": "hữu bánh can hữu _ _"
+         "hv": "hữu bính can hữu đản cao"
         },
         {
          "t": "你随便选",
          "ico": "👉",
          "c": "o",
          "py": "nǐ suíbiàn xuǎn",
-         "hv": "nể tuỳ tiện tuyển"
+         "hv": "nễ tùy tiện tuyển"
         }
        ],
        "traceWord": "饼干",
        "py": "Chāoshì lǐ yǒu bǐnggān yǒu dàngāo nǐ suíbiàn xuǎn",
-       "traceKey": "binggan"
+       "traceKey": "binggan",
+       "traceInfo": [
+        {
+         "c": "饼",
+         "py": "bǐng",
+         "hv": "bính"
+        },
+        {
+         "c": "干",
+         "py": "gān",
+         "hv": "can"
+        }
+       ]
       },
       {
        "scene": "🛒🥔🍅",
@@ -9108,12 +11353,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💰",
          "c": "o",
          "py": "érqiě hěn piányi",
-         "hv": "_ thả _ tiện nghi"
+         "hv": "nhi thả ngận tiện nghi"
         }
        ],
        "traceWord": "土豆",
        "py": "Zhōumò de shìchǎng yǒu tǔdòu yǒu xīhóngshì érqiě hěn piányi",
-       "traceKey": "tudou"
+       "traceKey": "tudou",
+       "traceInfo": [
+        {
+         "c": "土",
+         "py": "tǔ",
+         "hv": "thổ"
+        },
+        {
+         "c": "豆",
+         "py": "dòu",
+         "hv": "đậu"
+        }
+       ]
       },
       {
        "scene": "🍽🌭🍖😋",
@@ -9125,26 +11382,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🍽",
          "c": "s",
          "py": "zǎocān de pánzi lǐ",
-         "hv": "tảo _ đích bàn tí lịa"
+         "hv": "tảo xan đích bàn tử lý"
         },
         {
          "t": "有香肠有火腿",
          "ico": "🌭",
          "c": "v",
          "py": "yǒu xiāngcháng yǒu huǒtuǐ",
-         "hv": "hữu hương _ hữu hoả thoái"
+         "hv": "hữu hương trường hữu hỏa thối"
         },
         {
          "t": "大家都爱吃",
          "ico": "😋",
          "c": "o",
          "py": "dàjiā dōu ài chī",
-         "hv": "đại gia đô _ khật"
+         "hv": "đại gia đô ái cật"
         }
        ],
        "traceWord": "香肠",
        "py": "Zǎocān de pánzi lǐ yǒu xiāngcháng yǒu huǒtuǐ dàjiā dōu ài chī",
-       "traceKey": "xiangchang"
+       "traceKey": "xiangchang",
+       "traceInfo": [
+        {
+         "c": "香",
+         "py": "xiāng",
+         "hv": "hương"
+        },
+        {
+         "c": "肠",
+         "py": "cháng",
+         "hv": "trường"
+        }
+       ]
       },
       {
        "scene": "🏡🥞🦆💰",
@@ -9156,26 +11425,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏡",
          "c": "s",
          "py": "nóngcūn de xiǎo fànguǎn",
-         "hv": "nông thôn đích tiểu _ quán"
+         "hv": "nông thôn đích tiểu phạn quán"
         },
         {
          "t": "有饼有鸭子",
          "ico": "🦆",
          "c": "v",
          "py": "yǒu bǐng yǒu yāzi",
-         "hv": "hữu bánh hữu _ tí"
+         "hv": "hữu bính hữu áp tử"
         },
         {
          "t": "价格也很实惠",
          "ico": "💰",
          "c": "o",
          "py": "jiàgé yě hěn shíhuì",
-         "hv": "giá cách dã _ thực huệ"
+         "hv": "giá cách dã ngận thực huệ"
         }
        ],
        "traceWord": "鸭子",
        "py": "Nóngcūn de xiǎo fànguǎn yǒu bǐng yǒu yāzi jiàgé yě hěn shíhuì",
-       "traceKey": "yazi"
+       "traceKey": "yazi",
+       "traceInfo": [
+        {
+         "c": "鸭",
+         "py": "yā",
+         "hv": "áp"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "🏢🍱🍇👍",
@@ -9187,26 +11468,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "gōngsī zhǔnbèi de wǔcān",
-         "hv": "công ti chốn bị đích ngọ _"
+         "hv": "công ti chuẩn bị đích ngọ xan"
         },
         {
          "t": "有豆制品有葡萄",
          "ico": "🍇",
          "c": "v",
          "py": "yǒu dòuzhìpǐn yǒu pútao",
-         "hv": "hữu đậu chế phẩm hữu _ _"
+         "hv": "hữu đậu chế phẩm hữu bồ đào"
         },
         {
          "t": "同事都很满意",
          "ico": "👍",
          "c": "o",
          "py": "tóngshì dōu hěn mǎnyì",
-         "hv": "đồng sự đô _ mãn ý"
+         "hv": "đồng sự đô ngận mãn ý"
         }
        ],
        "traceWord": "豆制品",
        "py": "Gōngsī zhǔnbèi de wǔcān yǒu dòuzhìpǐn yǒu pútao tóngshì dōu hěn mǎnyì",
-       "traceKey": "douzhipin"
+       "traceKey": "douzhipin",
+       "traceInfo": [
+        {
+         "c": "豆",
+         "py": "dòu",
+         "hv": "đậu"
+        },
+        {
+         "c": "制",
+         "py": "zhì",
+         "hv": "chế"
+        },
+        {
+         "c": "品",
+         "py": "pǐn",
+         "hv": "phẩm"
+        }
+       ]
       },
       {
        "scene": "🏬🥬🐟💰",
@@ -9218,26 +11516,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏬",
          "c": "s",
          "py": "zhè gè nóngchǎnpǐn shìchǎng",
-         "hv": "_ cá nông _ phẩm thị trường"
+         "hv": "giá cá nông sản phẩm thị trường"
         },
         {
          "t": "有蔬菜有水产品",
          "ico": "🐟",
          "c": "v",
          "py": "yǒu shūcài yǒu shuǐchǎnpǐn",
-         "hv": "hữu _ _ hữu thuỷ _ phẩm"
+         "hv": "hữu sơ thái hữu thủy sản phẩm"
         },
         {
          "t": "而且价格比超市低",
          "ico": "💰",
          "c": "o",
          "py": "érqiě jiàgé bǐ chāoshì dī",
-         "hv": "_ thả giá cách tỉ siêu thị đây"
+         "hv": "nhi thả giá cách tỷ siêu thị đê"
         }
        ],
        "traceWord": "水产品",
        "py": "Zhè gè nóngchǎnpǐn shìchǎng yǒu shūcài yǒu shuǐchǎnpǐn érqiě jiàgé bǐ chāoshì dī",
-       "traceKey": "shuichanpin"
+       "traceKey": "shuichanpin",
+       "traceInfo": [
+        {
+         "c": "水",
+         "py": "shuǐ",
+         "hv": "thủy"
+        },
+        {
+         "c": "产",
+         "py": "chǎn",
+         "hv": "sản"
+        },
+        {
+         "c": "品",
+         "py": "pǐn",
+         "hv": "phẩm"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -9370,26 +11685,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📊",
          "c": "s",
          "py": "cóng shùjù lái kàn wǒmen",
-         "hv": "tòng số cớ lai khán ngã món"
+         "hv": "tòng số cứ lai khán ngã môn"
         },
         {
          "t": "需要",
          "ico": "📌",
          "c": "v",
          "py": "xūyào",
-         "hv": "_ yếu"
+         "hv": "nhu yếu"
         },
         {
          "t": "先收集资料再分析原因",
          "ico": "🔍",
          "c": "o",
          "py": "xiān shōují zīliào zài fēnxī yuányīn",
-         "hv": "tiên thu tập _ liệu tái phân _ nguyên nhân"
+         "hv": "tiên thu tập tư liệu tái phân tích nguyên nhân"
         }
        ],
        "traceWord": "收集",
        "py": "Cóng shùjù lái kàn wǒmen xūyào xiān shōují zīliào zài fēnxī yuányīn",
-       "traceKey": "shouji"
+       "traceKey": "shouji",
+       "traceInfo": [
+        {
+         "c": "收",
+         "py": "shōu",
+         "hv": "thu"
+        },
+        {
+         "c": "集",
+         "py": "jí",
+         "hv": "tập"
+        }
+       ]
       },
       {
        "scene": "📄👥3️⃣",
@@ -9401,14 +11728,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📄",
          "c": "s",
          "py": "cóng zhè fèn bàogào lái kàn kèhù",
-         "hv": "tòng _ phần báo _ lai khán khách hộ"
+         "hv": "tòng giá phần báo cáo lai khán khách hộ"
         },
         {
          "t": "可以分成",
          "ico": "✂️",
          "c": "v",
          "py": "kěyǐ fēnchéng",
-         "hv": "khả _ phân thành"
+         "hv": "khả dĩ phân thành"
         },
         {
          "t": "三类",
@@ -9420,7 +11747,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "分成",
        "py": "Cóng zhè fèn bàogào lái kàn kèhù kěyǐ fēnchéng sān lèi",
-       "traceKey": "fencheng"
+       "traceKey": "fencheng",
+       "traceInfo": [
+        {
+         "c": "分",
+         "py": "fēn",
+         "hv": "phân"
+        },
+        {
+         "c": "成",
+         "py": "chéng",
+         "hv": "thành"
+        }
+       ]
       },
       {
        "scene": "📁🗂🔎",
@@ -9432,7 +11771,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📁",
          "c": "s",
          "py": "cóng shǐyòng xíguàn lái kàn zhèxiē wénjiàn",
-         "hv": "tòng sứ dụng tập quen lai khán _ ta văn kiện"
+         "hv": "tòng sử dụng tập quán lai khán giá ta văn kiện"
         },
         {
          "t": "分类",
@@ -9446,12 +11785,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔎",
          "c": "o",
          "py": "yǐhòu gèng róngyì zhǎodào",
-         "hv": "_ hậu cánh dung dịch quơ đáo"
+         "hv": "dĩ hậu cánh dung dị trảo đáo"
         }
        ],
        "traceWord": "分类",
        "py": "Cóng shǐyòng xíguàn lái kàn zhèxiē wénjiàn fēnlèi yǐhòu gèng róngyì zhǎodào",
-       "traceKey": "fenlei"
+       "traceKey": "fenlei",
+       "traceInfo": [
+        {
+         "c": "分",
+         "py": "fēn",
+         "hv": "phân"
+        },
+        {
+         "c": "类",
+         "py": "lèi",
+         "hv": "loại"
+        }
+       ]
       },
       {
        "scene": "🔬💊🌡",
@@ -9463,26 +11814,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔬",
          "c": "s",
          "py": "cóng jiǎnyàn jiéguǒ lái kàn zhè zhǒng yàopiàn",
-         "hv": "tòng ghém nghiệm kết quả lai khán _ chõng dược phiến"
+         "hv": "tòng kiểm nghiệm kết quả lai khán giá chủng dược phiến"
         },
         {
          "t": "放在热水里",
          "ico": "🌡",
          "c": "v",
          "py": "fàng zài rè shuǐ lǐ",
-         "hv": "phóng tại nhiệt thuỷ lịa"
+         "hv": "phóng tại nhiệt thủy lý"
         },
         {
          "t": "容易分解",
          "ico": "💊",
          "c": "o",
          "py": "róngyì fēnjiě",
-         "hv": "dung dịch phân giải"
+         "hv": "dung dị phân giải"
         }
        ],
        "traceWord": "检验",
        "py": "Cóng jiǎnyàn jiéguǒ lái kàn zhè zhǒng yàopiàn fàng zài rè shuǐ lǐ róngyì fēnjiě",
-       "traceKey": "jianyan"
+       "traceKey": "jianyan",
+       "traceInfo": [
+        {
+         "c": "检",
+         "py": "jiǎn",
+         "hv": "kiểm"
+        },
+        {
+         "c": "验",
+         "py": "yàn",
+         "hv": "nghiệm"
+        }
+       ]
       },
       {
        "scene": "🥤♻️🧪",
@@ -9494,7 +11857,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🥤",
          "c": "s",
          "py": "cóng cáiliào lái kàn zhè zhǒng bēizi",
-         "hv": "tòng _ liệu lai khán _ chõng bôi tí"
+         "hv": "tòng tài liệu lai khán giá chủng bôi tử"
         },
         {
          "t": "是用",
@@ -9508,12 +11871,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "♻️",
          "c": "o",
          "py": "sùliào zhìchéng de",
-         "hv": "_ liệu chế thành đích"
+         "hv": "tố liệu chế thành đích"
         }
        ],
        "traceWord": "制成",
        "py": "Cóng cáiliào lái kàn zhè zhǒng bēizi shì yòng sùliào zhìchéng de",
-       "traceKey": "zhicheng"
+       "traceKey": "zhicheng",
+       "traceInfo": [
+        {
+         "c": "制",
+         "py": "zhì",
+         "hv": "chế"
+        },
+        {
+         "c": "成",
+         "py": "chéng",
+         "hv": "thành"
+        }
+       ]
       },
       {
        "scene": "📷🔎✍️",
@@ -9525,13 +11900,13 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📷",
          "c": "s",
          "py": "cóng fàngdà de zhàopiàn lái kàn zhè gè zì",
-         "hv": "tòng phóng đại đích chiếu phiến lai khán _ cá tự"
+         "hv": "tòng phóng đại đích chiếu phiến lai khán giá cá tự"
         },
         {
          "t": "写得",
          "ico": "✍️",
          "c": "v",
-         "py": "xiě dé",
+         "py": "xiě de",
          "hv": "tả đắc"
         },
         {
@@ -9543,8 +11918,20 @@ window.CURRICULUM_STAGES[5] = {
         }
        ],
        "traceWord": "放大",
-       "py": "Cóng fàngdà de zhàopiàn lái kàn zhè gè zì xiě dé bù tài qīngchu",
-       "traceKey": "fangda"
+       "py": "Cóng fàngdà de zhàopiàn lái kàn zhè gè zì xiě de bù tài qīngchu",
+       "traceKey": "fangda",
+       "traceInfo": [
+        {
+         "c": "放",
+         "py": "fàng",
+         "hv": "phóng"
+        },
+        {
+         "c": "大",
+         "py": "dà",
+         "hv": "đại"
+        }
+       ]
       },
       {
        "scene": "👥💡📂🤝",
@@ -9570,12 +11957,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📂",
          "c": "o",
          "py": "fēnxiǎng jīngyàn hé gòngxiǎng zīliào",
-         "hv": "phân hưởng kinh nghiệm hoà cộng hưởng _ liệu"
+         "hv": "phân hưởng kinh nghiệm hòa cộng hưởng tư liệu"
         }
        ],
        "traceWord": "分享",
        "py": "Cóng dàjiā de fǎnyìng lái kàn tóngshì dōu yuànyì fēnxiǎng jīngyàn hé gòngxiǎng zīliào",
-       "traceKey": "fenxiang"
+       "traceKey": "fenxiang",
+       "traceInfo": [
+        {
+         "c": "分",
+         "py": "fēn",
+         "hv": "phân"
+        },
+        {
+         "c": "享",
+         "py": "xiǎng",
+         "hv": "hưởng"
+        }
+       ]
       },
       {
        "scene": "💻📋🖨📤",
@@ -9587,7 +11986,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💻",
          "c": "s",
          "py": "cóng chéngxù de jiéguǒ lái kàn xìtǒng",
-         "hv": "tòng trình tựa đích kết quả lai khán hệ thống"
+         "hv": "tòng trình tự đích kết quả lai khán hệ thống"
         },
         {
          "t": "能自动生成",
@@ -9601,12 +12000,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📤",
          "c": "o",
          "py": "biǎogé bìng shūchū wénjiàn",
-         "hv": "biểu cách _ thâu xuất văn kiện"
+         "hv": "biểu cách tịnh thâu xuất văn kiện"
         }
        ],
        "traceWord": "生成",
        "py": "Cóng chéngxù de jiéguǒ lái kàn xìtǒng néng zìdòng shēngchéng biǎogé bìng shūchū wénjiàn",
-       "traceKey": "shengcheng"
+       "traceKey": "shengcheng",
+       "traceInfo": [
+        {
+         "c": "生",
+         "py": "shēng",
+         "hv": "sinh"
+        },
+        {
+         "c": "成",
+         "py": "chéng",
+         "hv": "thành"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -9632,7 +12043,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Yīnggāi míngtiān zài qù jīchǎng"
         }
        ],
-       "qpy": "Cóng gōngzuò liáng lái kàn zhè liǎng gè bùmén yīnggāi zěnme bàn?"
+       "qpy": "Cóng gōngzuò liàng lái kàn zhè liǎng gè bùmén yīnggāi zěnme bàn?"
       },
       {
        "q": "你觉得公司的市场应该怎么划分？",
@@ -9739,14 +12150,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👤",
          "c": "s",
          "py": "ná wǒ zìjǐ lái shuō měi gè yuè",
-         "hv": "nã ngã tự kỉ lai _ mỗi cá nguyệt"
+         "hv": "nã ngã tự kỷ lai thuyết mỗi cá nguyệt"
         },
         {
          "t": "都有一点儿",
          "ico": "📅",
          "c": "v",
          "py": "dōu yǒuyīdiǎnr",
-         "hv": "đô hữu nhất điểm _"
+         "hv": "đô hữu nhất điểm nhi"
         },
         {
          "t": "存款",
@@ -9758,7 +12169,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "存款",
        "py": "Ná wǒ zìjǐ lái shuō měi gè yuè dōu yǒuyīdiǎnr cúnkuǎn",
-       "traceKey": "cunkuan"
+       "traceKey": "cunkuan",
+       "traceInfo": [
+        {
+         "c": "存",
+         "py": "cún",
+         "hv": "tồn"
+        },
+        {
+         "c": "款",
+         "py": "kuǎn",
+         "hv": "khoản"
+        }
+       ]
       },
       {
        "scene": "🏠🏦📝",
@@ -9770,26 +12193,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "s",
          "py": "ná mǎi fángzi lái shuō hěn duō rén",
-         "hv": "nã mãi phòng tí lai _ _ đa nhân"
+         "hv": "nã mãi phòng tử lai thuyết ngận đa nhân"
         },
         {
          "t": "需要",
          "ico": "📌",
          "c": "v",
          "py": "xūyào",
-         "hv": "_ yếu"
+         "hv": "nhu yếu"
         },
         {
          "t": "向银行贷款",
          "ico": "🏦",
          "c": "o",
          "py": "xiàng yínháng dàikuǎn",
-         "hv": "hướng ngân hàng _ khoản"
+         "hv": "hướng ngân hàng thải khoản"
         }
        ],
        "traceWord": "贷款",
        "py": "Ná mǎi fángzi lái shuō hěn duō rén xūyào xiàng yínháng dàikuǎn",
-       "traceKey": "daikuan"
+       "traceKey": "daikuan",
+       "traceInfo": [
+        {
+         "c": "贷",
+         "py": "dài",
+         "hv": "thải"
+        },
+        {
+         "c": "款",
+         "py": "kuǎn",
+         "hv": "khoản"
+        }
+       ]
       },
       {
        "scene": "🏪📉💸",
@@ -9801,26 +12236,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏪",
          "c": "s",
          "py": "ná zhè jiā xiǎo diàn lái shuō qùnián",
-         "hv": "nã _ gia tiểu điếm lai _ khứ nên"
+         "hv": "nã giá gia tiểu điếm lai thuyết khứ niên"
         },
         {
          "t": "不但亏了钱",
          "ico": "📉",
          "c": "v",
          "py": "bùdàn kuī le qián",
-         "hv": "bất _ khuya liễu tiền"
+         "hv": "bất đãn khuy liễu tiền"
         },
         {
          "t": "而且还欠了朋友的钱",
          "ico": "💸",
          "c": "o",
          "py": "érqiě hái qiàn le péngyou de qián",
-         "hv": "_ thả hoàn khiếm liễu bằng hữu đích tiền"
+         "hv": "nhi thả hoàn khiếm liễu bằng hữu đích tiền"
         }
        ],
        "traceWord": "亏",
        "py": "Ná zhè jiā xiǎo diàn lái shuō qùnián bùdàn kuī le qián érqiě hái qiàn le péngyou de qián",
-       "traceKey": "kui"
+       "traceKey": "kui",
+       "traceInfo": [
+        {
+         "c": "亏",
+         "py": "kuī",
+         "hv": "khuy"
+        }
+       ]
       },
       {
        "scene": "🏫📊💴",
@@ -9832,14 +12274,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏫",
          "c": "s",
          "py": "ná xuéxiào lái shuō jīnnián de jīngfèi zhīchū",
-         "hv": "nã học hiệu lai _ kim nên đích kinh phí chi xuất"
+         "hv": "nã học hiệu lai thuyết kim niên đích kinh phí chi xuất"
         },
         {
          "t": "比去年增加了",
          "ico": "📈",
          "c": "v",
          "py": "bǐ qùnián zēngjiā le",
-         "hv": "tỉ khứ nên tăng gia liễu"
+         "hv": "tỷ khứ niên tăng gia liễu"
         },
         {
          "t": "不少",
@@ -9851,7 +12293,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "支出",
        "py": "Ná xuéxiào lái shuō jīnnián de jīngfèi zhīchū bǐ qùnián zēngjiā le bù shǎo",
-       "traceKey": "zhichu"
+       "traceKey": "zhichu",
+       "traceInfo": [
+        {
+         "c": "支",
+         "py": "zhī",
+         "hv": "chi"
+        },
+        {
+         "c": "出",
+         "py": "chū",
+         "hv": "xuất"
+        }
+       ]
       },
       {
        "scene": "🔑🏠💵",
@@ -9863,7 +12317,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔑",
          "c": "s",
          "py": "ná zū fángzi lái shuō nǐ",
-         "hv": "nã tô phòng tí lai _ nể"
+         "hv": "nã tô phòng tử lai thuyết nễ"
         },
         {
          "t": "要先付押金",
@@ -9877,12 +12331,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏦",
          "c": "o",
          "py": "zài ànshí huìkuǎn gěi fángdōng",
-         "hv": "tái án thì _ khoản cấp phòng đông"
+         "hv": "tái án thời hối khoản cấp phòng đông"
         }
        ],
        "traceWord": "押金",
        "py": "Ná zū fángzi lái shuō nǐ yào xiān fù yājīn zài ànshí huìkuǎn gěi fángdōng",
-       "traceKey": "yajin"
+       "traceKey": "yajin",
+       "traceInfo": [
+        {
+         "c": "押",
+         "py": "yā",
+         "hv": "áp"
+        },
+        {
+         "c": "金",
+         "py": "jīn",
+         "hv": "kim"
+        }
+       ]
       },
       {
        "scene": "💼🏦💹",
@@ -9894,26 +12360,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💼",
          "c": "s",
          "py": "ná zhè gè jījīn lái shuō tā de zīběn",
-         "hv": "nã _ cá cơ kim lai _ _ đích _ bản"
+         "hv": "nã giá cá cơ kim lai thuyết tha đích tư bản"
         },
         {
          "t": "主要来自",
          "ico": "➡️",
          "c": "v",
          "py": "zhǔyào láizì",
-         "hv": "chúa yếu lai tự"
+         "hv": "chủ yếu lai tự"
         },
         {
          "t": "很多普通人",
          "ico": "👥",
          "c": "o",
          "py": "hěn duō pǔtōng rén",
-         "hv": "_ đa phổ thông nhân"
+         "hv": "ngận đa phổ thông nhân"
         }
        ],
        "traceWord": "基金",
        "py": "Ná zhè gè jījīn lái shuō tā de zīběn zhǔyào láizì hěn duō pǔtōng rén",
-       "traceKey": "jijin"
+       "traceKey": "jijin",
+       "traceInfo": [
+        {
+         "c": "基",
+         "py": "jī",
+         "hv": "cơ"
+        },
+        {
+         "c": "金",
+         "py": "jīn",
+         "hv": "kim"
+        }
+       ]
       },
       {
        "scene": "🏢📉🏛",
@@ -9925,26 +12403,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "ná zhè jiā gōngsī lái shuō zhè cì de sǔnshī",
-         "hv": "nã _ gia công ti lai _ _ thứ đích tốn thất"
+         "hv": "nã giá gia công ti lai thuyết giá thứ đích tổn thất"
         },
         {
          "t": "占了",
          "ico": "🥧",
          "c": "v",
          "py": "zhàn le",
-         "hv": "chiêm liễu"
+         "hv": "chiếm liễu"
         },
         {
          "t": "资产的一半",
          "ico": "🏛",
          "c": "o",
          "py": "zīchǎn de yībàn",
-         "hv": "_ _ đích nhất bán"
+         "hv": "tư sản đích nhất bán"
         }
        ],
        "traceWord": "损失",
        "py": "Ná zhè jiā gōngsī lái shuō zhè cì de sǔnshī zhàn le zīchǎn de yībàn",
-       "traceKey": "sunshi"
+       "traceKey": "sunshi",
+       "traceInfo": [
+        {
+         "c": "损",
+         "py": "sǔn",
+         "hv": "tổn"
+        },
+        {
+         "c": "失",
+         "py": "shī",
+         "hv": "thất"
+        }
+       ]
       },
       {
        "scene": "🎓🏫🤝💴",
@@ -9956,14 +12446,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎓",
          "c": "s",
          "py": "ná zhè gè xuéshēng lái shuō xuéxiào de zīzhù hé bǔtiē",
-         "hv": "nã _ cá học sinh lai _ học hiệu đích _ trợ hoà bổ _"
+         "hv": "nã giá cá học sinh lai thuyết học hiệu đích tư trợ hòa bổ thiếp"
         },
         {
          "t": "让他",
          "ico": "👦",
          "c": "v",
          "py": "ràng tā",
-         "hv": "nhường tha"
+         "hv": "nhượng tha"
         },
         {
          "t": "不用打工",
@@ -9975,7 +12465,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "资助",
        "py": "Ná zhè gè xuéshēng lái shuō xuéxiào de zīzhù hé bǔtiē ràng tā bùyòng dǎgōng",
-       "traceKey": "zizhu"
+       "traceKey": "zizhu",
+       "traceInfo": [
+        {
+         "c": "资",
+         "py": "zī",
+         "hv": "tư"
+        },
+        {
+         "c": "助",
+         "py": "zhù",
+         "hv": "trợ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -10111,26 +12613,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💭",
          "c": "s",
          "py": "zài wǒ kànlái zhè gè wèntí",
-         "hv": "tại ngã khán lai _ cá _ _"
+         "hv": "tại ngã khán lai giá cá vấn đề"
         },
         {
          "t": "的关键是",
          "ico": "🔑",
          "c": "v",
          "py": "de guānjiàn shì",
-         "hv": "đích quan _ thị"
+         "hv": "đích quan kiện thị"
         },
         {
          "t": "时间",
          "ico": "⏰",
          "c": "o",
          "py": "shíjiān",
-         "hv": "thì gian"
+         "hv": "thời gian"
         }
        ],
        "traceWord": "关键",
        "py": "Zài wǒ kànlái zhè gè wèntí de guānjiàn shì shíjiān",
-       "traceKey": "guanjian"
+       "traceKey": "guanjian",
+       "traceInfo": [
+        {
+         "c": "关",
+         "py": "guān",
+         "hv": "quan"
+        },
+        {
+         "c": "键",
+         "py": "jiàn",
+         "hv": "kiện"
+        }
+       ]
       },
       {
        "scene": "🗣️👥⚖️",
@@ -10142,7 +12656,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "zhèngrú dàjiā suǒ shuō zhè gè zhēngyì",
-         "hv": "chính như đại gia sỡ _ _ cá tranh nghị"
+         "hv": "chính như đại gia sở thuyết giá cá tranh nghị"
         },
         {
          "t": "确实",
@@ -10156,12 +12670,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📏",
          "c": "o",
          "py": "hěn dà",
-         "hv": "_ đại"
+         "hv": "ngận đại"
         }
        ],
        "traceWord": "争议",
        "py": "Zhèngrú dàjiā suǒ shuō zhè gè zhēngyì quèshí hěn dà",
-       "traceKey": "zhengyi"
+       "traceKey": "zhengyi",
+       "traceInfo": [
+        {
+         "c": "争",
+         "py": "zhēng",
+         "hv": "tranh"
+        },
+        {
+         "c": "议",
+         "py": "yì",
+         "hv": "nghị"
+        }
+       ]
       },
       {
        "scene": "📅📋👥",
@@ -10173,7 +12699,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📅",
          "c": "s",
          "py": "huìyì de shíjiān hé ānpái",
-         "hv": "hội nghị đích thì gian hoà an bài"
+         "hv": "hội nghị đích thời gian hòa an bài"
         },
         {
          "t": "如下",
@@ -10187,12 +12713,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "o",
          "py": "qǐng dàjiā ànshí cānjiā",
-         "hv": "thỉnh đại gia án thì tham gia"
+         "hv": "thỉnh đại gia án thời tham gia"
         }
        ],
        "traceWord": "如下",
        "py": "Huìyì de shíjiān hé ānpái rúxià qǐng dàjiā ànshí cānjiā",
-       "traceKey": "ruxia"
+       "traceKey": "ruxia",
+       "traceInfo": [
+        {
+         "c": "如",
+         "py": "rú",
+         "hv": "như"
+        },
+        {
+         "c": "下",
+         "py": "xià",
+         "hv": "hạ"
+        }
+       ]
       },
       {
        "scene": "💡✋🌟",
@@ -10204,7 +12742,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💡",
          "c": "s",
          "py": "bǐfang shuō zhè gè xīn shǒufǎ",
-         "hv": "tỉ phương _ _ cá tân thủ pháp"
+         "hv": "tỷ phương thuyết giá cá tân thủ pháp"
         },
         {
          "t": "如同",
@@ -10218,12 +12756,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌟",
          "c": "o",
          "py": "yī gè hěn hǎo de shìfàn",
-         "hv": "nhất cá _ háo đích thị _"
+         "hv": "nhất cá ngận hảo đích thị phạm"
         }
        ],
        "traceWord": "比方",
        "py": "Bǐfang shuō zhè gè xīn shǒufǎ rútóng yī gè hěn hǎo de shìfàn",
-       "traceKey": "bifang"
+       "traceKey": "bifang",
+       "traceInfo": [
+        {
+         "c": "比",
+         "py": "bǐ",
+         "hv": "tỷ"
+        },
+        {
+         "c": "方",
+         "py": "fang",
+         "hv": "phương"
+        }
+       ]
       },
       {
        "scene": "📈💰🏢🛠️",
@@ -10242,19 +12792,36 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "➡️",
          "c": "v",
          "py": "yìwèizhe",
-         "hv": "ý vị trứ"
+         "hv": "ý vị trước"
         },
         {
          "t": "公司必须使用新的手段",
          "ico": "🛠️",
          "c": "o",
          "py": "gōngsī bìxū shǐyòng xīn de shǒuduàn",
-         "hv": "công ti tất tua sứ dụng tân đích thủ đoạn"
+         "hv": "công ti tất tu sử dụng tân đích thủ đoạn"
         }
        ],
        "traceWord": "意味着",
        "py": "Jiàgé shàngshēng yìwèizhe gōngsī bìxū shǐyòng xīn de shǒuduàn",
-       "traceKey": "yiweizhe"
+       "traceKey": "yiweizhe",
+       "traceInfo": [
+        {
+         "c": "意",
+         "py": "yì",
+         "hv": "ý"
+        },
+        {
+         "c": "味",
+         "py": "wèi",
+         "hv": "vị"
+        },
+        {
+         "c": "着",
+         "py": "zhe",
+         "hv": "trước"
+        }
+       ]
       },
       {
        "scene": "👶👀🧑📚",
@@ -10266,26 +12833,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👶",
          "c": "s",
          "py": "zài lǎoshī kànlái xiǎoháir",
-         "hv": "tại lão sư khán lai tiểu hài _"
+         "hv": "tại lão sư khán lai tiểu hài nhi"
         },
         {
          "t": "通过模仿",
          "ico": "🪞",
          "c": "v",
          "py": "tōngguò mófǎng",
-         "hv": "thông quá mô phảng"
+         "hv": "thông quá mô phỏng"
         },
         {
          "t": "大人学习说话",
          "ico": "🗣️",
          "c": "o",
          "py": "dàren xuéxí shuōhuà",
-         "hv": "đại nhân học tập _ thoại"
+         "hv": "đại nhân học tập thuyết thoại"
         }
        ],
        "traceWord": "模仿",
        "py": "Zài lǎoshī kànlái xiǎoháir tōngguò mófǎng dàren xuéxí shuōhuà",
-       "traceKey": "mofang"
+       "traceKey": "mofang",
+       "traceInfo": [
+        {
+         "c": "模",
+         "py": "mó",
+         "hv": "mô"
+        },
+        {
+         "c": "仿",
+         "py": "fǎng",
+         "hv": "phỏng"
+        }
+       ]
       },
       {
        "scene": "🔴🍀😊👥",
@@ -10297,26 +12876,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔴",
          "c": "s",
          "py": "zài hěn duō rén kànlái hóngsè",
-         "hv": "tại _ đa nhân khán lai hồng sắc"
+         "hv": "tại ngận đa nhân khán lai hồng sắc"
         },
         {
          "t": "象征着",
          "ico": "🏷️",
          "c": "v",
          "py": "xiàngzhēng zhe",
-         "hv": "tượng chinh trứ"
+         "hv": "tượng trưng trước"
         },
         {
          "t": "好运和幸福",
          "ico": "🍀",
          "c": "o",
          "py": "hǎoyùn hé xìngfú",
-         "hv": "háo vận hoà _ phúc"
+         "hv": "hảo vận hòa hạnh phúc"
         }
        ],
        "traceWord": "象征",
        "py": "Zài hěn duō rén kànlái hóngsè xiàngzhēng zhe hǎoyùn hé xìngfú",
-       "traceKey": "xiangzheng"
+       "traceKey": "xiangzheng",
+       "traceInfo": [
+        {
+         "c": "象",
+         "py": "xiàng",
+         "hv": "tượng"
+        },
+        {
+         "c": "征",
+         "py": "zhēng",
+         "hv": "trưng"
+        }
+       ]
       },
       {
        "scene": "💼🏢🔄",
@@ -10335,19 +12926,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "➡️",
          "c": "v",
          "py": "shǐde",
-         "hv": "sứ đắc"
+         "hv": "sử đắc"
         },
         {
          "t": "公司的形态发生了变化",
          "ico": "🔄",
          "c": "o",
          "py": "gōngsī de xíngtài fāshēng le biànhuà",
-         "hv": "công ti đích hình thái _ sinh liễu biến hoá"
+         "hv": "công ti đích hình thái phát sinh liễu biến hóa"
         }
        ],
        "traceWord": "形态",
        "py": "Xīn de gōngzuò móshì shǐde gōngsī de xíngtài fāshēng le biànhuà",
-       "traceKey": "xingtai"
+       "traceKey": "xingtai",
+       "traceInfo": [
+        {
+         "c": "形",
+         "py": "xíng",
+         "hv": "hình"
+        },
+        {
+         "c": "态",
+         "py": "tài",
+         "hv": "thái"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -10479,7 +13082,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚆",
          "c": "s",
          "py": "cóng Běijīng zhì Shànghǎi de huǒ chēpiào",
-         "hv": "tòng _ kinh chí thượng hải đích hoả xa phiếu"
+         "hv": "tòng bắc kinh chí thượng hải đích hỏa xa phiếu"
         },
         {
          "t": "已经",
@@ -10498,7 +13101,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "至",
        "py": "Cóng Běijīng zhì Shànghǎi de huǒ chēpiào yǐjīng mài wánle",
-       "traceKey": "zhi"
+       "traceKey": "zhi",
+       "traceInfo": [
+        {
+         "c": "至",
+         "py": "zhì",
+         "hv": "chí"
+        }
+       ]
       },
       {
        "scene": "🚌🏁🏠",
@@ -10510,26 +13120,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏁",
          "c": "s",
          "py": "zhè liàng chē de zhōngdiǎn zhàn",
-         "hv": "_ _ xa đích chung điểm trạm"
+         "hv": "giá lượng xa đích chung điểm trạm"
         },
         {
          "t": "离",
          "ico": "↔️",
          "c": "v",
          "py": "lí",
-         "hv": "li"
+         "hv": "ly"
         },
         {
          "t": "我家很近",
          "ico": "🏠",
          "c": "o",
          "py": "wǒ jiā hěn jìn",
-         "hv": "ngã gia _ cận"
+         "hv": "ngã gia ngận cận"
         }
        ],
        "traceWord": "终点",
        "py": "Zhè liàng chē de zhōngdiǎn zhàn lí wǒ jiā hěn jìn",
-       "traceKey": "zhongdian"
+       "traceKey": "zhongdian",
+       "traceInfo": [
+        {
+         "c": "终",
+         "py": "zhōng",
+         "hv": "chung"
+        },
+        {
+         "c": "点",
+         "py": "diǎn",
+         "hv": "điểm"
+        }
+       ]
       },
       {
        "scene": "📚🗓️🌟",
@@ -10541,26 +13163,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏫",
          "c": "s",
          "py": "zhè gè péixùnbān",
-         "hv": "_ cá bồi huấn ban"
+         "hv": "giá cá bồi huấn ban"
         },
         {
          "t": "为期三个月",
          "ico": "🗓️",
          "c": "v",
          "py": "wéiqī sān gè yuè",
-         "hv": "_ kì tam cá nguyệt"
+         "hv": "vi kỳ tam cá nguyệt"
         },
         {
          "t": "内容很丰富",
          "ico": "📚",
          "c": "o",
          "py": "nèiróng hěn fēngfù",
-         "hv": "nội dung _ phong phú"
+         "hv": "nội dung ngận phong phú"
         }
        ],
        "traceWord": "为期",
        "py": "Zhè gè péixùnbān wéiqī sān gè yuè nèiróng hěn fēngfù",
-       "traceKey": "weiqi"
+       "traceKey": "weiqi",
+       "traceInfo": [
+        {
+         "c": "为",
+         "py": "wéi",
+         "hv": "vi"
+        },
+        {
+         "c": "期",
+         "py": "qī",
+         "hv": "kỳ"
+        }
+       ]
       },
       {
        "scene": "📅✅💼",
@@ -10572,14 +13206,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📅",
          "c": "s",
          "py": "dào zhè gè yuèdǐ wéizhǐ",
-         "hv": "đáo _ cá nguyệt để _ chỉ"
+         "hv": "đáo giá cá nguyệt để vi chỉ"
         },
         {
          "t": "我们已经完成了",
          "ico": "✅",
          "c": "v",
          "py": "wǒmen yǐjīng wánchéng le",
-         "hv": "ngã món dĩ kinh hoàn thành liễu"
+         "hv": "ngã môn dĩ kinh hoàn thành liễu"
         },
         {
          "t": "一半的工作",
@@ -10591,7 +13225,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "为止",
        "py": "Dào zhè gè yuèdǐ wéizhǐ wǒmen yǐjīng wánchéng le yībàn de gōngzuò",
-       "traceKey": "weizhi"
+       "traceKey": "weizhi",
+       "traceInfo": [
+        {
+         "c": "为",
+         "py": "wéi",
+         "hv": "vi"
+        },
+        {
+         "c": "止",
+         "py": "zhǐ",
+         "hv": "chỉ"
+        }
+       ]
       },
       {
        "scene": "🌧️⚽⏸️",
@@ -10603,26 +13249,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌧️",
          "c": "s",
          "py": "yīnwèi yǔ tài dà le bǐsài",
-         "hv": "nhân _ _ thái đại liễu tỉ _"
+         "hv": "nhân vị vũ thái đại liễu tỷ tái"
         },
         {
          "t": "只好暂停",
          "ico": "⏸️",
          "c": "v",
          "py": "zhǐhǎo zàntíng",
-         "hv": "chỉ háo _ đình"
+         "hv": "chỉ hảo tạm đình"
         },
         {
          "t": "一个小时",
          "ico": "🕐",
          "c": "o",
          "py": "yī gè xiǎoshí",
-         "hv": "nhất cá tiểu thì"
+         "hv": "nhất cá tiểu thời"
         }
        ],
        "traceWord": "暂停",
        "py": "Yīnwèi yǔ tài dà le bǐsài zhǐhǎo zàntíng yī gè xiǎoshí",
-       "traceKey": "zanting"
+       "traceKey": "zanting",
+       "traceInfo": [
+        {
+         "c": "暂",
+         "py": "zàn",
+         "hv": "tạm"
+        },
+        {
+         "c": "停",
+         "py": "tíng",
+         "hv": "đình"
+        }
+       ]
       },
       {
        "scene": "🏢⚠️💪",
@@ -10634,26 +13292,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "wǒmen gōngsī",
-         "hv": "ngã món công ti"
+         "hv": "ngã môn công ti"
         },
         {
          "t": "暂时处在",
          "ico": "⏳",
          "c": "v",
          "py": "zànshí chǔzài",
-         "hv": "_ thì xử tại"
+         "hv": "tạm thời xử tại"
         },
         {
          "t": "很困难的阶段",
          "ico": "⚠️",
          "c": "o",
          "py": "hěn kùnnan de jiēduàn",
-         "hv": "_ khốn nan đích giai đoạn"
+         "hv": "ngận khốn nan đích giai đoạn"
         }
        ],
        "traceWord": "暂时",
        "py": "Wǒmen gōngsī zànshí chǔzài hěn kùnnan de jiēduàn",
-       "traceKey": "zanshi"
+       "traceKey": "zanshi",
+       "traceInfo": [
+        {
+         "c": "暂",
+         "py": "zàn",
+         "hv": "tạm"
+        },
+        {
+         "c": "时",
+         "py": "shí",
+         "hv": "thời"
+        }
+       ]
       },
       {
        "scene": "🗣️📋👥",
@@ -10665,26 +13335,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "zhè cì huìyì",
-         "hv": "_ thứ hội nghị"
+         "hv": "giá thứ hội nghị"
         },
         {
          "t": "围绕新产品展开",
          "ico": "📦",
          "c": "v",
          "py": "wéirào xīn chǎnpǐn zhǎnkāi",
-         "hv": "vè nhiễu tân _ phẩm triển khai"
+         "hv": "vi nhiễu tân sản phẩm triển khai"
         },
         {
          "t": "大家当场提出了很多意见",
          "ico": "👥",
          "c": "o",
          "py": "dàjiā dāngchǎng tíchū le hěn duō yìjiàn",
-         "hv": "đại gia đương trường đề xuất liễu _ đa ý kiến"
+         "hv": "đại gia đương trường đề xuất liễu ngận đa ý kiến"
         }
        ],
        "traceWord": "围绕",
        "py": "Zhè cì huìyì wéirào xīn chǎnpǐn zhǎnkāi dàjiā dāngchǎng tíchū le hěn duō yìjiàn",
-       "traceKey": "weirao"
+       "traceKey": "weirao",
+       "traceInfo": [
+        {
+         "c": "围",
+         "py": "wéi",
+         "hv": "vi"
+        },
+        {
+         "c": "绕",
+         "py": "rào",
+         "hv": "nhiễu"
+        }
+       ]
       },
       {
        "scene": "🏢🔒👥",
@@ -10710,12 +13392,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "o",
          "py": "ràng dàjiā cóngzhōng xuǎnzé yī gè bànfǎ",
-         "hv": "nhường đại gia tòng trung tuyển trạch nhất cá _ pháp"
+         "hv": "nhượng đại gia tòng trung tuyển trạch nhất cá biện pháp"
         }
        ],
        "traceWord": "出于",
        "py": "Gōngsī chūyú ānquán kǎolǜ ràng dàjiā cóngzhōng xuǎnzé yī gè bànfǎ",
-       "traceKey": "chuyu"
+       "traceKey": "chuyu",
+       "traceInfo": [
+        {
+         "c": "出",
+         "py": "chū",
+         "hv": "xuất"
+        },
+        {
+         "c": "于",
+         "py": "yú",
+         "hv": "vu"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -10774,9 +13468,9 @@ window.CURRICULUM_STAGES[5] = {
        "ans": "通用，全国都可以用",
        "opts": [
         {
-         "txt": "我昨天去了书店",
-         "ico": "📚",
-         "py": "Wǒ zuótiān qù le shūdiàn"
+         "txt": "这次会议以讨论安全问题为主",
+         "ico": "📋",
+         "py": "Zhè cì huìyì yǐ tǎolùn ānquán wèntí wéizhǔ"
         },
         {
          "txt": "它是红色的",
@@ -10847,26 +13541,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛋️",
          "c": "s",
          "py": "zhè gè kètīng",
-         "hv": "_ cá khách _"
+         "hv": "giá cá khách sảnh"
         },
         {
          "t": "够大的",
          "ico": "📏",
          "c": "v",
          "py": "gòu dà de",
-         "hv": "_ đại đích"
+         "hv": "cấu đại đích"
         },
         {
          "t": "可以放下一张大桌子",
          "ico": "🪑",
          "c": "o",
          "py": "kěyǐ fàngxia yī zhāng dà zhuōzi",
-         "hv": "khả _ phóng hạ nhất trương đại _ tí"
+         "hv": "khả dĩ phóng hạ nhất trương đại trác tử"
         }
        ],
        "traceWord": "客厅",
        "py": "Zhè gè kètīng gòu dà de kěyǐ fàngxia yī zhāng dà zhuōzi",
-       "traceKey": "keting"
+       "traceKey": "keting",
+       "traceInfo": [
+        {
+         "c": "客",
+         "py": "kè",
+         "hv": "khách"
+        },
+        {
+         "c": "厅",
+         "py": "tīng",
+         "hv": "sảnh"
+        }
+       ]
       },
       {
        "scene": "🛏️🪟🎨",
@@ -10878,26 +13584,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🪟",
          "c": "s",
          "py": "wòshì de chuānglián",
-         "hv": "_ thất đích song rèm"
+         "hv": "ngọa thất đích song liêm"
         },
         {
          "t": "够长的",
          "ico": "📏",
          "c": "v",
          "py": "gòu cháng de",
-         "hv": "_ trường đích"
+         "hv": "cấu trường đích"
         },
         {
          "t": "而且颜色很漂亮",
          "ico": "🎨",
          "c": "o",
          "py": "érqiě yánsè hěn piàoliang",
-         "hv": "_ thả _ sắc _ phều _"
+         "hv": "nhi thả nhan sắc ngận phiêu lượng"
         }
        ],
        "traceWord": "窗帘",
        "py": "Wòshì de chuānglián gòu cháng de érqiě yánsè hěn piàoliang",
-       "traceKey": "chuanglian"
+       "traceKey": "chuanglian",
+       "traceInfo": [
+        {
+         "c": "窗",
+         "py": "chuāng",
+         "hv": "song"
+        },
+        {
+         "c": "帘",
+         "py": "lián",
+         "hv": "liêm"
+        }
+       ]
       },
       {
        "scene": "🧱🏠🖌️",
@@ -10909,14 +13627,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧱",
          "c": "s",
          "py": "xīn fángzi de qiángbì",
-         "hv": "tân phòng tí đích tường bích"
+         "hv": "tân phòng tử đích tường bích"
         },
         {
          "t": "够白的",
          "ico": "⚪",
          "c": "v",
          "py": "gòu bái de",
-         "hv": "_ bạch đích"
+         "hv": "cấu bạch đích"
         },
         {
          "t": "不用再刷了",
@@ -10928,7 +13646,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "墙壁",
        "py": "Xīn fángzi de qiángbì gòu bái de bùyòng zài shuā le",
-       "traceKey": "qiangbi"
+       "traceKey": "qiangbi",
+       "traceInfo": [
+        {
+         "c": "墙",
+         "py": "qiáng",
+         "hv": "tường"
+        },
+        {
+         "c": "壁",
+         "py": "bì",
+         "hv": "bích"
+        }
+       ]
       },
       {
        "scene": "🪣🧼👕",
@@ -10940,26 +13670,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🪣",
          "c": "s",
          "py": "zhè gè liǎnpén",
-         "hv": "_ cá _ bồn"
+         "hv": "giá cá kiểm bồn"
         },
         {
          "t": "够深的",
          "ico": "🌊",
          "c": "v",
          "py": "gòu shēn de",
-         "hv": "_ thâm đích"
+         "hv": "cấu thâm đích"
         },
         {
          "t": "可以洗很多衣服",
          "ico": "👕",
          "c": "o",
          "py": "kěyǐ xǐ hěn duō yīfu",
-         "hv": "khả _ tẩy _ đa y phục"
+         "hv": "khả dĩ tẩy ngận đa y phục"
         }
        ],
        "traceWord": "脸盆",
        "py": "Zhè gè liǎnpén gòu shēn de kěyǐ xǐ hěn duō yīfu",
-       "traceKey": "lianpen"
+       "traceKey": "lianpen",
+       "traceInfo": [
+        {
+         "c": "脸",
+         "py": "liǎn",
+         "hv": "kiểm"
+        },
+        {
+         "c": "盆",
+         "py": "pén",
+         "hv": "bồn"
+        }
+       ]
       },
       {
        "scene": "📦⚖️🎁",
@@ -10971,26 +13713,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📦",
          "c": "s",
          "py": "zhè gè hézi",
-         "hv": "_ cá hộp tí"
+         "hv": "giá cá hạp tử"
         },
         {
          "t": "够重的",
          "ico": "⚖️",
          "c": "v",
          "py": "gòu zhòng de",
-         "hv": "_ trọng đích"
+         "hv": "cấu trọng đích"
         },
         {
          "t": "里面一定有很多东西",
          "ico": "🎁",
          "c": "o",
          "py": "lǐmiàn yīdìng yǒu hěn duō dōngxi",
-         "hv": "lịa _ nhất định hữu _ đa đông tây"
+         "hv": "lý diện nhất định hữu ngận đa đông tây"
         }
        ],
        "traceWord": "盒子",
        "py": "Zhè gè hézi gòu zhòng de lǐmiàn yīdìng yǒu hěn duō dōngxi",
-       "traceKey": "hezi"
+       "traceKey": "hezi",
+       "traceInfo": [
+        {
+         "c": "盒",
+         "py": "hé",
+         "hv": "hạp"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "🖥️📚🪑",
@@ -11002,26 +13756,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "s",
          "py": "wǒ de shūzhuō pángbiān de shūguì",
-         "hv": "ngã đích thư _ bàng biên đích thư cũi"
+         "hv": "ngã đích thư trác bàng biên đích thư quỹ"
         },
         {
          "t": "够高的",
          "ico": "📏",
          "c": "v",
          "py": "gòu gāo de",
-         "hv": "_ cao đích"
+         "hv": "cấu cao đích"
         },
         {
          "t": "放了很多书",
          "ico": "📖",
          "c": "o",
          "py": "fàng le hěn duō shū",
-         "hv": "phóng liễu _ đa thư"
+         "hv": "phóng liễu ngận đa thư"
         }
        ],
        "traceWord": "书桌",
        "py": "Wǒ de shūzhuō pángbiān de shūguì gòu gāo de fàng le hěn duō shū",
-       "traceKey": "shuzhuo"
+       "traceKey": "shuzhuo",
+       "traceInfo": [
+        {
+         "c": "书",
+         "py": "shū",
+         "hv": "thư"
+        },
+        {
+         "c": "桌",
+         "py": "zhuō",
+         "hv": "trác"
+        }
+       ]
       },
       {
        "scene": "🏫🛏️🤫",
@@ -11033,14 +13799,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏫",
          "c": "s",
          "py": "wǒmen sùshè gébì de fángjiān",
-         "hv": "ngã món túc xá cách bích đích phòng gian"
+         "hv": "ngã môn túc xá cách bích đích phòng gian"
         },
         {
          "t": "够安静的",
          "ico": "🤫",
          "c": "v",
          "py": "gòu ānjìng de",
-         "hv": "_ an _ đích"
+         "hv": "cấu an tĩnh đích"
         },
         {
          "t": "适合看书",
@@ -11052,7 +13818,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "宿舍",
        "py": "Wǒmen sùshè gébì de fángjiān gòu ānjìng de shìhé kàn shū",
-       "traceKey": "sushe"
+       "traceKey": "sushe",
+       "traceInfo": [
+        {
+         "c": "宿",
+         "py": "sù",
+         "hv": "túc"
+        },
+        {
+         "c": "舍",
+         "py": "shè",
+         "hv": "xá"
+        }
+       ]
       },
       {
        "scene": "🏢🐟🌊",
@@ -11064,26 +13842,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "gōngsī dàtīng lǐ de chízi",
-         "hv": "công ti đại _ lịa đích trì tí"
+         "hv": "công ti đại sảnh lý đích trì tử"
         },
         {
          "t": "够漂亮的",
          "ico": "✨",
          "c": "v",
          "py": "gòu piàoliang de",
-         "hv": "_ phều _ đích"
+         "hv": "cấu phiêu lượng đích"
         },
         {
          "t": "里面养了很多鱼",
          "ico": "🐟",
          "c": "o",
          "py": "lǐmiàn yǎng le hěn duō yú",
-         "hv": "lịa _ dưỡng liễu _ đa ngư"
+         "hv": "lý diện dưỡng liễu ngận đa ngư"
         }
        ],
        "traceWord": "池子",
        "py": "Gōngsī dàtīng lǐ de chízi gòu piàoliang de lǐmiàn yǎng le hěn duō yú",
-       "traceKey": "chizi"
+       "traceKey": "chizi",
+       "traceInfo": [
+        {
+         "c": "池",
+         "py": "chí",
+         "hv": "trì"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -11220,7 +14010,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏪",
          "c": "s",
          "py": "zhè jiā diàn",
-         "hv": "_ gia điếm"
+         "hv": "giá gia điếm"
         },
         {
          "t": "大的大小的小",
@@ -11234,12 +14024,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✅",
          "c": "o",
          "py": "dōngxi hěn qíquán",
-         "hv": "đông tây _ tày toàn"
+         "hv": "đông tây ngận tề toàn"
         }
        ],
        "traceWord": "齐全",
        "py": "Zhè jiā diàn dà de dàxiǎo de xiǎo dōngxi hěn qíquán",
-       "traceKey": "qiquan"
+       "traceKey": "qiquan",
+       "traceInfo": [
+        {
+         "c": "齐",
+         "py": "qí",
+         "hv": "tề"
+        },
+        {
+         "c": "全",
+         "py": "quán",
+         "hv": "toàn"
+        }
+       ]
       },
       {
        "scene": "🏫🗣✏️😓",
@@ -11251,7 +14053,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏫",
          "c": "s",
          "py": "kètáng shàng",
-         "hv": "khoá đường thượng"
+         "hv": "khóa đường thượng"
         },
         {
          "t": "讲的讲练的练",
@@ -11265,12 +14067,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😓",
          "c": "o",
          "py": "dàjiā dōu hěn xīnkǔ",
-         "hv": "đại gia đô _ tân khổ"
+         "hv": "đại gia đô ngận tân khổ"
         }
        ],
        "traceWord": "辛苦",
        "py": "Kètáng shàng jiǎng de jiǎng liàn de liàn dàjiā dōu hěn xīnkǔ",
-       "traceKey": "xinku"
+       "traceKey": "xinku",
+       "traceInfo": [
+        {
+         "c": "辛",
+         "py": "xīn",
+         "hv": "tân"
+        },
+        {
+         "c": "苦",
+         "py": "kǔ",
+         "hv": "khổ"
+        }
+       ]
       },
       {
        "scene": "💼⏰🐢",
@@ -11282,7 +14096,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💼",
          "c": "s",
          "py": "kāihuì shí",
-         "hv": "khai hội thì"
+         "hv": "khai hội thời"
         },
         {
          "t": "早的早迟的迟",
@@ -11296,12 +14110,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙂",
          "c": "o",
          "py": "dàjiā dōu xíguàn le",
-         "hv": "đại gia đô tập quen liễu"
+         "hv": "đại gia đô tập quán liễu"
         }
        ],
        "traceWord": "迟",
        "py": "Kāihuì shí zǎo de zǎo chí de chí dàjiā dōu xíguàn le",
-       "traceKey": "chi"
+       "traceKey": "chi",
+       "traceInfo": [
+        {
+         "c": "迟",
+         "py": "chí",
+         "hv": "trì"
+        }
+       ]
       },
       {
        "scene": "🏺💎🛡",
@@ -11313,7 +14134,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏺",
          "c": "s",
          "py": "zhèxiē dōngxi",
-         "hv": "_ ta đông tây"
+         "hv": "giá ta đông tây"
         },
         {
          "t": "古老的古老珍贵的珍贵",
@@ -11327,12 +14148,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛡",
          "c": "o",
          "py": "dōu yào bǎohù hǎo",
-         "hv": "đô yếu bảo hộ háo"
+         "hv": "đô yếu bảo hộ hảo"
         }
        ],
        "traceWord": "古老",
        "py": "Zhèxiē dōngxi gǔlǎo de gǔlǎo zhēnguì de zhēnguì dōu yào bǎohù hǎo",
-       "traceKey": "gulao"
+       "traceKey": "gulao",
+       "traceInfo": [
+        {
+         "c": "古",
+         "py": "gǔ",
+         "hv": "cổ"
+        },
+        {
+         "c": "老",
+         "py": "lǎo",
+         "hv": "lão"
+        }
+       ]
       },
       {
        "scene": "🏫👩‍🏫😠😊",
@@ -11344,14 +14177,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👩‍🏫",
          "c": "s",
          "py": "xuéxiào lǐ de lǎoshī",
-         "hv": "học hiệu lịa đích lão sư"
+         "hv": "học hiệu lý đích lão sư"
         },
         {
          "t": "严厉的严厉温和的温和",
          "ico": "😠",
          "c": "v",
          "py": "yánlì de yánlì wēnhé de wēnhé",
-         "hv": "nghiêm lẹ đích nghiêm lẹ ồn hoà đích ồn hoà"
+         "hv": "nghiêm lệ đích nghiêm lệ ôn hòa đích ôn hòa"
         },
         {
          "t": "学生都能学到东西",
@@ -11363,7 +14196,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "严厉",
        "py": "Xuéxiào lǐ de lǎoshī yánlì de yánlì wēnhé de wēnhé xuéshēng dōu néng xué dào dōngxi",
-       "traceKey": "yanli"
+       "traceKey": "yanli",
+       "traceInfo": [
+        {
+         "c": "严",
+         "py": "yán",
+         "hv": "nghiêm"
+        },
+        {
+         "c": "厉",
+         "py": "lì",
+         "hv": "lệ"
+        }
+       ]
       },
       {
        "scene": "🏢🗣👂😐",
@@ -11389,12 +14234,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😐",
          "c": "o",
          "py": "dàjiā dōu hěn yánsù",
-         "hv": "đại gia đô _ nghiêm _"
+         "hv": "đại gia đô ngận nghiêm túc"
         }
        ],
        "traceWord": "严肃",
        "py": "Huìyì shàng jiǎng de jiǎng tīng de tīng dàjiā dōu hěn yánsù",
-       "traceKey": "yansu"
+       "traceKey": "yansu",
+       "traceInfo": [
+        {
+         "c": "严",
+         "py": "yán",
+         "hv": "nghiêm"
+        },
+        {
+         "c": "肃",
+         "py": "sù",
+         "hv": "túc"
+        }
+       ]
       },
       {
        "scene": "📚🙋💡",
@@ -11406,26 +14263,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "s",
          "py": "shàngkè shí",
-         "hv": "thượng khoá thì"
+         "hv": "thượng khóa thời"
         },
         {
          "t": "提问的提问回答的回答",
          "ico": "🙋",
          "c": "v",
          "py": "tíwèn de tíwèn huídá de huídá",
-         "hv": "đề _ đích đề _ hồi đáp đích hồi đáp"
+         "hv": "đề vấn đích đề vấn hồi đáp đích hồi đáp"
         },
         {
          "t": "内容详细而且很广泛",
          "ico": "💡",
          "c": "o",
          "py": "nèiróng xiángxì érqiě hěn guǎngfàn",
-         "hv": "nội dung tường tới _ thả _ quảng phiếm"
+         "hv": "nội dung tường tế nhi thả ngận quảng phiếm"
         }
        ],
        "traceWord": "详细",
        "py": "Shàngkè shí tíwèn de tíwèn huídá de huídá nèiróng xiángxì érqiě hěn guǎngfàn",
-       "traceKey": "xiangxi"
+       "traceKey": "xiangxi",
+       "traceInfo": [
+        {
+         "c": "详",
+         "py": "xiáng",
+         "hv": "tường"
+        },
+        {
+         "c": "细",
+         "py": "xì",
+         "hv": "tế"
+        }
+       ]
       },
       {
        "scene": "🏭🛠💰👍",
@@ -11437,26 +14306,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "s",
          "py": "zhè jiā gōngsī",
-         "hv": "_ gia công ti"
+         "hv": "giá gia công ti"
         },
         {
          "t": "做的做卖的卖",
          "ico": "🛠",
          "c": "v",
          "py": "zuò de zuò mài de mài",
-         "hv": "_ đích _ mại đích mại"
+         "hv": "tố đích tố mại đích mại"
         },
         {
          "t": "产品一流服务也很棒",
          "ico": "👍",
          "c": "o",
          "py": "chǎnpǐn yīliú fúwù yě hěn bàng",
-         "hv": "_ phẩm nhất lưu phục vụ dã _ vổng"
+         "hv": "sản phẩm nhất lưu phục vụ dã ngận bổng"
         }
        ],
        "traceWord": "一流",
        "py": "Zhè jiā gōngsī zuò de zuò mài de mài chǎnpǐn yīliú fúwù yě hěn bàng",
-       "traceKey": "yiliu"
+       "traceKey": "yiliu",
+       "traceInfo": [
+        {
+         "c": "一",
+         "py": "yī",
+         "hv": "nhất"
+        },
+        {
+         "c": "流",
+         "py": "liú",
+         "hv": "lưu"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -11551,7 +14432,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "检查了我看得很仔细",
          "ico": "🔍",
-         "py": "Jiǎnchá le wǒ kàn dé hěn zǐxì"
+         "py": "Jiǎnchá le wǒ kàn de hěn zǐxì"
         }
        ],
        "qpy": "Nǐ jiǎnchá zhè fèn hétóng le ma?"
@@ -11589,26 +14470,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌀",
          "c": "s",
          "py": "zhè cì táifēng",
-         "hv": "_ thứ thai phong"
+         "hv": "giá thứ đài phong"
         },
         {
          "t": "在夜里吹倒了",
          "ico": "💨",
          "c": "v",
          "py": "zài yèlǐ chuī dǎo le",
-         "hv": "tại dạ lịa xuy đảo liễu"
+         "hv": "tại dạ lý xuy đảo liễu"
         },
         {
          "t": "很多大树",
          "ico": "🌳",
          "c": "o",
          "py": "hěn duō dà shù",
-         "hv": "_ đa đại thụ"
+         "hv": "ngận đa đại thụ"
         }
        ],
        "traceWord": "台风",
        "py": "Zhè cì táifēng zài yèlǐ chuī dǎo le hěn duō dà shù",
-       "traceKey": "taifeng"
+       "traceKey": "taifeng",
+       "traceInfo": [
+        {
+         "c": "台",
+         "py": "tái",
+         "hv": "đài"
+        },
+        {
+         "c": "风",
+         "py": "fēng",
+         "hv": "phong"
+        }
+       ]
       },
       {
        "scene": "🔥🚒👨‍🚒",
@@ -11620,7 +14513,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔥",
          "c": "s",
          "py": "huǒzāi xiànchǎng",
-         "hv": "hoả tai hiện trường"
+         "hv": "hỏa tai hiện trường"
         },
         {
          "t": "来了",
@@ -11639,7 +14532,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "消防",
        "py": "Huǒzāi xiànchǎng lái le shí gè xiāofáng duìyuán",
-       "traceKey": "xiaofang"
+       "traceKey": "xiaofang",
+       "traceInfo": [
+        {
+         "c": "消",
+         "py": "xiāo",
+         "hv": "tiêu"
+        },
+        {
+         "c": "防",
+         "py": "fáng",
+         "hv": "phòng"
+        }
+       ]
       },
       {
        "scene": "🏫🏚👨‍👩‍👧",
@@ -11651,7 +14556,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏫",
          "c": "s",
          "py": "zāiqū de xuéxiào lǐ",
-         "hv": "tai khu đích học hiệu lịa"
+         "hv": "tai khu đích học hiệu lý"
         },
         {
          "t": "住了",
@@ -11665,12 +14570,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👨‍👩‍👧",
          "c": "o",
          "py": "hěn duō shòuzāi qúnzhòng",
-         "hv": "_ đa thụ tai quần chúng"
+         "hv": "ngận đa thụ tai quần chúng"
         }
        ],
        "traceWord": "受灾",
        "py": "Zāiqū de xuéxiào lǐ zhù le hěn duō shòuzāi qúnzhòng",
-       "traceKey": "shouzai"
+       "traceKey": "shouzai",
+       "traceInfo": [
+        {
+         "c": "受",
+         "py": "shòu",
+         "hv": "thụ"
+        },
+        {
+         "c": "灾",
+         "py": "zāi",
+         "hv": "tai"
+        }
+       ]
       },
       {
        "scene": "🤝📦💰",
@@ -11682,7 +14599,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "s",
          "py": "wèile jiùzāi",
-         "hv": "_ liễu cứu tai"
+         "hv": "vị liễu cứu tai"
         },
         {
          "t": "各地送来了",
@@ -11696,12 +14613,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💰",
          "c": "o",
          "py": "hěn duō qián hé dōngxi",
-         "hv": "_ đa tiền hoà đông tây"
+         "hv": "ngận đa tiền hòa đông tây"
         }
        ],
        "traceWord": "救灾",
        "py": "Wèile jiùzāi gèdì sòng lái le hěn duō qián hé dōngxi",
-       "traceKey": "jiuzai"
+       "traceKey": "jiuzai",
+       "traceInfo": [
+        {
+         "c": "救",
+         "py": "jiù",
+         "hv": "cứu"
+        },
+        {
+         "c": "灾",
+         "py": "zāi",
+         "hv": "tai"
+        }
+       ]
       },
       {
        "scene": "🌧🌊🏘",
@@ -11713,7 +14642,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌧",
          "c": "s",
          "py": "liánxù jǐ tiān de yǔshuǐ",
-         "hv": "liên tục kỉ thiên đích _ thuỷ"
+         "hv": "liên tục kỷ thiên đích vũ thủy"
         },
         {
          "t": "造成了",
@@ -11727,12 +14656,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌊",
          "c": "o",
          "py": "yánzhòng de shuǐzāi",
-         "hv": "nghiêm trọng đích thuỷ tai"
+         "hv": "nghiêm trọng đích thủy tai"
         }
        ],
        "traceWord": "水灾",
        "py": "Liánxù jǐ tiān de yǔshuǐ zàochéng le yánzhòng de shuǐzāi",
-       "traceKey": "shuizai"
+       "traceKey": "shuizai",
+       "traceInfo": [
+        {
+         "c": "水",
+         "py": "shuǐ",
+         "hv": "thủy"
+        },
+        {
+         "c": "灾",
+         "py": "zāi",
+         "hv": "tai"
+        }
+       ]
       },
       {
        "scene": "🌍🏚⚠️",
@@ -11744,7 +14685,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌍",
          "c": "s",
          "py": "dìzhèn",
-         "hv": "địa _"
+         "hv": "địa chấn"
         },
         {
          "t": "是",
@@ -11758,12 +14699,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚠️",
          "c": "o",
          "py": "yī zhǒng yánzhòng de zìrán zāihài",
-         "hv": "nhất chõng nghiêm trọng đích tự nhiên tai hại"
+         "hv": "nhất chủng nghiêm trọng đích tự nhiên tai hại"
         }
        ],
        "traceWord": "灾害",
        "py": "Dìzhèn shì yī zhǒng yánzhòng de zìrán zāihài",
-       "traceKey": "zaihai"
+       "traceKey": "zaihai",
+       "traceInfo": [
+        {
+         "c": "灾",
+         "py": "zāi",
+         "hv": "tai"
+        },
+        {
+         "c": "害",
+         "py": "hài",
+         "hv": "hại"
+        }
+       ]
       },
       {
        "scene": "🌧🚶🤕📱",
@@ -11775,26 +14728,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "Xiǎolǐ",
-         "hv": "tiểu lí"
+         "hv": "tiểu lý"
         },
         {
          "t": "在路上摔倒了",
          "ico": "🚶",
          "c": "v",
          "py": "zài lùshang shuāidǎo le",
-         "hv": "tại lộ thượng _ đảo liễu"
+         "hv": "tại lộ thượng suất đảo liễu"
         },
         {
          "t": "手机也摔坏了",
          "ico": "📱",
          "c": "o",
          "py": "shǒujī yě shuāi huài le",
-         "hv": "thủ cơ dã _ hoại liễu"
+         "hv": "thủ cơ dã suất hoại liễu"
         }
        ],
        "traceWord": "摔倒",
        "py": "Xiǎolǐ zài lùshang shuāidǎo le shǒujī yě shuāi huài le",
-       "traceKey": "shuaidao"
+       "traceKey": "shuaidao",
+       "traceInfo": [
+        {
+         "c": "摔",
+         "py": "shuāi",
+         "hv": "suất"
+        },
+        {
+         "c": "倒",
+         "py": "dǎo",
+         "hv": "đảo"
+        }
+       ]
       },
       {
        "scene": "☀️🚗🌳💥",
@@ -11806,7 +14771,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚗",
          "c": "s",
          "py": "tiānqì qínglǎng shí nà liàng chē",
-         "hv": "thiên khí tạnh lãng thì na _ xa"
+         "hv": "thiên khí tình lãng thời na lượng xa"
         },
         {
          "t": "却撞了",
@@ -11820,12 +14785,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌳",
          "c": "o",
          "py": "yī kē shù",
-         "hv": "nhất quả thụ"
+         "hv": "nhất khỏa thụ"
         }
        ],
        "traceWord": "晴朗",
        "py": "Tiānqì qínglǎng shí nà liàng chē què zhuàng le yī kē shù",
-       "traceKey": "qinglang"
+       "traceKey": "qinglang",
+       "traceInfo": [
+        {
+         "c": "晴",
+         "py": "qíng",
+         "hv": "tình"
+        },
+        {
+         "c": "朗",
+         "py": "lǎng",
+         "hv": "lãng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -11886,7 +14863,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "这辆车坐五个人",
          "ico": "🚗",
-         "py": "Zhè liàng chē zuò wǔ gèrén"
+         "py": "Zhè liàng chē zuò wǔ gè rén"
         },
         {
          "txt": "这张桌子放两本书",
@@ -11896,10 +14873,10 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "这锅饭吃十个人",
          "ico": "🍚",
-         "py": "Zhè guō fàn chī shí gèrén"
+         "py": "Zhè guō fàn chī shí gè rén"
         }
        ],
-       "qpy": "Zhè guō fàn gòu jǐ gèrén chī?"
+       "qpy": "Zhè guō fàn gòu jǐ gè rén chī?"
       },
       {
        "q": "台风来了以后你们怎么防灾？",
@@ -11958,26 +14935,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑‍💼",
          "c": "s",
          "py": "chǎngzhǎng",
-         "hv": "xưởng trường"
+         "hv": "xưởng trưởng"
         },
         {
          "t": "今天上午在办公室里认真地回答了",
          "ico": "💬",
          "c": "v",
          "py": "jīntiān shàngwǔ zài bàngōngshì lǐ rènzhēn de huídá le",
-         "hv": "kim thiên thượng ngọ tại _ công thất lịa nhận chân địa hồi đáp liễu"
+         "hv": "kim thiên thượng ngọ tại biện công thất lý nhận chân địa hồi đáp liễu"
         },
         {
          "t": "群众的问题",
          "ico": "❓",
          "c": "o",
          "py": "qúnzhòng de wèntí",
-         "hv": "quần chúng đích _ _"
+         "hv": "quần chúng đích vấn đề"
         }
        ],
        "traceWord": "厂长",
        "py": "Chǎngzhǎng jīntiān shàngwǔ zài bàngōngshì lǐ rènzhēn de huídá le qúnzhòng de wèntí",
-       "traceKey": "changzhang"
+       "traceKey": "changzhang",
+       "traceInfo": [
+        {
+         "c": "厂",
+         "py": "chǎng",
+         "hv": "xưởng"
+        },
+        {
+         "c": "长",
+         "py": "zhǎng",
+         "hv": "trưởng"
+        }
+       ]
       },
       {
        "scene": "🏘🤝🌍",
@@ -11989,26 +14978,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑‍💼",
          "c": "s",
          "py": "júzhǎng",
-         "hv": "cục trường"
+         "hv": "cục trưởng"
         },
         {
          "t": "昨天下午在社区里热情地接待了",
          "ico": "🤝",
          "c": "v",
          "py": "zuótiān xiàwǔ zài shèqū lǐ rèqíng de jiēdài le",
-         "hv": "_ thiên hạ ngọ tại xã khu lịa nhiệt tình địa tiếp đãi liễu"
+         "hv": "tạc thiên hạ ngọ tại xã khu lý nhiệt tình địa tiếp đãi liễu"
         },
         {
          "t": "几位外国人士",
          "ico": "🌍",
          "c": "o",
          "py": "jǐ wèi wàiguó rénshì",
-         "hv": "kỉ vị ngoại quốc nhân sĩ"
+         "hv": "kỷ vị ngoại quốc nhân sĩ"
         }
        ],
        "traceWord": "社区",
        "py": "Júzhǎng zuótiān xiàwǔ zài shèqū lǐ rèqíng de jiēdài le jǐ wèi wàiguó rénshì",
-       "traceKey": "shequ"
+       "traceKey": "shequ",
+       "traceInfo": [
+        {
+         "c": "社",
+         "py": "shè",
+         "hv": "xã"
+        },
+        {
+         "c": "区",
+         "py": "qū",
+         "hv": "khu"
+        }
+       ]
       },
       {
        "scene": "🏅🗣📋",
@@ -12020,26 +15021,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏅",
          "c": "s",
          "py": "tuánzhǎng",
-         "hv": "đoàn trường"
+         "hv": "đoàn trưởng"
         },
         {
          "t": "上周在俱乐部里认真地给大家介绍了",
          "ico": "🗣",
          "c": "v",
          "py": "shàng zhōu zài jùlèbù lǐ rènzhēn de gěi dàjiā jièshào le",
-         "hv": "thượng chu tại câu lạc bộ lịa nhận chân địa cấp đại gia giới thiệu liễu"
+         "hv": "thượng chu tại câu lạc bộ lý nhận chân địa cấp đại gia giới thiệu liễu"
         },
         {
          "t": "新的计划",
          "ico": "📋",
          "c": "o",
          "py": "xīn de jìhuà",
-         "hv": "tân đích kể _"
+         "hv": "tân đích kế hoạch"
         }
        ],
        "traceWord": "俱乐部",
        "py": "Tuánzhǎng shàng zhōu zài jùlèbù lǐ rènzhēn de gěi dàjiā jièshào le xīn de jìhuà",
-       "traceKey": "julebu"
+       "traceKey": "julebu",
+       "traceInfo": [
+        {
+         "c": "俱",
+         "py": "jù",
+         "hv": "câu"
+        },
+        {
+         "c": "乐",
+         "py": "lè",
+         "hv": "lạc"
+        },
+        {
+         "c": "部",
+         "py": "bù",
+         "hv": "bộ"
+        }
+       ]
       },
       {
        "scene": "🚗😠👮",
@@ -12051,14 +15069,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚗",
          "c": "s",
          "py": "chēzhǔ",
-         "hv": "xa chúa"
+         "hv": "xa chủ"
         },
         {
          "t": "昨天在停车场很生气地向交警说明了",
          "ico": "😠",
          "c": "v",
          "py": "zuótiān zài tíngchēchǎng hěn shēngqì de xiàng jiāojǐng shuōmíng le",
-         "hv": "_ thiên tại đình xa trường _ sinh khí địa hướng giao khểnh _ minh liễu"
+         "hv": "tạc thiên tại đình xa trường ngận sinh khí địa hướng giao cảnh thuyết minh liễu"
         },
         {
          "t": "事故的经过",
@@ -12070,7 +15088,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "车主",
        "py": "Chēzhǔ zuótiān zài tíngchēchǎng hěn shēngqì de xiàng jiāojǐng shuōmíng le shìgù de jīngguò",
-       "traceKey": "chezhu"
+       "traceKey": "chezhu",
+       "traceInfo": [
+        {
+         "c": "车",
+         "py": "chē",
+         "hv": "xa"
+        },
+        {
+         "c": "主",
+         "py": "zhǔ",
+         "hv": "chủ"
+        }
+       ]
       },
       {
        "scene": "🏢✅📋",
@@ -12089,19 +15119,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✅",
          "c": "v",
          "py": "shàng ge yuè zài Běijīng míngquè de pīzhǔn le",
-         "hv": "thượng cá nguyệt tại _ kinh minh xác địa phê chốn liễu"
+         "hv": "thượng cá nguyệt tại bắc kinh minh xác địa phê chuẩn liễu"
         },
         {
          "t": "集团的新计划",
          "ico": "📋",
          "c": "o",
          "py": "jítuán de xīn jìhuà",
-         "hv": "tập đoàn đích tân kể _"
+         "hv": "tập đoàn đích tân kế hoạch"
         }
        ],
        "traceWord": "上级",
        "py": "Shàngjí shàng ge yuè zài Běijīng míngquè de pīzhǔn le jítuán de xīn jìhuà",
-       "traceKey": "shangji"
+       "traceKey": "shangji",
+       "traceInfo": [
+        {
+         "c": "上",
+         "py": "shàng",
+         "hv": "thượng"
+        },
+        {
+         "c": "级",
+         "py": "jí",
+         "hv": "cấp"
+        }
+       ]
       },
       {
        "scene": "🏛🌏🎪",
@@ -12127,12 +15169,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎪",
          "c": "o",
          "py": "yī cì dàxíng huódòng",
-         "hv": "nhất thứ đại _ hoạt động"
+         "hv": "nhất thứ đại hình hoạt động"
         }
        ],
        "traceWord": "组织",
        "py": "Zhōngyāng zuìjìn zài quánguó jījí de zǔzhī le yī cì dàxíng huódòng",
-       "traceKey": "zuzhi"
+       "traceKey": "zuzhi",
+       "traceInfo": [
+        {
+         "c": "组",
+         "py": "zǔ",
+         "hv": "tổ"
+        },
+        {
+         "c": "织",
+         "py": "zhī",
+         "hv": "chức"
+        }
+       ]
       },
       {
        "scene": "🌍👥💬",
@@ -12144,7 +15198,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌍",
          "c": "s",
          "py": "bù tóng guójí de yuángōng",
-         "hv": "bất đồng quốc _ đích viên công"
+         "hv": "bất đồng quốc tịch đích viên công"
         },
         {
          "t": "经常在会上热烈地讨论",
@@ -12158,12 +15212,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📋",
          "c": "o",
          "py": "gōngsī de xīn jìhuà",
-         "hv": "công ti đích tân kể _"
+         "hv": "công ti đích tân kế hoạch"
         }
        ],
        "traceWord": "国籍",
        "py": "Bù tóng guójí de yuángōng jīngcháng zài huì shàng rèliè de tǎolùn gōngsī de xīn jìhuà",
-       "traceKey": "guoji"
+       "traceKey": "guoji",
+       "traceInfo": [
+        {
+         "c": "国",
+         "py": "guó",
+         "hv": "quốc"
+        },
+        {
+         "c": "籍",
+         "py": "jí",
+         "hv": "tịch"
+        }
+       ]
       },
       {
        "scene": "🏛📰📊",
@@ -12182,19 +15248,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📰",
          "c": "v",
          "py": "měi nián tōngguò bàozhǐ xiàng guómín gōngbù",
-         "hv": "mỗi nên thông quá báo chỉ hướng quốc dân công bố"
+         "hv": "mỗi niên thông quá báo chỉ hướng quốc dân công bố"
         },
         {
          "t": "重要的数据",
          "ico": "📊",
          "c": "o",
          "py": "zhòngyào de shùjù",
-         "hv": "trọng yếu đích số cớ"
+         "hv": "trọng yếu đích số cứ"
         }
        ],
        "traceWord": "国民",
        "py": "Zhèngfǔ měi nián tōngguò bàozhǐ xiàng guómín gōngbù zhòngyào de shùjù",
-       "traceKey": "guomin"
+       "traceKey": "guomin",
+       "traceInfo": [
+        {
+         "c": "国",
+         "py": "guó",
+         "hv": "quốc"
+        },
+        {
+         "c": "民",
+         "py": "mín",
+         "hv": "dân"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -12331,7 +15409,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "jīnnián gōngsī de kèhù",
-         "hv": "kim nên công ti đích khách hộ"
+         "hv": "kim niên công ti đích khách hộ"
         },
         {
          "t": "增多",
@@ -12350,7 +15428,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "增多",
        "py": "Jīnnián gōngsī de kèhù zēngduō qǐlái le",
-       "traceKey": "zengduo"
+       "traceKey": "zengduo",
+       "traceInfo": [
+        {
+         "c": "增",
+         "py": "zēng",
+         "hv": "tăng"
+        },
+        {
+         "c": "多",
+         "py": "duō",
+         "hv": "đa"
+        }
+       ]
       },
       {
        "scene": "☀️🌡️⬆️",
@@ -12362,7 +15452,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "☀️",
          "c": "s",
          "py": "jìnrù xiàtiān yǐhòu qìwēn",
-         "hv": "tiến nhập _ thiên _ hậu khí ồn"
+         "hv": "tiến nhập hạ thiên dĩ hậu khí ôn"
         },
         {
          "t": "慢慢升高",
@@ -12381,7 +15471,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "升高",
        "py": "Jìnrù xiàtiān yǐhòu qìwēn mànmàn shēnggāo qǐlái le",
-       "traceKey": "shenggao"
+       "traceKey": "shenggao",
+       "traceInfo": [
+        {
+         "c": "升",
+         "py": "shēng",
+         "hv": "thăng"
+        },
+        {
+         "c": "高",
+         "py": "gāo",
+         "hv": "cao"
+        }
+       ]
       },
       {
        "scene": "😰💼💪",
@@ -12407,12 +15509,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💪",
          "c": "o",
          "py": "dàn wǒmen hái yào jiānchí xiàqù",
-         "hv": "_ ngã món hoàn yếu kiên trì hạ khứ"
+         "hv": "đãn ngã môn hoàn yếu kiên trì hạ khứ"
         }
        ],
        "traceWord": "增大",
        "py": "Yālì zēngdà le dàn wǒmen hái yào jiānchí xiàqù",
-       "traceKey": "zengda"
+       "traceKey": "zengda",
+       "traceInfo": [
+        {
+         "c": "增",
+         "py": "zēng",
+         "hv": "tăng"
+        },
+        {
+         "c": "大",
+         "py": "dà",
+         "hv": "đại"
+        }
+       ]
       },
       {
        "scene": "📅💰🪙",
@@ -12424,14 +15538,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💰",
          "c": "s",
          "py": "yuèdǐ de shíhou wǒ de qián",
-         "hv": "nguyệt để đích thì hầu ngã đích tiền"
+         "hv": "nguyệt để đích thời hậu ngã đích tiền"
         },
         {
          "t": "只剩下",
          "ico": "🪙",
          "c": "v",
          "py": "zhǐ shèngxia",
-         "hv": "chỉ _ hạ"
+         "hv": "chỉ thặng hạ"
         },
         {
          "t": "一点点了",
@@ -12443,7 +15557,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "剩下",
        "py": "Yuèdǐ de shíhou wǒ de qián zhǐ shèngxia yī diǎndiǎn le",
-       "traceKey": "shengxia"
+       "traceKey": "shengxia",
+       "traceInfo": [
+        {
+         "c": "剩",
+         "py": "shèng",
+         "hv": "thặng"
+        },
+        {
+         "c": "下",
+         "py": "xia",
+         "hv": "hạ"
+        }
+       ]
       },
       {
        "scene": "🏢🔄😟",
@@ -12462,7 +15588,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👉",
          "c": "v",
          "py": "ràng",
-         "hv": "nhường"
+         "hv": "nhượng"
         },
         {
          "t": "大家都紧张起来了",
@@ -12474,7 +15600,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "变动",
        "py": "Gōngsī rényuán de biàndòng ràng dàjiā dōu jǐnzhāng qǐlái le",
-       "traceKey": "biandong"
+       "traceKey": "biandong",
+       "traceInfo": [
+        {
+         "c": "变",
+         "py": "biàn",
+         "hv": "biến"
+        },
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        }
+       ]
       },
       {
        "scene": "🏃‍♂️🚫💔",
@@ -12486,26 +15624,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛋️",
          "c": "s",
          "py": "chángqī quēfá duànliàn",
-         "hv": "trường kì khuyết phạp _ _"
+         "hv": "trường kỳ khuyết phạp đoán luyện"
         },
         {
          "t": "会损害",
          "ico": "⚠️",
          "c": "v",
          "py": "huì sǔnhài",
-         "hv": "hội tốn hại"
+         "hv": "hội tổn hại"
         },
         {
          "t": "我们的身体健康",
          "ico": "💔",
          "c": "o",
          "py": "wǒmen de shēntǐ jiànkāng",
-         "hv": "ngã món đích thân thể kiện khang"
+         "hv": "ngã môn đích thân thể kiện khang"
         }
        ],
        "traceWord": "损害",
        "py": "Chángqī quēfá duànliàn huì sǔnhài wǒmen de shēntǐ jiànkāng",
-       "traceKey": "sunhai"
+       "traceKey": "sunhai",
+       "traceInfo": [
+        {
+         "c": "损",
+         "py": "sǔn",
+         "hv": "tổn"
+        },
+        {
+         "c": "害",
+         "py": "hài",
+         "hv": "hại"
+        }
+       ]
       },
       {
        "scene": "🧗🏆🤝",
@@ -12531,12 +15681,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏆",
          "c": "o",
          "py": "jiù yīdìng néng tūpò kùnnan chāoyuè duìshǒu",
-         "hv": "_ nhất định năng đột phá khốn nan siêu việt đỗi thủ"
+         "hv": "tựu nhất định năng đột phá khốn nan siêu việt đối thủ"
         }
        ],
        "traceWord": "突破",
        "py": "Zhǐyào dàjiā jiānchí xiàqù jiù yīdìng néng tūpò kùnnan chāoyuè duìshǒu",
-       "traceKey": "tupo"
+       "traceKey": "tupo",
+       "traceInfo": [
+        {
+         "c": "突",
+         "py": "tū",
+         "hv": "đột"
+        },
+        {
+         "c": "破",
+         "py": "pò",
+         "hv": "phá"
+        }
+       ]
       },
       {
        "scene": "👔🤝😄",
@@ -12548,26 +15710,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         },
         {
          "t": "帮忙调解了",
          "ico": "🤝",
          "c": "v",
          "py": "bāngmáng tiáojiě le",
-         "hv": "_ mang điều giải liễu"
+         "hv": "bang mang điều giải liễu"
         },
         {
          "t": "问题大家又充满了活力",
          "ico": "😄",
          "c": "o",
          "py": "wèntí dàjiā yòu chōngmǎn le huólì",
-         "hv": "_ _ đại gia lại sung mãn liễu hoạt lực"
+         "hv": "vấn đề đại gia hựu sung mãn liễu hoạt lực"
         }
        ],
        "traceWord": "调解",
        "py": "Jīnglǐ bāngmáng tiáojiě le wèntí dàjiā yòu chōngmǎn le huólì",
-       "traceKey": "tiaojie"
+       "traceKey": "tiaojie",
+       "traceInfo": [
+        {
+         "c": "调",
+         "py": "tiáo",
+         "hv": "điều"
+        },
+        {
+         "c": "解",
+         "py": "jiě",
+         "hv": "giải"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -12700,7 +15874,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "tīngdào zhè gè hǎo xiāoxi dàjiā",
-         "hv": "thính đáo _ cá háo tiêu tức đại gia"
+         "hv": "thính đáo giá cá hảo tiêu tức đại gia"
         },
         {
          "t": "都忍不住",
@@ -12714,12 +15888,29 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😆",
          "c": "o",
          "py": "xiào le qǐlái",
-         "hv": "_ liễu khởi lai"
+         "hv": "tiếu liễu khởi lai"
         }
        ],
        "traceWord": "忍不住",
        "py": "Tīngdào zhè gè hǎo xiāoxi dàjiā dōu rěn bu zhù xiào le qǐlái",
-       "traceKey": "renbuzhu"
+       "traceKey": "renbuzhu",
+       "traceInfo": [
+        {
+         "c": "忍",
+         "py": "rěn",
+         "hv": "nhẫn"
+        },
+        {
+         "c": "不",
+         "py": "bu",
+         "hv": "bất"
+        },
+        {
+         "c": "住",
+         "py": "zhù",
+         "hv": "trú"
+        }
+       ]
       },
       {
        "scene": "⏰📄✅",
@@ -12731,26 +15922,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏰",
          "c": "s",
          "py": "zhǐyào shíjiān chōngzú wǒmen",
-         "hv": "chỉ yếu thì gian sung túc ngã món"
+         "hv": "chỉ yếu thời gian sung túc ngã môn"
         },
         {
          "t": "就写得完",
          "ico": "✍️",
          "c": "v",
-         "py": "jiù xiě dé wán",
-         "hv": "_ tả đắc hoàn"
+         "py": "jiù xiě de wán",
+         "hv": "tựu tả đắc hoàn"
         },
         {
          "t": "这份报告",
          "ico": "📄",
          "c": "o",
          "py": "zhè fèn bàogào",
-         "hv": "_ phần báo _"
+         "hv": "giá phần báo cáo"
         }
        ],
        "traceWord": "充足",
-       "py": "Zhǐyào shíjiān chōngzú wǒmen jiù xiě dé wán zhè fèn bàogào",
-       "traceKey": "chongzu"
+       "py": "Zhǐyào shíjiān chōngzú wǒmen jiù xiě de wán zhè fèn bàogào",
+       "traceKey": "chongzu",
+       "traceInfo": [
+        {
+         "c": "充",
+         "py": "chōng",
+         "hv": "sung"
+        },
+        {
+         "c": "足",
+         "py": "zú",
+         "hv": "túc"
+        }
+       ]
       },
       {
        "scene": "🥵☀️😖",
@@ -12776,12 +15979,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🥵",
          "c": "o",
          "py": "xiàtiān zhème rè de tiānqì",
-         "hv": "_ thiên _ _ nhiệt đích thiên khí"
+         "hv": "hạ thiên giá ma nhiệt đích thiên khí"
         }
        ],
        "traceWord": "忍受",
        "py": "Wǒ shízài rěn shòubuliǎo xiàtiān zhème rè de tiānqì",
-       "traceKey": "renshou"
+       "traceKey": "renshou",
+       "traceInfo": [
+        {
+         "c": "忍",
+         "py": "rěn",
+         "hv": "nhẫn"
+        },
+        {
+         "c": "受",
+         "py": "shòu",
+         "hv": "thụ"
+        }
+       ]
       },
       {
        "scene": "💼🌟🙏",
@@ -12793,26 +16008,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "应该珍惜",
          "ico": "🙏",
          "c": "v",
          "py": "yīnggāi zhēnxī",
-         "hv": "ứng _ trân tiếc"
+         "hv": "ưng cai trân tích"
         },
         {
          "t": "现在得到的这个工作机会",
          "ico": "💼",
          "c": "o",
          "py": "xiànzài dédào de zhè gè gōngzuò jīhuì",
-         "hv": "hiện tại đắc đáo đích _ cá công tác cơ hội"
+         "hv": "hiện tại đắc đáo đích giá cá công tác cơ hội"
         }
        ],
        "traceWord": "珍惜",
        "py": "Wǒmen yīnggāi zhēnxī xiànzài dédào de zhè gè gōngzuò jīhuì",
-       "traceKey": "zhenxi"
+       "traceKey": "zhenxi",
+       "traceInfo": [
+        {
+         "c": "珍",
+         "py": "zhēn",
+         "hv": "trân"
+        },
+        {
+         "c": "惜",
+         "py": "xī",
+         "hv": "tích"
+        }
+       ]
       },
       {
        "scene": "🙅‍♂️😟🤝",
@@ -12824,14 +16051,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "nǐ",
-         "hv": "nể"
+         "hv": "nễ"
         },
         {
          "t": "别为难",
          "ico": "🙅",
          "c": "v",
          "py": "bié wéinán",
-         "hv": "_ _ nan"
+         "hv": "biệt vi nan"
         },
         {
          "t": "他了他也不是故意的",
@@ -12843,7 +16070,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "为难",
        "py": "Nǐ bié wéinán tā le tā yě bú shì gùyì de",
-       "traceKey": "weinan"
+       "traceKey": "weinan",
+       "traceInfo": [
+        {
+         "c": "为",
+         "py": "wéi",
+         "hv": "vi"
+        },
+        {
+         "c": "难",
+         "py": "nán",
+         "hv": "nan"
+        }
+       ]
       },
       {
        "scene": "⚠️👉🚫",
@@ -12855,26 +16094,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚠️",
          "c": "s",
          "py": "chū le wèntí",
-         "hv": "xuất liễu _ _"
+         "hv": "xuất liễu vấn đề"
         },
         {
          "t": "别总是怪",
          "ico": "👉",
          "c": "v",
          "py": "bié zǒngshì guài",
-         "hv": "_ tổng thị _"
+         "hv": "biệt tổng thị quái"
         },
         {
          "t": "别人也别轻易放弃",
          "ico": "🚫",
          "c": "o",
          "py": "biérén yě bié qīngyì fàngqì",
-         "hv": "_ nhân dã _ khinh dịch phóng _"
+         "hv": "biệt nhân dã biệt khinh dị phóng khí"
         }
        ],
        "traceWord": "放弃",
        "py": "Chū le wèntí bié zǒngshì guài biérén yě bié qīngyì fàngqì",
-       "traceKey": "fangqi"
+       "traceKey": "fangqi",
+       "traceInfo": [
+        {
+         "c": "放",
+         "py": "fàng",
+         "hv": "phóng"
+        },
+        {
+         "c": "弃",
+         "py": "qì",
+         "hv": "khí"
+        }
+       ]
       },
       {
        "scene": "🚬🚭👫",
@@ -12886,7 +16137,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "tā zài péngyou de gǔlì xià",
-         "hv": "tha tại bằng hữu đích _ lệ hạ"
+         "hv": "tha tại bằng hữu đích cổ lệ hạ"
         },
         {
          "t": "终于戒了",
@@ -12900,12 +16151,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚬",
          "c": "o",
          "py": "yān",
-         "hv": "_"
+         "hv": "yên"
         }
        ],
        "traceWord": "鼓励",
        "py": "Tā zài péngyou de gǔlì xià zhōngyú jiè le yān",
-       "traceKey": "guli"
+       "traceKey": "guli",
+       "traceInfo": [
+        {
+         "c": "鼓",
+         "py": "gǔ",
+         "hv": "cổ"
+        },
+        {
+         "c": "励",
+         "py": "lì",
+         "hv": "lệ"
+        }
+       ]
       },
       {
        "scene": "📊🏆😊",
@@ -12924,19 +16187,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏆",
          "c": "v",
          "py": "chāoguò le yùqī",
-         "hv": "siêu quá liễu dự kì"
+         "hv": "siêu quá liễu dự kỳ"
         },
         {
          "t": "大家都很自豪",
          "ico": "😊",
          "c": "o",
          "py": "dàjiā dōu hěn zìháo",
-         "hv": "đại gia đô _ tự hào"
+         "hv": "đại gia đô ngận tự hào"
         }
        ],
        "traceWord": "自豪",
        "py": "Gōngsī de chéngjì chāoguò le yùqī dàjiā dōu hěn zìháo",
-       "traceKey": "zihao"
+       "traceKey": "zihao",
+       "traceInfo": [
+        {
+         "c": "自",
+         "py": "zì",
+         "hv": "tự"
+        },
+        {
+         "c": "豪",
+         "py": "háo",
+         "hv": "hào"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -13075,20 +16350,27 @@ window.CURRICULUM_STAGES[5] = {
          "t": "咳得很厉害",
          "ico": "🤧",
          "c": "v",
-         "py": "ké dé hěn lìhai",
-         "hv": "cay đắc _ lẹ hại"
+         "py": "ké de hěn lìhai",
+         "hv": "khái đắc ngận lệ hại"
         },
         {
          "t": "晚上一直睡不着",
          "ico": "🌙",
          "c": "o",
          "py": "wǎnshang yīzhí shuì bù zhe",
-         "hv": "vãn thượng nhất _ _ bất trứ"
+         "hv": "vãn thượng nhất trực thụy bất trước"
         }
        ],
        "traceWord": "咳",
-       "py": "Tā ké dé hěn lìhai wǎnshang yīzhí shuì bù zhe",
-       "traceKey": "ke"
+       "py": "Tā ké de hěn lìhai wǎnshang yīzhí shuì bù zhe",
+       "traceKey": "ke",
+       "traceInfo": [
+        {
+         "c": "咳",
+         "py": "ké",
+         "hv": "khái"
+        }
+       ]
       },
       {
        "scene": "🏥👥😵",
@@ -13106,7 +16388,7 @@ window.CURRICULUM_STAGES[5] = {
          "t": "多得",
          "ico": "👥",
          "c": "v",
-         "py": "duō dé",
+         "py": "duō de",
          "hv": "đa đắc"
         },
         {
@@ -13118,8 +16400,20 @@ window.CURRICULUM_STAGES[5] = {
         }
        ],
        "traceWord": "门诊",
-       "py": "Jīntiān yīyuàn ménzhěn de bìngrén duō dé bùdéliǎo",
-       "traceKey": "menzhen"
+       "py": "Jīntiān yīyuàn ménzhěn de bìngrén duō de bùdéliǎo",
+       "traceKey": "menzhen",
+       "traceInfo": [
+        {
+         "c": "门",
+         "py": "mén",
+         "hv": "môn"
+        },
+        {
+         "c": "诊",
+         "py": "zhěn",
+         "hv": "chẩn"
+        }
+       ]
       },
       {
        "scene": "👨‍⚕️🦐🔴",
@@ -13138,19 +16432,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🩺",
          "c": "v",
          "py": "zhěnduàn yǐhòu shuō",
-         "hv": "chẩn đoạn _ hậu _"
+         "hv": "chẩn đoạn dĩ hậu thuyết"
         },
         {
          "t": "我对海鲜过敏得很厉害",
          "ico": "🦐",
          "c": "o",
-         "py": "wǒ duì hǎixiān guòmǐn dé hěn lìhai",
-         "hv": "ngã đỗi hải tiên quá mẫn đắc _ lẹ hại"
+         "py": "wǒ duì hǎixiān guòmǐn de hěn lìhai",
+         "hv": "ngã đối hải tiên quá mẫn đắc ngận lệ hại"
         }
        ],
        "traceWord": "诊断",
-       "py": "Yīshēng zhěnduàn yǐhòu shuō wǒ duì hǎixiān guòmǐn dé hěn lìhai",
-       "traceKey": "zhenduan"
+       "py": "Yīshēng zhěnduàn yǐhòu shuō wǒ duì hǎixiān guòmǐn de hěn lìhai",
+       "traceKey": "zhenduan",
+       "traceInfo": [
+        {
+         "c": "诊",
+         "py": "zhěn",
+         "hv": "chẩn"
+        },
+        {
+         "c": "断",
+         "py": "duàn",
+         "hv": "đoạn"
+        }
+       ]
       },
       {
        "scene": "👩‍⚕️🧴💉",
@@ -13169,19 +16475,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧴",
          "c": "v",
          "py": "xiān bǎ gōngjù xiāodú",
-         "hv": "tiên bã công cụ tiêu độc"
+         "hv": "tiên bả công cụ tiêu độc"
         },
         {
          "t": "然后给我注射药水",
          "ico": "💉",
          "c": "o",
          "py": "ránhòu gěi wǒ zhùshè yàoshuǐ",
-         "hv": "nhiên hậu cấp ngã chú xạ dược thuỷ"
+         "hv": "nhiên hậu cấp ngã chú xạ dược thủy"
         }
        ],
        "traceWord": "注射",
        "py": "Hùshi xiān bǎ gōngjù xiāodú ránhòu gěi wǒ zhùshè yàoshuǐ",
-       "traceKey": "zhushe"
+       "traceKey": "zhushe",
+       "traceInfo": [
+        {
+         "c": "注",
+         "py": "zhù",
+         "hv": "chú"
+        },
+        {
+         "c": "射",
+         "py": "shè",
+         "hv": "xạ"
+        }
+       ]
       },
       {
        "scene": "🌿🍵😌",
@@ -13193,7 +16511,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌿",
          "c": "s",
          "py": "tā chī le zhōngyào yǐhòu tòngkǔ",
-         "hv": "tha khật liễu trung dược _ hậu thống khổ"
+         "hv": "tha cật liễu trung dược dĩ hậu thống khổ"
         },
         {
          "t": "减轻",
@@ -13212,7 +16530,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "中药",
        "py": "Tā chī le zhōngyào yǐhòu tòngkǔ jiǎnqīng le bù shǎo",
-       "traceKey": "zhongyao"
+       "traceKey": "zhongyao",
+       "traceInfo": [
+        {
+         "c": "中",
+         "py": "zhōng",
+         "hv": "trung"
+        },
+        {
+         "c": "药",
+         "py": "yào",
+         "hv": "dược"
+        }
+       ]
       },
       {
        "scene": "🦐☠️🤢",
@@ -13224,26 +16554,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🦐",
          "c": "s",
          "py": "tā chī le bù gānjìng de hǎixiān",
-         "hv": "tha khật liễu bất can _ đích hải tiên"
+         "hv": "tha cật liễu bất can tịnh đích hải tiên"
         },
         {
          "t": "中毒了",
          "ico": "☠️",
          "c": "v",
          "py": "zhòngdú le",
-         "hv": "trung độc liễu"
+         "hv": "trúng độc liễu"
         },
         {
          "t": "难受得慌",
          "ico": "🤢",
          "c": "o",
-         "py": "nánshòu dé huāng",
+         "py": "nánshòu de huāng",
          "hv": "nan thụ đắc hoảng"
         }
        ],
        "traceWord": "中毒",
-       "py": "Tā chī le bù gānjìng de hǎixiān zhòngdú le nánshòu dé huāng",
-       "traceKey": "zhongdu"
+       "py": "Tā chī le bù gānjìng de hǎixiān zhòngdú le nánshòu de huāng",
+       "traceKey": "zhongdu",
+       "traceInfo": [
+        {
+         "c": "中",
+         "py": "zhòng",
+         "hv": "trúng"
+        },
+        {
+         "c": "毒",
+         "py": "dú",
+         "hv": "độc"
+        }
+       ]
       },
       {
        "scene": "🚑👨‍⚕️❤️",
@@ -13269,12 +16611,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛏️",
          "c": "o",
          "py": "nà wèi zhòngdú de bìngrén",
-         "hv": "na vị trung độc đích bệnh nhân"
+         "hv": "na vị trúng độc đích bệnh nhân"
         }
        ],
        "traceWord": "抢救",
        "py": "Yīshēng mǎshàng qiǎngjiù le nà wèi zhòngdú de bìngrén",
-       "traceKey": "qiangjiu"
+       "traceKey": "qiangjiu",
+       "traceInfo": [
+        {
+         "c": "抢",
+         "py": "qiǎng",
+         "hv": "_"
+        },
+        {
+         "c": "救",
+         "py": "jiù",
+         "hv": "cứu"
+        }
+       ]
       },
       {
        "scene": "🏃💦😮‍💨",
@@ -13286,14 +16640,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏃",
          "c": "s",
          "py": "tā yī yùndòng jiù",
-         "hv": "tha nhất vận động _"
+         "hv": "tha nhất vận động tựu"
         },
         {
          "t": "出汗出得厉害",
          "ico": "💦",
          "c": "v",
-         "py": "chūhàn chū dé lìhai",
-         "hv": "xuất _ xuất đắc lẹ hại"
+         "py": "chūhàn chū de lìhai",
+         "hv": "xuất hãn xuất đắc lệ hại"
         },
         {
          "t": "体力也差了",
@@ -13304,8 +16658,20 @@ window.CURRICULUM_STAGES[5] = {
         }
        ],
        "traceWord": "出汗",
-       "py": "Tā yī yùndòng jiù chūhàn chū dé lìhai tǐlì yě chà le",
-       "traceKey": "chuhan"
+       "py": "Tā yī yùndòng jiù chūhàn chū de lìhai tǐlì yě chà le",
+       "traceKey": "chuhan",
+       "traceInfo": [
+        {
+         "c": "出",
+         "py": "chū",
+         "hv": "xuất"
+        },
+        {
+         "c": "汗",
+         "py": "hàn",
+         "hv": "hãn"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -13323,7 +16689,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "因为我坐太久了腰酸得慌",
          "ico": "💆",
-         "py": "Yīnwèi wǒ zuò tài jiǔ le yāo suān dé huāng"
+         "py": "Yīnwèi wǒ zuò tài jiǔ le yāo suān de huāng"
         },
         {
          "txt": "因为明天是我的生日",
@@ -13448,20 +16814,37 @@ window.CURRICULUM_STAGES[5] = {
          "t": "羽毛球打得",
          "ico": "🏸",
          "c": "v",
-         "py": "yǔmáoqiú dǎ dé",
-         "hv": "võ mao cầu đả đắc"
+         "py": "yǔmáoqiú dǎ de",
+         "hv": "vũ mao cầu đả đắc"
         },
         {
          "t": "比我好得多",
          "ico": "✨",
          "c": "o",
-         "py": "bǐ wǒ hǎo dé duō",
-         "hv": "tỉ ngã háo đắc đa"
+         "py": "bǐ wǒ hǎo de duō",
+         "hv": "tỷ ngã hảo đắc đa"
         }
        ],
        "traceWord": "羽毛球",
-       "py": "Xiǎomíng yǔmáoqiú dǎ dé bǐ wǒ hǎo dé duō",
-       "traceKey": "yumaoqiu"
+       "py": "Xiǎomíng yǔmáoqiú dǎ de bǐ wǒ hǎo de duō",
+       "traceKey": "yumaoqiu",
+       "traceInfo": [
+        {
+         "c": "羽",
+         "py": "yǔ",
+         "hv": "vũ"
+        },
+        {
+         "c": "毛",
+         "py": "máo",
+         "hv": "mao"
+        },
+        {
+         "c": "球",
+         "py": "qiú",
+         "hv": "cầu"
+        }
+       ]
       },
       {
        "scene": "🧑‍⚖️🗣️✅",
@@ -13473,14 +16856,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑‍⚖️",
          "c": "s",
          "py": "nà wèi cáipàn",
-         "hv": "na vị trài phán"
+         "hv": "na vị tài phán"
         },
         {
          "t": "说话说得",
          "ico": "🗣️",
          "c": "v",
-         "py": "shuōhuà shuō dé",
-         "hv": "_ thoại _ đắc"
+         "py": "shuōhuà shuō de",
+         "hv": "thuyết thoại thuyết đắc"
         },
         {
          "t": "非常清楚",
@@ -13491,8 +16874,20 @@ window.CURRICULUM_STAGES[5] = {
         }
        ],
        "traceWord": "裁判",
-       "py": "Nà wèi cáipàn shuōhuà shuō dé fēicháng qīngchu",
-       "traceKey": "caipan"
+       "py": "Nà wèi cáipàn shuōhuà shuō de fēicháng qīngchu",
+       "traceKey": "caipan",
+       "traceInfo": [
+        {
+         "c": "裁",
+         "py": "cái",
+         "hv": "tài"
+        },
+        {
+         "c": "判",
+         "py": "pàn",
+         "hv": "phán"
+        }
+       ]
       },
       {
        "scene": "🏊🧑💨",
@@ -13510,20 +16905,37 @@ window.CURRICULUM_STAGES[5] = {
          "t": "在游泳池游得",
          "ico": "🏊",
          "c": "v",
-         "py": "zài yóuyǒngchí yóu dé",
-         "hv": "tại _ _ trì _ đắc"
+         "py": "zài yóuyǒngchí yóu de",
+         "hv": "tại du vịnh trì du đắc"
         },
         {
          "t": "又快又稳",
          "ico": "💨",
          "c": "o",
          "py": "yòu kuài yòu wěn",
-         "hv": "lại khoái lại ủn"
+         "hv": "hựu khoái hựu ổn"
         }
        ],
        "traceWord": "游泳池",
-       "py": "Tā zài yóuyǒngchí yóu dé yòu kuài yòu wěn",
-       "traceKey": "youyongchi"
+       "py": "Tā zài yóuyǒngchí yóu de yòu kuài yòu wěn",
+       "traceKey": "youyongchi",
+       "traceInfo": [
+        {
+         "c": "游",
+         "py": "yóu",
+         "hv": "du"
+        },
+        {
+         "c": "泳",
+         "py": "yǒng",
+         "hv": "vịnh"
+        },
+        {
+         "c": "池",
+         "py": "chí",
+         "hv": "trì"
+        }
+       ]
       },
       {
        "scene": "🏆🥈🏃",
@@ -13535,26 +16947,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏆",
          "c": "s",
          "py": "dàjiǎngsài de guànjūn",
-         "hv": "đại _ _ đích quán quân"
+         "hv": "đại tưởng tái đích quán quân"
         },
         {
          "t": "跑得",
          "ico": "🏃",
          "c": "v",
-         "py": "pǎo dé",
-         "hv": "_ đắc"
+         "py": "pǎo de",
+         "hv": "bào đắc"
         },
         {
          "t": "比亚军快一点儿",
          "ico": "🥈",
          "c": "o",
          "py": "bǐ yàjūn kuài yīdiǎnr",
-         "hv": "tỉ _ quân khoái nhất điểm _"
+         "hv": "tỷ á quân khoái nhất điểm nhi"
         }
        ],
        "traceWord": "冠军",
-       "py": "Dàjiǎngsài de guànjūn pǎo dé bǐ yàjūn kuài yīdiǎnr",
-       "traceKey": "guanjun"
+       "py": "Dàjiǎngsài de guànjūn pǎo de bǐ yàjūn kuài yīdiǎnr",
+       "traceKey": "guanjun",
+       "traceInfo": [
+        {
+         "c": "冠",
+         "py": "guàn",
+         "hv": "quán"
+        },
+        {
+         "c": "军",
+         "py": "jūn",
+         "hv": "quân"
+        }
+       ]
       },
       {
        "scene": "🏅🤔😌",
@@ -13566,13 +16990,13 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏅",
          "c": "s",
          "py": "zhè cì jìngsài de shèngfù",
-         "hv": "_ thứ _ _ đích thắng phụ"
+         "hv": "giá thứ cạnh tái đích thắng phụ"
         },
         {
          "t": "他看得",
          "ico": "👀",
          "c": "v",
-         "py": "tā kàn dé",
+         "py": "tā kàn de",
          "hv": "tha khán đắc"
         },
         {
@@ -13580,12 +17004,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😌",
          "c": "o",
          "py": "hěn qīngsōng",
-         "hv": "_ khinh tùng"
+         "hv": "ngận khinh tùng"
         }
        ],
        "traceWord": "胜负",
-       "py": "Zhè cì jìngsài de shèngfù tā kàn dé hěn qīngsōng",
-       "traceKey": "shengfu"
+       "py": "Zhè cì jìngsài de shèngfù tā kàn de hěn qīngsōng",
+       "traceKey": "shengfu",
+       "traceInfo": [
+        {
+         "c": "胜",
+         "py": "shèng",
+         "hv": "thắng"
+        },
+        {
+         "c": "负",
+         "py": "fù",
+         "hv": "phụ"
+        }
+       ]
       },
       {
        "scene": "🌳👨‍👩‍👧😄",
@@ -13597,26 +17033,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👨‍👩‍👧",
          "c": "s",
          "py": "zhōumò wǒmen",
-         "hv": "chu mạt ngã món"
+         "hv": "chu mạt ngã môn"
         },
         {
          "t": "在公园休闲得",
          "ico": "🌳",
          "c": "v",
-         "py": "zài gōngyuán xiūxián dé",
-         "hv": "tại công viên hưu _ đắc"
+         "py": "zài gōngyuán xiūxián de",
+         "hv": "tại công viên hưu nhàn đắc"
         },
         {
          "t": "很开心",
          "ico": "😄",
          "c": "o",
          "py": "hěn kāixīn",
-         "hv": "_ khai tâm"
+         "hv": "ngận khai tâm"
         }
        ],
        "traceWord": "休闲",
-       "py": "Zhōumò wǒmen zài gōngyuán xiūxián dé hěn kāixīn",
-       "traceKey": "xiuxian"
+       "py": "Zhōumò wǒmen zài gōngyuán xiūxián de hěn kāixīn",
+       "traceKey": "xiuxian",
+       "traceInfo": [
+        {
+         "c": "休",
+         "py": "xiū",
+         "hv": "hưu"
+        },
+        {
+         "c": "闲",
+         "py": "xián",
+         "hv": "nhàn"
+        }
+       ]
       },
       {
        "scene": "😴🧑😵",
@@ -13628,26 +17076,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😴",
          "c": "s",
          "py": "tā shuìmián bùzú",
-         "hv": "tha _ miên bất túc"
+         "hv": "tha thụy miên bất túc"
         },
         {
          "t": "累得",
          "ico": "😵",
          "c": "v",
-         "py": "lèi dé",
-         "hv": "luỵ đắc"
+         "py": "lèi de",
+         "hv": "lụy đắc"
         },
         {
          "t": "连话都说不出来",
          "ico": "🤐",
          "c": "o",
          "py": "lián huà dōu shuō bù chūlái",
-         "hv": "liên thoại đô _ bất xuất lai"
+         "hv": "liên thoại đô thuyết bất xuất lai"
         }
        ],
        "traceWord": "睡眠",
-       "py": "Tā shuìmián bùzú lèi dé lián huà dōu shuō bù chūlái",
-       "traceKey": "shuimian"
+       "py": "Tā shuìmián bùzú lèi de lián huà dōu shuō bù chūlái",
+       "traceKey": "shuimian",
+       "traceInfo": [
+        {
+         "c": "睡",
+         "py": "shuì",
+         "hv": "thụy"
+        },
+        {
+         "c": "眠",
+         "py": "mián",
+         "hv": "miên"
+        }
+       ]
       },
       {
        "scene": "👴🏃‍♂️💪",
@@ -13659,26 +17119,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👴",
          "c": "s",
          "py": "yéye",
-         "hv": "_ _"
+         "hv": "gia gia"
         },
         {
          "t": "活得很长寿",
          "ico": "🎂",
          "c": "v",
-         "py": "huó dé hěn chángshòu",
-         "hv": "hoạt đắc _ trường thọ"
+         "py": "huó de hěn chángshòu",
+         "hv": "hoạt đắc ngận trường thọ"
         },
         {
          "t": "因为他锻炼得很认真",
          "ico": "💪",
          "c": "o",
-         "py": "yīnwèi tā duànliàn dé hěn rènzhēn",
-         "hv": "nhân _ tha _ _ đắc _ nhận chân"
+         "py": "yīnwèi tā duànliàn de hěn rènzhēn",
+         "hv": "nhân vị tha đoán luyện đắc ngận nhận chân"
         }
        ],
        "traceWord": "长寿",
-       "py": "Yéye huó dé hěn chángshòu yīnwèi tā duànliàn dé hěn rènzhēn",
-       "traceKey": "changshou"
+       "py": "Yéye huó de hěn chángshòu yīnwèi tā duànliàn de hěn rènzhēn",
+       "traceKey": "changshou",
+       "traceInfo": [
+        {
+         "c": "长",
+         "py": "cháng",
+         "hv": "trường"
+        },
+        {
+         "c": "寿",
+         "py": "shòu",
+         "hv": "thọ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -13720,7 +17192,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "他买彩票买得不多",
          "ico": "🎫",
-         "py": "Tā mǎi cǎipiào mǎi dé bù duō"
+         "py": "Tā mǎi cǎipiào mǎi de bù duō"
         },
         {
          "txt": "她是我的汉语老师",
@@ -13728,7 +17200,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Tā shì wǒ de Hànyǔ lǎoshī"
         }
        ],
-       "qpy": "Tā mǎi cǎipiào mǎi dé duō bù duō?"
+       "qpy": "Tā mǎi cǎipiào mǎi de duō bù duō?"
       },
       {
        "q": "小王被选为模范员工，他觉得怎么样？",
@@ -13763,7 +17235,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "他激动得说不出话来",
          "ico": "🏆",
-         "py": "Tā jīdòng dé shuō bù chū huà lái"
+         "py": "Tā jīdòng de shuō bù chū huà lái"
         },
         {
          "txt": "他明天要去机场",
@@ -13811,7 +17283,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏞️",
          "c": "s",
          "py": "hé àn shang",
-         "hv": "hà ngàn thượng"
+         "hv": "hà ngạn thượng"
         },
         {
          "t": "有",
@@ -13825,12 +17297,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌳",
          "c": "o",
          "py": "yī pái hěn gāo dà de shù",
-         "hv": "nhất bài _ cao đại đích thụ"
+         "hv": "nhất bài ngận cao đại đích thụ"
         }
        ],
        "traceWord": "岸上",
        "py": "Hé àn shang yǒu yī pái hěn gāo dà de shù",
-       "traceKey": "anshang"
+       "traceKey": "anshang",
+       "traceInfo": [
+        {
+         "c": "岸",
+         "py": "àn",
+         "hv": "ngạn"
+        },
+        {
+         "c": "上",
+         "py": "shang",
+         "hv": "thượng"
+        }
+       ]
       },
       {
        "scene": "🧊🐧❄️",
@@ -13842,26 +17326,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧭",
          "c": "s",
          "py": "běijí hé nánjí",
-         "hv": "_ cực hoà nam cực"
+         "hv": "bắc cực hòa nam cực"
         },
         {
          "t": "都有着",
          "ico": "⚡",
          "c": "v",
          "py": "dōu yǒuzhe",
-         "hv": "đô hữu trứ"
+         "hv": "đô hữu trước"
         },
         {
          "t": "很厚的冰雪",
          "ico": "❄️",
          "c": "o",
          "py": "hěn hòu de bīngxuě",
-         "hv": "_ _ đích băng _"
+         "hv": "ngận hậu đích băng tuyết"
         }
        ],
        "traceWord": "南极",
        "py": "Běijí hé nánjí dōu yǒuzhe hěn hòu de bīngxuě",
-       "traceKey": "nanji"
+       "traceKey": "nanji",
+       "traceInfo": [
+        {
+         "c": "南",
+         "py": "nán",
+         "hv": "nam"
+        },
+        {
+         "c": "极",
+         "py": "jí",
+         "hv": "cực"
+        }
+       ]
       },
       {
        "scene": "🌾🐑🐂",
@@ -13873,26 +17369,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌾",
          "c": "s",
          "py": "zhè piàn cǎoyuán shàng",
-         "hv": "_ phiến thảo nguyên thượng"
+         "hv": "giá phiến thảo nguyên thượng"
         },
         {
          "t": "有着",
          "ico": "⚡",
          "c": "v",
          "py": "yǒuzhe",
-         "hv": "hữu trứ"
+         "hv": "hữu trước"
         },
         {
          "t": "很多牛和羊",
          "ico": "🐑",
          "c": "o",
          "py": "hěn duō niú hé yáng",
-         "hv": "_ đa ngưu hoà dương"
+         "hv": "ngận đa ngưu hòa dương"
         }
        ],
        "traceWord": "草原",
        "py": "Zhè piàn cǎoyuán shàng yǒuzhe hěn duō niú hé yáng",
-       "traceKey": "caoyuan"
+       "traceKey": "caoyuan",
+       "traceInfo": [
+        {
+         "c": "草",
+         "py": "cǎo",
+         "hv": "thảo"
+        },
+        {
+         "c": "原",
+         "py": "yuán",
+         "hv": "nguyên"
+        }
+       ]
       },
       {
        "scene": "🗺️⛰️✍️",
@@ -13918,12 +17426,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⛰️",
          "c": "o",
          "py": "gāoyuán hé píngyuán de míngzi",
-         "hv": "cao nguyên hoà bình nguyên đích danh tự"
+         "hv": "cao nguyên hòa bình nguyên đích danh tự"
         }
        ],
        "traceWord": "高原",
        "py": "Dìtú shàng xiě yǒu gāoyuán hé píngyuán de míngzi",
-       "traceKey": "gaoyuan"
+       "traceKey": "gaoyuan",
+       "traceInfo": [
+        {
+         "c": "高",
+         "py": "gāo",
+         "hv": "cao"
+        },
+        {
+         "c": "原",
+         "py": "yuán",
+         "hv": "nguyên"
+        }
+       ]
       },
       {
        "scene": "🏜️🌵☀️",
@@ -13935,26 +17455,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏜️",
          "c": "s",
          "py": "shāmò dìdài",
-         "hv": "sa mạc địa đai"
+         "hv": "sa mạc địa đới"
         },
         {
          "t": "有着",
          "ico": "⚡",
          "c": "v",
          "py": "yǒuzhe",
-         "hv": "hữu trứ"
+         "hv": "hữu trước"
         },
         {
          "t": "十分特殊的地形",
          "ico": "🌄",
          "c": "o",
          "py": "shífēn tèshū de dìxíng",
-         "hv": "thập phân đặc thùa đích địa hình"
+         "hv": "thập phân đặc thù đích địa hình"
         }
        ],
        "traceWord": "地形",
        "py": "Shāmò dìdài yǒuzhe shífēn tèshū de dìxíng",
-       "traceKey": "dixing"
+       "traceKey": "dixing",
+       "traceInfo": [
+        {
+         "c": "地",
+         "py": "dì",
+         "hv": "địa"
+        },
+        {
+         "c": "形",
+         "py": "xíng",
+         "hv": "hình"
+        }
+       ]
       },
       {
        "scene": "⛰️💧🏞️",
@@ -13966,7 +17498,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⛰️",
          "c": "s",
          "py": "shān dòng pángbiān",
-         "hv": "sơn đọng bàng biên"
+         "hv": "sơn động bàng biên"
         },
         {
          "t": "有",
@@ -13980,12 +17512,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💧",
          "c": "o",
          "py": "yī yǎn quán hé yī tiáo xiǎo gōu",
-         "hv": "nhất nhãn tuyền hoà nhất điều tiểu _"
+         "hv": "nhất nhãn tuyền hòa nhất điều tiểu câu"
         }
        ],
        "traceWord": "洞",
        "py": "Shān dòng pángbiān yǒu yī yǎn quán hé yī tiáo xiǎo gōu",
-       "traceKey": "dong"
+       "traceKey": "dong",
+       "traceInfo": [
+        {
+         "c": "洞",
+         "py": "dòng",
+         "hv": "động"
+        }
+       ]
       },
       {
        "scene": "🏔️🌳🛡️",
@@ -14011,12 +17550,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌳",
          "c": "o",
          "py": "hěn duō shù",
-         "hv": "_ đa thụ"
+         "hv": "ngận đa thụ"
         }
        ],
        "traceWord": "边境",
        "py": "Biānjìng qūyù de shān shàng yǒu hěn duō shù",
-       "traceKey": "bianjing"
+       "traceKey": "bianjing",
+       "traceInfo": [
+        {
+         "c": "边",
+         "py": "biān",
+         "hv": "biên"
+        },
+        {
+         "c": "境",
+         "py": "jìng",
+         "hv": "cảnh"
+        }
+       ]
       },
       {
        "scene": "🏗️💧🌊",
@@ -14028,7 +17579,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏗️",
          "c": "s",
          "py": "shān qū xīn jiàn de shuǐkù lǐ",
-         "hv": "sơn khu tân kiến đích thuỷ kho lịa"
+         "hv": "sơn khu tân kiến đích thủy khố lý"
         },
         {
          "t": "存有",
@@ -14042,12 +17593,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌊",
          "c": "o",
          "py": "dàliàng de shuǐ",
-         "hv": "đại _ đích thuỷ"
+         "hv": "đại lượng đích thủy"
         }
        ],
        "traceWord": "水库",
        "py": "Shān qū xīn jiàn de shuǐkù lǐ cún yǒu dàliàng de shuǐ",
-       "traceKey": "shuiku"
+       "traceKey": "shuiku",
+       "traceInfo": [
+        {
+         "c": "水",
+         "py": "shuǐ",
+         "hv": "thủy"
+        },
+        {
+         "c": "库",
+         "py": "kù",
+         "hv": "khố"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -14180,26 +17743,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙏",
          "c": "s",
          "py": "qǐng nǐ",
-         "hv": "thỉnh nể"
+         "hv": "thỉnh nễ"
         },
         {
          "t": "把",
          "ico": "🤲",
          "c": "v",
          "py": "bǎ",
-         "hv": "bã"
+         "hv": "bả"
         },
         {
          "t": "我的钢笔放在桌子上",
          "ico": "🖊️",
          "c": "o",
          "py": "wǒ de gāngbǐ fàng zài zhuōzi shàng",
-         "hv": "ngã đích gang bút phóng tại _ tí thượng"
+         "hv": "ngã đích cương bút phóng tại trác tử thượng"
         }
        ],
        "traceWord": "钢笔",
        "py": "Qǐng nǐ bǎ wǒ de gāngbǐ fàng zài zhuōzi shàng",
-       "traceKey": "gangbi"
+       "traceKey": "gangbi",
+       "traceInfo": [
+        {
+         "c": "钢",
+         "py": "gāng",
+         "hv": "cương"
+        },
+        {
+         "c": "笔",
+         "py": "bǐ",
+         "hv": "bút"
+        }
+       ]
       },
       {
        "scene": "🧑🖌️🎒",
@@ -14218,19 +17793,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤲",
          "c": "v",
          "py": "bǎ",
-         "hv": "bã"
+         "hv": "bả"
         },
         {
          "t": "毛笔和胶水都放进了背包",
          "ico": "🎒",
          "c": "o",
          "py": "máobǐ hé jiāoshuǐ dōu fàng jìn le bēibāo",
-         "hv": "mao bút hoà keo thuỷ đô phóng tiến liễu bối bao"
+         "hv": "mao bút hòa giao thủy đô phóng tiến liễu bối bao"
         }
        ],
        "traceWord": "背包",
        "py": "Tā bǎ máobǐ hé jiāoshuǐ dōu fàng jìn le bēibāo",
-       "traceKey": "beibao"
+       "traceKey": "beibao",
+       "traceInfo": [
+        {
+         "c": "背",
+         "py": "bēi",
+         "hv": "bối"
+        },
+        {
+         "c": "包",
+         "py": "bāo",
+         "hv": "bao"
+        }
+       ]
       },
       {
        "scene": "🧑✂️📏",
@@ -14249,7 +17836,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✂️",
          "c": "v",
          "py": "yòng jiǎndāo bǎ jiāodài jiǎn",
-         "hv": "dụng tiện đao bã keo đai tiện"
+         "hv": "dụng tiễn đao bả giao đới tiễn"
         },
         {
          "t": "成了两段",
@@ -14261,7 +17848,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "剪刀",
        "py": "Xiǎowáng yòng jiǎndāo bǎ jiāodài jiǎn chéng le liǎng duàn",
-       "traceKey": "jiandao"
+       "traceKey": "jiandao",
+       "traceInfo": [
+        {
+         "c": "剪",
+         "py": "jiǎn",
+         "hv": "tiễn"
+        },
+        {
+         "c": "刀",
+         "py": "dāo",
+         "hv": "đao"
+        }
+       ]
       },
       {
        "scene": "🧑🔋🆕",
@@ -14280,19 +17879,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤲",
          "c": "v",
          "py": "bǎ",
-         "hv": "bã"
+         "hv": "bả"
         },
         {
          "t": "没电的电池换成了新的",
          "ico": "🔋",
          "c": "o",
          "py": "méi diàn de diànchí huàn chéng le xīn de",
-         "hv": "một _ đích _ trì _ thành liễu tân đích"
+         "hv": "một điện đích điện trì hoán thành liễu tân đích"
         }
        ],
        "traceWord": "电池",
        "py": "Wǒ bǎ méi diàn de diànchí huàn chéng le xīn de",
-       "traceKey": "dianchi"
+       "traceKey": "dianchi",
+       "traceInfo": [
+        {
+         "c": "电",
+         "py": "diàn",
+         "hv": "điện"
+        },
+        {
+         "c": "池",
+         "py": "chí",
+         "hv": "trì"
+        }
+       ]
       },
       {
        "scene": "🏢🥵🪭",
@@ -14304,26 +17915,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🥵",
          "c": "s",
          "py": "bàngōngshì lǐ tài rè le Xiǎolǐ",
-         "hv": "_ công thất lịa thái nhiệt liễu tiểu lí"
+         "hv": "biện công thất lý thái nhiệt liễu tiểu lý"
         },
         {
          "t": "把",
          "ico": "🤲",
          "c": "v",
          "py": "bǎ",
-         "hv": "bã"
+         "hv": "bả"
         },
         {
          "t": "扇子拿出来扇风",
          "ico": "🪭",
          "c": "o",
          "py": "shànzi ná chūlái shān fēng",
-         "hv": "phiến tí nã xuất lai phiến phong"
+         "hv": "phiến tử nã xuất lai phiến phong"
         }
        ],
        "traceWord": "扇子",
        "py": "Bàngōngshì lǐ tài rè le Xiǎolǐ bǎ shànzi ná chūlái shān fēng",
-       "traceKey": "shanzi"
+       "traceKey": "shanzi",
+       "traceInfo": [
+        {
+         "c": "扇",
+         "py": "shàn",
+         "hv": "phiến"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "🏢🚪🔒",
@@ -14335,26 +17958,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🕔",
          "c": "s",
          "py": "xiàbān yǐqián qǐng nǐ",
-         "hv": "hạ ban _ tiền thỉnh nể"
+         "hv": "hạ ban dĩ tiền thỉnh nễ"
         },
         {
          "t": "把",
          "ico": "🤲",
          "c": "v",
          "py": "bǎ",
-         "hv": "bã"
+         "hv": "bả"
         },
         {
          "t": "办公室的门锁好",
          "ico": "🔒",
          "c": "o",
          "py": "bàngōngshì de mén suǒ hǎo",
-         "hv": "_ công thất đích môn toả háo"
+         "hv": "biện công thất đích môn tỏa hảo"
         }
        ],
        "traceWord": "锁",
        "py": "Xiàbān yǐqián qǐng nǐ bǎ bàngōngshì de mén suǒ hǎo",
-       "traceKey": "suo"
+       "traceKey": "suo",
+       "traceInfo": [
+        {
+         "c": "锁",
+         "py": "suǒ",
+         "hv": "tỏa"
+        }
+       ]
       },
       {
        "scene": "🚪🍚⚡",
@@ -14366,26 +17996,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚪",
          "c": "s",
          "py": "chūmén yǐqián bié wàng le",
-         "hv": "xuất môn _ tiền _ vong liễu"
+         "hv": "xuất môn dĩ tiền biệt vong liễu"
         },
         {
          "t": "把",
          "ico": "🤲",
          "c": "v",
          "py": "bǎ",
-         "hv": "bã"
+         "hv": "bả"
         },
         {
          "t": "电饭锅的电源关上",
          "ico": "🍚",
          "c": "o",
          "py": "diànfànguō de diànyuán guānshang",
-         "hv": "_ _ _ đích _ nguồn quan thượng"
+         "hv": "điện phạn oa đích điện nguyên quan thượng"
         }
        ],
        "traceWord": "电饭锅",
        "py": "Chūmén yǐqián bié wàng le bǎ diànfànguō de diànyuán guānshang",
-       "traceKey": "dianfanguo"
+       "traceKey": "dianfanguo",
+       "traceInfo": [
+        {
+         "c": "电",
+         "py": "diàn",
+         "hv": "điện"
+        },
+        {
+         "c": "饭",
+         "py": "fàn",
+         "hv": "phạn"
+        },
+        {
+         "c": "锅",
+         "py": "guō",
+         "hv": "oa"
+        }
+       ]
       },
       {
        "scene": "👩🔥👶",
@@ -14397,26 +18044,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👩",
          "c": "s",
          "py": "māma",
-         "hv": "má má"
+         "hv": "ma ma"
         },
         {
          "t": "把",
          "ico": "🤲",
          "c": "v",
          "py": "bǎ",
-         "hv": "bã"
+         "hv": "bả"
         },
         {
          "t": "火柴放在孩子拿不到的地方",
          "ico": "🔥",
          "c": "o",
          "py": "huǒchái fàng zài háizi ná bú dào de dìfang",
-         "hv": "hoả sài phóng tại hài tí nã bất đáo đích địa phương"
+         "hv": "hỏa sài phóng tại hài tử nã bất đáo đích địa phương"
         }
        ],
        "traceWord": "火柴",
        "py": "Māma bǎ huǒchái fàng zài háizi ná bú dào de dìfang",
-       "traceKey": "huochai"
+       "traceKey": "huochai",
+       "traceInfo": [
+        {
+         "c": "火",
+         "py": "huǒ",
+         "hv": "hỏa"
+        },
+        {
+         "c": "柴",
+         "py": "chái",
+         "hv": "sài"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -14442,7 +18101,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Yīnwèi xià ge yuè wǒ yào qù Běijīng"
         }
        ],
-       "qpy": "Nǐ wèi shénme bǎ shǒujī de língshēng diào xiǎo le?"
+       "qpy": "Nǐ wèi shénme bǎ shǒujī de língshēng tiáo xiǎo le?"
       },
       {
        "q": "你把剪子放在哪儿了？",
@@ -14553,13 +18212,13 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧥",
          "c": "s",
          "py": "nà jiàn yǔróngfú",
-         "hv": "na kiện võ nhung phục"
+         "hv": "na kiện vũ nhung phục"
         },
         {
          "t": "已经洗得",
          "ico": "🧺",
          "c": "v",
-         "py": "yǐjīng xǐ dé",
+         "py": "yǐjīng xǐ de",
          "hv": "dĩ kinh tẩy đắc"
         },
         {
@@ -14567,12 +18226,29 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "✨",
          "c": "o",
          "py": "hěn gānjìng le",
-         "hv": "_ can _ liễu"
+         "hv": "ngận can tịnh liễu"
         }
        ],
        "traceWord": "羽绒服",
-       "py": "Nà jiàn yǔróngfú yǐjīng xǐ dé hěn gānjìng le",
-       "traceKey": "yurongfu"
+       "py": "Nà jiàn yǔróngfú yǐjīng xǐ de hěn gānjìng le",
+       "traceKey": "yurongfu",
+       "traceInfo": [
+        {
+         "c": "羽",
+         "py": "yǔ",
+         "hv": "vũ"
+        },
+        {
+         "c": "绒",
+         "py": "róng",
+         "hv": "nhung"
+        },
+        {
+         "c": "服",
+         "py": "fú",
+         "hv": "phục"
+        }
+       ]
       },
       {
        "scene": "👖🛍️🚫",
@@ -14584,7 +18260,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👖",
          "c": "s",
          "py": "nà tiáo niúzǎikù",
-         "hv": "na điều ngưu tử khố"
+         "hv": "na điều ngưu tể khố"
         },
         {
          "t": "买回来",
@@ -14598,12 +18274,29 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚫",
          "c": "o",
          "py": "yǐhòu yīzhí méi chuān",
-         "hv": "_ hậu nhất _ một xuyên"
+         "hv": "dĩ hậu nhất trực một xuyên"
         }
        ],
        "traceWord": "牛仔裤",
        "py": "Nà tiáo niúzǎikù mǎi huílái yǐhòu yīzhí méi chuān",
-       "traceKey": "niuzaiku"
+       "traceKey": "niuzaiku",
+       "traceInfo": [
+        {
+         "c": "牛",
+         "py": "niú",
+         "hv": "ngưu"
+        },
+        {
+         "c": "仔",
+         "py": "zǎi",
+         "hv": "tể"
+        },
+        {
+         "c": "裤",
+         "py": "kù",
+         "hv": "khố"
+        }
+       ]
       },
       {
        "scene": "👞✨💼",
@@ -14615,26 +18308,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👞",
          "c": "s",
          "py": "zhè shuāng píxié",
-         "hv": "_ song bì hài"
+         "hv": "giá song bì hài"
         },
         {
          "t": "擦亮了",
          "ico": "✨",
          "c": "v",
          "py": "cā liàng le",
-         "hv": "xát _ liễu"
+         "hv": "sát lượng liễu"
         },
         {
          "t": "就可以穿去开会",
          "ico": "💼",
          "c": "o",
          "py": "jiù kěyǐ chuān qù kāihuì",
-         "hv": "_ khả _ xuyên khứ khai hội"
+         "hv": "tựu khả dĩ xuyên khứ khai hội"
         }
        ],
        "traceWord": "皮鞋",
        "py": "Zhè shuāng píxié cā liàng le jiù kěyǐ chuān qù kāihuì",
-       "traceKey": "pixie"
+       "traceKey": "pixie",
+       "traceInfo": [
+        {
+         "c": "皮",
+         "py": "pí",
+         "hv": "bì"
+        },
+        {
+         "c": "鞋",
+         "py": "xié",
+         "hv": "hài"
+        }
+       ]
       },
       {
        "scene": "🤵📅🧺",
@@ -14665,7 +18370,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "西装",
        "py": "Míngtiān kāihuì yào chuān de xīzhuāng yǐjīng sòng qù xǐ le",
-       "traceKey": "xizhuang"
+       "traceKey": "xizhuang",
+       "traceInfo": [
+        {
+         "c": "西",
+         "py": "xī",
+         "hv": "tây"
+        },
+        {
+         "c": "装",
+         "py": "zhuāng",
+         "hv": "trang"
+        }
+       ]
       },
       {
        "scene": "👔🌈🏪",
@@ -14677,14 +18394,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "nà tiáo xiānyàn de lǐngdài",
-         "hv": "na điều tiên diễm đích lãnh đai"
+         "hv": "na điều tiên diễm đích lĩnh đới"
         },
         {
          "t": "早就卖",
          "ico": "💰",
          "c": "v",
          "py": "zǎo jiù mài",
-         "hv": "tảo _ mại"
+         "hv": "tảo tựu mại"
         },
         {
          "t": "完了",
@@ -14696,7 +18413,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "领带",
        "py": "Nà tiáo xiānyàn de lǐngdài zǎo jiù mài wánle",
-       "traceKey": "lingdai"
+       "traceKey": "lingdai",
+       "traceInfo": [
+        {
+         "c": "领",
+         "py": "lǐng",
+         "hv": "lĩnh"
+        },
+        {
+         "c": "带",
+         "py": "dài",
+         "hv": "đới"
+        }
+       ]
       },
       {
        "scene": "👩🎨🩶",
@@ -14708,14 +18437,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👩",
          "c": "s",
          "py": "tā de tóufa",
-         "hv": "_ đích đầu _"
+         "hv": "tha đích đầu phát"
         },
         {
          "t": "昨天刚染",
          "ico": "🎨",
          "c": "v",
          "py": "zuótiān gāng rǎn",
-         "hv": "_ thiên _ nhuộm"
+         "hv": "tạc thiên cương nhiễm"
         },
         {
          "t": "成了灰色",
@@ -14727,7 +18456,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "染",
        "py": "Tā de tóufa zuótiān gāng rǎn chéng le huīsè",
-       "traceKey": "ran"
+       "traceKey": "ran",
+       "traceInfo": [
+        {
+         "c": "染",
+         "py": "rǎn",
+         "hv": "nhiễm"
+        }
+       ]
       },
       {
        "scene": "🟣🧥🪑",
@@ -14739,26 +18475,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧥",
          "c": "s",
          "py": "nà jiàn zǐ sè de wàitào",
-         "hv": "na kiện tía sắc đích ngoại _"
+         "hv": "na kiện tử sắc đích ngoại sáo"
         },
         {
          "t": "随手披",
          "ico": "🤲",
          "c": "v",
          "py": "suíshǒu pī",
-         "hv": "tuỳ thủ phơ"
+         "hv": "tùy thủ phi"
         },
         {
          "t": "在椅子上",
          "ico": "🪑",
          "c": "o",
          "py": "zài yǐzi shàng",
-         "hv": "tại _ tí thượng"
+         "hv": "tại ỷ tử thượng"
         }
        ],
        "traceWord": "披",
        "py": "Nà jiàn zǐ sè de wàitào suíshǒu pī zài yǐzi shàng",
-       "traceKey": "pi"
+       "traceKey": "pi",
+       "traceInfo": [
+        {
+         "c": "披",
+         "py": "pī",
+         "hv": "phi"
+        }
+       ]
       },
       {
        "scene": "🧔✂️😎",
@@ -14770,14 +18513,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧔",
          "c": "s",
          "py": "tā de húzi",
-         "hv": "tha đích _ tí"
+         "hv": "tha đích hồ tử"
         },
         {
          "t": "剪短了",
          "ico": "✂️",
          "c": "v",
          "py": "jiǎn duǎn le",
-         "hv": "tiện đoản liễu"
+         "hv": "tiễn đoản liễu"
         },
         {
          "t": "模样精神多了",
@@ -14789,7 +18532,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "模样",
        "py": "Tā de húzi jiǎn duǎn le múyàng jīngshén duō le",
-       "traceKey": "muyang"
+       "traceKey": "muyang",
+       "traceInfo": [
+        {
+         "c": "模",
+         "py": "mú",
+         "hv": "mô"
+        },
+        {
+         "c": "样",
+         "py": "yàng",
+         "hv": "dạng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -14922,26 +18677,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑‍🤝‍🧑",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "乘车去",
          "ico": "🚌",
          "c": "v",
          "py": "chéng chē qù",
-         "hv": "thặng xa khứ"
+         "hv": "thừa xa khứ"
         },
         {
          "t": "郊区看朋友",
          "ico": "🏘️",
          "c": "o",
          "py": "jiāoqū kàn péngyou",
-         "hv": "_ khu khán bằng hữu"
+         "hv": "giao khu khán bằng hữu"
         }
        ],
        "traceWord": "乘车",
        "py": "Wǒmen chéng chē qù jiāoqū kàn péngyou",
-       "traceKey": "chengche"
+       "traceKey": "chengche",
+       "traceInfo": [
+        {
+         "c": "乘",
+         "py": "chéng",
+         "hv": "thừa"
+        },
+        {
+         "c": "车",
+         "py": "chē",
+         "hv": "xa"
+        }
+       ]
       },
       {
        "scene": "🧑🏍️⚓",
@@ -14960,19 +18727,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏍️",
          "c": "v",
          "py": "měi tiān qí mótuō qù",
-         "hv": "mỗi thiên kị _ thác khứ"
+         "hv": "mỗi thiên kỵ ma thác khứ"
         },
         {
          "t": "码头上班",
          "ico": "⚓",
          "c": "o",
          "py": "mǎtóu shàngbān",
-         "hv": "_ đầu thượng ban"
+         "hv": "mã đầu thượng ban"
         }
        ],
        "traceWord": "摩托",
        "py": "Tā měi tiān qí mótuō qù mǎtóu shàngbān",
-       "traceKey": "motuo"
+       "traceKey": "motuo",
+       "traceInfo": [
+        {
+         "c": "摩",
+         "py": "mó",
+         "hv": "ma"
+        },
+        {
+         "c": "托",
+         "py": "tuō",
+         "hv": "thác"
+        }
+       ]
       },
       {
        "scene": "🧳🎫🚉",
@@ -14984,14 +18763,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧳",
          "c": "s",
          "py": "chéngkè",
-         "hv": "thặng khách"
+         "hv": "thừa khách"
         },
         {
          "t": "拿着",
          "ico": "🤲",
          "c": "v",
          "py": "ná zhe",
-         "hv": "nã trứ"
+         "hv": "nã trước"
         },
         {
          "t": "车票排队上车",
@@ -15003,7 +18782,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "乘客",
        "py": "Chéngkè ná zhe chēpiào páiduì shàng chē",
-       "traceKey": "chengke"
+       "traceKey": "chengke",
+       "traceInfo": [
+        {
+         "c": "乘",
+         "py": "chéng",
+         "hv": "thừa"
+        },
+        {
+         "c": "客",
+         "py": "kè",
+         "hv": "khách"
+        }
+       ]
       },
       {
        "scene": "🧑🏨🧳",
@@ -15015,7 +18806,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑‍🤝‍🧑",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "先去",
@@ -15029,12 +18820,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏨",
          "c": "o",
          "py": "chénglǐ de bīnguǎn fàngxia xíngli zài qù gōngsī",
-         "hv": "thành lịa đích tân quán phóng hạ hàng lí tái khứ công ti"
+         "hv": "thành lý đích tân quán phóng hạ hành lý tái khứ công ti"
         }
        ],
        "traceWord": "宾馆",
        "py": "Wǒmen xiān qù chénglǐ de bīnguǎn fàngxia xíngli zài qù gōngsī",
-       "traceKey": "binguan"
+       "traceKey": "binguan",
+       "traceInfo": [
+        {
+         "c": "宾",
+         "py": "bīn",
+         "hv": "tân"
+        },
+        {
+         "c": "馆",
+         "py": "guǎn",
+         "hv": "quán"
+        }
+       ]
       },
       {
        "scene": "🧑🪪🚗",
@@ -15046,7 +18849,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "nǐ",
-         "hv": "nể"
+         "hv": "nễ"
         },
         {
          "t": "要有驾照才能",
@@ -15060,12 +18863,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛣️",
          "c": "o",
          "py": "jiàshǐ qìchē shàng gāosù gōnglù",
-         "hv": "giá _ _ xa thượng cao tốc công lộ"
+         "hv": "giá sử khí xa thượng cao tốc công lộ"
         }
        ],
        "traceWord": "驾驶",
        "py": "Nǐ yào yǒu jiàzhào cáinéng jiàshǐ qìchē shàng gāosù gōnglù",
-       "traceKey": "jiashi"
+       "traceKey": "jiashi",
+       "traceInfo": [
+        {
+         "c": "驾",
+         "py": "jià",
+         "hv": "giá"
+        },
+        {
+         "c": "驶",
+         "py": "shǐ",
+         "hv": "sử"
+        }
+       ]
       },
       {
        "scene": "🌧️🚗🐢",
@@ -15077,26 +18892,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌧️",
          "c": "s",
          "py": "xià dà yǔ qìchē",
-         "hv": "hạ đại _ _ xa"
+         "hv": "hạ đại vũ khí xa"
         },
         {
          "t": "只好",
          "ico": "😕",
          "c": "v",
          "py": "zhǐhǎo",
-         "hv": "chỉ háo"
+         "hv": "chỉ hảo"
         },
         {
          "t": "在公路上慢慢行驶",
          "ico": "🐢",
          "c": "o",
          "py": "zài gōnglù shàng mànmàn xíngshǐ",
-         "hv": "tại công lộ thượng mạn mạn hàng _"
+         "hv": "tại công lộ thượng mạn mạn hành sử"
         }
        ],
        "traceWord": "行驶",
        "py": "Xià dà yǔ qìchē zhǐhǎo zài gōnglù shàng mànmàn xíngshǐ",
-       "traceKey": "xingshi"
+       "traceKey": "xingshi",
+       "traceInfo": [
+        {
+         "c": "行",
+         "py": "xíng",
+         "hv": "hành"
+        },
+        {
+         "c": "驶",
+         "py": "shǐ",
+         "hv": "sử"
+        }
+       ]
       },
       {
        "scene": "🧑‍🤝‍🧑🧭⛰️",
@@ -15108,7 +18935,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑‍🤝‍🧑",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "请了一位向导",
@@ -15122,12 +18949,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⛵",
          "c": "o",
          "py": "dài wǒmen chéngzuò xiǎo chuán qù shānqū",
-         "hv": "đai ngã món thặng _ tiểu thuyền khứ sơn khu"
+         "hv": "đới ngã môn thừa tọa tiểu thuyền khứ sơn khu"
         }
        ],
        "traceWord": "向导",
        "py": "Wǒmen qǐng le yī wèi xiàngdǎo dài wǒmen chéngzuò xiǎo chuán qù shānqū",
-       "traceKey": "xiangdao"
+       "traceKey": "xiangdao",
+       "traceInfo": [
+        {
+         "c": "向",
+         "py": "xiàng",
+         "hv": "hướng"
+        },
+        {
+         "c": "导",
+         "py": "dǎo",
+         "hv": "đạo"
+        }
+       ]
       },
       {
        "scene": "🏞️🚢↔️",
@@ -15139,14 +18978,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏞️",
          "c": "s",
          "py": "zhè tiáo hé de nánběi liǎng'àn",
-         "hv": "_ điều hà đích nam _ lưỡng ngàn"
+         "hv": "giá điều hà đích nam bắc lưỡng ngạn"
         },
         {
          "t": "要乘坐轮船",
          "ico": "🚢",
          "c": "v",
          "py": "yào chéngzuò lúnchuán",
-         "hv": "yếu thặng _ luân thuyền"
+         "hv": "yếu thừa tọa luân thuyền"
         },
         {
          "t": "才能过去",
@@ -15158,7 +18997,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "两岸",
        "py": "Zhè tiáo hé de nánběi liǎng'àn yào chéngzuò lúnchuán cáinéng guòqù",
-       "traceKey": "liangan"
+       "traceKey": "liangan",
+       "traceInfo": [
+        {
+         "c": "两",
+         "py": "liǎng",
+         "hv": "lưỡng"
+        },
+        {
+         "c": "岸",
+         "py": "àn",
+         "hv": "ngạn"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -15291,14 +19142,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         },
         {
          "t": "让",
          "ico": "👉",
          "c": "v",
          "py": "ràng",
-         "hv": "nhường"
+         "hv": "nhượng"
         },
         {
          "t": "我今天给客户回信",
@@ -15310,7 +19161,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "回信",
        "py": "Jīnglǐ ràng wǒ jīntiān gěi kèhù huíxìn",
-       "traceKey": "huixin"
+       "traceKey": "huixin",
+       "traceInfo": [
+        {
+         "c": "回",
+         "py": "huí",
+         "hv": "hồi"
+        },
+        {
+         "c": "信",
+         "py": "xìn",
+         "hv": "tín"
+        }
+       ]
       },
       {
        "scene": "👨‍💼📬✉️",
@@ -15322,7 +19185,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👨‍💼",
          "c": "s",
          "py": "lǎobǎn",
-         "hv": "lão ván"
+         "hv": "lão bản"
         },
         {
          "t": "叫",
@@ -15336,12 +19199,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📬",
          "c": "o",
          "py": "Xiǎowáng qù xìnxiāng kàn kàn yǒu méiyǒu láixìn",
-         "hv": "tiểu vương khứ tín rương khán khán hữu một hữu lai tín"
+         "hv": "tiểu vương khứ tín tương khán khán hữu một hữu lai tín"
         }
        ],
        "traceWord": "信箱",
        "py": "Lǎobǎn jiào Xiǎowáng qù xìnxiāng kàn kàn yǒu méiyǒu láixìn",
-       "traceKey": "xinxiang"
+       "traceKey": "xinxiang",
+       "traceInfo": [
+        {
+         "c": "信",
+         "py": "xìn",
+         "hv": "tín"
+        },
+        {
+         "c": "箱",
+         "py": "xiāng",
+         "hv": "tương"
+        }
+       ]
       },
       {
        "scene": "🤝💭🧑",
@@ -15353,26 +19228,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "s",
          "py": "zhè cì huìtán",
-         "hv": "_ thứ hội đàm"
+         "hv": "giá thứ hội đàm"
         },
         {
          "t": "让",
          "ico": "👉",
          "c": "v",
          "py": "ràng",
-         "hv": "nhường"
+         "hv": "nhượng"
         },
         {
          "t": "我有很多感想",
          "ico": "💭",
          "c": "o",
          "py": "wǒ yǒu hěn duō gǎnxiǎng",
-         "hv": "ngã hữu _ đa cảm tưởng"
+         "hv": "ngã hữu ngận đa cảm tưởng"
         }
        ],
        "traceWord": "感想",
        "py": "Zhè cì huìtán ràng wǒ yǒu hěn duō gǎnxiǎng",
-       "traceKey": "ganxiang"
+       "traceKey": "ganxiang",
+       "traceInfo": [
+        {
+         "c": "感",
+         "py": "gǎn",
+         "hv": "cảm"
+        },
+        {
+         "c": "想",
+         "py": "xiǎng",
+         "hv": "tưởng"
+        }
+       ]
       },
       {
        "scene": "💌😊🤗",
@@ -15391,7 +19278,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👉",
          "c": "v",
          "py": "shǐ",
-         "hv": "sứ"
+         "hv": "sử"
         },
         {
          "t": "他感受到朋友的关心",
@@ -15403,7 +19290,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "贺卡",
        "py": "Yī zhāng hèkǎ shǐ tā gǎnshòu dào péngyou de guānxīn",
-       "traceKey": "heka"
+       "traceKey": "heka",
+       "traceInfo": [
+        {
+         "c": "贺",
+         "py": "hè",
+         "hv": "hạ"
+        },
+        {
+         "c": "卡",
+         "py": "kǎ",
+         "hv": "_"
+        }
+       ]
       },
       {
        "scene": "📞🤝✅",
@@ -15415,26 +19314,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📞",
          "c": "s",
          "py": "jīngcháng liánluò",
-         "hv": "kinh thường liên rạc"
+         "hv": "kinh thường liên lạc"
         },
         {
          "t": "使",
          "ico": "👉",
          "c": "v",
          "py": "shǐ",
-         "hv": "sứ"
+         "hv": "sử"
         },
         {
          "t": "我们的沟通更加顺利",
          "ico": "✅",
          "c": "o",
          "py": "wǒmen de gōutōng gèngjiā shùnlì",
-         "hv": "ngã món đích _ thông cánh gia thuận lợi"
+         "hv": "ngã môn đích câu thông cánh gia thuận lợi"
         }
        ],
        "traceWord": "联络",
        "py": "Jīngcháng liánluò shǐ wǒmen de gōutōng gèngjiā shùnlì",
-       "traceKey": "lianluo"
+       "traceKey": "lianluo",
+       "traceInfo": [
+        {
+         "c": "联",
+         "py": "lián",
+         "hv": "liên"
+        },
+        {
+         "c": "络",
+         "py": "luò",
+         "hv": "lạc"
+        }
+       ]
       },
       {
        "scene": "👔💻✈️",
@@ -15446,26 +19357,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "zhǔrèn",
-         "hv": "chúa nhậm"
+         "hv": "chủ nhiệm"
         },
         {
          "t": "让",
          "ico": "👉",
          "c": "v",
          "py": "ràng",
-         "hv": "nhường"
+         "hv": "nhượng"
         },
         {
          "t": "秘书先查询航班再询问客户的时间",
          "ico": "💻",
          "c": "o",
          "py": "mìshū xiān cháxún hángbān zài xúnwèn kèhù de shíjiān",
-         "hv": "_ thư tiên tra _ hàng ban tái _ _ khách hộ đích thì gian"
+         "hv": "bí thư tiên tra tuân hàng ban tái tuân vấn khách hộ đích thời gian"
         }
        ],
        "traceWord": "查询",
        "py": "Zhǔrèn ràng mìshū xiān cháxún hángbān zài xúnwèn kèhù de shíjiān",
-       "traceKey": "chaxun"
+       "traceKey": "chaxun",
+       "traceInfo": [
+        {
+         "c": "查",
+         "py": "chá",
+         "hv": "tra"
+        },
+        {
+         "c": "询",
+         "py": "xún",
+         "hv": "tuân"
+        }
+       ]
       },
       {
        "scene": "🤝🎁🙏",
@@ -15477,26 +19400,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "s",
          "py": "péngyou de bāngzhù",
-         "hv": "bằng hữu đích _ trợ"
+         "hv": "bằng hữu đích bang trợ"
         },
         {
          "t": "让",
          "ico": "👉",
          "c": "v",
          "py": "ràng",
-         "hv": "nhường"
+         "hv": "nhượng"
         },
         {
          "t": "我一直想着怎么报答他",
          "ico": "🙏",
          "c": "o",
          "py": "wǒ yīzhí xiǎng zhe zěnme bàodá tā",
-         "hv": "ngã nhất _ tưởng trứ chẩn _ báo đáp tha"
+         "hv": "ngã nhất trực tưởng trước chẩm ma báo đáp tha"
         }
        ],
        "traceWord": "报答",
        "py": "Péngyou de bāngzhù ràng wǒ yīzhí xiǎng zhe zěnme bàodá tā",
-       "traceKey": "baoda"
+       "traceKey": "baoda",
+       "traceInfo": [
+        {
+         "c": "报",
+         "py": "bào",
+         "hv": "báo"
+        },
+        {
+         "c": "答",
+         "py": "dá",
+         "hv": "đáp"
+        }
+       ]
       },
       {
        "scene": "🌐💬🛒",
@@ -15515,19 +19450,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👉",
          "c": "v",
          "py": "shǐ",
-         "hv": "sứ"
+         "hv": "sử"
         },
         {
          "t": "不少人改变了对这个产品的看法",
          "ico": "🛒",
          "c": "o",
          "py": "bù shǎo rén gǎibiàn le duì zhè gè chǎnpǐn de kànfǎ",
-         "hv": "bất thiểu nhân _ biến liễu đỗi _ cá _ phẩm đích khán pháp"
+         "hv": "bất thiểu nhân cải biến liễu đối giá cá sản phẩm đích khán pháp"
         }
        ],
        "traceWord": "评论",
        "py": "Wǎng shang de pínglùn shǐ bù shǎo rén gǎibiàn le duì zhè gè chǎnpǐn de kànfǎ",
-       "traceKey": "pinglun"
+       "traceKey": "pinglun",
+       "traceInfo": [
+        {
+         "c": "评",
+         "py": "píng",
+         "hv": "bình"
+        },
+        {
+         "c": "论",
+         "py": "lùn",
+         "hv": "luận"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -15564,7 +19511,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "因为他说得不够清楚",
          "ico": "🗣️",
-         "py": "Yīnwèi tā shuō dé bùgòu qīngchu"
+         "py": "Yīnwèi tā shuō de bùgòu qīngchu"
         },
         {
          "txt": "因为明天会下雨",
@@ -15670,19 +19617,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌍",
          "c": "v",
          "py": "bǐ dìqiú xiǎo",
-         "hv": "tỉ địa cầu tiểu"
+         "hv": "tỷ địa cầu tiểu"
         },
         {
          "t": "很多",
          "ico": "🔢",
          "c": "o",
          "py": "hěn duō",
-         "hv": "_ đa"
+         "hv": "ngận đa"
         }
        ],
        "traceWord": "体积",
        "py": "Yuèqiú de tǐjī bǐ dìqiú xiǎo hěn duō",
-       "traceKey": "tiji"
+       "traceKey": "tiji",
+       "traceInfo": [
+        {
+         "c": "体",
+         "py": "tǐ",
+         "hv": "thể"
+        },
+        {
+         "c": "积",
+         "py": "jī",
+         "hv": "tích"
+        }
+       ]
       },
       {
        "scene": "🚀🌍🔥",
@@ -15694,26 +19653,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌍",
          "c": "s",
          "py": "dìmiàn shàng de mócā",
-         "hv": "địa _ thượng đích _ xát"
+         "hv": "địa diện thượng đích ma sát"
         },
         {
          "t": "跟太空相比",
          "ico": "🚀",
          "c": "v",
          "py": "gēn tàikōng xiāngbǐ",
-         "hv": "ngấn thái không tương tỉ"
+         "hv": "cân thái không tương tỷ"
         },
         {
          "t": "大得多",
          "ico": "📈",
          "c": "o",
-         "py": "dà dé duō",
+         "py": "dà de duō",
          "hv": "đại đắc đa"
         }
        ],
        "traceWord": "摩擦",
-       "py": "Dìmiàn shàng de mócā gēn tàikōng xiāngbǐ dà dé duō",
-       "traceKey": "moca"
+       "py": "Dìmiàn shàng de mócā gēn tàikōng xiāngbǐ dà de duō",
+       "traceKey": "moca",
+       "traceInfo": [
+        {
+         "c": "摩",
+         "py": "mó",
+         "hv": "ma"
+        },
+        {
+         "c": "擦",
+         "py": "cā",
+         "hv": "sát"
+        }
+       ]
       },
       {
        "scene": "🛰️🌕🌍",
@@ -15725,26 +19696,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛰️",
          "c": "s",
          "py": "zhè kē wèixīng",
-         "hv": "_ _ vệ tinh"
+         "hv": "giá khỏa vệ tinh"
         },
         {
          "t": "比月球离地球近",
          "ico": "🌕",
          "c": "v",
          "py": "bǐ yuèqiú lí dìqiú jìn",
-         "hv": "tỉ nguyệt cầu li địa cầu cận"
+         "hv": "tỷ nguyệt cầu ly địa cầu cận"
         },
         {
          "t": "三万公里",
          "ico": "📏",
          "c": "o",
          "py": "sān wàn gōnglǐ",
-         "hv": "tam vạn công lịa"
+         "hv": "tam vạn công lý"
         }
        ],
        "traceWord": "卫星",
        "py": "Zhè kē wèixīng bǐ yuèqiú lí dìqiú jìn sān wàn gōnglǐ",
-       "traceKey": "weixing"
+       "traceKey": "weixing",
+       "traceInfo": [
+        {
+         "c": "卫",
+         "py": "wèi",
+         "hv": "vệ"
+        },
+        {
+         "c": "星",
+         "py": "xīng",
+         "hv": "tinh"
+        }
+       ]
       },
       {
        "scene": "🌙☀️⚡",
@@ -15756,26 +19739,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌙",
          "c": "s",
          "py": "yuèliang fāchū de néngliàng",
-         "hv": "nguyệt _ _ xuất đích năng _"
+         "hv": "nguyệt lượng phát xuất đích năng lượng"
         },
         {
          "t": "跟太阳相比",
          "ico": "☀️",
          "c": "v",
          "py": "gēn tàiyáng xiāngbǐ",
-         "hv": "ngấn thái dương tương tỉ"
+         "hv": "cân thái dương tương tỷ"
         },
         {
          "t": "少得多",
          "ico": "📉",
          "c": "o",
-         "py": "shǎo dé duō",
+         "py": "shǎo de duō",
          "hv": "thiểu đắc đa"
         }
        ],
        "traceWord": "能量",
-       "py": "Yuèliang fāchū de néngliàng gēn tàiyáng xiāngbǐ shǎo dé duō",
-       "traceKey": "nengliang"
+       "py": "Yuèliang fāchū de néngliàng gēn tàiyáng xiāngbǐ shǎo de duō",
+       "traceKey": "nengliang",
+       "traceInfo": [
+        {
+         "c": "能",
+         "py": "néng",
+         "hv": "năng"
+        },
+        {
+         "c": "量",
+         "py": "liàng",
+         "hv": "lượng"
+        }
+       ]
       },
       {
        "scene": "🔭🌟🧑",
@@ -15787,14 +19782,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔭",
          "c": "s",
          "py": "zhè wèi tóngshì duì tiānwén de xìngqù",
-         "hv": "_ vị đồng sự đỗi thiên văn đích hưng thú"
+         "hv": "giá vị đồng sự đối thiên văn đích hứng thú"
         },
         {
          "t": "比我大",
          "ico": "🧑",
          "c": "v",
          "py": "bǐ wǒ dà",
-         "hv": "tỉ ngã đại"
+         "hv": "tỷ ngã đại"
         },
         {
          "t": "一倍",
@@ -15806,7 +19801,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "天文",
        "py": "Zhè wèi tóngshì duì tiānwén de xìngqù bǐ wǒ dà yī bèi",
-       "traceKey": "tianwen"
+       "traceKey": "tianwen",
+       "traceInfo": [
+        {
+         "c": "天",
+         "py": "tiān",
+         "hv": "thiên"
+        },
+        {
+         "c": "文",
+         "py": "wén",
+         "hv": "văn"
+        }
+       ]
       },
       {
        "scene": "🪑📐📏",
@@ -15818,26 +19825,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🪑",
          "c": "s",
          "py": "zhè zhāng zhuōzi de chángdù",
-         "hv": "_ trương _ tí đích trường độ"
+         "hv": "giá trương trác tử đích trường độ"
         },
         {
          "t": "比宽度多",
          "ico": "📐",
          "c": "v",
          "py": "bǐ kuāndù duō",
-         "hv": "tỉ khoan độ đa"
+         "hv": "tỷ khoan độ đa"
         },
         {
          "t": "三十厘米",
          "ico": "📏",
          "c": "o",
          "py": "sān shí límǐ",
-         "hv": "tam thập li _"
+         "hv": "tam thập li mễ"
         }
        ],
        "traceWord": "长度",
        "py": "Zhè zhāng zhuōzi de chángdù bǐ kuāndù duō sān shí límǐ",
-       "traceKey": "changdu"
+       "traceKey": "changdu",
+       "traceInfo": [
+        {
+         "c": "长",
+         "py": "cháng",
+         "hv": "trường"
+        },
+        {
+         "c": "度",
+         "py": "dù",
+         "hv": "độ"
+        }
+       ]
       },
       {
        "scene": "⛰️🏞️📏",
@@ -15849,26 +19868,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⛰️",
          "c": "s",
          "py": "zhè zuò shān de gāodù",
-         "hv": "_ toà sơn đích cao độ"
+         "hv": "giá tọa sơn đích cao độ"
         },
         {
          "t": "比那个湖的深度多",
          "ico": "🏞️",
          "c": "v",
          "py": "bǐ nà gè hú de shēndù duō",
-         "hv": "tỉ na cá hồ đích thâm độ đa"
+         "hv": "tỷ na cá hồ đích thâm độ đa"
         },
         {
          "t": "两千米",
          "ico": "📏",
          "c": "o",
          "py": "liǎng qiān mǐ",
-         "hv": "lưỡng thiên _"
+         "hv": "lưỡng thiên mễ"
         }
        ],
        "traceWord": "高度",
        "py": "Zhè zuò shān de gāodù bǐ nà gè hú de shēndù duō liǎng qiān mǐ",
-       "traceKey": "gaodu"
+       "traceKey": "gaodu",
+       "traceInfo": [
+        {
+         "c": "高",
+         "py": "gāo",
+         "hv": "cao"
+        },
+        {
+         "c": "度",
+         "py": "dù",
+         "hv": "độ"
+        }
+       ]
       },
       {
        "scene": "⚙️📳💪",
@@ -15880,14 +19911,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚙️",
          "c": "s",
          "py": "jīqì zhèndòng de qiángdù",
-         "hv": "cơ khí chấn động đích càng độ"
+         "hv": "cơ khí chấn động đích cường độ"
         },
         {
          "t": "比以前大了",
          "ico": "📈",
          "c": "v",
          "py": "bǐ yǐqián dà le",
-         "hv": "tỉ _ tiền đại liễu"
+         "hv": "tỷ dĩ tiền đại liễu"
         },
         {
          "t": "一倍",
@@ -15899,7 +19930,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "强度",
        "py": "Jīqì zhèndòng de qiángdù bǐ yǐqián dà le yī bèi",
-       "traceKey": "qiangdu"
+       "traceKey": "qiangdu",
+       "traceInfo": [
+        {
+         "c": "强",
+         "py": "qiáng",
+         "hv": "cường"
+        },
+        {
+         "c": "度",
+         "py": "dù",
+         "hv": "độ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -15912,12 +19955,12 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "月球上的物质比地球多得多",
          "ico": "🌍",
-         "py": "Yuèqiú shàng de wùzhì bǐ dìqiú duō dé duō"
+         "py": "Yuèqiú shàng de wùzhì bǐ dìqiú duō de duō"
         },
         {
          "txt": "月球上的物质比地球少得多",
          "ico": "✅",
-         "py": "Yuèqiú shàng de wùzhì bǐ dìqiú shǎo dé duō"
+         "py": "Yuèqiú shàng de wùzhì bǐ dìqiú shǎo de duō"
         },
         {
          "txt": "月球上的物质跟地球一样多",
@@ -16031,26 +20074,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "zhōngwǔ tóngshì men",
-         "hv": "trung ngọ đồng sự món"
+         "hv": "trung ngọ đồng sự môn"
         },
         {
          "t": "或是去餐馆",
          "ico": "🍽️",
          "c": "v",
          "py": "huòshì qù cānguǎn",
-         "hv": "hoặc thị khứ _ quán"
+         "hv": "hoặc thị khứ xan quán"
         },
         {
          "t": "或是点盒饭",
          "ico": "🍱",
          "c": "o",
          "py": "huòshì diǎn héfàn",
-         "hv": "hoặc thị điểm hộp _"
+         "hv": "hoặc thị điểm hạp phạn"
         }
        ],
        "traceWord": "餐馆",
        "py": "Zhōngwǔ tóngshì men huòshì qù cānguǎn huòshì diǎn héfàn",
-       "traceKey": "canguan"
+       "traceKey": "canguan",
+       "traceInfo": [
+        {
+         "c": "餐",
+         "py": "cān",
+         "hv": "xan"
+        },
+        {
+         "c": "馆",
+         "py": "guǎn",
+         "hv": "quán"
+        }
+       ]
       },
       {
        "scene": "📅🍽️🦆",
@@ -16062,26 +20117,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "wǒmen míngtiān",
-         "hv": "ngã món minh thiên"
+         "hv": "ngã môn minh thiên"
         },
         {
          "t": "或是在餐厅吃烤鸭",
          "ico": "🦆",
          "c": "v",
          "py": "huòshì zài cāntīng chī kǎoyā",
-         "hv": "hoặc thị tại _ _ khật khảo _"
+         "hv": "hoặc thị tại xan sảnh cật khảo áp"
         },
         {
          "t": "或是去餐馆吃烤肉",
          "ico": "🍖",
          "c": "o",
          "py": "huòshì qù cānguǎn chī kǎoròu",
-         "hv": "hoặc thị khứ _ quán khật khảo _"
+         "hv": "hoặc thị khứ xan quán cật khảo nhục"
         }
        ],
        "traceWord": "烤鸭",
        "py": "Wǒmen míngtiān huòshì zài cāntīng chī kǎoyā huòshì qù cānguǎn chī kǎoròu",
-       "traceKey": "kaoya"
+       "traceKey": "kaoya",
+       "traceInfo": [
+        {
+         "c": "烤",
+         "py": "kǎo",
+         "hv": "khảo"
+        },
+        {
+         "c": "鸭",
+         "py": "yā",
+         "hv": "áp"
+        }
+       ]
       },
       {
        "scene": "🏢🥤😋",
@@ -16093,26 +20160,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🥤",
          "c": "s",
          "py": "zhè jiā cānyǐn gōngsī mài de yǐnliào",
-         "hv": "_ gia _ ẩm công ti mại đích ẩm liệu"
+         "hv": "giá gia xan ẩm công ti mại đích ẩm liệu"
         },
         {
          "t": "或是甜的",
          "ico": "🍬",
          "c": "v",
          "py": "huòshì tián de",
-         "hv": "hoặc thị _ đích"
+         "hv": "hoặc thị điềm đích"
         },
         {
          "t": "或是酸的",
          "ico": "🍋",
          "c": "o",
          "py": "huòshì suān de",
-         "hv": "hoặc thị _ đích"
+         "hv": "hoặc thị toan đích"
         }
        ],
        "traceWord": "饮料",
        "py": "Zhè jiā cānyǐn gōngsī mài de yǐnliào huòshì tián de huòshì suān de",
-       "traceKey": "yinliao"
+       "traceKey": "yinliao",
+       "traceInfo": [
+        {
+         "c": "饮",
+         "py": "yǐn",
+         "hv": "ẩm"
+        },
+        {
+         "c": "料",
+         "py": "liào",
+         "hv": "liệu"
+        }
+       ]
       },
       {
        "scene": "🌙🍶🍷",
@@ -16124,26 +20203,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌙",
          "c": "s",
          "py": "wǎnfàn shí tā",
-         "hv": "vãn _ thì tha"
+         "hv": "vãn phạn thời tha"
         },
         {
          "t": "或是喝白酒",
          "ico": "🍶",
          "c": "v",
          "py": "huòshì hē báijiǔ",
-         "hv": "hoặc thị hát bạch _"
+         "hv": "hoặc thị hát bạch tửu"
         },
         {
          "t": "或是喝葡萄酒",
          "ico": "🍷",
          "c": "o",
          "py": "huòshì hē pútaojiǔ",
-         "hv": "hoặc thị hát _ _ _"
+         "hv": "hoặc thị hát bồ đào tửu"
         }
        ],
        "traceWord": "白酒",
        "py": "Wǎnfàn shí tā huòshì hē báijiǔ huòshì hē pútaojiǔ",
-       "traceKey": "baijiu"
+       "traceKey": "baijiu",
+       "traceInfo": [
+        {
+         "c": "白",
+         "py": "bái",
+         "hv": "bạch"
+        },
+        {
+         "c": "酒",
+         "py": "jiǔ",
+         "hv": "tửu"
+        }
+       ]
       },
       {
        "scene": "🆕🍣🦆",
@@ -16162,19 +20253,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🍣",
          "c": "v",
          "py": "huòshì cháng cháng shòusī",
-         "hv": "hoặc thị _ _ thọ ti"
+         "hv": "hoặc thị thường thường thọ ti"
         },
         {
          "t": "或是尝尝烤鸭",
          "ico": "🦆",
          "c": "o",
          "py": "huòshì cháng cháng kǎoyā",
-         "hv": "hoặc thị _ _ khảo _"
+         "hv": "hoặc thị thường thường khảo áp"
         }
        ],
        "traceWord": "寿司",
        "py": "Dì yī cì lái de kèrén huòshì cháng cháng shòusī huòshì cháng cháng kǎoyā",
-       "traceKey": "shousi"
+       "traceKey": "shousi",
+       "traceInfo": [
+        {
+         "c": "寿",
+         "py": "shòu",
+         "hv": "thọ"
+        },
+        {
+         "c": "司",
+         "py": "sī",
+         "hv": "ti"
+        }
+       ]
       },
       {
        "scene": "🍴🥢🍝",
@@ -16186,26 +20289,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🍽️",
          "c": "s",
          "py": "chī xīcān shí rénmen",
-         "hv": "khật tây _ thì nhân món"
+         "hv": "cật tây xan thời nhân môn"
         },
         {
          "t": "或是用叉子",
          "ico": "🍴",
          "c": "v",
          "py": "huòshì yòng chāzi",
-         "hv": "hoặc thị dụng _ tí"
+         "hv": "hoặc thị dụng xoa tử"
         },
         {
          "t": "或是用筷子",
          "ico": "🥢",
          "c": "o",
          "py": "huòshì yòng kuàizi",
-         "hv": "hoặc thị dụng _ tí"
+         "hv": "hoặc thị dụng khoái tử"
         }
        ],
        "traceWord": "叉子",
        "py": "Chī xīcān shí rénmen huòshì yòng chāzi huòshì yòng kuàizi",
-       "traceKey": "chazi"
+       "traceKey": "chazi",
+       "traceInfo": [
+        {
+         "c": "叉",
+         "py": "chā",
+         "hv": "xoa"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "💬😊😣",
@@ -16217,14 +20332,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "或是谈生活的酸甜苦辣",
          "ico": "😊",
          "c": "v",
          "py": "huòshì tán shēnghuó de suān-tián-kǔ-là",
-         "hv": "hoặc thị đàm sinh hoạt đích _ _ khổ lượt"
+         "hv": "hoặc thị đàm sinh hoạt đích toan điềm khổ lạt"
         },
         {
          "t": "或是谈工作的事情",
@@ -16236,7 +20351,29 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "酸甜苦辣",
        "py": "Wǒmen huòshì tán shēnghuó de suān-tián-kǔ-là huòshì tán gōngzuò de shìqing",
-       "traceKey": "suantiankula"
+       "traceKey": "suantiankula",
+       "traceInfo": [
+        {
+         "c": "酸",
+         "py": "suān",
+         "hv": "toan"
+        },
+        {
+         "c": "甜",
+         "py": "tián",
+         "hv": "điềm"
+        },
+        {
+         "c": "苦",
+         "py": "kǔ",
+         "hv": "khổ"
+        },
+        {
+         "c": "辣",
+         "py": "là",
+         "hv": "lạt"
+        }
+       ]
       },
       {
        "scene": "🏠🔪🍴",
@@ -16248,26 +20385,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "s",
          "py": "Xiǎomíng zài chúfáng lǐ",
-         "hv": "tiểu minh tại chù phòng lịa"
+         "hv": "tiểu minh tại trù phòng lý"
         },
         {
          "t": "或是洗菜",
          "ico": "🥬",
          "c": "v",
          "py": "huòshì xǐ cài",
-         "hv": "hoặc thị tẩy _"
+         "hv": "hoặc thị tẩy thái"
         },
         {
          "t": "或是用叉子叉肉",
          "ico": "🍴",
          "c": "o",
          "py": "huòshì yòng chāzi chā ròu",
-         "hv": "hoặc thị dụng _ tí _ _"
+         "hv": "hoặc thị dụng xoa tử xoa nhục"
         }
        ],
        "traceWord": "厨房",
        "py": "Xiǎomíng zài chúfáng lǐ huòshì xǐ cài huòshì yòng chāzi chā ròu",
-       "traceKey": "chufang"
+       "traceKey": "chufang",
+       "traceInfo": [
+        {
+         "c": "厨",
+         "py": "chú",
+         "hv": "trù"
+        },
+        {
+         "c": "房",
+         "py": "fáng",
+         "hv": "phòng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -16399,14 +20548,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💼",
          "c": "s",
          "py": "jǐnguǎn gōngzuò hěn jiānkǔ",
-         "hv": "tận quản công tác _ gian khổ"
+         "hv": "tẫn quản công tác ngận gian khổ"
         },
         {
          "t": "但是他的信念",
          "ico": "💭",
          "c": "v",
          "py": "dànshì tā de xìnniàn",
-         "hv": "_ thị tha đích tín niệm"
+         "hv": "đãn thị tha đích tín niệm"
         },
         {
          "t": "非常坚定",
@@ -16418,7 +20567,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "信念",
        "py": "Jǐnguǎn gōngzuò hěn jiānkǔ dànshì tā de xìnniàn fēicháng jiāndìng",
-       "traceKey": "xinnian"
+       "traceKey": "xinnian",
+       "traceInfo": [
+        {
+         "c": "信",
+         "py": "xìn",
+         "hv": "tín"
+        },
+        {
+         "c": "念",
+         "py": "niàn",
+         "hv": "niệm"
+        }
+       ]
       },
       {
        "scene": "🛣️👥🔥",
@@ -16430,26 +20591,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛣️",
          "c": "s",
          "py": "jǐnguǎn dàolù hěn jiānnán",
-         "hv": "tận quản đạo lộ _ gian nan"
+         "hv": "tẫn quản đạo lộ ngận gian nan"
         },
         {
          "t": "但是大家的意志",
          "ico": "👥",
          "c": "v",
          "py": "dànshì dàjiā de yìzhì",
-         "hv": "_ thị đại gia đích ý chí"
+         "hv": "đãn thị đại gia đích ý chí"
         },
         {
          "t": "从来没有动摇",
          "ico": "🔥",
          "c": "o",
          "py": "cónglái méiyǒu dòngyáo",
-         "hv": "tòng lai một hữu động gieo"
+         "hv": "tòng lai một hữu động dao"
         }
        ],
        "traceWord": "意志",
        "py": "Jǐnguǎn dàolù hěn jiānnán dànshì dàjiā de yìzhì cónglái méiyǒu dòngyáo",
-       "traceKey": "yizhi"
+       "traceKey": "yizhi",
+       "traceInfo": [
+        {
+         "c": "意",
+         "py": "yì",
+         "hv": "ý"
+        },
+        {
+         "c": "志",
+         "py": "zhì",
+         "hv": "chí"
+        }
+       ]
       },
       {
        "scene": "📉😊🙂",
@@ -16461,26 +20634,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📉",
          "c": "s",
          "py": "jǐnguǎn jiéguǒ bù hǎo",
-         "hv": "tận quản kết quả bất háo"
+         "hv": "tẫn quản kết quả bất hảo"
         },
         {
          "t": "但是他的心态",
          "ico": "🙂",
          "c": "v",
          "py": "dànshì tā de xīntài",
-         "hv": "_ thị tha đích tâm thái"
+         "hv": "đãn thị tha đích tâm thái"
         },
         {
          "t": "一点儿也不消极",
          "ico": "☀️",
          "c": "o",
          "py": "yīdiǎnr yě bù xiāojí",
-         "hv": "nhất điểm _ dã bất tiêu cực"
+         "hv": "nhất điểm nhi dã bất tiêu cực"
         }
        ],
        "traceWord": "心态",
        "py": "Jǐnguǎn jiéguǒ bù hǎo dànshì tā de xīntài yīdiǎnr yě bù xiāojí",
-       "traceKey": "xintai"
+       "traceKey": "xintai",
+       "traceInfo": [
+        {
+         "c": "心",
+         "py": "xīn",
+         "hv": "tâm"
+        },
+        {
+         "c": "态",
+         "py": "tài",
+         "hv": "thái"
+        }
+       ]
       },
       {
        "scene": "🛡️📘🧑",
@@ -16492,14 +20677,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛡️",
          "c": "s",
          "py": "jǐnguǎn tā de ānquán yìshí",
-         "hv": "tận quản tha đích an toàn ý _"
+         "hv": "tẫn quản tha đích an toàn ý thức"
         },
         {
          "t": "比较薄弱但是",
          "ico": "⚠️",
          "c": "v",
          "py": "bǐjiào bóruò dànshì",
-         "hv": "tỉ _ _ nhược _ thị"
+         "hv": "tỷ giảo bạc nhược đãn thị"
         },
         {
          "t": "他愿意学习",
@@ -16511,7 +20696,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "薄弱",
        "py": "Jǐnguǎn tā de ānquán yìshí bǐjiào bóruò dànshì tā yuànyì xuéxí",
-       "traceKey": "boruo"
+       "traceKey": "boruo",
+       "traceInfo": [
+        {
+         "c": "薄",
+         "py": "bó",
+         "hv": "bạc"
+        },
+        {
+         "c": "弱",
+         "py": "ruò",
+         "hv": "nhược"
+        }
+       ]
       },
       {
        "scene": "🏢🌙✋",
@@ -16523,14 +20720,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "jǐnguǎn gōngsī duì wǒ de qīwàng",
-         "hv": "tận quản công ti đỗi ngã đích kì vọng"
+         "hv": "tẫn quản công ti đối ngã đích kỳ vọng"
         },
         {
          "t": "很高但是",
          "ico": "⬆️",
          "c": "v",
          "py": "hěn gāo dànshì",
-         "hv": "_ cao _ thị"
+         "hv": "ngận cao đãn thị"
         },
         {
          "t": "加班是自愿的",
@@ -16542,7 +20739,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "期望",
        "py": "Jǐnguǎn gōngsī duì wǒ de qīwàng hěn gāo dànshì jiābān shì zìyuàn de",
-       "traceKey": "qiwang"
+       "traceKey": "qiwang",
+       "traceInfo": [
+        {
+         "c": "期",
+         "py": "qī",
+         "hv": "kỳ"
+        },
+        {
+         "c": "望",
+         "py": "wàng",
+         "hv": "vọng"
+        }
+       ]
       },
       {
        "scene": "💰🏷️🎯",
@@ -16554,26 +20763,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💰",
          "c": "s",
          "py": "jǐnguǎn Xiǎolǐ duì jiàgé",
-         "hv": "tận quản tiểu lí đỗi giá cách"
+         "hv": "tẫn quản tiểu lý đối giá cách"
         },
         {
          "t": "很敏感但是他更",
          "ico": "🏷️",
          "c": "v",
          "py": "hěn mǐngǎn dànshì tā gèng",
-         "hv": "_ mẫn cảm _ thị tha cánh"
+         "hv": "ngận mẫn cảm đãn thị tha cánh"
         },
         {
          "t": "重视产品内在的质量",
          "ico": "✅",
          "c": "o",
          "py": "zhòngshì chǎnpǐn nèizài de zhìliàng",
-         "hv": "trọng thị _ phẩm nội tại đích chất _"
+         "hv": "trọng thị sản phẩm nội tại đích chất lượng"
         }
        ],
        "traceWord": "敏感",
        "py": "Jǐnguǎn Xiǎolǐ duì jiàgé hěn mǐngǎn dànshì tā gèng zhòngshì chǎnpǐn nèizài de zhìliàng",
-       "traceKey": "mingan"
+       "traceKey": "mingan",
+       "traceInfo": [
+        {
+         "c": "敏",
+         "py": "mǐn",
+         "hv": "mẫn"
+        },
+        {
+         "c": "感",
+         "py": "gǎn",
+         "hv": "cảm"
+        }
+       ]
       },
       {
        "scene": "💭🙅‍♂️⏳",
@@ -16585,14 +20806,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💭",
          "c": "s",
          "py": "jǐnguǎn zhè gè kànfǎ bǐjiào zhǔguān",
-         "hv": "tận quản _ cá khán pháp tỉ _ chúa quan"
+         "hv": "tẫn quản giá cá khán pháp tỷ giảo chủ quan"
         },
         {
          "t": "但是我们",
          "ico": "👥",
          "c": "v",
          "py": "dànshì wǒmen",
-         "hv": "_ thị ngã món"
+         "hv": "đãn thị ngã môn"
         },
         {
          "t": "不能被动地等待",
@@ -16604,7 +20825,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "主观",
        "py": "Jǐnguǎn zhè gè kànfǎ bǐjiào zhǔguān dànshì wǒmen bù néng bèidòng de děngdài",
-       "traceKey": "zhuguan"
+       "traceKey": "zhuguan",
+       "traceInfo": [
+        {
+         "c": "主",
+         "py": "zhǔ",
+         "hv": "chủ"
+        },
+        {
+         "c": "观",
+         "py": "guān",
+         "hv": "quan"
+        }
+       ]
       },
       {
        "scene": "🏃🛣️😤",
@@ -16616,26 +20849,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛣️",
          "c": "s",
          "py": "jǐnguǎn lù hěn yuǎn",
-         "hv": "tận quản lộ _ viễn"
+         "hv": "tẫn quản lộ ngận viễn"
         },
         {
          "t": "但是我愿意",
          "ico": "🙋",
          "c": "v",
          "py": "dànshì wǒ yuànyì",
-         "hv": "_ thị ngã nguyện ý"
+         "hv": "đãn thị ngã nguyện ý"
         },
         {
          "t": "坚持每天跑步",
          "ico": "🏃",
          "c": "o",
          "py": "jiānchí měi tiān pǎobù",
-         "hv": "kiên trì mỗi thiên _ bộ"
+         "hv": "kiên trì mỗi thiên bào bộ"
         }
        ],
        "traceWord": "愿",
        "py": "Jǐnguǎn lù hěn yuǎn dànshì wǒ yuànyì jiānchí měi tiān pǎobù",
-       "traceKey": "yuan"
+       "traceKey": "yuan",
+       "traceInfo": [
+        {
+         "c": "愿",
+         "py": "yuàn",
+         "hv": "nguyện"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -16772,26 +21012,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔍",
          "c": "s",
          "py": "yīdàn fāxiàn lòudòng",
-         "hv": "nhất đán _ hiện lậu đọng"
+         "hv": "nhất đán phát hiện lậu động"
         },
         {
          "t": "就要",
          "ico": "⚡",
          "c": "v",
          "py": "jiùyào",
-         "hv": "_ yếu"
+         "hv": "tựu yếu"
         },
         {
          "t": "马上修复",
          "ico": "🔧",
          "c": "o",
          "py": "mǎshàng xiūfù",
-         "hv": "mã thượng tu hạ"
+         "hv": "mã thượng tu phục"
         }
        ],
        "traceWord": "修复",
        "py": "Yīdàn fāxiàn lòudòng jiùyào mǎshàng xiūfù",
-       "traceKey": "xiufu"
+       "traceKey": "xiufu",
+       "traceInfo": [
+        {
+         "c": "修",
+         "py": "xiū",
+         "hv": "tu"
+        },
+        {
+         "c": "复",
+         "py": "fù",
+         "hv": "phục"
+        }
+       ]
       },
       {
        "scene": "🏠💧🛠️",
@@ -16803,7 +21055,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "s",
          "py": "yīdàn wūzi",
-         "hv": "nhất đán ốc tí"
+         "hv": "nhất đán ốc tử"
         },
         {
          "t": "漏了",
@@ -16817,12 +21069,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛠️",
          "c": "o",
          "py": "jiùyào zhǎo rén lái xiūlǐ",
-         "hv": "_ yếu quơ nhân lai tu lí"
+         "hv": "tựu yếu trảo nhân lai tu lý"
         }
        ],
        "traceWord": "漏",
        "py": "Yīdàn wūzi lòu le jiùyào zhǎo rén lái xiūlǐ",
-       "traceKey": "lou"
+       "traceKey": "lou",
+       "traceInfo": [
+        {
+         "c": "漏",
+         "py": "lòu",
+         "hv": "lậu"
+        }
+       ]
       },
       {
        "scene": "🏚️🔨🏢",
@@ -16834,7 +21093,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏚️",
          "c": "s",
          "py": "yīdàn jiù lóu",
-         "hv": "nhất đán _ lầu"
+         "hv": "nhất đán cựu lâu"
         },
         {
          "t": "被拆除",
@@ -16848,12 +21107,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "o",
          "py": "jiù huì jiànzào xīn de dà lóu",
-         "hv": "_ hội kiến tạo tân đích đại lầu"
+         "hv": "tựu hội kiến tạo tân đích đại lâu"
         }
        ],
        "traceWord": "拆除",
        "py": "Yīdàn jiù lóu bèi chāichú jiù huì jiànzào xīn de dà lóu",
-       "traceKey": "chaichu"
+       "traceKey": "chaichu",
+       "traceInfo": [
+        {
+         "c": "拆",
+         "py": "chāi",
+         "hv": "sách"
+        },
+        {
+         "c": "除",
+         "py": "chú",
+         "hv": "trừ"
+        }
+       ]
       },
       {
        "scene": "💻🔌🔧",
@@ -16865,26 +21136,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💻",
          "c": "s",
          "py": "yīdàn diànnǎo",
-         "hv": "nhất đán _ não"
+         "hv": "nhất đán điện não"
         },
         {
          "t": "没连接好",
          "ico": "🔗",
          "c": "v",
          "py": "méi liánjiē hǎo",
-         "hv": "một liên tiếp háo"
+         "hv": "một liên tiếp hảo"
         },
         {
          "t": "就别插电源",
          "ico": "🔌",
          "c": "o",
          "py": "jiù bié chā diànyuán",
-         "hv": "_ _ chắp _ nguồn"
+         "hv": "tựu biệt sáp điện nguyên"
         }
        ],
        "traceWord": "连接",
        "py": "Yīdàn diànnǎo méi liánjiē hǎo jiù bié chā diànyuán",
-       "traceKey": "lianjie"
+       "traceKey": "lianjie",
+       "traceInfo": [
+        {
+         "c": "连",
+         "py": "lián",
+         "hv": "liên"
+        },
+        {
+         "c": "接",
+         "py": "jiē",
+         "hv": "tiếp"
+        }
+       ]
       },
       {
        "scene": "🥛♨️⏰",
@@ -16896,26 +21179,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "yīdàn nǐ",
-         "hv": "nhất đán nể"
+         "hv": "nhất đán nễ"
         },
         {
          "t": "把牛奶加热",
          "ico": "♨️",
          "c": "v",
          "py": "bǎ niúnǎi jiārè",
-         "hv": "bã ngưu nái gia nhiệt"
+         "hv": "bả ngưu nãi gia nhiệt"
         },
         {
          "t": "就要马上喝完",
          "ico": "🥛",
          "c": "o",
          "py": "jiùyào mǎshàng hē wán",
-         "hv": "_ yếu mã thượng hát hoàn"
+         "hv": "tựu yếu mã thượng hát hoàn"
         }
        ],
        "traceWord": "加热",
        "py": "Yīdàn nǐ bǎ niúnǎi jiārè jiùyào mǎshàng hē wán",
-       "traceKey": "jiare"
+       "traceKey": "jiare",
+       "traceInfo": [
+        {
+         "c": "加",
+         "py": "jiā",
+         "hv": "gia"
+        },
+        {
+         "c": "热",
+         "py": "rè",
+         "hv": "nhiệt"
+        }
+       ]
       },
       {
        "scene": "🏘️🔨😢",
@@ -16927,7 +21222,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏘️",
          "c": "s",
          "py": "yīdàn Běijīng de lǎo hútòngr",
-         "hv": "nhất đán _ kinh đích lão _ đồng _"
+         "hv": "nhất đán bắc kinh đích lão hồ đồng nhi"
         },
         {
          "t": "都拆了",
@@ -16941,12 +21236,29 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👀",
          "c": "o",
          "py": "jiù kàn bú dào le",
-         "hv": "_ khán bất đáo liễu"
+         "hv": "tựu khán bất đáo liễu"
         }
        ],
        "traceWord": "胡同儿",
        "py": "Yīdàn Běijīng de lǎo hútòngr dōu chāi le jiù kàn bú dào le",
-       "traceKey": "hutongr"
+       "traceKey": "hutongr",
+       "traceInfo": [
+        {
+         "c": "胡",
+         "py": "hú",
+         "hv": "hồ"
+        },
+        {
+         "c": "同",
+         "py": "tòng",
+         "hv": "đồng"
+        },
+        {
+         "c": "儿",
+         "py": "ér",
+         "hv": "nhi"
+        }
+       ]
       },
       {
        "scene": "📚🗄️🧹",
@@ -16958,7 +21270,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "s",
          "py": "yīdàn túshūguǎn de shū kù",
-         "hv": "nhất đán đồ thư quán đích thư kho"
+         "hv": "nhất đán đồ thư quán đích thư khố"
         },
         {
          "t": "满了",
@@ -16972,12 +21284,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧹",
          "c": "o",
          "py": "jiùyào qīnglǐ jiù shū",
-         "hv": "_ yếu thanh lí _ thư"
+         "hv": "tựu yếu thanh lý cựu thư"
         }
        ],
        "traceWord": "清理",
        "py": "Yīdàn túshūguǎn de shū kù mǎn le jiùyào qīnglǐ jiù shū",
-       "traceKey": "qingli"
+       "traceKey": "qingli",
+       "traceInfo": [
+        {
+         "c": "清",
+         "py": "qīng",
+         "hv": "thanh"
+        },
+        {
+         "c": "理",
+         "py": "lǐ",
+         "hv": "lý"
+        }
+       ]
       },
       {
        "scene": "🏗️🧹🚚",
@@ -16989,7 +21313,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "yīdàn zhè zuò xīn jiànzhù",
-         "hv": "nhất đán _ toà tân kiến trốc"
+         "hv": "nhất đán giá tọa tân kiến trúc"
         },
         {
          "t": "修建完成",
@@ -17003,12 +21327,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧹",
          "c": "o",
          "py": "jiùyào xiān shōushi hǎo bàngōngshì zài bānjiā",
-         "hv": "_ yếu tiên thu thập háo _ công thất tái bưng gia"
+         "hv": "tựu yếu tiên thu thập hảo biện công thất tái ban gia"
         }
        ],
        "traceWord": "修建",
        "py": "Yīdàn zhè zuò xīn jiànzhù xiūjiàn wánchéng jiùyào xiān shōushi hǎo bàngōngshì zài bānjiā",
-       "traceKey": "xiujian"
+       "traceKey": "xiujian",
+       "traceInfo": [
+        {
+         "c": "修",
+         "py": "xiū",
+         "hv": "tu"
+        },
+        {
+         "c": "建",
+         "py": "jiàn",
+         "hv": "kiến"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -17141,26 +21477,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "yàoshi nǐ bù xiǎng dǎjià",
-         "hv": "yếu thị nể bất tưởng đả giá"
+         "hv": "yếu thị nễ bất tưởng đả giá"
         },
         {
          "t": "就别去那家酒吧",
          "ico": "🚫",
          "c": "v",
          "py": "jiù bié qù nà jiā jiǔbā",
-         "hv": "_ _ khứ na gia _ và"
+         "hv": "tựu biệt khứ na gia tửu ba"
         },
         {
          "t": "否则会有麻烦",
          "ico": "⚠️",
          "c": "o",
          "py": "fǒuzé huì yǒu máfan",
-         "hv": "bĩ tắc hội hữu ma phiền"
+         "hv": "phủ tắc hội hữu ma phiền"
         }
        ],
        "traceWord": "打架",
        "py": "Yàoshi nǐ bù xiǎng dǎjià jiù bié qù nà jiā jiǔbā fǒuzé huì yǒu máfan",
-       "traceKey": "dajia"
+       "traceKey": "dajia",
+       "traceInfo": [
+        {
+         "c": "打",
+         "py": "dǎ",
+         "hv": "đả"
+        },
+        {
+         "c": "架",
+         "py": "jià",
+         "hv": "giá"
+        }
+       ]
       },
       {
        "scene": "🏢⚔️🗣️",
@@ -17172,26 +21520,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "yàoshi liǎng gè bùmén yǒu chōngtū",
-         "hv": "yếu thị lưỡng cá bộ môn hữu _ đột"
+         "hv": "yếu thị lưỡng cá bộ môn hữu xung đột"
         },
         {
          "t": "就应该马上沟通",
          "ico": "🗣️",
          "c": "v",
          "py": "jiù yīnggāi mǎshàng gōutōng",
-         "hv": "_ ứng _ mã thượng _ thông"
+         "hv": "tựu ưng cai mã thượng câu thông"
         },
         {
          "t": "否则问题会更严重",
          "ico": "📈",
          "c": "o",
          "py": "fǒuzé wèntí huì gèng yánzhòng",
-         "hv": "bĩ tắc _ _ hội cánh nghiêm trọng"
+         "hv": "phủ tắc vấn đề hội cánh nghiêm trọng"
         }
        ],
        "traceWord": "冲突",
        "py": "Yàoshi liǎng gè bùmén yǒu chōngtū jiù yīnggāi mǎshàng gōutōng fǒuzé wèntí huì gèng yánzhòng",
-       "traceKey": "chongtu"
+       "traceKey": "chongtu",
+       "traceInfo": [
+        {
+         "c": "冲",
+         "py": "chōng",
+         "hv": "xung"
+        },
+        {
+         "c": "突",
+         "py": "tū",
+         "hv": "đột"
+        }
+       ]
       },
       {
        "scene": "🪖🛡️🏠",
@@ -17217,12 +21577,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "o",
          "py": "rénmín jiù méiyǒu ānquán de shēnghuó",
-         "hv": "nhân dân _ một hữu an toàn đích sinh hoạt"
+         "hv": "nhân dân tựu một hữu an toàn đích sinh hoạt"
         }
        ],
        "traceWord": "保卫",
        "py": "Yàoshi méiyǒu jūnrén bǎowèi guójiā rénmín jiù méiyǒu ānquán de shēnghuó",
-       "traceKey": "baowei"
+       "traceKey": "baowei",
+       "traceInfo": [
+        {
+         "c": "保",
+         "py": "bǎo",
+         "hv": "bảo"
+        },
+        {
+         "c": "卫",
+         "py": "wèi",
+         "hv": "vệ"
+        }
+       ]
       },
       {
        "scene": "😠✍️🚫",
@@ -17234,26 +21606,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😠",
          "c": "s",
          "py": "yàoshi yǒu rén qiǎngpò nǐ qiānzì",
-         "hv": "yếu thị hữu nhân càng bách nể _ tự"
+         "hv": "yếu thị hữu nhân cưỡng bách nễ thiêm tự"
         },
         {
          "t": "就不要答应",
          "ico": "🙅",
          "c": "v",
          "py": "jiù bùyào dāying",
-         "hv": "_ bất yếu đáp ứng"
+         "hv": "tựu bất yếu đáp ứng"
         },
         {
          "t": "否则会有风险",
          "ico": "⚠️",
          "c": "o",
          "py": "fǒuzé huì yǒu fēngxiǎn",
-         "hv": "bĩ tắc hội hữu phong hiểm"
+         "hv": "phủ tắc hội hữu phong hiểm"
         }
        ],
        "traceWord": "强迫",
        "py": "Yàoshi yǒu rén qiǎngpò nǐ qiānzì jiù bùyào dāying fǒuzé huì yǒu fēngxiǎn",
-       "traceKey": "qiangpo"
+       "traceKey": "qiangpo",
+       "traceInfo": [
+        {
+         "c": "强",
+         "py": "qiǎng",
+         "hv": "cưỡng"
+        },
+        {
+         "c": "迫",
+         "py": "pò",
+         "hv": "bách"
+        }
+       ]
       },
       {
        "scene": "👔🚩📈",
@@ -17265,26 +21649,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "yàoshi jīnglǐ shuàilǐng wǒmen",
-         "hv": "yếu thị kinh lí _ lãnh ngã món"
+         "hv": "yếu thị kinh lý suất lĩnh ngã môn"
         },
         {
          "t": "去占领新市场",
          "ico": "🚩",
          "c": "v",
          "py": "qù zhànlǐng xīn shìchǎng",
-         "hv": "khứ chiêm lãnh tân thị trường"
+         "hv": "khứ chiếm lĩnh tân thị trường"
         },
         {
          "t": "就要先做好计划否则会失败",
          "ico": "📋",
          "c": "o",
          "py": "jiùyào xiān zuò hǎo jìhuà fǒuzé huì shībài",
-         "hv": "_ yếu tiên _ háo kể _ bĩ tắc hội thất bại"
+         "hv": "tựu yếu tiên tố hảo kế hoạch phủ tắc hội thất bại"
         }
        ],
        "traceWord": "率领",
        "py": "Yàoshi jīnglǐ shuàilǐng wǒmen qù zhànlǐng xīn shìchǎng jiùyào xiān zuò hǎo jìhuà fǒuzé huì shībài",
-       "traceKey": "shuailing"
+       "traceKey": "shuailing",
+       "traceInfo": [
+        {
+         "c": "率",
+         "py": "shuài",
+         "hv": "suất"
+        },
+        {
+         "c": "领",
+         "py": "lǐng",
+         "hv": "lĩnh"
+        }
+       ]
       },
       {
        "scene": "🏭📊👑",
@@ -17296,26 +21692,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "s",
          "py": "yàoshi zhè jiā gōngsī",
-         "hv": "yếu thị _ gia công ti"
+         "hv": "yếu thị giá gia công ti"
         },
         {
          "t": "占有一半以上的市场",
          "ico": "📊",
          "c": "v",
          "py": "zhànyǒu yībàn yǐshàng de shìchǎng",
-         "hv": "chiêm hữu nhất bán _ thượng đích thị trường"
+         "hv": "chiếm hữu nhất bán dĩ thượng đích thị trường"
         },
         {
          "t": "就会成为行业里最大的势力",
          "ico": "👑",
          "c": "o",
          "py": "jiù huì chéngwéi hángyè lǐ zuì dà de shìlì",
-         "hv": "_ hội thành _ hàng nghiệp lịa tối đại đích thế lực"
+         "hv": "tựu hội thành vi hàng nghiệp lý tối đại đích thế lực"
         }
        ],
        "traceWord": "占有",
        "py": "Yàoshi zhè jiā gōngsī zhànyǒu yībàn yǐshàng de shìchǎng jiù huì chéngwéi hángyè lǐ zuì dà de shìlì",
-       "traceKey": "zhanyou"
+       "traceKey": "zhanyou",
+       "traceInfo": [
+        {
+         "c": "占",
+         "py": "zhàn",
+         "hv": "chiếm"
+        },
+        {
+         "c": "有",
+         "py": "yǒu",
+         "hv": "hữu"
+        }
+       ]
       },
       {
        "scene": "🏠🔥⚠️",
@@ -17327,26 +21735,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "s",
          "py": "yàoshi nǐ zài wūzi lǐ",
-         "hv": "yếu thị nể tại ốc tí lịa"
+         "hv": "yếu thị nễ tại ốc tử lý"
         },
         {
          "t": "点燃火柴",
          "ico": "🔥",
          "c": "v",
          "py": "diǎnrán huǒchái",
-         "hv": "điểm nhen hoả sài"
+         "hv": "điểm nhiên hỏa sài"
         },
         {
          "t": "就要小心否则会引起火灾",
          "ico": "🚒",
          "c": "o",
          "py": "jiùyào xiǎoxīn fǒuzé huì yǐnqǐ huǒzāi",
-         "hv": "_ yếu tiểu tâm bĩ tắc hội dẫn khởi hoả tai"
+         "hv": "tựu yếu tiểu tâm phủ tắc hội dẫn khởi hỏa tai"
         }
        ],
        "traceWord": "点燃",
        "py": "Yàoshi nǐ zài wūzi lǐ diǎnrán huǒchái jiùyào xiǎoxīn fǒuzé huì yǐnqǐ huǒzāi",
-       "traceKey": "dianran"
+       "traceKey": "dianran",
+       "traceInfo": [
+        {
+         "c": "点",
+         "py": "diǎn",
+         "hv": "điểm"
+        },
+        {
+         "c": "燃",
+         "py": "rán",
+         "hv": "nhiên"
+        }
+       ]
       },
       {
        "scene": "🌳🛣️🚗",
@@ -17365,19 +21785,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛣️",
          "c": "v",
          "py": "dǎng zhù le mǎlù",
-         "hv": "_ trú liễu mã lộ"
+         "hv": "đáng trú liễu mã lộ"
         },
         {
          "t": "就应该马上处理否则会堵车",
          "ico": "🚗",
          "c": "o",
          "py": "jiù yīnggāi mǎshàng chǔlǐ fǒuzé huì dǔchē",
-         "hv": "_ ứng _ mã thượng xử lí bĩ tắc hội _ xa"
+         "hv": "tựu ưng cai mã thượng xử lý phủ tắc hội đổ xa"
         }
        ],
        "traceWord": "挡",
        "py": "Yàoshi dà shù dǎng zhù le mǎlù jiù yīnggāi mǎshàng chǔlǐ fǒuzé huì dǔchē",
-       "traceKey": "dang"
+       "traceKey": "dang",
+       "traceInfo": [
+        {
+         "c": "挡",
+         "py": "dǎng",
+         "hv": "đáng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -17462,20 +21889,20 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "教练会说他跑得很快",
          "ico": "🏃",
-         "py": "Jiàoliàn huì shuō tā pǎo dé hěn kuài"
+         "py": "Jiàoliàn huì shuō tā pǎo de hěn kuài"
         },
         {
          "txt": "教练会说他射得很准",
          "ico": "🎯",
-         "py": "Jiàoliàn huì shuō tā shè dé hěn zhǔn"
+         "py": "Jiàoliàn huì shuō tā shè de hěn zhǔn"
         },
         {
          "txt": "教练会说他唱得很好听",
          "ico": "🎤",
-         "py": "Jiàoliàn huì shuō tā chàng dé hěn hǎotīng"
+         "py": "Jiàoliàn huì shuō tā chàng de hěn hǎotīng"
         }
        ],
-       "qpy": "Jūnrén yī qiāng jiù shè zhōng le mùbiāo jiàoliàn huì zěnme shuō?"
+       "qpy": "Jūnrén yī qiāng jiù shè zhòng le mùbiāo jiàoliàn huì zěnme shuō?"
       }
      ],
      "realTask": {
@@ -17510,26 +21937,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "chúfēi lǐngdǎo",
-         "hv": "trừ phi lãnh đạo"
+         "hv": "trừ phi lĩnh đạo"
         },
         {
          "t": "确立明确的目标",
          "ico": "🎯",
          "c": "v",
          "py": "quèlì míngquè de mùbiāo",
-         "hv": "xác lập minh xác đích mục bêu"
+         "hv": "xác lập minh xác đích mục tiêu"
         },
         {
          "t": "项目才能顺利进行",
          "ico": "📈",
          "c": "o",
          "py": "xiàngmù cáinéng shùnlì jìnxíng",
-         "hv": "hạng mục tài năng thuận lợi tiến hàng"
+         "hv": "hạng mục tài năng thuận lợi tiến hành"
         }
        ],
        "traceWord": "确立",
        "py": "Chúfēi lǐngdǎo quèlì míngquè de mùbiāo xiàngmù cáinéng shùnlì jìnxíng",
-       "traceKey": "queli"
+       "traceKey": "queli",
+       "traceInfo": [
+        {
+         "c": "确",
+         "py": "què",
+         "hv": "xác"
+        },
+        {
+         "c": "立",
+         "py": "lì",
+         "hv": "lập"
+        }
+       ]
       },
       {
        "scene": "🏢🤝📋",
@@ -17555,12 +21994,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📋",
          "c": "o",
          "py": "cáinéng zuò hǎo niándù guīhuà",
-         "hv": "tài năng _ háo nên độ qui _"
+         "hv": "tài năng tố hảo niên độ quy hoạch"
         }
        ],
        "traceWord": "规划",
        "py": "Chúfēi gè bùmén mìqiè pèihé cáinéng zuò hǎo niándù guīhuà",
-       "traceKey": "guihua"
+       "traceKey": "guihua",
+       "traceInfo": [
+        {
+         "c": "规",
+         "py": "guī",
+         "hv": "quy"
+        },
+        {
+         "c": "划",
+         "py": "huà",
+         "hv": "hoạch"
+        }
+       ]
       },
       {
        "scene": "👔📣🔄",
@@ -17572,7 +22023,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "chúfēi lǎobǎn",
-         "hv": "trừ phi lão ván"
+         "hv": "trừ phi lão bản"
         },
         {
          "t": "倡导新的工作方式",
@@ -17586,12 +22037,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔄",
          "c": "o",
          "py": "dàjiā cái huì yuànyì gǎibiàn",
-         "hv": "đại gia tài hội nguyện ý _ biến"
+         "hv": "đại gia tài hội nguyện ý cải biến"
         }
        ],
        "traceWord": "倡导",
        "py": "Chúfēi lǎobǎn chàngdǎo xīn de gōngzuò fāngshì dàjiā cái huì yuànyì gǎibiàn",
-       "traceKey": "changdao"
+       "traceKey": "changdao",
+       "traceInfo": [
+        {
+         "c": "倡",
+         "py": "chàng",
+         "hv": "xướng"
+        },
+        {
+         "c": "导",
+         "py": "dǎo",
+         "hv": "đạo"
+        }
+       ]
       },
       {
        "scene": "🔗✅🌍",
@@ -17603,26 +22066,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔗",
          "c": "s",
          "py": "chúfēi měi gè huánjié",
-         "hv": "trừ phi mỗi cá _ tiết"
+         "hv": "trừ phi mỗi cá hoàn tiết"
         },
         {
          "t": "都没有问题",
          "ico": "✅",
          "c": "v",
          "py": "dōu méiyǒu wèntí",
-         "hv": "đô một hữu _ _"
+         "hv": "đô một hữu vấn đề"
         },
         {
          "t": "产品才能卖到国外",
          "ico": "🌍",
          "c": "o",
          "py": "chǎnpǐn cáinéng mài dào guó wài",
-         "hv": "_ phẩm tài năng mại đáo quốc ngoại"
+         "hv": "sản phẩm tài năng mại đáo quốc ngoại"
         }
        ],
        "traceWord": "环节",
        "py": "Chúfēi měi gè huánjié dōu méiyǒu wèntí chǎnpǐn cáinéng mài dào guó wài",
-       "traceKey": "huanjie"
+       "traceKey": "huanjie",
+       "traceInfo": [
+        {
+         "c": "环",
+         "py": "huán",
+         "hv": "hoàn"
+        },
+        {
+         "c": "节",
+         "py": "jié",
+         "hv": "tiết"
+        }
+       ]
       },
       {
        "scene": "🏭🛠️👷",
@@ -17641,19 +22116,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛠️",
          "c": "v",
          "py": "pèibèi zúgòu de shèbèi",
-         "hv": "phối bị túc _ đích thết bị"
+         "hv": "phối bị túc cấu đích thiết bị"
         },
         {
          "t": "工人才能开始生产",
          "ico": "👷",
          "c": "o",
          "py": "gōngrén cáinéng kāishǐ shēngchǎn",
-         "hv": "công nhân tài năng khai thuỷ sinh _"
+         "hv": "công nhân tài năng khai thủy sinh sản"
         }
        ],
        "traceWord": "配备",
        "py": "Chúfēi jīdì pèibèi zúgòu de shèbèi gōngrén cáinéng kāishǐ shēngchǎn",
-       "traceKey": "peibei"
+       "traceKey": "peibei",
+       "traceInfo": [
+        {
+         "c": "配",
+         "py": "pèi",
+         "hv": "phối"
+        },
+        {
+         "c": "备",
+         "py": "bèi",
+         "hv": "bị"
+        }
+       ]
       },
       {
        "scene": "🏢🧰👥",
@@ -17672,19 +22159,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧰",
          "c": "v",
          "py": "yǒu pèitào de fúwù hé fǔzhù rényuán",
-         "hv": "hữu phối _ đích phục vụ hoà _ trợ nhân viên"
+         "hv": "hữu phối sáo đích phục vụ hòa phụ trợ nhân viên"
         },
         {
          "t": "才能照顾这么多客户",
          "ico": "👥",
          "c": "o",
          "py": "cáinéng zhàogù zhème duō kèhù",
-         "hv": "tài năng chiếu cố _ _ đa khách hộ"
+         "hv": "tài năng chiếu cố giá ma đa khách hộ"
         }
        ],
        "traceWord": "辅助",
        "py": "Chúfēi gōngsī yǒu pèitào de fúwù hé fǔzhù rényuán cáinéng zhàogù zhème duō kèhù",
-       "traceKey": "fuzhu"
+       "traceKey": "fuzhu",
+       "traceInfo": [
+        {
+         "c": "辅",
+         "py": "fǔ",
+         "hv": "phụ"
+        },
+        {
+         "c": "助",
+         "py": "zhù",
+         "hv": "trợ"
+        }
+       ]
       },
       {
        "scene": "📊👀⏱️",
@@ -17696,7 +22195,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "chúfēi wǒmen",
-         "hv": "trừ phi ngã món"
+         "hv": "trừ phi ngã môn"
         },
         {
          "t": "注重市场的动态",
@@ -17710,12 +22209,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏱️",
          "c": "o",
          "py": "cáinéng bǎwò chǎnpǐn de gēngxīn zhōuqī",
-         "hv": "tài năng bã _ _ phẩm đích canh tân chu kì"
+         "hv": "tài năng bả ác sản phẩm đích canh tân chu kỳ"
         }
        ],
        "traceWord": "周期",
        "py": "Chúfēi wǒmen zhùzhòng shìchǎng de dòngtài cáinéng bǎwò chǎnpǐn de gēngxīn zhōuqī",
-       "traceKey": "zhouqi"
+       "traceKey": "zhouqi",
+       "traceInfo": [
+        {
+         "c": "周",
+         "py": "zhōu",
+         "hv": "chu"
+        },
+        {
+         "c": "期",
+         "py": "qī",
+         "hv": "kỳ"
+        }
+       ]
       },
       {
        "scene": "💡🧑‍💼📈",
@@ -17741,12 +22252,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📈",
          "c": "o",
          "py": "gōngzuò cái huì yǒu hǎo de xiàoguǒ",
-         "hv": "công tác tài hội hữu háo đích hiệu quả"
+         "hv": "công tác tài hội hữu hảo đích hiệu quả"
         }
        ],
        "traceWord": "动机",
        "py": "Chúfēi yuángōng yǒu míngquè de dòngjī gōngzuò cái huì yǒu hǎo de xiàoguǒ",
-       "traceKey": "dongji"
+       "traceKey": "dongji",
+       "traceInfo": [
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        },
+        {
+         "c": "机",
+         "py": "jī",
+         "hv": "cơ"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -17882,14 +22405,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "chúfēi lǎobǎn qīnzì hàozhào dàjiā",
-         "hv": "trừ phi lão ván thân tự hiệu chịu đại gia"
+         "hv": "trừ phi lão bản thân tự hiệu triệu đại gia"
         },
         {
          "t": "否则",
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "没有人愿意加班",
@@ -17901,7 +22424,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "号召",
        "py": "Chúfēi lǎobǎn qīnzì hàozhào dàjiā fǒuzé méi yǒu rén yuànyì jiābān",
-       "traceKey": "haozhao"
+       "traceKey": "haozhao",
+       "traceInfo": [
+        {
+         "c": "号",
+         "py": "hào",
+         "hv": "hiệu"
+        },
+        {
+         "c": "召",
+         "py": "zhào",
+         "hv": "triệu"
+        }
+       ]
       },
       {
        "scene": "📣🆕🤔",
@@ -17913,26 +22448,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔄",
          "c": "s",
          "py": "chúfēi huàn yī gè xīn kǒuhào",
-         "hv": "trừ phi _ nhất cá tân khẩu hiệu"
+         "hv": "trừ phi hoán nhất cá tân khẩu hiệu"
         },
         {
          "t": "否则",
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "大家很快就会忘记",
          "ico": "💭",
          "c": "o",
          "py": "dàjiā hěn kuài jiù huì wàngjì",
-         "hv": "đại gia _ khoái _ hội vong kí"
+         "hv": "đại gia ngận khoái tựu hội vong ký"
         }
        ],
        "traceWord": "口号",
        "py": "Chúfēi huàn yī gè xīn kǒuhào fǒuzé dàjiā hěn kuài jiù huì wàngjì",
-       "traceKey": "kouhao"
+       "traceKey": "kouhao",
+       "traceInfo": [
+        {
+         "c": "口",
+         "py": "kǒu",
+         "hv": "khẩu"
+        },
+        {
+         "c": "号",
+         "py": "hào",
+         "hv": "hiệu"
+        }
+       ]
       },
       {
        "scene": "🏛️🌿📢",
@@ -17944,26 +22491,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏛️",
          "c": "s",
          "py": "chúfēi zhèngfǔ dà lì tíchàng huánbǎo",
-         "hv": "trừ phi chính phủ đại lực đề xướng _ bảo"
+         "hv": "trừ phi chính phủ đại lực đề xướng hoàn bảo"
         },
         {
          "t": "否则",
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "很多人不会注意",
          "ico": "👀",
          "c": "o",
          "py": "hěn duō rén bú huì zhùyì",
-         "hv": "_ đa nhân bất hội chú ý"
+         "hv": "ngận đa nhân bất hội chú ý"
         }
        ],
        "traceWord": "提倡",
        "py": "Chúfēi zhèngfǔ dà lì tíchàng huánbǎo fǒuzé hěn duō rén bú huì zhùyì",
-       "traceKey": "tichang"
+       "traceKey": "tichang",
+       "traceInfo": [
+        {
+         "c": "提",
+         "py": "tí",
+         "hv": "đề"
+        },
+        {
+         "c": "倡",
+         "py": "chàng",
+         "hv": "xướng"
+        }
+       ]
       },
       {
        "scene": "🏆🥇🚫",
@@ -17982,19 +22541,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "不能得到这个称号",
          "ico": "🏅",
          "c": "o",
          "py": "bù néng dédào zhè gè chēnghào",
-         "hv": "bất năng đắc đáo _ cá xưng hiệu"
+         "hv": "bất năng đắc đáo giá cá xưng hiệu"
         }
        ],
        "traceWord": "称号",
        "py": "Chúfēi tā nádào guànjūn fǒuzé bù néng dédào zhè gè chēnghào",
-       "traceKey": "chenghao"
+       "traceKey": "chenghao",
+       "traceInfo": [
+        {
+         "c": "称",
+         "py": "chēng",
+         "hv": "xưng"
+        },
+        {
+         "c": "号",
+         "py": "hào",
+         "hv": "hiệu"
+        }
+       ]
       },
       {
        "scene": "🗳️👨‍💼📰",
@@ -18006,26 +22577,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗳️",
          "c": "s",
          "py": "chúfēi tā dāngxuǎn shìzhǎng",
-         "hv": "trừ phi tha đương tuyển thị trường"
+         "hv": "trừ phi tha đương tuyển thị trưởng"
         },
         {
          "t": "否则",
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "外界不会称他为专家",
          "ico": "📰",
          "c": "o",
          "py": "wàijiè bú huì chēng tā wèi zhuānjiā",
-         "hv": "ngoại giới bất hội xưng tha _ chuyên gia"
+         "hv": "ngoại giới bất hội xưng tha vị chuyên gia"
         }
        ],
        "traceWord": "当选",
        "py": "Chúfēi tā dāngxuǎn shìzhǎng fǒuzé wàijiè bú huì chēng tā wèi zhuānjiā",
-       "traceKey": "dangxuan"
+       "traceKey": "dangxuan",
+       "traceInfo": [
+        {
+         "c": "当",
+         "py": "dāng",
+         "hv": "đương"
+        },
+        {
+         "c": "选",
+         "py": "xuǎn",
+         "hv": "tuyển"
+        }
+       ]
       },
       {
        "scene": "🤝🔒🔥",
@@ -18037,26 +22620,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "s",
          "py": "chúfēi nǐ yǒu sīrén guānxì",
-         "hv": "trừ phi nể hữu tư nhân quan hệ"
+         "hv": "trừ phi nễ hữu tư nhân quan hệ"
         },
         {
          "t": "否则",
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "很难进入热门专业",
          "ico": "🔥",
          "c": "o",
          "py": "hěn nán jìnrù rèmén zhuānyè",
-         "hv": "_ nan tiến nhập nhiệt môn chuyên nghiệp"
+         "hv": "ngận nan tiến nhập nhiệt môn chuyên nghiệp"
         }
        ],
        "traceWord": "热门",
        "py": "Chúfēi nǐ yǒu sīrén guānxì fǒuzé hěn nán jìnrù rèmén zhuānyè",
-       "traceKey": "remen"
+       "traceKey": "remen",
+       "traceInfo": [
+        {
+         "c": "热",
+         "py": "rè",
+         "hv": "nhiệt"
+        },
+        {
+         "c": "门",
+         "py": "mén",
+         "hv": "môn"
+        }
+       ]
       },
       {
        "scene": "🏢👥📋",
@@ -18068,26 +22663,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "chúfēi gōngsī yōngyǒu zúgòu de rénlì",
-         "hv": "trừ phi công ti dùng hữu túc _ đích nhân lực"
+         "hv": "trừ phi công ti ủng hữu túc cấu đích nhân lực"
         },
         {
          "t": "否则",
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "所在部门无法完成任务",
          "ico": "📋",
          "c": "o",
          "py": "suǒzài bùmén wúfǎ wánchéng rènwu",
-         "hv": "sỡ tại bộ môn vô pháp hoàn thành nhậm vụ"
+         "hv": "sở tại bộ môn vô pháp hoàn thành nhiệm vụ"
         }
        ],
        "traceWord": "人力",
        "py": "Chúfēi gōngsī yōngyǒu zúgòu de rénlì fǒuzé suǒzài bùmén wúfǎ wánchéng rènwu",
-       "traceKey": "renli"
+       "traceKey": "renli",
+       "traceInfo": [
+        {
+         "c": "人",
+         "py": "rén",
+         "hv": "nhân"
+        },
+        {
+         "c": "力",
+         "py": "lì",
+         "hv": "lực"
+        }
+       ]
       },
       {
        "scene": "⚖️🤝⏱️",
@@ -18099,26 +22706,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚖️",
          "c": "s",
          "py": "chúfēi shuāngfāng de lìchǎng yīzhì",
-         "hv": "trừ phi song phương đích lập trường nhất nhí"
+         "hv": "trừ phi song phương đích lập trường nhất trí"
         },
         {
          "t": "否则",
          "ico": "🔀",
          "c": "v",
          "py": "fǒuzé",
-         "hv": "bĩ tắc"
+         "hv": "phủ tắc"
         },
         {
          "t": "很难立刻签约",
          "ico": "✍️",
          "c": "o",
          "py": "hěn nán lìkè qiānyuē",
-         "hv": "_ nan lập khắc _ ước"
+         "hv": "ngận nan lập khắc thiêm ước"
         }
        ],
        "traceWord": "立场",
        "py": "Chúfēi shuāngfāng de lìchǎng yīzhì fǒuzé hěn nán lìkè qiānyuē",
-       "traceKey": "lichang"
+       "traceKey": "lichang",
+       "traceInfo": [
+        {
+         "c": "立",
+         "py": "lì",
+         "hv": "lập"
+        },
+        {
+         "c": "场",
+         "py": "chǎng",
+         "hv": "trường"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -18264,12 +22883,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "o",
          "py": "yīn'ér chǎnpǐn chéngběn yě tígāo le",
-         "hv": "nhân _ _ phẩm thành bản dã đề cao liễu"
+         "hv": "nhân nhi sản phẩm thành bản dã đề cao liễu"
         }
        ],
        "traceWord": "上涨",
        "py": "Yuánliào jiàgé shàngzhǎng yīn'ér chǎnpǐn chéngběn yě tígāo le",
-       "traceKey": "shangzhang"
+       "traceKey": "shangzhang",
+       "traceInfo": [
+        {
+         "c": "上",
+         "py": "shàng",
+         "hv": "thượng"
+        },
+        {
+         "c": "涨",
+         "py": "zhǎng",
+         "hv": "trướng"
+        }
+       ]
       },
       {
        "scene": "🛒📈👥",
@@ -18288,19 +22919,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📈",
          "c": "v",
          "py": "yīzhí shàngzhǎng",
-         "hv": "nhất _ thượng trướng"
+         "hv": "nhất trực thượng trướng"
         },
         {
          "t": "因而很多人减少了购物",
          "ico": "👥",
          "c": "o",
          "py": "yīn'ér hěn duō rén jiǎnshǎo le gòuwù",
-         "hv": "nhân _ _ đa nhân giảm thiểu liễu _ vật"
+         "hv": "nhân nhi ngận đa nhân giảm thiểu liễu cấu vật"
         }
        ],
        "traceWord": "物价",
        "py": "Zuìjìn wùjià yīzhí shàngzhǎng yīn'ér hěn duō rén jiǎnshǎo le gòuwù",
-       "traceKey": "wujia"
+       "traceKey": "wujia",
+       "traceInfo": [
+        {
+         "c": "物",
+         "py": "wù",
+         "hv": "vật"
+        },
+        {
+         "c": "价",
+         "py": "jià",
+         "hv": "giá"
+        }
+       ]
       },
       {
        "scene": "📦🏢🛍️",
@@ -18312,26 +22955,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "zhè jiā gōngsī",
-         "hv": "_ gia công ti"
+         "hv": "giá gia công ti"
         },
         {
          "t": "改进了产品包装和商标",
          "ico": "📦",
          "c": "v",
          "py": "gǎijìn le chǎnpǐn bāozhuāng hé shāngbiāo",
-         "hv": "_ tiến liễu _ phẩm bao trang hoà thương bêu"
+         "hv": "cải tiến liễu sản phẩm bao trang hòa thương tiêu"
         },
         {
          "t": "因而吸引了更多顾客",
          "ico": "🛍️",
          "c": "o",
          "py": "yīn'ér xīyǐn le gèng duō gùkè",
-         "hv": "nhân _ cộp dẫn liễu cánh đa cố khách"
+         "hv": "nhân nhi hấp dẫn liễu cánh đa cố khách"
         }
        ],
        "traceWord": "包装",
        "py": "Zhè jiā gōngsī gǎijìn le chǎnpǐn bāozhuāng hé shāngbiāo yīn'ér xīyǐn le gèng duō gùkè",
-       "traceKey": "baozhuang"
+       "traceKey": "baozhuang",
+       "traceInfo": [
+        {
+         "c": "包",
+         "py": "bāo",
+         "hv": "bao"
+        },
+        {
+         "c": "装",
+         "py": "zhuāng",
+         "hv": "trang"
+        }
+       ]
       },
       {
        "scene": "🤝🗣️✅",
@@ -18343,26 +22998,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "cǎigòu jīnglǐ",
-         "hv": "_ _ kinh lí"
+         "hv": "thái cấu kinh lý"
         },
         {
          "t": "谈得很顺利",
          "ico": "🗣️",
          "c": "v",
-         "py": "tán dé hěn shùnlì",
-         "hv": "đàm đắc _ thuận lợi"
+         "py": "tán de hěn shùnlì",
+         "hv": "đàm đắc ngận thuận lợi"
         },
         {
          "t": "因而今天上午就成交了",
          "ico": "✅",
          "c": "o",
          "py": "yīn'ér jīntiān shàngwǔ jiù chéngjiāo le",
-         "hv": "nhân _ kim thiên thượng ngọ _ thành giao liễu"
+         "hv": "nhân nhi kim thiên thượng ngọ tựu thành giao liễu"
         }
        ],
        "traceWord": "采购",
-       "py": "Cǎigòu jīnglǐ tán dé hěn shùnlì yīn'ér jīntiān shàngwǔ jiù chéngjiāo le",
-       "traceKey": "caigou"
+       "py": "Cǎigòu jīnglǐ tán de hěn shùnlì yīn'ér jīntiān shàngwǔ jiù chéngjiāo le",
+       "traceKey": "caigou",
+       "traceInfo": [
+        {
+         "c": "采",
+         "py": "cǎi",
+         "hv": "thái"
+        },
+        {
+         "c": "购",
+         "py": "gòu",
+         "hv": "cấu"
+        }
+       ]
       },
       {
        "scene": "💼💰📊",
@@ -18374,26 +23041,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💼",
          "c": "s",
          "py": "zhè bǐ mǎimai",
-         "hv": "_ bút mãi mại"
+         "hv": "giá bút mãi mại"
         },
         {
          "t": "的利润很高",
          "ico": "💰",
          "c": "v",
          "py": "de lìrùn hěn gāo",
-         "hv": "đích lợi nhuần _ cao"
+         "hv": "đích lợi nhuận ngận cao"
         },
         {
          "t": "因而不少商人都想做",
          "ico": "🧑‍💼",
          "c": "o",
          "py": "yīn'ér bù shǎo shāngrén dōu xiǎng zuò",
-         "hv": "nhân _ bất thiểu thương nhân đô tưởng _"
+         "hv": "nhân nhi bất thiểu thương nhân đô tưởng tố"
         }
        ],
        "traceWord": "利润",
        "py": "Zhè bǐ mǎimai de lìrùn hěn gāo yīn'ér bù shǎo shāngrén dōu xiǎng zuò",
-       "traceKey": "lirun"
+       "traceKey": "lirun",
+       "traceInfo": [
+        {
+         "c": "利",
+         "py": "lì",
+         "hv": "lợi"
+        },
+        {
+         "c": "润",
+         "py": "rùn",
+         "hv": "nhuận"
+        }
+       ]
       },
       {
        "scene": "🌐🚢🏭",
@@ -18405,26 +23084,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌐",
          "c": "s",
          "py": "liǎng guó de màoyì",
-         "hv": "lưỡng quốc đích _ dịch"
+         "hv": "lưỡng quốc đích mậu dị"
         },
         {
          "t": "不断发展",
          "ico": "🚢",
          "c": "v",
          "py": "bùduàn fāzhǎn",
-         "hv": "bất đoạn _ triển"
+         "hv": "bất đoạn phát triển"
         },
         {
          "t": "因而带动了相关产业的增长",
          "ico": "🏭",
          "c": "o",
          "py": "yīn'ér dàidòng le xiāngguān chǎnyè de zēngzhǎng",
-         "hv": "nhân _ đai động liễu tương quan _ nghiệp đích tăng trường"
+         "hv": "nhân nhi đới động liễu tương quan sản nghiệp đích tăng trưởng"
         }
        ],
        "traceWord": "贸易",
        "py": "Liǎng guó de màoyì bùduàn fāzhǎn yīn'ér dàidòng le xiāngguān chǎnyè de zēngzhǎng",
-       "traceKey": "maoyi"
+       "traceKey": "maoyi",
+       "traceInfo": [
+        {
+         "c": "贸",
+         "py": "mào",
+         "hv": "mậu"
+        },
+        {
+         "c": "易",
+         "py": "yì",
+         "hv": "dị"
+        }
+       ]
       },
       {
        "scene": "🏭🏷️📉",
@@ -18443,19 +23134,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "v",
          "py": "shōugòu le jǐ jiā xiǎo gōngchǎng",
-         "hv": "thu _ liễu kỉ gia tiểu công xưởng"
+         "hv": "thu cấu liễu kỷ gia tiểu công xưởng"
         },
         {
          "t": "因而生产成本下降成效很明显",
          "ico": "📉",
          "c": "o",
          "py": "yīn'ér shēngchǎn chéngběn xiàjiàng chéngxiào hěn míngxiǎn",
-         "hv": "nhân _ sinh _ thành bản hạ giáng thành hiệu _ minh hiển"
+         "hv": "nhân nhi sinh sản thành bản hạ giáng thành hiệu ngận minh hiển"
         }
        ],
        "traceWord": "收购",
        "py": "Gōngsī shōugòu le jǐ jiā xiǎo gōngchǎng yīn'ér shēngchǎn chéngběn xiàjiàng chéngxiào hěn míngxiǎn",
-       "traceKey": "shougou"
+       "traceKey": "shougou",
+       "traceInfo": [
+        {
+         "c": "收",
+         "py": "shōu",
+         "hv": "thu"
+        },
+        {
+         "c": "购",
+         "py": "gòu",
+         "hv": "cấu"
+        }
+       ]
       },
       {
        "scene": "🏘️💸😠",
@@ -18481,12 +23184,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😠",
          "c": "o",
          "py": "yīn'ér jūmín dōu hěn bù mǎnyì",
-         "hv": "nhân _ cư dân đô _ bất mãn ý"
+         "hv": "nhân nhi cư dân đô ngận bất mãn ý"
         }
        ],
        "traceWord": "涨价",
        "py": "Xiǎo qū de wùyè zuìjìn zhǎngjià yīn'ér jūmín dōu hěn bù mǎnyì",
-       "traceKey": "zhangjia"
+       "traceKey": "zhangjia",
+       "traceInfo": [
+        {
+         "c": "涨",
+         "py": "zhǎng",
+         "hv": "trướng"
+        },
+        {
+         "c": "价",
+         "py": "jià",
+         "hv": "giá"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -18618,7 +23333,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧠",
          "c": "s",
          "py": "jíshǐ nǐ hěn cōngmíng",
-         "hv": "tức sứ nể _ thông minh"
+         "hv": "tức sử nễ ngận thông minh"
         },
         {
          "t": "也要",
@@ -18637,7 +23352,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "勤奋",
        "py": "Jíshǐ nǐ hěn cōngmíng yě yào qínfèn xuéxí",
-       "traceKey": "qinfen"
+       "traceKey": "qinfen",
+       "traceInfo": [
+        {
+         "c": "勤",
+         "py": "qín",
+         "hv": "cần"
+        },
+        {
+         "c": "奋",
+         "py": "fèn",
+         "hv": "phấn"
+        }
+       ]
       },
       {
        "scene": "🌟🎓📖",
@@ -18649,7 +23376,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌟",
          "c": "s",
          "py": "jíshǐ shì tiāncái",
-         "hv": "tức sứ thị thiên tài"
+         "hv": "tức sử thị thiên tài"
         },
         {
          "t": "也不可能",
@@ -18663,12 +23390,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎓",
          "c": "o",
          "py": "bù xuéxí jiù nádào bóshì xuéwèi",
-         "hv": "bất học tập _ nã đáo bác sĩ học vị"
+         "hv": "bất học tập tựu nã đáo bác sĩ học vị"
         }
        ],
        "traceWord": "天才",
        "py": "Jíshǐ shì tiāncái yě bù kěnéng bù xuéxí jiù nádào bóshì xuéwèi",
-       "traceKey": "tiancai"
+       "traceKey": "tiancai",
+       "traceInfo": [
+        {
+         "c": "天",
+         "py": "tiān",
+         "hv": "thiên"
+        },
+        {
+         "c": "才",
+         "py": "cái",
+         "hv": "tài"
+        }
+       ]
       },
       {
        "scene": "📜🎓📚",
@@ -18680,7 +23419,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📜",
          "c": "s",
          "py": "jíshǐ yǐjīng nádào shuòshì zhèngshū",
-         "hv": "tức sứ dĩ kinh nã đáo thạc sĩ chứng thư"
+         "hv": "tức sử dĩ kinh nã đáo thạc sĩ chứng thư"
         },
         {
          "t": "也要继续学习",
@@ -18694,12 +23433,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💡",
          "c": "o",
          "py": "xīn zhīshi",
-         "hv": "tân tri _"
+         "hv": "tân tri thức"
         }
        ],
        "traceWord": "硕士",
        "py": "Jíshǐ yǐjīng nádào shuòshì zhèngshū yě yào jìxù xuéxí xīn zhīshi",
-       "traceKey": "shuoshi"
+       "traceKey": "shuoshi",
+       "traceInfo": [
+        {
+         "c": "硕",
+         "py": "shuò",
+         "hv": "thạc"
+        },
+        {
+         "c": "士",
+         "py": "shì",
+         "hv": "sĩ"
+        }
+       ]
       },
       {
        "scene": "📘🔄🧑‍🎓",
@@ -18711,26 +23462,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📘",
          "c": "s",
          "py": "jíshǐ bú shì nǐ de zhuānyè",
-         "hv": "tức sứ bất thị nể đích chuyên nghiệp"
+         "hv": "tức sử bất thị nễ đích chuyên nghiệp"
         },
         {
          "t": "也可以选修",
          "ico": "✅",
          "c": "v",
          "py": "yě kěyǐ xuǎnxiū",
-         "hv": "dã khả _ tuyển tu"
+         "hv": "dã khả dĩ tuyển tu"
         },
         {
          "t": "其他学科",
          "ico": "🔬",
          "c": "o",
          "py": "qítā xuékē",
-         "hv": "kì tha học khoa"
+         "hv": "kỳ tha học khoa"
         }
        ],
        "traceWord": "选修",
        "py": "Jíshǐ bú shì nǐ de zhuānyè yě kěyǐ xuǎnxiū qítā xuékē",
-       "traceKey": "xuanxiu"
+       "traceKey": "xuanxiu",
+       "traceInfo": [
+        {
+         "c": "选",
+         "py": "xuǎn",
+         "hv": "tuyển"
+        },
+        {
+         "c": "修",
+         "py": "xiū",
+         "hv": "tu"
+        }
+       ]
       },
       {
        "scene": "🏫📝📋",
@@ -18742,7 +23505,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏫",
          "c": "s",
          "py": "jíshǐ xuéxiào jīnnián kuòdà zhāoshēng",
-         "hv": "tức sứ học hiệu kim nên quẳng đại chiêu sinh"
+         "hv": "tức sử học hiệu kim niên khuếch đại chiêu sinh"
         },
         {
          "t": "也要按照",
@@ -18756,12 +23519,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👩‍🏫",
          "c": "o",
          "py": "jiàoxué dàgāng shàngkè",
-         "hv": "giáo học đại cương thượng khoá"
+         "hv": "giáo học đại cương thượng khóa"
         }
        ],
        "traceWord": "招生",
        "py": "Jíshǐ xuéxiào jīnnián kuòdà zhāoshēng yě yào ànzhào jiàoxué dàgāng shàngkè",
-       "traceKey": "zhaosheng"
+       "traceKey": "zhaosheng",
+       "traceInfo": [
+        {
+         "c": "招",
+         "py": "zhāo",
+         "hv": "chiêu"
+        },
+        {
+         "c": "生",
+         "py": "shēng",
+         "hv": "sinh"
+        }
+       ]
       },
       {
        "scene": "🔬👨‍🔬🤔",
@@ -18773,7 +23548,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔬",
          "c": "s",
          "py": "jíshǐ yánjiūsuǒ de kètí fēicháng nán",
-         "hv": "tức sứ nghiên cứu sỡ đích khoá _ phi thường nan"
+         "hv": "tức sử nghiên cứu sở đích khóa đề phi thường nan"
         },
         {
          "t": "也有",
@@ -18787,12 +23562,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👨‍🔬",
          "c": "o",
          "py": "niánqīng xuézhě yuànyì cānjiā",
-         "hv": "nên khinh học _ nguyện ý tham gia"
+         "hv": "niên khinh học giả nguyện ý tham gia"
         }
        ],
        "traceWord": "课题",
        "py": "Jíshǐ yánjiūsuǒ de kètí fēicháng nán yě yǒu niánqīng xuézhě yuànyì cānjiā",
-       "traceKey": "keti"
+       "traceKey": "keti",
+       "traceInfo": [
+        {
+         "c": "课",
+         "py": "kè",
+         "hv": "khóa"
+        },
+        {
+         "c": "题",
+         "py": "tí",
+         "hv": "đề"
+        }
+       ]
       },
       {
        "scene": "📖💡🔁",
@@ -18804,7 +23591,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📖",
          "c": "s",
          "py": "jíshǐ yǐjīng dú guò hěn duō biàn zhè běn shū",
-         "hv": "tức sứ dĩ kinh độc quá _ đa _ _ bản thư"
+         "hv": "tức sử dĩ kinh độc quá ngận đa biến giá bản thư"
         },
         {
          "t": "也能给我",
@@ -18818,12 +23605,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💡",
          "c": "o",
          "py": "xīn de qǐfā",
-         "hv": "tân đích _ _"
+         "hv": "tân đích khải phát"
         }
        ],
        "traceWord": "启发",
        "py": "Jíshǐ yǐjīng dú guò hěn duō biàn zhè běn shū yě néng gěi wǒ xīn de qǐfā",
-       "traceKey": "qifa"
+       "traceKey": "qifa",
+       "traceInfo": [
+        {
+         "c": "启",
+         "py": "qǐ",
+         "hv": "khải"
+        },
+        {
+         "c": "发",
+         "py": "fā",
+         "hv": "phát"
+        }
+       ]
       },
       {
        "scene": "📚🪑🏫",
@@ -18835,7 +23634,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "s",
          "py": "jíshǐ kǎoshì qián yuèlǎnshì de zuòwèi hěn shǎo",
-         "hv": "tức sứ khảo thí tiền _ lãm thất đích toà vị _ thiểu"
+         "hv": "tức sử khảo thí tiền duyệt lãm thất đích tọa vị ngận thiểu"
         },
         {
          "t": "也有",
@@ -18854,7 +23653,24 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "阅览室",
        "py": "Jíshǐ kǎoshì qián yuèlǎnshì de zuòwèi hěn shǎo yě yǒu bù shǎo xuéshēng jiānchí qù kàn shū",
-       "traceKey": "yuelanshi"
+       "traceKey": "yuelanshi",
+       "traceInfo": [
+        {
+         "c": "阅",
+         "py": "yuè",
+         "hv": "duyệt"
+        },
+        {
+         "c": "览",
+         "py": "lǎn",
+         "hv": "lãm"
+        },
+        {
+         "c": "室",
+         "py": "shì",
+         "hv": "thất"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -18997,19 +23813,36 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎪",
          "c": "v",
          "py": "jǔbàn kāimùshì",
-         "hv": "cử _ khai _ thức"
+         "hv": "cử biện khai mạc thức"
         },
         {
          "t": "为的是展示新产品",
          "ico": "📦",
          "c": "o",
          "py": "wèi de shì zhǎnshì xīn chǎnpǐn",
-         "hv": "_ đích thị triển thị tân _ phẩm"
+         "hv": "vị đích thị triển thị tân sản phẩm"
         }
        ],
        "traceWord": "开幕式",
        "py": "Gōngsī jǔbàn kāimùshì wèi de shì zhǎnshì xīn chǎnpǐn",
-       "traceKey": "kaimushi"
+       "traceKey": "kaimushi",
+       "traceInfo": [
+        {
+         "c": "开",
+         "py": "kāi",
+         "hv": "khai"
+        },
+        {
+         "c": "幕",
+         "py": "mù",
+         "hv": "mạc"
+        },
+        {
+         "c": "式",
+         "py": "shì",
+         "hv": "thức"
+        }
+       ]
       },
       {
        "scene": "🧑🎪🔍",
@@ -19021,26 +23854,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "参加这次博览会",
          "ico": "🎪",
          "c": "v",
          "py": "cānjiā zhè cì bólǎnhuì",
-         "hv": "tham gia _ thứ bác lãm hội"
+         "hv": "tham gia giá thứ bác lãm hội"
         },
         {
          "t": "为的是了解新的品种",
          "ico": "🔍",
          "c": "o",
          "py": "wèi de shì liǎojiě xīn de pǐnzhǒng",
-         "hv": "_ đích thị liễu giải tân đích phẩm chõng"
+         "hv": "vị đích thị liễu giải tân đích phẩm chủng"
         }
        ],
        "traceWord": "品种",
        "py": "Wǒmen cānjiā zhè cì bólǎnhuì wèi de shì liǎojiě xīn de pǐnzhǒng",
-       "traceKey": "pinzhong"
+       "traceKey": "pinzhong",
+       "traceInfo": [
+        {
+         "c": "品",
+         "py": "pǐn",
+         "hv": "phẩm"
+        },
+        {
+         "c": "种",
+         "py": "zhǒng",
+         "hv": "chủng"
+        }
+       ]
       },
       {
        "scene": "🧑🏛️🗣️",
@@ -19052,7 +23897,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "tāmen",
-         "hv": "tha món"
+         "hv": "tha môn"
         },
         {
          "t": "在博物馆开会",
@@ -19066,12 +23911,29 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "o",
          "py": "wèi de shì tǎolùn zhǎnlǎn de jìhuà",
-         "hv": "_ đích thị thảo luận triển lãm đích kể _"
+         "hv": "vị đích thị thảo luận triển lãm đích kế hoạch"
         }
        ],
        "traceWord": "博物馆",
        "py": "Tāmen zài bówùguǎn kāihuì wèi de shì tǎolùn zhǎnlǎn de jìhuà",
-       "traceKey": "bowuguan"
+       "traceKey": "bowuguan",
+       "traceInfo": [
+        {
+         "c": "博",
+         "py": "bó",
+         "hv": "bác"
+        },
+        {
+         "c": "物",
+         "py": "wù",
+         "hv": "vật"
+        },
+        {
+         "c": "馆",
+         "py": "guǎn",
+         "hv": "quán"
+        }
+       ]
       },
       {
        "scene": "👔🎉🙏",
@@ -19083,26 +23945,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "lǎobǎn",
-         "hv": "lão ván"
+         "hv": "lão bản"
         },
         {
          "t": "请我们参加闭幕式",
          "ico": "🎉",
          "c": "v",
          "py": "qǐng wǒmen cānjiā bìmùshì",
-         "hv": "thỉnh ngã món tham gia bế _ thức"
+         "hv": "thỉnh ngã môn tham gia bế mạc thức"
         },
         {
          "t": "为的是感谢大家的努力",
          "ico": "🙏",
          "c": "o",
          "py": "wèi de shì gǎnxiè dàjiā de nǔlì",
-         "hv": "_ đích thị cảm tạ đại gia đích _ lực"
+         "hv": "vị đích thị cảm tạ đại gia đích nỗ lực"
         }
        ],
        "traceWord": "闭幕式",
        "py": "Lǎobǎn qǐng wǒmen cānjiā bìmùshì wèi de shì gǎnxiè dàjiā de nǔlì",
-       "traceKey": "bimushi"
+       "traceKey": "bimushi",
+       "traceInfo": [
+        {
+         "c": "闭",
+         "py": "bì",
+         "hv": "bế"
+        },
+        {
+         "c": "幕",
+         "py": "mù",
+         "hv": "mạc"
+        },
+        {
+         "c": "式",
+         "py": "shì",
+         "hv": "thức"
+        }
+       ]
       },
       {
        "scene": "🏛️🌸🌆",
@@ -19121,19 +24000,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌸",
          "c": "v",
          "py": "yòng piàoliang de zhuāngshì",
-         "hv": "dụng phều _ đích trang _"
+         "hv": "dụng phiêu lượng đích trang sức"
         },
         {
          "t": "为的是展现城市的风光",
          "ico": "🌆",
          "c": "o",
          "py": "wèi de shì zhǎnxiàn chéngshì de fēngguāng",
-         "hv": "_ đích thị triển hiện thành thị đích phong quang"
+         "hv": "vị đích thị triển hiện thành thị đích phong quang"
         }
        ],
        "traceWord": "风光",
        "py": "Zhǎnlǎn zhōngxīn yòng piàoliang de zhuāngshì wèi de shì zhǎnxiàn chéngshì de fēngguāng",
-       "traceKey": "fengguang"
+       "traceKey": "fengguang",
+       "traceInfo": [
+        {
+         "c": "风",
+         "py": "fēng",
+         "hv": "phong"
+        },
+        {
+         "c": "光",
+         "py": "guāng",
+         "hv": "quang"
+        }
+       ]
       },
       {
        "scene": "👔🎊😊",
@@ -19145,26 +24036,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ",
-         "hv": "kinh lí"
+         "hv": "kinh lý"
         },
         {
          "t": "在开幕典礼上特别注意风度",
          "ico": "🎊",
          "c": "v",
          "py": "zài kāimù diǎnlǐ shàng tèbié zhùyì fēngdù",
-         "hv": "tại khai _ điển lễ thượng đặc _ chú ý phong độ"
+         "hv": "tại khai mạc điển lễ thượng đặc biệt chú ý phong độ"
         },
         {
          "t": "为的是给客户留下好印象",
          "ico": "😊",
          "c": "o",
          "py": "wèi de shì gěi kèhù liúxia hǎo yìnxiàng",
-         "hv": "_ đích thị cấp khách hộ lưu hạ háo ấn tượng"
+         "hv": "vị đích thị cấp khách hộ lưu hạ hảo ấn tượng"
         }
        ],
        "traceWord": "典礼",
        "py": "Jīnglǐ zài kāimù diǎnlǐ shàng tèbié zhùyì fēngdù wèi de shì gěi kèhù liúxia hǎo yìnxiàng",
-       "traceKey": "dianli"
+       "traceKey": "dianli",
+       "traceInfo": [
+        {
+         "c": "典",
+         "py": "diǎn",
+         "hv": "điển"
+        },
+        {
+         "c": "礼",
+         "py": "lǐ",
+         "hv": "lễ"
+        }
+       ]
       },
       {
        "scene": "🧑🏺🏢",
@@ -19176,26 +24079,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "买了几件工艺品",
          "ico": "🏺",
          "c": "v",
          "py": "mǎi le jǐ jiàn gōngyì pǐn",
-         "hv": "mãi liễu kỉ kiện công nghệ phẩm"
+         "hv": "mãi liễu kỷ kiện công nghệ phẩm"
         },
         {
          "t": "为的是装饰新办公室",
          "ico": "🏢",
          "c": "o",
          "py": "wèi de shì zhuāngshì xīn bàngōngshì",
-         "hv": "_ đích thị trang _ tân _ công thất"
+         "hv": "vị đích thị trang sức tân biện công thất"
         }
        ],
        "traceWord": "工艺",
        "py": "Wǒmen mǎi le jǐ jiàn gōngyì pǐn wèi de shì zhuāngshì xīn bàngōngshì",
-       "traceKey": "gongyi"
+       "traceKey": "gongyi",
+       "traceInfo": [
+        {
+         "c": "工",
+         "py": "gōng",
+         "hv": "công"
+        },
+        {
+         "c": "艺",
+         "py": "yì",
+         "hv": "nghệ"
+        }
+       ]
       },
       {
        "scene": "🎪📅📦",
@@ -19207,7 +24122,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎪",
          "c": "s",
          "py": "bólǎnhuì xià zhōu bìmù",
-         "hv": "bác lãm hội hạ chu bế _"
+         "hv": "bác lãm hội hạ chu bế mạc"
         },
         {
          "t": "大家加班",
@@ -19221,12 +24136,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📦",
          "c": "o",
          "py": "wèi de shì shùnlì zhǎnshì xīn chǎnpǐn",
-         "hv": "_ đích thị thuận lợi triển thị tân _ phẩm"
+         "hv": "vị đích thị thuận lợi triển thị tân sản phẩm"
         }
        ],
        "traceWord": "闭幕",
        "py": "Bólǎnhuì xià zhōu bìmù dàjiā jiābān wèi de shì shùnlì zhǎnshì xīn chǎnpǐn",
-       "traceKey": "bimu"
+       "traceKey": "bimu",
+       "traceInfo": [
+        {
+         "c": "闭",
+         "py": "bì",
+         "hv": "bế"
+        },
+        {
+         "c": "幕",
+         "py": "mù",
+         "hv": "mạc"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -19358,7 +24285,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "nǐ",
-         "hv": "nể"
+         "hv": "nễ"
         },
         {
          "t": "先在网站上注册",
@@ -19372,12 +24299,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💻",
          "c": "o",
          "py": "yǐbiàn shǐyòng gōngsī de ruǎnjiàn",
-         "hv": "_ tiện sứ dụng công ti đích nhuyễn kiện"
+         "hv": "dĩ tiện sử dụng công ti đích nhuyễn kiện"
         }
        ],
        "traceWord": "注册",
        "py": "Nǐ xiān zài wǎngzhàn shàng zhùcè yǐbiàn shǐyòng gōngsī de ruǎnjiàn",
-       "traceKey": "zhuce"
+       "traceKey": "zhuce",
+       "traceInfo": [
+        {
+         "c": "注",
+         "py": "zhù",
+         "hv": "chú"
+        },
+        {
+         "c": "册",
+         "py": "cè",
+         "hv": "sách"
+        }
+       ]
       },
       {
        "scene": "🧾📱🔍",
@@ -19396,19 +24335,36 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📱",
          "c": "v",
          "py": "fā le yī gè èrwéimǎ",
-         "hv": "_ liễu nhất cá nhì _ _"
+         "hv": "phát liễu nhất cá nhị duy mã"
         },
         {
          "t": "以便我们搜索产品信息",
          "ico": "🔍",
          "c": "o",
          "py": "yǐbiàn wǒmen sōusuǒ chǎnpǐn xìnxī",
-         "hv": "_ tiện ngã món sưu sách _ phẩm tín tức"
+         "hv": "dĩ tiện ngã môn sưu sách sản phẩm tín tức"
         }
        ],
        "traceWord": "二维码",
        "py": "Kèhù fā le yī gè èrwéimǎ yǐbiàn wǒmen sōusuǒ chǎnpǐn xìnxī",
-       "traceKey": "erweima"
+       "traceKey": "erweima",
+       "traceInfo": [
+        {
+         "c": "二",
+         "py": "èr",
+         "hv": "nhị"
+        },
+        {
+         "c": "维",
+         "py": "wéi",
+         "hv": "duy"
+        },
+        {
+         "c": "码",
+         "py": "mǎ",
+         "hv": "mã"
+        }
+       ]
       },
       {
        "scene": "🧑🔍🌐",
@@ -19420,26 +24376,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "nǐ",
-         "hv": "nể"
+         "hv": "nễ"
         },
         {
          "t": "可以搜一下公司的名字",
          "ico": "🔍",
          "c": "v",
          "py": "kěyǐ sōu yī xià gōngsī de míngzi",
-         "hv": "khả _ sưu nhất hạ công ti đích danh tự"
+         "hv": "khả dĩ sưu nhất hạ công ti đích danh tự"
         },
         {
          "t": "以便找到我们的网站",
          "ico": "🌐",
          "c": "o",
          "py": "yǐbiàn zhǎodào wǒmen de wǎngzhàn",
-         "hv": "_ tiện quơ đáo ngã món đích võng trạm"
+         "hv": "dĩ tiện trảo đáo ngã môn đích võng trạm"
         }
        ],
        "traceWord": "搜",
        "py": "Nǐ kěyǐ sōu yī xià gōngsī de míngzi yǐbiàn zhǎodào wǒmen de wǎngzhàn",
-       "traceKey": "sou"
+       "traceKey": "sou",
+       "traceInfo": [
+        {
+         "c": "搜",
+         "py": "sōu",
+         "hv": "sưu"
+        }
+       ]
       },
       {
        "scene": "👷🤖🔎",
@@ -19458,19 +24421,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤖",
          "c": "v",
          "py": "xiān qǐdòng jīqìrén",
-         "hv": "tiên _ động cơ khí nhân"
+         "hv": "tiên khải động cơ khí nhân"
         },
         {
          "t": "以便检查它的运行情况",
          "ico": "🔎",
          "c": "o",
          "py": "yǐbiàn jiǎnchá tā de yùnxíng qíngkuàng",
-         "hv": "_ tiện ghém tra _ đích vận hàng tình huống"
+         "hv": "dĩ tiện kiểm tra tha đích vận hành tình huống"
         }
        ],
        "traceWord": "启动",
        "py": "Gōngchéngshī xiān qǐdòng jīqìrén yǐbiàn jiǎnchá tā de yùnxíng qíngkuàng",
-       "traceKey": "qidong"
+       "traceKey": "qidong",
+       "traceInfo": [
+        {
+         "c": "启",
+         "py": "qǐ",
+         "hv": "khải"
+        },
+        {
+         "c": "动",
+         "py": "dòng",
+         "hv": "động"
+        }
+       ]
       },
       {
        "scene": "🧑🛡️🦠",
@@ -19482,7 +24457,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "每周杀毒一次",
@@ -19496,12 +24471,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🦠",
          "c": "o",
          "py": "yǐbiàn bǎohù diànnǎo bú shòu bìngdú de yǐngxiǎng",
-         "hv": "_ tiện bảo hộ _ não bất thụ bệnh độc đích ảnh hướng"
+         "hv": "dĩ tiện bảo hộ điện não bất thụ bệnh độc đích ảnh hưởng"
         }
        ],
        "traceWord": "病毒",
        "py": "Wǒmen měi zhōu shādú yī cì yǐbiàn bǎohù diànnǎo bú shòu bìngdú de yǐngxiǎng",
-       "traceKey": "bingdu"
+       "traceKey": "bingdu",
+       "traceInfo": [
+        {
+         "c": "病",
+         "py": "bìng",
+         "hv": "bệnh"
+        },
+        {
+         "c": "毒",
+         "py": "dú",
+         "hv": "độc"
+        }
+       ]
       },
       {
        "scene": "🏢🖥️⚡",
@@ -19520,19 +24507,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🖥️",
          "c": "v",
          "py": "huàn le xīn de yìngjiàn",
-         "hv": "_ liễu tân đích ngạnh kiện"
+         "hv": "hoán liễu tân đích ngạnh kiện"
         },
         {
          "t": "以便提高软件的性能",
          "ico": "⚡",
          "c": "o",
          "py": "yǐbiàn tígāo ruǎnjiàn de xìngnéng",
-         "hv": "_ tiện đề cao nhuyễn kiện đích tính năng"
+         "hv": "dĩ tiện đề cao nhuyễn kiện đích tính năng"
         }
        ],
        "traceWord": "硬件",
        "py": "Gōngsī huàn le xīn de yìngjiàn yǐbiàn tígāo ruǎnjiàn de xìngnéng",
-       "traceKey": "yingjian"
+       "traceKey": "yingjian",
+       "traceInfo": [
+        {
+         "c": "硬",
+         "py": "yìng",
+         "hv": "ngạnh"
+        },
+        {
+         "c": "件",
+         "py": "jiàn",
+         "hv": "kiện"
+        }
+       ]
       },
       {
        "scene": "👨‍💼🔘🤖",
@@ -19551,19 +24550,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔘",
          "c": "v",
          "py": "àn zhè gè jiàn",
-         "hv": "án _ cá _"
+         "hv": "án giá cá kiện"
         },
         {
          "t": "以便让机器人开始运行",
          "ico": "🤖",
          "c": "o",
          "py": "yǐbiàn ràng jīqìrén kāishǐ yùnxíng",
-         "hv": "_ tiện nhường cơ khí nhân khai thuỷ vận hàng"
+         "hv": "dĩ tiện nhượng cơ khí nhân khai thủy vận hành"
         }
        ],
        "traceWord": "键",
        "py": "Yuángōng àn zhè gè jiàn yǐbiàn ràng jīqìrén kāishǐ yùnxíng",
-       "traceKey": "jian"
+       "traceKey": "jian",
+       "traceInfo": [
+        {
+         "c": "键",
+         "py": "jiàn",
+         "hv": "kiện"
+        }
+       ]
       },
       {
        "scene": "🧑⌨️🏠",
@@ -19582,19 +24588,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⌨️",
          "c": "v",
          "py": "mǎi le xīn jiànpán hé xīn shǔbiāo",
-         "hv": "mãi liễu tân _ bàn hoà tân _ bêu"
+         "hv": "mãi liễu tân kiện bàn hòa tân thử tiêu"
         },
         {
          "t": "以便在家更方便地工作",
          "ico": "🏠",
          "c": "o",
          "py": "yǐbiàn zàijiā gèng fāngbiàn de gōngzuò",
-         "hv": "_ tiện tại gia cánh phương tiện địa công tác"
+         "hv": "dĩ tiện tại gia cánh phương tiện địa công tác"
         }
        ],
        "traceWord": "鼠标",
        "py": "Tā mǎi le xīn jiànpán hé xīn shǔbiāo yǐbiàn zàijiā gèng fāngbiàn de gōngzuò",
-       "traceKey": "shubiao"
+       "traceKey": "shubiao",
+       "traceInfo": [
+        {
+         "c": "鼠",
+         "py": "shǔ",
+         "hv": "thử"
+        },
+        {
+         "c": "标",
+         "py": "biāo",
+         "hv": "tiêu"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -19726,26 +24744,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "s",
          "py": "méiyǒu wūshuǐ chǔlǐ",
-         "hv": "một hữu ô thuỷ xử lí"
+         "hv": "một hữu ô thủy xử lý"
         },
         {
          "t": "就没有",
          "ico": "🚫",
          "c": "v",
          "py": "jiù méiyǒu",
-         "hv": "_ một hữu"
+         "hv": "tựu một hữu"
         },
         {
          "t": "干净的河",
          "ico": "🏞️",
          "c": "o",
          "py": "gānjìng de hé",
-         "hv": "can _ đích hà"
+         "hv": "can tịnh đích hà"
         }
        ],
        "traceWord": "污水",
        "py": "Méiyǒu wūshuǐ chǔlǐ jiù méiyǒu gānjìng de hé",
-       "traceKey": "wushui"
+       "traceKey": "wushui",
+       "traceInfo": [
+        {
+         "c": "污",
+         "py": "wū",
+         "hv": "ô"
+        },
+        {
+         "c": "水",
+         "py": "shuǐ",
+         "hv": "thủy"
+        }
+       ]
       },
       {
        "scene": "⛏️🔥🏭",
@@ -19757,26 +24787,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⛏️",
          "c": "s",
          "py": "méiyǒu méi hé tiānránqì",
-         "hv": "một hữu muồi hoà thiên nhiên khí"
+         "hv": "một hữu môi hòa thiên nhiên khí"
         },
         {
          "t": "工厂就没有",
          "ico": "🏭",
          "c": "v",
          "py": "gōngchǎng jiù méiyǒu",
-         "hv": "công xưởng _ một hữu"
+         "hv": "công xưởng tựu một hữu"
         },
         {
          "t": "足够的热量",
          "ico": "🔥",
          "c": "o",
          "py": "zúgòu de rèliàng",
-         "hv": "túc _ đích nhiệt _"
+         "hv": "túc cấu đích nhiệt lượng"
         }
        ],
        "traceWord": "天然气",
        "py": "Méiyǒu méi hé tiānránqì gōngchǎng jiù méiyǒu zúgòu de rèliàng",
-       "traceKey": "tianranqi"
+       "traceKey": "tianranqi",
+       "traceInfo": [
+        {
+         "c": "天",
+         "py": "tiān",
+         "hv": "thiên"
+        },
+        {
+         "c": "然",
+         "py": "rán",
+         "hv": "nhiên"
+        },
+        {
+         "c": "气",
+         "py": "qì",
+         "hv": "khí"
+        }
+       ]
       },
       {
        "scene": "🔥🏠🍳",
@@ -19788,26 +24835,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🔥",
          "c": "s",
          "py": "méiyǒu méiqì",
-         "hv": "một hữu muồi khí"
+         "hv": "một hữu môi khí"
         },
         {
          "t": "我们就没有办法",
          "ico": "🤷",
          "c": "v",
          "py": "wǒmen jiù méiyǒu bànfǎ",
-         "hv": "ngã món _ một hữu _ pháp"
+         "hv": "ngã môn tựu một hữu biện pháp"
         },
         {
          "t": "做饭",
          "ico": "🍳",
          "c": "o",
          "py": "zuòfàn",
-         "hv": "_ _"
+         "hv": "tố phạn"
         }
        ],
        "traceWord": "煤气",
        "py": "Méiyǒu méiqì wǒmen jiù méiyǒu bànfǎ zuòfàn",
-       "traceKey": "meiqi"
+       "traceKey": "meiqi",
+       "traceInfo": [
+        {
+         "c": "煤",
+         "py": "méi",
+         "hv": "môi"
+        },
+        {
+         "c": "气",
+         "py": "qì",
+         "hv": "khí"
+        }
+       ]
       },
       {
        "scene": "🏭☁️🌬️",
@@ -19819,26 +24878,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "s",
          "py": "méi yǒu rén guǎnlǐ wūrǎn qìtǐ",
-         "hv": "một hữu nhân quản lí ô nhuộm khí thể"
+         "hv": "một hữu nhân quản lý ô nhiễm khí thể"
         },
         {
          "t": "就没有",
          "ico": "🚫",
          "c": "v",
          "py": "jiù méiyǒu",
-         "hv": "_ một hữu"
+         "hv": "tựu một hữu"
         },
         {
          "t": "干净的空气",
          "ico": "🌬️",
          "c": "o",
          "py": "gānjìng de kōngqì",
-         "hv": "can _ đích không khí"
+         "hv": "can tịnh đích không khí"
         }
        ],
        "traceWord": "气体",
        "py": "Méi yǒu rén guǎnlǐ wūrǎn qìtǐ jiù méiyǒu gānjìng de kōngqì",
-       "traceKey": "qiti"
+       "traceKey": "qiti",
+       "traceInfo": [
+        {
+         "c": "气",
+         "py": "qì",
+         "hv": "khí"
+        },
+        {
+         "c": "体",
+         "py": "tǐ",
+         "hv": "thể"
+        }
+       ]
       },
       {
        "scene": "🗑️♻️📦",
@@ -19850,26 +24921,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗑️",
          "c": "s",
          "py": "méiyǒu lājī huíshōu",
-         "hv": "một hữu lắp _ hồi thu"
+         "hv": "một hữu lạp ngập hồi thu"
         },
         {
          "t": "就没有",
          "ico": "🚫",
          "c": "v",
          "py": "jiù méiyǒu",
-         "hv": "_ một hữu"
+         "hv": "tựu một hữu"
         },
         {
          "t": "资源的再利用",
          "ico": "♻️",
          "c": "o",
          "py": "zīyuán de zài lìyòng",
-         "hv": "_ nguồn đích tái lợi dụng"
+         "hv": "tư nguyên đích tái lợi dụng"
         }
        ],
        "traceWord": "回收",
        "py": "Méiyǒu lājī huíshōu jiù méiyǒu zīyuán de zài lìyòng",
-       "traceKey": "huishou"
+       "traceKey": "huishou",
+       "traceInfo": [
+        {
+         "c": "回",
+         "py": "huí",
+         "hv": "hồi"
+        },
+        {
+         "c": "收",
+         "py": "shōu",
+         "hv": "thu"
+        }
+       ]
       },
       {
        "scene": "🌦️☀️🌡️",
@@ -19888,19 +24971,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "v",
          "py": "wǒmen jiù méiyǒu",
-         "hv": "ngã món _ một hữu"
+         "hv": "ngã môn tựu một hữu"
         },
         {
          "t": "准备高温天气的时间",
          "ico": "🌡️",
          "c": "o",
          "py": "zhǔnbèi gāowēn tiānqì de shíjiān",
-         "hv": "chốn bị cao ồn thiên khí đích thì gian"
+         "hv": "chuẩn bị cao ôn thiên khí đích thời gian"
         }
        ],
        "traceWord": "气象",
        "py": "Méiyǒu qìxiàng yùbào wǒmen jiù méiyǒu zhǔnbèi gāowēn tiānqì de shíjiān",
-       "traceKey": "qixiang"
+       "traceKey": "qixiang",
+       "traceInfo": [
+        {
+         "c": "气",
+         "py": "qì",
+         "hv": "khí"
+        },
+        {
+         "c": "象",
+         "py": "xiàng",
+         "hv": "tượng"
+        }
+       ]
       },
       {
        "scene": "❄️👴🏠",
@@ -19912,26 +25007,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "♨️",
          "c": "s",
          "py": "méiyǒu nuǎnqì",
-         "hv": "một hữu _ khí"
+         "hv": "một hữu noãn khí"
         },
         {
          "t": "冬天老人就没有办法",
          "ico": "👴",
          "c": "v",
          "py": "dōngtiān lǎorén jiù méiyǒu bànfǎ",
-         "hv": "đông thiên lão nhân _ một hữu _ pháp"
+         "hv": "đông thiên lão nhân tựu một hữu biện pháp"
         },
         {
          "t": "不冻着",
          "ico": "❄️",
          "c": "o",
          "py": "bú dòng zhe",
-         "hv": "bất đông trứ"
+         "hv": "bất đống trước"
         }
        ],
        "traceWord": "冻",
        "py": "Méiyǒu nuǎnqì dōngtiān lǎorén jiù méiyǒu bànfǎ bú dòng zhe",
-       "traceKey": "dong"
+       "traceKey": "dong",
+       "traceInfo": [
+        {
+         "c": "冻",
+         "py": "dòng",
+         "hv": "đống"
+        }
+       ]
       },
       {
        "scene": "🚿🌳💧",
@@ -19943,26 +25045,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚿",
          "c": "s",
          "py": "méi yǒu rén zài xiàtiān sǎ shuǐ",
-         "hv": "một hữu nhân tại _ thiên sái thuỷ"
+         "hv": "một hữu nhân tại hạ thiên sái thủy"
         },
         {
          "t": "公园的草就没有",
          "ico": "🌳",
          "c": "v",
          "py": "gōngyuán de cǎo jiù méiyǒu",
-         "hv": "công viên đích thảo _ một hữu"
+         "hv": "công viên đích thảo tựu một hữu"
         },
         {
          "t": "水分",
          "ico": "💧",
          "c": "o",
          "py": "shuǐfèn",
-         "hv": "thuỷ phân"
+         "hv": "thủy phận"
         }
        ],
        "traceWord": "洒",
        "py": "Méi yǒu rén zài xiàtiān sǎ shuǐ gōngyuán de cǎo jiù méiyǒu shuǐfèn",
-       "traceKey": "sa"
+       "traceKey": "sa",
+       "traceInfo": [
+        {
+         "c": "洒",
+         "py": "sǎ",
+         "hv": "sái"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -20099,14 +25208,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚧",
          "c": "s",
          "py": "zhè tiáo lù",
-         "hv": "_ điều lộ"
+         "hv": "giá điều lộ"
         },
         {
          "t": "再斜我们也",
          "ico": "📐",
          "c": "v",
          "py": "zài xié wǒmen yě",
-         "hv": "tái tà ngã món dã"
+         "hv": "tái tà ngã môn dã"
         },
         {
          "t": "要走过去",
@@ -20118,7 +25227,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "斜",
        "py": "Zhè tiáo lù zài xié wǒmen yě yào zǒu guòqù",
-       "traceKey": "xie"
+       "traceKey": "xie",
+       "traceInfo": [
+        {
+         "c": "斜",
+         "py": "xié",
+         "hv": "tà"
+        }
+       ]
       },
       {
        "scene": "🧱🪟💪",
@@ -20130,26 +25246,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🪟",
          "c": "s",
          "py": "zhè kuài bōli",
-         "hv": "_ khối _ lê"
+         "hv": "giá khối pha lê"
         },
         {
          "t": "再脆也",
          "ico": "💥",
          "c": "v",
          "py": "zài cuì yě",
-         "hv": "tái _ dã"
+         "hv": "tái thúy dã"
         },
         {
          "t": "比那块好用",
          "ico": "👍",
          "c": "o",
          "py": "bǐ nà kuài hǎo yòng",
-         "hv": "tỉ na khối háo dụng"
+         "hv": "tỷ na khối hảo dụng"
         }
        ],
        "traceWord": "玻璃",
        "py": "Zhè kuài bōli zài cuì yě bǐ nà kuài hǎo yòng",
-       "traceKey": "boli"
+       "traceKey": "boli",
+       "traceInfo": [
+        {
+         "c": "玻",
+         "py": "bō",
+         "hv": "pha"
+        },
+        {
+         "c": "璃",
+         "py": "li",
+         "hv": "lê"
+        }
+       ]
       },
       {
        "scene": "🛋️🌙😣",
@@ -20161,7 +25289,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛋️",
          "c": "s",
          "py": "zhè zhāng shāfā",
-         "hv": "_ trương sa _"
+         "hv": "giá trương sa phát"
         },
         {
          "t": "再软我今天也",
@@ -20175,12 +25303,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😣",
          "c": "o",
          "py": "shuì bù zhe",
-         "hv": "_ bất trứ"
+         "hv": "thụy bất trước"
         }
        ],
        "traceWord": "软",
        "py": "Zhè zhāng shāfā zài ruǎn wǒ jīntiān yě shuì bù zhe",
-       "traceKey": "ruan"
+       "traceKey": "ruan",
+       "traceInfo": [
+        {
+         "c": "软",
+         "py": "ruǎn",
+         "hv": "nhuyễn"
+        }
+       ]
       },
       {
        "scene": "🏠🗑️🤢",
@@ -20192,7 +25327,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗑️",
          "c": "s",
          "py": "chúfáng lǐ de lājī",
-         "hv": "chù phòng lịa đích lắp _"
+         "hv": "trù phòng lý đích lạp ngập"
         },
         {
          "t": "再臭也",
@@ -20205,13 +25340,20 @@ window.CURRICULUM_STAGES[5] = {
          "t": "要及时倒掉",
          "ico": "🚮",
          "c": "o",
-         "py": "yào jíshí dǎo diào",
-         "hv": "yếu cập thì đảo trao"
+         "py": "yào jíshí dào diào",
+         "hv": "yếu cập thời đáo điệu"
         }
        ],
        "traceWord": "臭",
-       "py": "Chúfáng lǐ de lājī zài chòu yě yào jíshí dǎo diào",
-       "traceKey": "chou"
+       "py": "Chúfáng lǐ de lājī zài chòu yě yào jíshí dào diào",
+       "traceKey": "chou",
+       "traceInfo": [
+        {
+         "c": "臭",
+         "py": "chòu",
+         "hv": "xú"
+        }
+       ]
       },
       {
        "scene": "🌧️🛣️🚶",
@@ -20223,26 +25365,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌧️",
          "c": "s",
          "py": "xià yǔ tiān dìmiàn",
-         "hv": "hạ _ thiên địa _"
+         "hv": "hạ vũ thiên địa diện"
         },
         {
          "t": "再滑他也",
          "ico": "⚠️",
          "c": "v",
          "py": "zài huá tā yě",
-         "hv": "tái gột tha dã"
+         "hv": "tái hoạt tha dã"
         },
         {
          "t": "走得很稳",
          "ico": "🚶",
          "c": "o",
-         "py": "zǒu dé hěn wěn",
-         "hv": "tẩu đắc _ ủn"
+         "py": "zǒu de hěn wěn",
+         "hv": "tẩu đắc ngận ổn"
         }
        ],
        "traceWord": "滑",
-       "py": "Xià yǔ tiān dìmiàn zài huá tā yě zǒu dé hěn wěn",
-       "traceKey": "hua"
+       "py": "Xià yǔ tiān dìmiàn zài huá tā yě zǒu de hěn wěn",
+       "traceKey": "hua",
+       "traceInfo": [
+        {
+         "c": "滑",
+         "py": "huá",
+         "hv": "hoạt"
+        }
+       ]
       },
       {
        "scene": "🏢🏯🌟",
@@ -20254,7 +25403,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "zhè zuò lóu",
-         "hv": "_ toà lầu"
+         "hv": "giá tọa lâu"
         },
         {
          "t": "再高大也",
@@ -20273,7 +25422,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "雄伟",
        "py": "Zhè zuò lóu zài gāodà yě bùrú Chángchéng xióngwěi",
-       "traceKey": "xiongwei"
+       "traceKey": "xiongwei",
+       "traceInfo": [
+        {
+         "c": "雄",
+         "py": "xióng",
+         "hv": "hùng"
+        },
+        {
+         "c": "伟",
+         "py": "wěi",
+         "hv": "vĩ"
+        }
+       ]
       },
       {
        "scene": "🛤️⏳💪",
@@ -20285,14 +25446,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛤️",
          "c": "s",
          "py": "qiánmiàn de lù",
-         "hv": "tiền _ đích lộ"
+         "hv": "tiền diện đích lộ"
         },
         {
          "t": "再漫长我们也",
          "ico": "⏳",
          "c": "v",
          "py": "zài màncháng wǒmen yě",
-         "hv": "tái man trường ngã món dã"
+         "hv": "tái mạn trường ngã môn dã"
         },
         {
          "t": "要一步一步走下去",
@@ -20304,7 +25465,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "漫长",
        "py": "Qiánmiàn de lù zài màncháng wǒmen yě yào yī bù yī bù zǒu xiàqù",
-       "traceKey": "manchang"
+       "traceKey": "manchang",
+       "traceInfo": [
+        {
+         "c": "漫",
+         "py": "màn",
+         "hv": "mạn"
+        },
+        {
+         "c": "长",
+         "py": "cháng",
+         "hv": "trường"
+        }
+       ]
       },
       {
        "scene": "🍞💪🍽️",
@@ -20316,7 +25489,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🍞",
          "c": "s",
          "py": "zhè kuài miànbāo",
-         "hv": "_ khối _ bao"
+         "hv": "giá khối diện bao"
         },
         {
          "t": "再硬他也",
@@ -20330,12 +25503,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🍽️",
          "c": "o",
          "py": "huì chī wán bú huì làngfèi",
-         "hv": "hội khật hoàn bất hội _ phí"
+         "hv": "hội cật hoàn bất hội lãng phí"
         }
        ],
        "traceWord": "硬",
        "py": "Zhè kuài miànbāo zài yìng tā yě huì chī wán bú huì làngfèi",
-       "traceKey": "ying"
+       "traceKey": "ying",
+       "traceInfo": [
+        {
+         "c": "硬",
+         "py": "yìng",
+         "hv": "ngạnh"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -20468,7 +25648,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "回顾",
@@ -20482,12 +25662,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📊",
          "c": "o",
          "py": "guòqù yī nián de gōngzuò fāxiàn wèntí hái bù shǎo",
-         "hv": "quá khứ nhất nên đích công tác _ hiện _ _ hoàn bất thiểu"
+         "hv": "quá khứ nhất niên đích công tác phát hiện vấn đề hoàn bất thiểu"
         }
        ],
        "traceWord": "回顾",
        "py": "Wǒmen huígù guòqù yī nián de gōngzuò fāxiàn wèntí hái bù shǎo",
-       "traceKey": "huigu"
+       "traceKey": "huigu",
+       "traceInfo": [
+        {
+         "c": "回",
+         "py": "huí",
+         "hv": "hồi"
+        },
+        {
+         "c": "顾",
+         "py": "gù",
+         "hv": "cố"
+        }
+       ]
       },
       {
        "scene": "👴🏠😊",
@@ -20513,12 +25705,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😊",
          "c": "o",
          "py": "xiǎoshíhou de shìqing juéde nà duàn shíjiān hěn xìngfú",
-         "hv": "tiểu thì hầu đích sự tình giác đắc na đoạn thì gian _ _ phúc"
+         "hv": "tiểu thời hậu đích sự tình giác đắc na đoạn thời gian ngận hạnh phúc"
         }
        ],
        "traceWord": "回忆",
        "py": "Tā huíyì xiǎoshíhou de shìqing juéde nà duàn shíjiān hěn xìngfú",
-       "traceKey": "huiyi"
+       "traceKey": "huiyi",
+       "traceInfo": [
+        {
+         "c": "回",
+         "py": "huí",
+         "hv": "hồi"
+        },
+        {
+         "c": "忆",
+         "py": "yì",
+         "hv": "ức"
+        }
+       ]
       },
       {
        "scene": "🏭📈💼",
@@ -20530,26 +25734,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "rúguǒ nǐ",
-         "hv": "như quả nể"
+         "hv": "như quả nễ"
         },
         {
          "t": "熟悉",
          "ico": "🤝",
          "c": "v",
          "py": "shúxi",
-         "hv": "thục tạt"
+         "hv": "thục tất"
         },
         {
          "t": "这个行业就能更快掌握工作的方法",
          "ico": "⚡",
          "c": "o",
          "py": "zhè gè hángyè jiù néng gèng kuài zhǎngwò gōngzuò de fāngfǎ",
-         "hv": "_ cá hàng nghiệp _ năng cánh khoái _ _ công tác đích phương pháp"
+         "hv": "giá cá hàng nghiệp tựu năng cánh khoái chưởng ác công tác đích phương pháp"
         }
        ],
        "traceWord": "掌握",
        "py": "Rúguǒ nǐ shúxi zhè gè hángyè jiù néng gèng kuài zhǎngwò gōngzuò de fāngfǎ",
-       "traceKey": "zhangwo"
+       "traceKey": "zhangwo",
+       "traceInfo": [
+        {
+         "c": "掌",
+         "py": "zhǎng",
+         "hv": "chưởng"
+        },
+        {
+         "c": "握",
+         "py": "wò",
+         "hv": "ác"
+        }
+       ]
       },
       {
        "scene": "🧑‍💼🗣️🙂",
@@ -20560,7 +25776,7 @@ window.CURRICULUM_STAGES[5] = {
          "t": "一个人的修养",
          "ico": "🧑‍💼",
          "c": "s",
-         "py": "yī gèrén de xiūyǎng",
+         "py": "yī gè rén de xiūyǎng",
          "hv": "nhất cá nhân đích tu dưỡng"
         },
         {
@@ -20568,19 +25784,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "v",
          "py": "bùdàn kàn tā shuō shénme",
-         "hv": "bất _ khán tha _ thập _"
+         "hv": "bất đãn khán tha thuyết thập ma"
         },
         {
          "t": "而且看他做什么",
          "ico": "✨",
          "c": "o",
          "py": "érqiě kàn tā zuò shénme",
-         "hv": "_ thả khán tha _ thập _"
+         "hv": "nhi thả khán tha tố thập ma"
         }
        ],
        "traceWord": "修养",
-       "py": "Yī gèrén de xiūyǎng bùdàn kàn tā shuō shénme érqiě kàn tā zuò shénme",
-       "traceKey": "xiuyang"
+       "py": "Yī gè rén de xiūyǎng bùdàn kàn tā shuō shénme érqiě kàn tā zuò shénme",
+       "traceKey": "xiuyang",
+       "traceInfo": [
+        {
+         "c": "修",
+         "py": "xiū",
+         "hv": "tu"
+        },
+        {
+         "c": "养",
+         "py": "yǎng",
+         "hv": "dưỡng"
+        }
+       ]
       },
       {
        "scene": "🖼️👴💭",
@@ -20592,26 +25820,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🖼️",
          "c": "s",
          "py": "tā kàndào zhè zhāng lǎo zhàopiàn",
-         "hv": "tha khán đáo _ trương lão chiếu phiến"
+         "hv": "tha khán đáo giá trương lão chiếu phiến"
         },
         {
          "t": "就联想到",
          "ico": "💭",
          "c": "v",
          "py": "jiù liánxiǎng dào",
-         "hv": "_ liên tưởng đáo"
+         "hv": "tựu liên tưởng đáo"
         },
         {
          "t": "小时候的家乡",
          "ico": "🏡",
          "c": "o",
          "py": "xiǎoshíhou de jiāxiāng",
-         "hv": "tiểu thì hầu đích gia _"
+         "hv": "tiểu thời hậu đích gia hương"
         }
        ],
        "traceWord": "联想",
        "py": "Tā kàndào zhè zhāng lǎo zhàopiàn jiù liánxiǎng dào xiǎoshíhou de jiāxiāng",
-       "traceKey": "lianxiang"
+       "traceKey": "lianxiang",
+       "traceInfo": [
+        {
+         "c": "联",
+         "py": "lián",
+         "hv": "liên"
+        },
+        {
+         "c": "想",
+         "py": "xiǎng",
+         "hv": "tưởng"
+        }
+       ]
       },
       {
        "scene": "🧠❓🤝",
@@ -20623,26 +25863,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧠",
          "c": "s",
          "py": "yīnwèi jìyì bù tài qīngchu tā",
-         "hv": "nhân _ kí ức bất thái thanh sở tha"
+         "hv": "nhân vị ký ức bất thái thanh sở tha"
         },
         {
          "t": "只好寻求",
          "ico": "🙏",
          "c": "v",
          "py": "zhǐhǎo xúnqiú",
-         "hv": "chỉ háo tầm cầu"
+         "hv": "chỉ hảo tầm cầu"
         },
         {
          "t": "同事的帮助",
          "ico": "🤝",
          "c": "o",
          "py": "tóngshì de bāngzhù",
-         "hv": "đồng sự đích _ trợ"
+         "hv": "đồng sự đích bang trợ"
         }
        ],
        "traceWord": "记忆",
        "py": "Yīnwèi jìyì bù tài qīngchu tā zhǐhǎo xúnqiú tóngshì de bāngzhù",
-       "traceKey": "jiyi"
+       "traceKey": "jiyi",
+       "traceInfo": [
+        {
+         "c": "记",
+         "py": "jì",
+         "hv": "ký"
+        },
+        {
+         "c": "忆",
+         "py": "yì",
+         "hv": "ức"
+        }
+       ]
       },
       {
        "scene": "👮🔍💡",
@@ -20654,26 +25906,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👮",
          "c": "s",
          "py": "jǐngchá",
-         "hv": "khểnh sát"
+         "hv": "cảnh sát"
         },
         {
          "t": "发觉",
          "ico": "🔍",
          "c": "v",
          "py": "fājué",
-         "hv": "_ giác"
+         "hv": "phát giác"
         },
         {
          "t": "这条线索不简单很快就看出了事情的真相",
          "ico": "💡",
          "c": "o",
          "py": "zhè tiáo xiànsuǒ bù jiǎndān hěn kuài jiù kànchū le shìqing de zhēnxiàng",
-         "hv": "_ điều _ sách bất giản đơn _ khoái _ khán xuất liễu sự tình đích chân tương"
+         "hv": "giá điều tuyến sách bất giản đơn ngận khoái tựu khán xuất liễu sự tình đích chân tướng"
         }
        ],
        "traceWord": "线索",
        "py": "Jǐngchá fājué zhè tiáo xiànsuǒ bù jiǎndān hěn kuài jiù kànchū le shìqing de zhēnxiàng",
-       "traceKey": "xiansuo"
+       "traceKey": "xiansuo",
+       "traceInfo": [
+        {
+         "c": "线",
+         "py": "xiàn",
+         "hv": "tuyến"
+        },
+        {
+         "c": "索",
+         "py": "suǒ",
+         "hv": "sách"
+        }
+       ]
       },
       {
        "scene": "💬😟🤔",
@@ -20685,26 +25949,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒmen",
-         "hv": "ngã món"
+         "hv": "ngã môn"
         },
         {
          "t": "不应该把别人的批评看成",
          "ico": "🤔",
          "c": "v",
          "py": "bù yīnggāi bǎ biérén de pīpíng kànchéng",
-         "hv": "bất ứng _ bã _ nhân đích phê bình khán thành"
+         "hv": "bất ưng cai bả biệt nhân đích phê bình khán thành"
         },
         {
          "t": "对自己的不满",
          "ico": "😟",
          "c": "o",
          "py": "duì zìjǐ de bùmǎn",
-         "hv": "đỗi tự kỉ đích bất mãn"
+         "hv": "đối tự kỷ đích bất mãn"
         }
        ],
        "traceWord": "看成",
        "py": "Wǒmen bù yīnggāi bǎ biérén de pīpíng kànchéng duì zìjǐ de bùmǎn",
-       "traceKey": "kancheng"
+       "traceKey": "kancheng",
+       "traceInfo": [
+        {
+         "c": "看",
+         "py": "kàn",
+         "hv": "khán"
+        },
+        {
+         "c": "成",
+         "py": "chéng",
+         "hv": "thành"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -20837,26 +26113,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👨‍👩‍👧",
          "c": "s",
          "py": "érnǚ",
-         "hv": "_ nữa"
+         "hv": "nhi nữ"
         },
         {
          "t": "长大以后再也不需要",
          "ico": "🧑",
          "c": "v",
          "py": "zhǎngdà yǐhòu zài yě bù xūyào",
-         "hv": "trường đại _ hậu tái dã bất _ yếu"
+         "hv": "trưởng đại dĩ hậu tái dã bất nhu yếu"
         },
         {
          "t": "父母天天陪着",
          "ico": "👫",
          "c": "o",
          "py": "fùmǔ tiān tiān péi zhe",
-         "hv": "_ mẫu thiên thiên _ trứ"
+         "hv": "phụ mẫu thiên thiên bồi trước"
         }
        ],
        "traceWord": "儿女",
        "py": "Érnǚ zhǎngdà yǐhòu zài yě bù xūyào fùmǔ tiān tiān péi zhe",
-       "traceKey": "ernu"
+       "traceKey": "ernu",
+       "traceInfo": [
+        {
+         "c": "儿",
+         "py": "ér",
+         "hv": "nhi"
+        },
+        {
+         "c": "女",
+         "py": "nǚ",
+         "hv": "nữ"
+        }
+       ]
       },
       {
        "scene": "🏠👴😊",
@@ -20875,19 +26163,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👴",
          "c": "v",
          "py": "niánlíng dà le dànshì píqi zài yě méiyǒu",
-         "hv": "nên _ đại liễu _ thị tì khí tái dã một hữu"
+         "hv": "niên linh đại liễu đãn thị tì khí tái dã một hữu"
         },
         {
          "t": "以前那么大了",
          "ico": "😊",
          "c": "o",
          "py": "yǐqián nàme dà le",
-         "hv": "_ tiền na _ đại liễu"
+         "hv": "dĩ tiền na ma đại liễu"
         }
        ],
        "traceWord": "邻居",
        "py": "Wǒ de línjū niánlíng dà le dànshì píqi zài yě méiyǒu yǐqián nàme dà le",
-       "traceKey": "linju"
+       "traceKey": "linju",
+       "traceInfo": [
+        {
+         "c": "邻",
+         "py": "lín",
+         "hv": "lân"
+        },
+        {
+         "c": "居",
+         "py": "jū",
+         "hv": "cư"
+        }
+       ]
       },
       {
        "scene": "👵💑🏡",
@@ -20899,26 +26199,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👵",
          "c": "s",
          "py": "tā",
-         "hv": "_"
+         "hv": "tha"
         },
         {
          "t": "一辈子陪着",
          "ico": "💑",
          "c": "v",
          "py": "yībèizi péi zhe",
-         "hv": "nhất bối tí _ trứ"
+         "hv": "nhất bối tử bồi trước"
         },
         {
          "t": "丈夫再也没有离开过这个城市",
          "ico": "🏙️",
          "c": "o",
          "py": "zhàngfu zài yě méiyǒu líkāi guò zhè gè chéngshì",
-         "hv": "trượng phu tái dã một hữu li khai quá _ cá thành thị"
+         "hv": "trượng phu tái dã một hữu ly khai quá giá cá thành thị"
         }
        ],
        "traceWord": "一辈子",
        "py": "Tā yībèizi péi zhe zhàngfu zài yě méiyǒu líkāi guò zhè gè chéngshì",
-       "traceKey": "yibeizi"
+       "traceKey": "yibeizi",
+       "traceInfo": [
+        {
+         "c": "一",
+         "py": "yī",
+         "hv": "nhất"
+        },
+        {
+         "c": "辈",
+         "py": "bèi",
+         "hv": "bối"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "🗣️😞🙈",
@@ -20930,26 +26247,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "nǐ zhèyàng shuōhuà",
-         "hv": "nể _ dạng _ thoại"
+         "hv": "nễ giá dạng thuyết thoại"
         },
         {
          "t": "会让他再也没有",
          "ico": "😞",
          "c": "v",
          "py": "huì ràng tā zài yě méiyǒu",
-         "hv": "hội nhường tha tái dã một hữu"
+         "hv": "hội nhượng tha tái dã một hữu"
         },
         {
          "t": "面子",
          "ico": "🙈",
          "c": "o",
          "py": "miànzi",
-         "hv": "_ tí"
+         "hv": "diện tử"
         }
        ],
        "traceWord": "面子",
        "py": "Nǐ zhèyàng shuōhuà huì ràng tā zài yě méiyǒu miànzi",
-       "traceKey": "mianzi"
+       "traceKey": "mianzi",
+       "traceInfo": [
+        {
+         "c": "面",
+         "py": "miàn",
+         "hv": "diện"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "🤝💖✅",
@@ -20961,7 +26290,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧑",
          "c": "s",
          "py": "tā duì péngyou",
-         "hv": "tha đỗi bằng hữu"
+         "hv": "tha đối bằng hữu"
         },
         {
          "t": "非常真诚",
@@ -20975,12 +26304,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "o",
          "py": "suǒyǐ tāmen de yǒuyì zài yě méiyǒu chū guò wèntí",
-         "hv": "sỡ _ tha món đích hữu _ tái dã một hữu xuất quá _ _"
+         "hv": "sở dĩ tha môn đích hữu nghị tái dã một hữu xuất quá vấn đề"
         }
        ],
        "traceWord": "友谊",
        "py": "Tā duì péngyou fēicháng zhēnchéng suǒyǐ tāmen de yǒuyì zài yě méiyǒu chū guò wèntí",
-       "traceKey": "youyi"
+       "traceKey": "youyi",
+       "traceInfo": [
+        {
+         "c": "友",
+         "py": "yǒu",
+         "hv": "hữu"
+        },
+        {
+         "c": "谊",
+         "py": "yì",
+         "hv": "nghị"
+        }
+       ]
       },
       {
        "scene": "💑💍🏠",
@@ -20992,14 +26333,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💑",
          "c": "s",
          "py": "tāmen",
-         "hv": "tha món"
+         "hv": "tha môn"
         },
         {
          "t": "恋爱三年后结婚了",
          "ico": "💍",
          "c": "v",
          "py": "liàn'ài sān nián hòu jiéhūn le",
-         "hv": "luyến _ tam nên hậu kết _ liễu"
+         "hv": "luyến ái tam niên hậu kết hôn liễu"
         },
         {
          "t": "再也没有分开过",
@@ -21011,7 +26352,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "恋爱",
        "py": "Tāmen liàn'ài sān nián hòu jiéhūn le zài yě méiyǒu fēnkāi guò",
-       "traceKey": "lianai"
+       "traceKey": "lianai",
+       "traceInfo": [
+        {
+         "c": "恋",
+         "py": "liàn",
+         "hv": "luyến"
+        },
+        {
+         "c": "爱",
+         "py": "ài",
+         "hv": "ái"
+        }
+       ]
       },
       {
        "scene": "👨👩💰",
@@ -21023,7 +26376,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👨👩",
          "c": "s",
          "py": "zài zhè gè gōngsī lǐ nánxìng hé nǚxìng de gōngzī",
-         "hv": "tại _ cá công ti lịa nam tính hoà nữa tính đích công _"
+         "hv": "tại giá cá công ti lý nam tính hòa nữ tính đích công tư"
         },
         {
          "t": "再也没有",
@@ -21037,12 +26390,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⚖️",
          "c": "o",
          "py": "qūbié le",
-         "hv": "khu _ liễu"
+         "hv": "khu biệt liễu"
         }
        ],
        "traceWord": "男性",
        "py": "Zài zhè gè gōngsī lǐ nánxìng hé nǚxìng de gōngzī zài yě méiyǒu qūbié le",
-       "traceKey": "nanxing"
+       "traceKey": "nanxing",
+       "traceInfo": [
+        {
+         "c": "男",
+         "py": "nán",
+         "hv": "nam"
+        },
+        {
+         "c": "性",
+         "py": "xìng",
+         "hv": "tính"
+        }
+       ]
       },
       {
        "scene": "👶😤🚪",
@@ -21054,26 +26419,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👶",
          "c": "s",
          "py": "nǐ duì háizi",
-         "hv": "nể đỗi hài tí"
+         "hv": "nễ đối hài tử"
         },
         {
          "t": "没有耐心",
          "ico": "😤",
          "c": "v",
          "py": "méiyǒu nàixīn",
-         "hv": "một hữu _ tâm"
+         "hv": "một hữu nại tâm"
         },
         {
          "t": "他们就再也不愿意跟你说话",
          "ico": "🚪",
          "c": "o",
          "py": "tāmen jiù zài yě bú yuànyì gēn nǐ shuōhuà",
-         "hv": "tha món _ tái dã bất nguyện ý ngấn nể _ thoại"
+         "hv": "tha môn tựu tái dã bất nguyện ý cân nễ thuyết thoại"
         }
        ],
        "traceWord": "耐心",
        "py": "Nǐ duì háizi méiyǒu nàixīn tāmen jiù zài yě bú yuànyì gēn nǐ shuōhuà",
-       "traceKey": "naixin"
+       "traceKey": "naixin",
+       "traceInfo": [
+        {
+         "c": "耐",
+         "py": "nài",
+         "hv": "nại"
+        },
+        {
+         "c": "心",
+         "py": "xīn",
+         "hv": "tâm"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -21210,7 +26587,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👃",
          "c": "s",
          "py": "wǒ de bízi",
-         "hv": "ngã đích _ tí"
+         "hv": "ngã đích tị tử"
         },
         {
          "t": "可",
@@ -21224,12 +26601,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😣",
          "c": "o",
          "py": "téng le",
-         "hv": "_ liễu"
+         "hv": "đông liễu"
         }
        ],
        "traceWord": "鼻子",
        "py": "Wǒ de bízi kě téng le",
-       "traceKey": "bizi"
+       "traceKey": "bizi",
+       "traceInfo": [
+        {
+         "c": "鼻",
+         "py": "bí",
+         "hv": "tị"
+        },
+        {
+         "c": "子",
+         "py": "zi",
+         "hv": "tử"
+        }
+       ]
       },
       {
        "scene": "🐱👂📏",
@@ -21241,7 +26630,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🐱",
          "c": "s",
          "py": "zhè zhǐ māo de ěrduo",
-         "hv": "_ chỉ mèo đích nhĩ đoá"
+         "hv": "giá chỉ miêu đích nhĩ đóa"
         },
         {
          "t": "可",
@@ -21260,7 +26649,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "耳朵",
        "py": "Zhè zhǐ māo de ěrduo kě dà le",
-       "traceKey": "erduo"
+       "traceKey": "erduo",
+       "traceInfo": [
+        {
+         "c": "耳",
+         "py": "ěr",
+         "hv": "nhĩ"
+        },
+        {
+         "c": "朵",
+         "py": "duo",
+         "hv": "đóa"
+        }
+       ]
       },
       {
        "scene": "👨😐🏥",
@@ -21272,7 +26673,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😐",
          "c": "s",
          "py": "tā jīntiān de liǎnsè",
-         "hv": "tha kim thiên đích _ sắc"
+         "hv": "tha kim thiên đích kiểm sắc"
         },
         {
          "t": "可",
@@ -21286,12 +26687,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙅",
          "c": "o",
          "py": "bù hǎo",
-         "hv": "bất háo"
+         "hv": "bất hảo"
         }
        ],
        "traceWord": "脸色",
        "py": "Tā jīntiān de liǎnsè kě bù hǎo",
-       "traceKey": "lianse"
+       "traceKey": "lianse",
+       "traceInfo": [
+        {
+         "c": "脸",
+         "py": "liǎn",
+         "hv": "kiểm"
+        },
+        {
+         "c": "色",
+         "py": "sè",
+         "hv": "sắc"
+        }
+       ]
       },
       {
        "scene": "📅💼😫",
@@ -21303,7 +26716,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💼",
          "c": "s",
          "py": "zhè jǐ tiān wǒ de jiān",
-         "hv": "_ kỉ thiên ngã đích _"
+         "hv": "giá kỷ thiên ngã đích kiên"
         },
         {
          "t": "可",
@@ -21317,12 +26730,19 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😫",
          "c": "o",
          "py": "suān le",
-         "hv": "_ liễu"
+         "hv": "toan liễu"
         }
        ],
        "traceWord": "肩",
        "py": "Zhè jǐ tiān wǒ de jiān kě suān le",
-       "traceKey": "jian"
+       "traceKey": "jian",
+       "traceInfo": [
+        {
+         "c": "肩",
+         "py": "jiān",
+         "hv": "kiên"
+        }
+       ]
       },
       {
        "scene": "☀️🧴💦",
@@ -21334,7 +26754,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🧴",
          "c": "s",
          "py": "xiàtiān wǒ de pífū",
-         "hv": "_ thiên ngã đích bì _"
+         "hv": "hạ thiên ngã đích bì phu"
         },
         {
          "t": "可",
@@ -21348,12 +26768,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💦",
          "c": "o",
          "py": "róngyì chūhàn",
-         "hv": "dung dịch xuất _"
+         "hv": "dung dị xuất hãn"
         }
        ],
        "traceWord": "皮肤",
        "py": "Xiàtiān wǒ de pífū kě róngyì chūhàn",
-       "traceKey": "pifu"
+       "traceKey": "pifu",
+       "traceInfo": [
+        {
+         "c": "皮",
+         "py": "pí",
+         "hv": "bì"
+        },
+        {
+         "c": "肤",
+         "py": "fū",
+         "hv": "phu"
+        }
+       ]
       },
       {
        "scene": "💅👆📏",
@@ -21365,7 +26797,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💅",
          "c": "s",
          "py": "nǐ de zhǐjia",
-         "hv": "nể đích chỉ giáp"
+         "hv": "nễ đích chỉ giáp"
         },
         {
          "t": "可",
@@ -21379,12 +26811,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📏",
          "c": "o",
          "py": "bǐ wǒ de cháng duō le",
-         "hv": "tỉ ngã đích trường đa liễu"
+         "hv": "tỷ ngã đích trường đa liễu"
         }
        ],
        "traceWord": "指甲",
        "py": "Nǐ de zhǐjia kě bǐ wǒ de cháng duō le",
-       "traceKey": "zhijia"
+       "traceKey": "zhijia",
+       "traceInfo": [
+        {
+         "c": "指",
+         "py": "zhǐ",
+         "hv": "chỉ"
+        },
+        {
+         "c": "甲",
+         "py": "jia",
+         "hv": "giáp"
+        }
+       ]
       },
       {
        "scene": "🍜🌶️🚫",
@@ -21396,26 +26840,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🫃",
          "c": "s",
          "py": "nǐ de cháng wèi bù hǎo",
-         "hv": "nể đích _ _ bất háo"
+         "hv": "nễ đích trường vị bất hảo"
         },
         {
          "t": "可别",
          "ico": "🚫",
          "c": "v",
          "py": "kě bié",
-         "hv": "khả _"
+         "hv": "khả biệt"
         },
         {
          "t": "吃太辣的东西",
          "ico": "🌶️",
          "c": "o",
          "py": "chī tài là de dōngxi",
-         "hv": "khật thái lượt đích đông tây"
+         "hv": "cật thái lạt đích đông tây"
         }
        ],
        "traceWord": "肠",
        "py": "Nǐ de cháng wèi bù hǎo kě bié chī tài là de dōngxi",
-       "traceKey": "chang"
+       "traceKey": "chang",
+       "traceInfo": [
+        {
+         "c": "肠",
+         "py": "cháng",
+         "hv": "trường"
+        }
+       ]
       },
       {
        "scene": "🏋️💪👥",
@@ -21427,7 +26878,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏋️",
          "c": "s",
          "py": "jīngcháng duànliàn de rén jīròu",
-         "hv": "kinh thường _ _ đích nhân _ _"
+         "hv": "kinh thường đoán luyện đích nhân cơ nhục"
         },
         {
          "t": "可",
@@ -21441,12 +26892,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💪",
          "c": "o",
          "py": "bǐ yībān rén fādá",
-         "hv": "tỉ nhất bàn nhân _ đạt"
+         "hv": "tỷ nhất ban nhân phát đạt"
         }
        ],
        "traceWord": "肌肉",
        "py": "Jīngcháng duànliàn de rén jīròu kě bǐ yībān rén fādá",
-       "traceKey": "jirou"
+       "traceKey": "jirou",
+       "traceInfo": [
+        {
+         "c": "肌",
+         "py": "jī",
+         "hv": "cơ"
+        },
+        {
+         "c": "肉",
+         "py": "ròu",
+         "hv": "nhục"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -21472,7 +26935,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Zhè jiā diàn de cài hěn hǎochī"
         }
        ],
-       "qpy": "Nǐ wèi shénme bù gǎn yī gèrén wǎnshang chūmén?"
+       "qpy": "Nǐ wèi shénme bù gǎn yī gè rén wǎnshang chūmén?"
       },
       {
        "q": "为什么睡觉对脑子很重要？",
@@ -21579,26 +27042,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📖",
          "c": "s",
          "py": "zhè shǒu shīgē wǒ",
-         "hv": "_ thủ thi ca ngã"
+         "hv": "giá thủ thi ca ngã"
         },
         {
          "t": "怎么也",
          "ico": "🤷",
          "c": "v",
          "py": "zěnme yě",
-         "hv": "chẩn _ dã"
+         "hv": "chẩm ma dã"
         },
         {
          "t": "记不住",
          "ico": "🧠",
          "c": "o",
          "py": "jì bú zhù",
-         "hv": "kí bất trú"
+         "hv": "ký bất trú"
         }
        ],
        "traceWord": "诗歌",
        "py": "Zhè shǒu shīgē wǒ zěnme yě jì bú zhù",
-       "traceKey": "shige"
+       "traceKey": "shige",
+       "traceInfo": [
+        {
+         "c": "诗",
+         "py": "shī",
+         "hv": "thi"
+        },
+        {
+         "c": "歌",
+         "py": "gē",
+         "hv": "ca"
+        }
+       ]
       },
       {
        "scene": "📚👀😵",
@@ -21617,7 +27092,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤷",
          "c": "v",
          "py": "zěnme dōu",
-         "hv": "chẩn _ đô"
+         "hv": "chẩm ma đô"
         },
         {
          "t": "看不完",
@@ -21629,7 +27104,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "散文",
        "py": "Tā xiě de sǎnwén wǒ zěnme dōu kàn bù wán",
-       "traceKey": "sanwen"
+       "traceKey": "sanwen",
+       "traceInfo": [
+        {
+         "c": "散",
+         "py": "sǎn",
+         "hv": "tản"
+        },
+        {
+         "c": "文",
+         "py": "wén",
+         "hv": "văn"
+        }
+       ]
       },
       {
        "scene": "🖌️📆😣",
@@ -21641,26 +27128,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🖌️",
          "c": "s",
          "py": "wǒ liàn le bàn nián shūfǎ",
-         "hv": "ngã luyện liễu bán nên thư pháp"
+         "hv": "ngã luyện liễu bán niên thư pháp"
         },
         {
          "t": "怎么也",
          "ico": "🤷",
          "c": "v",
          "py": "zěnme yě",
-         "hv": "chẩn _ dã"
+         "hv": "chẩm ma dã"
         },
         {
          "t": "写不好",
          "ico": "😣",
          "c": "o",
          "py": "xiě bù hǎo",
-         "hv": "tả bất háo"
+         "hv": "tả bất hảo"
         }
        ],
        "traceWord": "书法",
        "py": "Wǒ liàn le bàn nián shūfǎ zěnme yě xiě bù hǎo",
-       "traceKey": "shufa"
+       "traceKey": "shufa",
+       "traceInfo": [
+        {
+         "c": "书",
+         "py": "shū",
+         "hv": "thư"
+        },
+        {
+         "c": "法",
+         "py": "fǎ",
+         "hv": "pháp"
+        }
+       ]
       },
       {
        "scene": "📕😍🤲",
@@ -21672,14 +27171,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📕",
          "c": "s",
          "py": "zhè běn mànhuà wǒ",
-         "hv": "_ bản man hoạ ngã"
+         "hv": "giá bản mạn họa ngã"
         },
         {
          "t": "怎么都",
          "ico": "🤷",
          "c": "v",
          "py": "zěnme dōu",
-         "hv": "chẩn _ đô"
+         "hv": "chẩm ma đô"
         },
         {
          "t": "放不下",
@@ -21691,7 +27190,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "漫画",
        "py": "Zhè běn mànhuà wǒ zěnme dōu fàng bú xià",
-       "traceKey": "manhua"
+       "traceKey": "manhua",
+       "traceInfo": [
+        {
+         "c": "漫",
+         "py": "màn",
+         "hv": "mạn"
+        },
+        {
+         "c": "画",
+         "py": "huà",
+         "hv": "họa"
+        }
+       ]
       },
       {
        "scene": "📘🔍⏳",
@@ -21710,19 +27221,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤷",
          "c": "v",
          "py": "zěnme yě",
-         "hv": "chẩn _ dã"
+         "hv": "chẩm ma dã"
         },
         {
          "t": "没找到这个成语",
          "ico": "🔍",
          "c": "o",
          "py": "méi zhǎodào zhè gè chéngyǔ",
-         "hv": "một quơ đáo _ cá thành ngữ"
+         "hv": "một trảo đáo giá cá thành ngữ"
         }
        ],
        "traceWord": "成语",
        "py": "Wǒ chá le bàntiān cídiǎn zěnme yě méi zhǎodào zhè gè chéngyǔ",
-       "traceKey": "chengyu"
+       "traceKey": "chengyu",
+       "traceInfo": [
+        {
+         "c": "成",
+         "py": "chéng",
+         "hv": "thành"
+        },
+        {
+         "c": "语",
+         "py": "yǔ",
+         "hv": "ngữ"
+        }
+       ]
       },
       {
        "scene": "🗣️🇨🇳🤝",
@@ -21734,26 +27257,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "wǒ xiǎng yòng Huáyǔ ānwèi tā",
-         "hv": "ngã tưởng dụng hoa ngữ an uý tha"
+         "hv": "ngã tưởng dụng hoa ngữ an úy tha"
         },
         {
          "t": "怎么都",
          "ico": "🤷",
          "c": "v",
          "py": "zěnme dōu",
-         "hv": "chẩn _ đô"
+         "hv": "chẩm ma đô"
         },
         {
          "t": "找不到合适的言语",
          "ico": "💬",
          "c": "o",
          "py": "zhǎo bú dào héshì de yányǔ",
-         "hv": "quơ bất đáo hợp thích đích ngôn ngữ"
+         "hv": "trảo bất đáo hợp thích đích ngôn ngữ"
         }
        ],
        "traceWord": "华语",
        "py": "Wǒ xiǎng yòng Huáyǔ ānwèi tā zěnme dōu zhǎo bú dào héshì de yányǔ",
-       "traceKey": "huayu"
+       "traceKey": "huayu",
+       "traceInfo": [
+        {
+         "c": "华",
+         "py": "huá",
+         "hv": "hoa"
+        },
+        {
+         "c": "语",
+         "py": "yǔ",
+         "hv": "ngữ"
+        }
+       ]
       },
       {
        "scene": "📄🎤🔟",
@@ -21765,14 +27300,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎤",
          "c": "s",
          "py": "zhè piān kèwén wǒ lǎngdú le shí biàn",
-         "hv": "_ _ khoá văn ngã lãng độc liễu thập _"
+         "hv": "giá thiên khóa văn ngã lãng độc liễu thập biến"
         },
         {
          "t": "怎么也",
          "ico": "🤷",
          "c": "v",
          "py": "zěnme yě",
-         "hv": "chẩn _ dã"
+         "hv": "chẩm ma dã"
         },
         {
          "t": "读不流利",
@@ -21784,7 +27319,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "朗读",
        "py": "Zhè piān kèwén wǒ lǎngdú le shí biàn zěnme yě dú bù liúlì",
-       "traceKey": "langdu"
+       "traceKey": "langdu",
+       "traceInfo": [
+        {
+         "c": "朗",
+         "py": "lǎng",
+         "hv": "lãng"
+        },
+        {
+         "c": "读",
+         "py": "dú",
+         "hv": "độc"
+        }
+       ]
       },
       {
        "scene": "💬❤️🧠",
@@ -21796,14 +27343,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💬",
          "c": "s",
          "py": "tā nà yī jù huà wǒ",
-         "hv": "tha na nhất câu thoại ngã"
+         "hv": "tha na nhất cú thoại ngã"
         },
         {
          "t": "怎么都",
          "ico": "🤷",
          "c": "v",
          "py": "zěnme dōu",
-         "hv": "chẩn _ đô"
+         "hv": "chẩm ma đô"
         },
         {
          "t": "忘不了",
@@ -21815,7 +27362,24 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "一句话",
        "py": "Tā nà yī jù huà wǒ zěnme dōu wàng bù le",
-       "traceKey": "yijuhua"
+       "traceKey": "yijuhua",
+       "traceInfo": [
+        {
+         "c": "一",
+         "py": "yī",
+         "hv": "nhất"
+        },
+        {
+         "c": "句",
+         "py": "jù",
+         "hv": "cú"
+        },
+        {
+         "c": "话",
+         "py": "huà",
+         "hv": "thoại"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -21930,261 +27494,362 @@ window.CURRICULUM_STAGES[5] = {
      "name": "Bài 5.20C: Truyền thông và nghe nhìn",
      "grammar": {
       "formulas": [
-       "📱 这个也不是微博 + ➕ 那个也不是 + 📝 博客",
-       "🎬 拍摄这个视频的人 + ❌ 也不是 + 👨 小王也不是小李",
-       "🌗 这个场面的光线 + ❌ 不是太亮 + ❌ 也不是太暗"
+       "😂 笑也不是 + ， + 😭 哭也不是",
+       "📸 拍也不是 + ， + 🙅 不拍也不是",
+       "📱 发到微博上也不是 + ， + 🤐 不发也不是"
       ],
-      "tip": "Cấu trúc X也不是，Y也不是 (yě bú shì, dã bất thị): phủ định liên tiếp hai đối tượng, nghĩa là \"cái này cũng không phải, cái kia cũng không phải\". Hai vế song song, mỗi vế có 也不是; thường dùng khi loại trừ các khả năng đã nêu. Dạng gần nghĩa: 不是 X 也不是 Y (không phải X mà cũng không phải Y).",
-      "vn_tip": "Người Việt hay dịch \"không phải A cũng không phải B\" thành 不是A也不是B nhưng bỏ 是 ở vế sau (viết 也不B). Đúng là phải giữ 是: 也不是B. Không dùng 也 một mình trong câu phủ định: 他不是医生，也不是老师."
+      "tip": "X也不是，Y也不是 (yě bú shì, dã bất thị): diễn tả tình thế tiến thoái lưỡng nan, làm X cũng dở mà Y cũng dở, không biết xử trí thế nào. X và Y là hai hành động trái ngược nhau (笑/哭, 说/不说, 留/走, 拍/不拍), thường đặt sau chủ ngữ là người đang khó xử: 他笑也不是，哭也不是.",
+      "vn_tip": "Người Việt dễ nhầm mẫu này với phủ định hai đối tượng (这个也不是，那个也不是 = cái này không phải, cái kia cũng không phải). Ở đây X, Y là ĐỘNG TỪ chỉ hai cách làm trái ngược, nghĩa là \"làm thế nào cũng không ổn\": 留也不是，走也不是 (ở cũng dở, đi cũng dở), không dùng danh từ."
      },
      "chunks": [
       {
-       "scene": "📱📝🤷",
-       "full": "这个也不是微博那个也不是博客",
-       "vi": "Cái này cũng không phải Weibo, cái kia cũng không phải blog",
+       "scene": "🌑📸🤔",
+       "full": "光线太暗了摄影师拍也不是不拍也不是",
+       "vi": "Ánh sáng quá tối, nhiếp ảnh gia chụp cũng dở mà không chụp cũng dở",
        "parts": [
         {
-         "t": "这个也不是微博",
-         "ico": "📱",
-         "c": "s",
-         "py": "zhè gè yě bú shì wēibó",
-         "hv": "_ cá dã bất thị vi bác"
-        },
-        {
-         "t": "那个也不是",
-         "ico": "🙅",
-         "c": "v",
-         "py": "nà gè yě bú shì",
-         "hv": "na cá dã bất thị"
-        },
-        {
-         "t": "博客",
-         "ico": "📝",
-         "c": "o",
-         "py": "bókè",
-         "hv": "bác khách"
-        }
-       ],
-       "traceWord": "微博",
-       "py": "Zhè gè yě bú shì wēibó nà gè yě bú shì bókè",
-       "traceKey": "weibo"
-      },
-      {
-       "scene": "🎬▶️👨",
-       "full": "拍摄这个视频的人也不是小王也不是小李",
-       "vi": "Người quay video này cũng không phải Tiểu Vương, cũng không phải Tiểu Lý",
-       "parts": [
-        {
-         "t": "拍摄这个视频的人",
-         "ico": "🎬",
-         "c": "s",
-         "py": "pāishè zhè gè shìpín de rén",
-         "hv": "phếch nhép _ cá thị _ đích nhân"
-        },
-        {
-         "t": "也不是",
-         "ico": "🙅",
-         "c": "v",
-         "py": "yě bú shì",
-         "hv": "dã bất thị"
-        },
-        {
-         "t": "小王也不是小李",
-         "ico": "👨",
-         "c": "o",
-         "py": "Xiǎowáng yě bú shì Xiǎolǐ",
-         "hv": "tiểu vương dã bất thị tiểu lí"
-        }
-       ],
-       "traceWord": "视频",
-       "py": "Pāishè zhè gè shìpín de rén yě bú shì Xiǎowáng yě bú shì Xiǎolǐ",
-       "traceKey": "shipin"
-      },
-      {
-       "scene": "📹🏢🙅",
-       "full": "这台摄像机也不是公司的那台也不是",
-       "vi": "Chiếc máy quay này không phải của công ty, chiếc kia cũng không phải",
-       "parts": [
-        {
-         "t": "这台摄像机",
-         "ico": "📹",
-         "c": "s",
-         "py": "zhè tái shèxiàngjī",
-         "hv": "_ thai nhép tượng cơ"
-        },
-        {
-         "t": "也不是公司的",
-         "ico": "🏢",
-         "c": "v",
-         "py": "yě bú shì gōngsī de",
-         "hv": "dã bất thị công ti đích"
-        },
-        {
-         "t": "那台也不是",
-         "ico": "🙅",
-         "c": "o",
-         "py": "nà tái yě bú shì",
-         "hv": "na thai dã bất thị"
-        }
-       ],
-       "traceWord": "摄像机",
-       "py": "Zhè tái shèxiàngjī yě bú shì gōngsī de nà tái yě bú shì",
-       "traceKey": "shexiangji"
-      },
-      {
-       "scene": "📸👨🇨🇳",
-       "full": "那位摄影师也不是中国人这位也不是",
-       "vi": "Nhiếp ảnh gia kia không phải người Trung Quốc, vị này cũng không phải",
-       "parts": [
-        {
-         "t": "那位摄影师",
-         "ico": "📸",
-         "c": "s",
-         "py": "nà wèi shèyǐngshī",
-         "hv": "na vị nhép ảnh sư"
-        },
-        {
-         "t": "也不是中国人",
-         "ico": "🇨🇳",
-         "c": "v",
-         "py": "yě bú shì Zhōngguó rén",
-         "hv": "dã bất thị trung quốc nhân"
-        },
-        {
-         "t": "这位也不是",
-         "ico": "🙅",
-         "c": "o",
-         "py": "zhè wèi yě bú shì",
-         "hv": "_ vị dã bất thị"
-        }
-       ],
-       "traceWord": "摄影师",
-       "py": "Nà wèi shèyǐngshī yě bú shì Zhōngguó rén zhè wèi yě bú shì",
-       "traceKey": "sheyingshi"
-      },
-      {
-       "scene": "💿🎵🙅",
-       "full": "这张专辑也不是新的那张也不是",
-       "vi": "Album này không phải album mới, album kia cũng không phải",
-       "parts": [
-        {
-         "t": "这张专辑",
-         "ico": "💿",
-         "c": "s",
-         "py": "zhè zhāng zhuānjí",
-         "hv": "_ trương chuyên _"
-        },
-        {
-         "t": "也不是新的",
-         "ico": "🆕",
-         "c": "v",
-         "py": "yě bú shì xīn de",
-         "hv": "dã bất thị tân đích"
-        },
-        {
-         "t": "那张也不是",
-         "ico": "🙅",
-         "c": "o",
-         "py": "nà zhāng yě bú shì",
-         "hv": "na trương dã bất thị"
-        }
-       ],
-       "traceWord": "专辑",
-       "py": "Zhè zhāng zhuānjí yě bú shì xīn de nà zhāng yě bú shì",
-       "traceKey": "zhuanji"
-      },
-      {
-       "scene": "🖼️🌄🙅",
-       "full": "这个画面也不是风景那个景象也不是风景",
-       "vi": "Khung hình này không phải phong cảnh, cảnh tượng kia cũng không phải phong cảnh",
-       "parts": [
-        {
-         "t": "这个画面",
-         "ico": "🖼️",
-         "c": "s",
-         "py": "zhè gè huàmiàn",
-         "hv": "_ cá hoạ _"
-        },
-        {
-         "t": "也不是风景",
-         "ico": "🌄",
-         "c": "v",
-         "py": "yě bú shì fēngjǐng",
-         "hv": "dã bất thị phong cảnh"
-        },
-        {
-         "t": "那个景象也不是风景",
-         "ico": "🙅",
-         "c": "o",
-         "py": "nà gè jǐngxiàng yě bú shì fēngjǐng",
-         "hv": "na cá cảnh tượng dã bất thị phong cảnh"
-        }
-       ],
-       "traceWord": "景象",
-       "py": "Zhè gè huàmiàn yě bú shì fēngjǐng nà gè jǐngxiàng yě bú shì fēngjǐng",
-       "traceKey": "jingxiang"
-      },
-      {
-       "scene": "🎥💡🌗",
-       "full": "这个场面的光线不是太亮也不是太暗",
-       "vi": "Ánh sáng của cảnh quay này không quá sáng cũng không quá tối",
-       "parts": [
-        {
-         "t": "这个场面的光线",
+         "t": "光线太暗了摄影师",
          "ico": "💡",
          "c": "s",
-         "py": "zhè gè chǎngmiàn de guāngxiàn",
-         "hv": "_ cá trường _ đích quang _"
+         "py": "guāngxiàn tài àn le shèyǐngshī",
+         "hv": "quang tuyến thái ám liễu nhiếp ảnh sư"
         },
         {
-         "t": "不是太亮",
-         "ico": "☀️",
+         "t": "拍也不是",
+         "ico": "📸",
          "c": "v",
-         "py": "bú shì tài liàng",
-         "hv": "bất thị thái _"
+         "py": "pāi yě bú shì",
+         "hv": "phách dã bất thị"
         },
         {
-         "t": "也不是太暗",
-         "ico": "🌑",
+         "t": "不拍也不是",
+         "ico": "🙅",
          "c": "o",
-         "py": "yě bú shì tài àn",
-         "hv": "dã bất thị thái ám"
+         "py": "bù pāi yě bú shì",
+         "hv": "bất phách dã bất thị"
         }
        ],
        "traceWord": "光线",
-       "py": "Zhè gè chǎngmiàn de guāngxiàn bú shì tài liàng yě bú shì tài àn",
-       "traceKey": "guangxian"
+       "py": "Guāngxiàn tài àn le shèyǐngshī pāi yě bú shì bù pāi yě bú shì",
+       "traceKey": "guangxian",
+       "traceInfo": [
+        {
+         "c": "光",
+         "py": "guāng",
+         "hv": "quang"
+        },
+        {
+         "c": "线",
+         "py": "xiàn",
+         "hv": "tuyến"
+        }
+       ]
       },
       {
-       "scene": "📺📰🙅",
-       "full": "这个频道也不是新闻的那个也不是",
-       "vi": "Kênh này không phải kênh tin tức, kênh kia cũng không phải",
+       "scene": "🎞️📱🤔",
+       "full": "这段视频发到微博上也不是不发也不是",
+       "vi": "Đoạn video này đăng lên Weibo cũng dở mà không đăng cũng dở",
        "parts": [
         {
-         "t": "这个频道",
+         "t": "这段视频",
+         "ico": "🎞️",
+         "c": "s",
+         "py": "zhè duàn shìpín",
+         "hv": "giá đoạn thị tần"
+        },
+        {
+         "t": "发到微博上也不是",
+         "ico": "📱",
+         "c": "v",
+         "py": "fā dào wēibó shàng yě bú shì",
+         "hv": "phát đáo vi bác thượng dã bất thị"
+        },
+        {
+         "t": "不发也不是",
+         "ico": "🤐",
+         "c": "o",
+         "py": "bù fā yě bú shì",
+         "hv": "bất phát dã bất thị"
+        }
+       ],
+       "traceWord": "微博",
+       "py": "Zhè duàn shìpín fā dào wēibó shàng yě bú shì bù fā yě bú shì",
+       "traceKey": "weibo",
+       "traceInfo": [
+        {
+         "c": "微",
+         "py": "wēi",
+         "hv": "vi"
+        },
+        {
+         "c": "博",
+         "py": "bó",
+         "hv": "bác"
+        }
+       ]
+      },
+      {
+       "scene": "👥🎥😟",
+       "full": "面对这种场面记者走上前拍摄也不是退后也不是",
+       "vi": "Trước cảnh tượng như vậy, phóng viên tiến lên quay cũng dở mà lùi lại cũng dở",
+       "parts": [
+        {
+         "t": "面对这种场面记者",
+         "ico": "🧑‍💼",
+         "c": "s",
+         "py": "miànduì zhè zhǒng chǎngmiàn jìzhě",
+         "hv": "diện đối giá chủng trường diện ký giả"
+        },
+        {
+         "t": "走上前拍摄也不是",
+         "ico": "🎥",
+         "c": "v",
+         "py": "zǒu shàng qián pāishè yě bú shì",
+         "hv": "tẩu thượng tiền phách nhiếp dã bất thị"
+        },
+        {
+         "t": "退后也不是",
+         "ico": "🔙",
+         "c": "o",
+         "py": "tuì hòu yě bú shì",
+         "hv": "thoái hậu dã bất thị"
+        }
+       ],
+       "traceWord": "场面",
+       "py": "Miànduì zhè zhǒng chǎngmiàn jìzhě zǒu shàng qián pāishè yě bú shì tuì hòu yě bú shì",
+       "traceKey": "changmian",
+       "traceInfo": [
+        {
+         "c": "场",
+         "py": "chǎng",
+         "hv": "trường"
+        },
+        {
+         "c": "面",
+         "py": "miàn",
+         "hv": "diện"
+        }
+       ]
+      },
+      {
+       "scene": "📹🔋😟",
+       "full": "摄像机快没电了小王停也不是继续拍也不是",
+       "vi": "Máy quay sắp hết pin, Tiểu Vương dừng cũng dở mà quay tiếp cũng dở",
+       "parts": [
+        {
+         "t": "摄像机快没电了小王",
+         "ico": "📹",
+         "c": "s",
+         "py": "shèxiàngjī kuài méi diàn le Xiǎowáng",
+         "hv": "nhiếp tượng cơ khoái một điện liễu tiểu vương"
+        },
+        {
+         "t": "停也不是",
+         "ico": "⏹️",
+         "c": "v",
+         "py": "tíng yě bú shì",
+         "hv": "đình dã bất thị"
+        },
+        {
+         "t": "继续拍也不是",
+         "ico": "▶️",
+         "c": "o",
+         "py": "jìxù pāi yě bú shì",
+         "hv": "kế tục phách dã bất thị"
+        }
+       ],
+       "traceWord": "摄像机",
+       "py": "Shèxiàngjī kuài méi diàn le Xiǎowáng tíng yě bú shì jìxù pāi yě bú shì",
+       "traceKey": "shexiangji",
+       "traceInfo": [
+        {
+         "c": "摄",
+         "py": "shè",
+         "hv": "nhiếp"
+        },
+        {
+         "c": "像",
+         "py": "xiàng",
+         "hv": "tượng"
+        },
+        {
+         "c": "机",
+         "py": "jī",
+         "hv": "cơ"
+        }
+       ]
+      },
+      {
+       "scene": "💿📉🏢",
+       "full": "新专辑卖得不好公司继续宣传也不是放弃也不是",
+       "vi": "Album mới bán không chạy, công ty tiếp tục quảng bá cũng dở mà bỏ cuộc cũng dở",
+       "parts": [
+        {
+         "t": "新专辑卖得不好公司",
+         "ico": "💿",
+         "c": "s",
+         "py": "xīn zhuānjí mài de bù hǎo gōngsī",
+         "hv": "tân chuyên tập mại đắc bất hảo công ti"
+        },
+        {
+         "t": "继续宣传也不是",
+         "ico": "📣",
+         "c": "v",
+         "py": "jìxù xuānchuán yě bú shì",
+         "hv": "kế tục tuyên truyền dã bất thị"
+        },
+        {
+         "t": "放弃也不是",
+         "ico": "🏳️",
+         "c": "o",
+         "py": "fàngqì yě bú shì",
+         "hv": "phóng khí dã bất thị"
+        }
+       ],
+       "traceWord": "专辑",
+       "py": "Xīn zhuānjí mài de bù hǎo gōngsī jìxù xuānchuán yě bú shì fàngqì yě bú shì",
+       "traceKey": "zhuanji",
+       "traceInfo": [
+        {
+         "c": "专",
+         "py": "zhuān",
+         "hv": "chuyên"
+        },
+        {
+         "c": "辑",
+         "py": "jí",
+         "hv": "tập"
+        }
+       ]
+      },
+      {
+       "scene": "📺📉🤔",
+       "full": "观众越来越少这个频道改也不是不改也不是",
+       "vi": "Khán giả ngày càng ít, kênh này thay đổi cũng dở mà không đổi cũng dở",
+       "parts": [
+        {
+         "t": "观众越来越少这个频道",
          "ico": "📺",
          "c": "s",
-         "py": "zhè gè píndào",
-         "hv": "_ cá _ đạo"
+         "py": "guānzhòng yuè lái yuè shǎo zhè gè píndào",
+         "hv": "quan chúng việt lai việt thiểu giá cá tần đạo"
         },
         {
-         "t": "也不是新闻的",
-         "ico": "📰",
+         "t": "改也不是",
+         "ico": "🔄",
          "c": "v",
-         "py": "yě bú shì xīnwén de",
-         "hv": "dã bất thị tân _ đích"
+         "py": "gǎi yě bú shì",
+         "hv": "cải dã bất thị"
         },
         {
-         "t": "那个也不是",
+         "t": "不改也不是",
          "ico": "🙅",
          "c": "o",
-         "py": "nà gè yě bú shì",
-         "hv": "na cá dã bất thị"
+         "py": "bù gǎi yě bú shì",
+         "hv": "bất cải dã bất thị"
         }
        ],
        "traceWord": "频道",
-       "py": "Zhè gè píndào yě bú shì xīnwén de nà gè yě bú shì",
-       "traceKey": "pindao"
+       "py": "Guānzhòng yuè lái yuè shǎo zhè gè píndào gǎi yě bú shì bù gǎi yě bú shì",
+       "traceKey": "pindao",
+       "traceInfo": [
+        {
+         "c": "频",
+         "py": "pín",
+         "hv": "tần"
+        },
+        {
+         "c": "道",
+         "py": "dào",
+         "hv": "đạo"
+        }
+       ]
+      },
+      {
+       "scene": "💻📝😣",
+       "full": "同事在博客上批评了我我回复也不是不回复也不是",
+       "vi": "Đồng nghiệp phê bình tôi trên blog, tôi trả lời cũng dở mà không trả lời cũng dở",
+       "parts": [
+        {
+         "t": "同事在博客上批评了我我",
+         "ico": "📝",
+         "c": "s",
+         "py": "tóngshì zài bókè shàng pīpíng le wǒ wǒ",
+         "hv": "đồng sự tại bác khách thượng phê bình liễu ngã ngã"
+        },
+        {
+         "t": "回复也不是",
+         "ico": "💬",
+         "c": "v",
+         "py": "huífù yě bú shì",
+         "hv": "hồi phục dã bất thị"
+        },
+        {
+         "t": "不回复也不是",
+         "ico": "🤐",
+         "c": "o",
+         "py": "bù huífù yě bú shì",
+         "hv": "bất hồi phục dã bất thị"
+        }
+       ],
+       "traceWord": "博客",
+       "py": "Tóngshì zài bókè shàng pīpíng le wǒ wǒ huífù yě bú shì bù huífù yě bú shì",
+       "traceKey": "boke",
+       "traceInfo": [
+        {
+         "c": "博",
+         "py": "bó",
+         "hv": "bác"
+        },
+        {
+         "c": "客",
+         "py": "kè",
+         "hv": "khách"
+        }
+       ]
+      },
+      {
+       "scene": "🖥️😂😭",
+       "full": "看到画面上的景象他笑也不是哭也不是",
+       "vi": "Nhìn thấy cảnh tượng trên màn hình, anh ấy cười cũng dở mà khóc cũng dở",
+       "parts": [
+        {
+         "t": "看到画面上的景象他",
+         "ico": "🖼️",
+         "c": "s",
+         "py": "kàndào huàmiàn shàng de jǐngxiàng tā",
+         "hv": "khán đáo họa diện thượng đích cảnh tượng tha"
+        },
+        {
+         "t": "笑也不是",
+         "ico": "😂",
+         "c": "v",
+         "py": "xiào yě bú shì",
+         "hv": "tiếu dã bất thị"
+        },
+        {
+         "t": "哭也不是",
+         "ico": "😭",
+         "c": "o",
+         "py": "kū yě bú shì",
+         "hv": "khốc dã bất thị"
+        }
+       ],
+       "traceWord": "景象",
+       "py": "Kàndào huàmiàn shàng de jǐngxiàng tā xiào yě bú shì kū yě bú shì",
+       "traceKey": "jingxiang",
+       "traceInfo": [
+        {
+         "c": "景",
+         "py": "jǐng",
+         "hv": "cảnh"
+        },
+        {
+         "c": "象",
+         "py": "xiàng",
+         "hv": "tượng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -22237,49 +27902,49 @@ window.CURRICULUM_STAGES[5] = {
        "qpy": "Nǐ wèi shénme xǐhuan zhè jiàn yīfu?"
       },
       {
-       "q": "这个视频是小王拍的吗？",
-       "qvi": "Video này là do Tiểu Vương quay à?",
-       "scene": "▶️🎬❓",
-       "ans": "不是小王拍的也不是小李拍的",
+       "q": "客户对这段视频不满意，你要重新拍吗？",
+       "qvi": "Khách hàng không hài lòng với đoạn video này, bạn có quay lại không?",
+       "scene": "🎞️😠🤔",
+       "ans": "时间不够了，重新拍也不是，不拍也不是",
        "opts": [
         {
-         "txt": "明天是星期一",
-         "ico": "📅",
-         "py": "Míngtiān shì xīngqī yī"
+         "txt": "这家饭店的菜很好吃",
+         "ico": "🍜",
+         "py": "Zhè jiā fàndiàn de cài hěn hǎochī"
         },
         {
-         "txt": "这个周末我想休息",
-         "ico": "🛌",
-         "py": "Zhè gè zhōumò wǒ xiǎng xiūxi"
+         "txt": "时间不够了，重新拍也不是，不拍也不是",
+         "ico": "🎬",
+         "py": "Shíjiān bùgòu le chóngxīn pāi yě bú shì bù pāi yě bú shì"
         },
         {
-         "txt": "不是小王拍的也不是小李拍的",
-         "ico": "🙅",
-         "py": "Bú shì Xiǎowáng pāi de yě bú shì Xiǎolǐ pāi de"
+         "txt": "他们下午三点开会",
+         "ico": "👥",
+         "py": "Tāmen xiàwǔ sān diǎn kāihuì"
         }
        ],
-       "qpy": "Zhè gè shìpín shì Xiǎowáng pāi de ma?"
+       "qpy": "Kèhù duì zhè duàn shìpín bù mǎnyì nǐ yào chóngxīn pāi ma?"
       },
       {
        "q": "你是学摄影还是学摄像的？",
        "qvi": "Bạn học nhiếp ảnh hay học quay phim?",
        "scene": "📷🎥👤",
-       "ans": "我不是学摄影也不是学摄像",
+       "ans": "我是学摄影的，也会一点摄像",
        "opts": [
         {
-         "txt": "我不是学摄影也不是学摄像",
+         "txt": "我是学摄影的，也会一点摄像",
          "ico": "📷",
-         "py": "Wǒ bú shì xué shèyǐng yě bú shì xué shèxiàng"
+         "py": "Wǒ shì xué shèyǐng de yě huì yī diǎn shèxiàng"
         },
         {
-         "txt": "我喜欢喝咖啡",
-         "ico": "☕",
-         "py": "Wǒ xǐhuan hē kāfēi"
+         "txt": "我每天坐地铁上班",
+         "ico": "🚇",
+         "py": "Wǒ měi tiān zuò dìtiě shàngbān"
         },
         {
-         "txt": "他们在北京开会",
-         "ico": "👥",
-         "py": "Tāmen zài Běijīng kāihuì"
+         "txt": "我已经把报告发给经理了",
+         "ico": "📄",
+         "py": "Wǒ yǐjīng bǎ bàogào fā gěi jīnglǐ le"
         }
        ],
        "qpy": "Nǐ shì xué shèyǐng háishi xué shèxiàng de?"
@@ -22320,26 +27985,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📜",
          "c": "s",
          "py": "zhè gè jùběn",
-         "hv": "_ cá kịch bản"
+         "hv": "giá cá kịch bản"
         },
         {
          "t": "改也不是",
          "ico": "✏️",
          "c": "v",
          "py": "gǎi yě bú shì",
-         "hv": "_ dã bất thị"
+         "hv": "cải dã bất thị"
         },
         {
          "t": "不改也不是",
          "ico": "🚫",
          "c": "o",
          "py": "bù gǎi yě bú shì",
-         "hv": "bất _ dã bất thị"
+         "hv": "bất cải dã bất thị"
         }
        ],
        "traceWord": "剧本",
        "py": "Zhè gè jùběn gǎi yě bú shì bù gǎi yě bú shì",
-       "traceKey": "juben"
+       "traceKey": "juben",
+       "traceInfo": [
+        {
+         "c": "剧",
+         "py": "jù",
+         "hv": "kịch"
+        },
+        {
+         "c": "本",
+         "py": "běn",
+         "hv": "bản"
+        }
+       ]
       },
       {
        "scene": "🎭😂😭",
@@ -22351,26 +28028,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎭",
          "c": "s",
          "py": "zhè chū xǐjù",
-         "hv": "_ xuất hỉ kịch"
+         "hv": "giá xuất hỉ kịch"
         },
         {
          "t": "太奇怪",
          "ico": "🤨",
          "c": "v",
          "py": "tài qíguài",
-         "hv": "thái kỳ _"
+         "hv": "thái kỳ quái"
         },
         {
          "t": "笑也不是哭也不是",
          "ico": "😂",
          "c": "o",
          "py": "xiào yě bú shì kū yě bú shì",
-         "hv": "_ dã bất thị khóc dã bất thị"
+         "hv": "tiếu dã bất thị khốc dã bất thị"
         }
        ],
        "traceWord": "喜剧",
        "py": "Zhè chū xǐjù tài qíguài xiào yě bú shì kū yě bú shì",
-       "traceKey": "xiju"
+       "traceKey": "xiju",
+       "traceInfo": [
+        {
+         "c": "喜",
+         "py": "xǐ",
+         "hv": "hỉ"
+        },
+        {
+         "c": "剧",
+         "py": "jù",
+         "hv": "kịch"
+        }
+       ]
       },
       {
        "scene": "🎤😑🙉",
@@ -22382,14 +28071,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎤",
          "c": "s",
          "py": "tā yǎn de xiàngsheng",
-         "hv": "tha diễn đích tương thanh"
+         "hv": "tha diễn đích tướng thanh"
         },
         {
          "t": "太无聊",
          "ico": "😑",
          "c": "v",
          "py": "tài wúliáo",
-         "hv": "thái vô _"
+         "hv": "thái vô liêu"
         },
         {
          "t": "听也不是不听也不是",
@@ -22401,7 +28090,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "相声",
        "py": "Tā yǎn de xiàngsheng tài wúliáo tīng yě bú shì bù tīng yě bú shì",
-       "traceKey": "xiangsheng"
+       "traceKey": "xiangsheng",
+       "traceInfo": [
+        {
+         "c": "相",
+         "py": "xiàng",
+         "hv": "tướng"
+        },
+        {
+         "c": "声",
+         "py": "sheng",
+         "hv": "thanh"
+        }
+       ]
       },
       {
        "scene": "🧑‍🤝‍🧑🎟️🤔",
@@ -22432,7 +28133,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "戏",
        "py": "Péngyou qǐng wǒ qù kàn xì qù yě bú shì bú qù yě bú shì",
-       "traceKey": "xi"
+       "traceKey": "xi",
+       "traceInfo": [
+        {
+         "c": "戏",
+         "py": "xì",
+         "hv": "hí"
+        }
+       ]
       },
       {
        "scene": "🎬🎭😟",
@@ -22451,7 +28159,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎭",
          "c": "v",
          "py": "ràng wǒ bànyǎn huàirén",
-         "hv": "nhường ngã _ diễn hoại nhân"
+         "hv": "nhượng ngã _ diễn hoại nhân"
         },
         {
          "t": "演也不是不演也不是",
@@ -22463,7 +28171,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "扮演",
        "py": "Dǎoyǎn ràng wǒ bànyǎn huàirén yǎn yě bú shì bù yǎn yě bú shì",
-       "traceKey": "banyan"
+       "traceKey": "banyan",
+       "traceInfo": [
+        {
+         "c": "扮",
+         "py": "bàn",
+         "hv": "_"
+        },
+        {
+         "c": "演",
+         "py": "yǎn",
+         "hv": "diễn"
+        }
+       ]
       },
       {
        "scene": "🏠🥁🎹",
@@ -22482,7 +28202,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🥁",
          "c": "v",
          "py": "lǎoshì dǎ gǔ tán qín",
-         "hv": "lão thị đả _ đàn cầm"
+         "hv": "lão thị đả cổ đàn cầm"
         },
         {
          "t": "劝也不是不劝也不是",
@@ -22494,7 +28214,14 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "鼓",
        "py": "Línjū lǎoshì dǎ gǔ tán qín quàn yě bú shì bú quàn yě bú shì",
-       "traceKey": "gu"
+       "traceKey": "gu",
+       "traceInfo": [
+        {
+         "c": "鼓",
+         "py": "gǔ",
+         "hv": "cổ"
+        }
+       ]
       },
       {
        "scene": "🎉💃😳",
@@ -22513,19 +28240,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💃",
          "c": "v",
          "py": "tā ràng wǒ tiào yī duàn wǔ",
-         "hv": "tha nhường ngã khêu nhất đoạn vũ"
+         "hv": "tha nhượng ngã khiêu nhất đoạn vũ"
         },
         {
          "t": "跳也不是不跳也不是",
          "ico": "😳",
          "c": "o",
          "py": "tiào yě bú shì bú tiào yě bú shì",
-         "hv": "khêu dã bất thị bất khêu dã bất thị"
+         "hv": "khiêu dã bất thị bất khiêu dã bất thị"
         }
        ],
        "traceWord": "舞",
        "py": "Wǎnhuì shàng tā ràng wǒ tiào yī duàn wǔ tiào yě bú shì bú tiào yě bú shì",
-       "traceKey": "wu"
+       "traceKey": "wu",
+       "traceInfo": [
+        {
+         "c": "舞",
+         "py": "wǔ",
+         "hv": "vũ"
+        }
+       ]
       },
       {
        "scene": "👥👏🎤",
@@ -22544,19 +28278,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👏",
          "c": "v",
          "py": "dōu zài gǔzhǎng",
-         "hv": "đô tại _ _"
+         "hv": "đô tại cổ chưởng"
         },
         {
          "t": "他站在台上唱也不是走也不是",
          "ico": "🎤",
          "c": "o",
          "py": "tā zhàn zài táishàng chàng yě bú shì zǒu yě bú shì",
-         "hv": "tha trạm tại thai thượng xướng dã bất thị tẩu dã bất thị"
+         "hv": "tha trạm tại đài thượng xướng dã bất thị tẩu dã bất thị"
         }
        ],
        "traceWord": "鼓掌",
        "py": "Dàjiā dōu zài gǔzhǎng tā zhàn zài táishàng chàng yě bú shì zǒu yě bú shì",
-       "traceKey": "guzhang"
+       "traceKey": "guzhang",
+       "traceInfo": [
+        {
+         "c": "鼓",
+         "py": "gǔ",
+         "hv": "cổ"
+        },
+        {
+         "c": "掌",
+         "py": "zhǎng",
+         "hv": "chưởng"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -22688,26 +28434,43 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🐼",
          "c": "s",
          "py": "shuō dào zhúzi dàxióngmāo",
-         "hv": "_ đáo trúc tí đại hùng mèo"
+         "hv": "thuyết đáo trúc tử đại hùng miêu"
         },
         {
          "t": "吃的是它",
          "ico": "🎋",
          "c": "v",
          "py": "chī de shì tā",
-         "hv": "khật đích thị _"
+         "hv": "cật đích thị tha"
         },
         {
          "t": "睡的也是它",
          "ico": "😴",
          "c": "o",
          "py": "shuì de yě shì tā",
-         "hv": "_ đích dã thị _"
+         "hv": "thụy đích dã thị tha"
         }
        ],
        "traceWord": "大熊猫",
        "py": "Shuō dào zhúzi dàxióngmāo chī de shì tā shuì de yě shì tā",
-       "traceKey": "daxiongmao"
+       "traceKey": "daxiongmao",
+       "traceInfo": [
+        {
+         "c": "大",
+         "py": "dà",
+         "hv": "đại"
+        },
+        {
+         "c": "熊",
+         "py": "xióng",
+         "hv": "hùng"
+        },
+        {
+         "c": "猫",
+         "py": "māo",
+         "hv": "miêu"
+        }
+       ]
       },
       {
        "scene": "🌸🍑🌾",
@@ -22719,26 +28482,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌸",
          "c": "s",
          "py": "shuō qǐ táoshù",
-         "hv": "_ khởi đào thụ"
+         "hv": "thuyết khởi đào thụ"
         },
         {
          "t": "春天开桃花的是它",
          "ico": "🌸",
          "c": "v",
          "py": "chūntiān kāi táohuā de shì tā",
-         "hv": "_ thiên khai đào hoa đích thị _"
+         "hv": "xuân thiên khai đào hoa đích thị tha"
         },
         {
          "t": "秋天丰收的也是它",
          "ico": "🍑",
          "c": "o",
          "py": "qiūtiān fēngshōu de yě shì tā",
-         "hv": "thu thiên phong thu đích dã thị _"
+         "hv": "thu thiên phong thu đích dã thị tha"
         }
        ],
        "traceWord": "桃树",
        "py": "Shuō qǐ táoshù chūntiān kāi táohuā de shì tā qiūtiān fēngshōu de yě shì tā",
-       "traceKey": "taoshu"
+       "traceKey": "taoshu",
+       "traceInfo": [
+        {
+         "c": "桃",
+         "py": "táo",
+         "hv": "đào"
+        },
+        {
+         "c": "树",
+         "py": "shù",
+         "hv": "thụ"
+        }
+       ]
       },
       {
        "scene": "🐯😨👀",
@@ -22750,26 +28525,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🐯",
          "c": "s",
          "py": "dòngwùyuán lǐ de lǎo hǔ",
-         "hv": "động vật viên lịa đích lão hổ"
+         "hv": "động vật viên lý đích lão hổ"
         },
         {
          "t": "小朋友怕的是它",
          "ico": "😨",
          "c": "v",
          "py": "xiǎopéngyǒu pà de shì tā",
-         "hv": "tiểu bằng hữu _ đích thị _"
+         "hv": "tiểu bằng hữu phạ đích thị tha"
         },
         {
          "t": "爱看的也是它",
          "ico": "👀",
          "c": "o",
          "py": "ài kàn de yě shì tā",
-         "hv": "_ khán đích dã thị _"
+         "hv": "ái khán đích dã thị tha"
         }
        ],
        "traceWord": "虎",
        "py": "Dòngwùyuán lǐ de lǎo hǔ xiǎopéngyǒu pà de shì tā ài kàn de yě shì tā",
-       "traceKey": "hu"
+       "traceKey": "hu",
+       "traceInfo": [
+        {
+         "c": "虎",
+         "py": "hǔ",
+         "hv": "hổ"
+        }
+       ]
       },
       {
        "scene": "🐍😱😲",
@@ -22788,19 +28570,26 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😱",
          "c": "v",
          "py": "ràng wǒ hàipà de shì tā",
-         "hv": "nhường ngã hại _ đích thị _"
+         "hv": "nhượng ngã hại phạ đích thị tha"
         },
         {
          "t": "让我吃惊的也是它",
          "ico": "😲",
          "c": "o",
          "py": "ràng wǒ chījīng de yě shì tā",
-         "hv": "nhường ngã khật kinh đích dã thị _"
+         "hv": "nhượng ngã cật kinh đích dã thị tha"
         }
        ],
        "traceWord": "蛇",
        "py": "Nà tiáo shé ràng wǒ hàipà de shì tā ràng wǒ chījīng de yě shì tā",
-       "traceKey": "she"
+       "traceKey": "she",
+       "traceInfo": [
+        {
+         "c": "蛇",
+         "py": "shé",
+         "hv": "xà"
+        }
+       ]
       },
       {
        "scene": "🥬🐰🐭",
@@ -22812,26 +28601,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🥬",
          "c": "s",
          "py": "shuō dào báicài",
-         "hv": "_ đáo bạch _"
+         "hv": "thuyết đáo bạch thái"
         },
         {
          "t": "小兔爱吃的是它",
          "ico": "🐰",
          "c": "v",
          "py": "xiǎo tù ài chī de shì tā",
-         "hv": "tiểu thỏ _ khật đích thị _"
+         "hv": "tiểu thố ái cật đích thị tha"
         },
         {
          "t": "老鼠爱偷的也是它",
          "ico": "🐭",
          "c": "o",
          "py": "lǎo shǔ ài tōu de yě shì tā",
-         "hv": "lão _ _ _ đích dã thị _"
+         "hv": "lão thử ái thâu đích dã thị tha"
         }
        ],
        "traceWord": "兔",
        "py": "Shuō dào báicài xiǎo tù ài chī de shì tā lǎo shǔ ài tōu de yě shì tā",
-       "traceKey": "tu"
+       "traceKey": "tu",
+       "traceInfo": [
+        {
+         "c": "兔",
+         "py": "tù",
+         "hv": "thố"
+        }
+       ]
       },
       {
        "scene": "🐒👶🧑",
@@ -22843,26 +28639,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🐒",
          "c": "s",
          "py": "dòngwùyuán lǐ de xiǎo hóu",
-         "hv": "động vật viên lịa đích tiểu hầu"
+         "hv": "động vật viên lý đích tiểu hầu"
         },
         {
          "t": "小朋友爱看的是它",
          "ico": "👶",
          "c": "v",
          "py": "xiǎopéngyǒu ài kàn de shì tā",
-         "hv": "tiểu bằng hữu _ khán đích thị _"
+         "hv": "tiểu bằng hữu ái khán đích thị tha"
         },
         {
          "t": "大人爱看的也是它",
          "ico": "🧑",
          "c": "o",
          "py": "dàren ài kàn de yě shì tā",
-         "hv": "đại nhân _ khán đích dã thị _"
+         "hv": "đại nhân ái khán đích dã thị tha"
         }
        ],
        "traceWord": "猴",
        "py": "Dòngwùyuán lǐ de xiǎo hóu xiǎopéngyǒu ài kàn de shì tā dàren ài kàn de yě shì tā",
-       "traceKey": "hou"
+       "traceKey": "hou",
+       "traceInfo": [
+        {
+         "c": "猴",
+         "py": "hóu",
+         "hv": "hầu"
+        }
+       ]
       },
       {
        "scene": "🐻😴🐟",
@@ -22874,26 +28677,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🐻",
          "c": "s",
          "py": "shuō dào xióng",
-         "hv": "_ đáo hùng"
+         "hv": "thuyết đáo hùng"
         },
         {
          "t": "冬天爱睡觉的是它",
          "ico": "😴",
          "c": "v",
          "py": "dōngtiān ài shuìjiào de shì tā",
-         "hv": "đông thiên _ _ giác đích thị _"
+         "hv": "đông thiên ái thụy giác đích thị tha"
         },
         {
          "t": "夏天爱吃鱼的也是它",
          "ico": "🐟",
          "c": "o",
          "py": "xiàtiān ài chī yú de yě shì tā",
-         "hv": "_ thiên _ khật ngư đích dã thị _"
+         "hv": "hạ thiên ái cật ngư đích dã thị tha"
         }
        ],
        "traceWord": "熊",
        "py": "Shuō dào xióng dōngtiān ài shuìjiào de shì tā xiàtiān ài chī yú de yě shì tā",
-       "traceKey": "xiong"
+       "traceKey": "xiong",
+       "traceInfo": [
+        {
+         "c": "熊",
+         "py": "xióng",
+         "hv": "hùng"
+        }
+       ]
       },
       {
        "scene": "🌾💻📈",
@@ -22905,26 +28715,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌾",
          "c": "s",
          "py": "xiāngcūn de xīn jìshù",
-         "hv": "_ thôn đích tân kĩ thuật"
+         "hv": "hương thôn đích tân kỹ thuật"
         },
         {
          "t": "让农民增产的是它",
          "ico": "📈",
          "c": "v",
          "py": "ràng nóngmín zēngchǎn de shì tā",
-         "hv": "nhường nông dân tăng _ đích thị _"
+         "hv": "nhượng nông dân tăng sản đích thị tha"
         },
         {
          "t": "让农民高兴的也是它",
          "ico": "😊",
          "c": "o",
          "py": "ràng nóngmín gāoxìng de yě shì tā",
-         "hv": "nhường nông dân cao hưng đích dã thị _"
+         "hv": "nhượng nông dân cao hứng đích dã thị tha"
         }
        ],
        "traceWord": "增产",
        "py": "Xiāngcūn de xīn jìshù ràng nóngmín zēngchǎn de shì tā ràng nóngmín gāoxìng de yě shì tā",
-       "traceKey": "zengchan"
+       "traceKey": "zengchan",
+       "traceInfo": [
+        {
+         "c": "增",
+         "py": "zēng",
+         "hv": "tăng"
+        },
+        {
+         "c": "产",
+         "py": "chǎn",
+         "hv": "sản"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -23063,19 +28885,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛋️",
          "c": "v",
          "py": "xián zhe yě shì xián zhe",
-         "hv": "_ trứ dã thị _ trứ"
+         "hv": "nhàn trước dã thị nhàn trước"
         },
         {
          "t": "不如包饺子",
          "ico": "🥟",
          "c": "o",
          "py": "bùrú bāo jiǎozi",
-         "hv": "bất như bao _ tí"
+         "hv": "bất như bao giảo tử"
         }
        ],
        "traceWord": "除夕",
        "py": "Chúxī zàijiā xián zhe yě shì xián zhe bùrú bāo jiǎozi",
-       "traceKey": "chuxi"
+       "traceKey": "chuxi",
+       "traceInfo": [
+        {
+         "c": "除",
+         "py": "chú",
+         "hv": "trừ"
+        },
+        {
+         "c": "夕",
+         "py": "xī",
+         "hv": "tịch"
+        }
+       ]
       },
       {
        "scene": "🎆🏠🚶",
@@ -23094,19 +28928,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏠",
          "c": "v",
          "py": "dāi zhe yě shì dāi zhe",
-         "hv": "đãi trứ dã thị đãi trứ"
+         "hv": "đãi trước dã thị đãi trước"
         },
         {
          "t": "不如出去玩儿",
          "ico": "🚶",
          "c": "o",
          "py": "bùrú chūqù wánr",
-         "hv": "bất như xuất khứ ngoạn _"
+         "hv": "bất như xuất khứ ngoạn nhi"
         }
        ],
        "traceWord": "元旦",
        "py": "Yuándàn nà tiān dāi zhe yě shì dāi zhe bùrú chūqù wánr",
-       "traceKey": "yuandan"
+       "traceKey": "yuandan",
+       "traceInfo": [
+        {
+         "c": "元",
+         "py": "yuán",
+         "hv": "nguyên"
+        },
+        {
+         "c": "旦",
+         "py": "dàn",
+         "hv": "đán"
+        }
+       ]
       },
       {
        "scene": "🥮🌕🛒",
@@ -23132,12 +28978,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛒",
          "c": "o",
          "py": "děng zhe yě shì děng zhe bùrú xiān mǎi yuèbing",
-         "hv": "đẳng trứ dã thị đẳng trứ bất như tiên mãi nguyệt bánh"
+         "hv": "đẳng trước dã thị đẳng trước bất như tiên mãi nguyệt bính"
         }
        ],
        "traceWord": "月饼",
        "py": "Zhōngqiū Jié kuài dào le děng zhe yě shì děng zhe bùrú xiān mǎi yuèbing",
-       "traceKey": "yuebing"
+       "traceKey": "yuebing",
+       "traceInfo": [
+        {
+         "c": "月",
+         "py": "yuè",
+         "hv": "nguyệt"
+        },
+        {
+         "c": "饼",
+         "py": "bing",
+         "hv": "bính"
+        }
+       ]
       },
       {
        "scene": "📅🗓️📚",
@@ -23149,7 +29007,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📅",
          "c": "s",
          "py": "zhè gè lǐbài",
-         "hv": "_ cá lễ bái"
+         "hv": "giá cá lễ bái"
         },
         {
          "t": "我没有会议",
@@ -23163,12 +29021,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📚",
          "c": "o",
          "py": "zuò zhe yě shì zuò zhe bùrú qù xuéxí",
-         "hv": "_ trứ dã thị _ trứ bất như khứ học tập"
+         "hv": "tọa trước dã thị tọa trước bất như khứ học tập"
         }
        ],
        "traceWord": "礼拜",
        "py": "Zhè gè lǐbài wǒ méiyǒu huìyì zuò zhe yě shì zuò zhe bùrú qù xuéxí",
-       "traceKey": "libai"
+       "traceKey": "libai",
+       "traceInfo": [
+        {
+         "c": "礼",
+         "py": "lǐ",
+         "hv": "lễ"
+        },
+        {
+         "c": "拜",
+         "py": "bài",
+         "hv": "bái"
+        }
+       ]
       },
       {
        "scene": "🌙😵📖",
@@ -23187,19 +29057,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "😵",
          "c": "v",
          "py": "shuì bù zhe",
-         "hv": "_ bất trứ"
+         "hv": "thụy bất trước"
         },
         {
          "t": "躺着也是躺着不如起来看书",
          "ico": "📖",
          "c": "o",
          "py": "tǎng zhe yě shì tǎng zhe bùrú qǐlái kàn shū",
-         "hv": "thẳng trứ dã thị thẳng trứ bất như khởi lai khán thư"
+         "hv": "thảng trước dã thị thảng trước bất như khởi lai khán thư"
         }
        ],
        "traceWord": "夜间",
        "py": "Yèjiān shuì bù zhe tǎng zhe yě shì tǎng zhe bùrú qǐlái kàn shū",
-       "traceKey": "yejian"
+       "traceKey": "yejian",
+       "traceInfo": [
+        {
+         "c": "夜",
+         "py": "yè",
+         "hv": "dạ"
+        },
+        {
+         "c": "间",
+         "py": "jiān",
+         "hv": "gian"
+        }
+       ]
       },
       {
        "scene": "🌅🚇📘",
@@ -23211,14 +29093,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🌅",
          "c": "s",
          "py": "qīngchén de dìtiě lǐ",
-         "hv": "thanh thần đích địa thiết lịa"
+         "hv": "thanh thần đích địa thiết lý"
         },
         {
          "t": "站着也是站着",
          "ico": "🚇",
          "c": "v",
          "py": "zhàn zhe yě shì zhàn zhe",
-         "hv": "trạm trứ dã thị trạm trứ"
+         "hv": "trạm trước dã thị trạm trước"
         },
         {
          "t": "不如拿出书来读",
@@ -23230,7 +29112,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "清晨",
        "py": "Qīngchén de dìtiě lǐ zhàn zhe yě shì zhàn zhe bùrú náchū shū lái dú",
-       "traceKey": "qingchen"
+       "traceKey": "qingchen",
+       "traceInfo": [
+        {
+         "c": "清",
+         "py": "qīng",
+         "hv": "thanh"
+        },
+        {
+         "c": "晨",
+         "py": "chén",
+         "hv": "thần"
+        }
+       ]
       },
       {
        "scene": "🚗🎧📰",
@@ -23249,19 +29143,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎧",
          "c": "v",
          "py": "tīng zhe yě shì tīng zhe",
-         "hv": "thính trứ dã thị thính trứ"
+         "hv": "thính trước dã thị thính trước"
         },
         {
          "t": "不如听一下儿时事",
          "ico": "📰",
          "c": "o",
          "py": "bùrú tīng yīxiàr shíshì",
-         "hv": "bất như thính nhất hạ _ thì sự"
+         "hv": "bất như thính nhất hạ nhi thời sự"
         }
        ],
        "traceWord": "时事",
        "py": "Kāichē lùshang tīng zhe yě shì tīng zhe bùrú tīng yīxiàr shíshì",
-       "traceKey": "shishi"
+       "traceKey": "shishi",
+       "traceInfo": [
+        {
+         "c": "时",
+         "py": "shí",
+         "hv": "thời"
+        },
+        {
+         "c": "事",
+         "py": "shì",
+         "hv": "sự"
+        }
+       ]
       },
       {
        "scene": "🏢📉🏖️",
@@ -23273,26 +29179,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "niánqián gōngsī",
-         "hv": "nên tiền công ti"
+         "hv": "niên tiền công ti"
         },
         {
          "t": "没什么生意",
          "ico": "📉",
          "c": "v",
          "py": "méi shénme shēngyi",
-         "hv": "một thập _ sinh ý"
+         "hv": "một thập ma sinh ý"
         },
         {
          "t": "干着也是干着不如早一点儿放假",
          "ico": "🏖️",
          "c": "o",
-         "py": "gān zhe yě shì gān zhe bùrú zǎo yīdiǎnr fàngjià",
-         "hv": "can trứ dã thị can trứ bất như tảo nhất điểm _ phóng _"
+         "py": "gān zhe yě shì gàn zhe bùrú zǎo yīdiǎnr fàngjià",
+         "hv": "can trước dã thị cán trước bất như tảo nhất điểm nhi phóng giá"
         }
        ],
        "traceWord": "年前",
-       "py": "Niánqián gōngsī méi shénme shēngyi gān zhe yě shì gān zhe bùrú zǎo yīdiǎnr fàngjià",
-       "traceKey": "nianqian"
+       "py": "Niánqián gōngsī méi shénme shēngyi gān zhe yě shì gàn zhe bùrú zǎo yīdiǎnr fàngjià",
+       "traceKey": "nianqian",
+       "traceInfo": [
+        {
+         "c": "年",
+         "py": "nián",
+         "hv": "niên"
+        },
+        {
+         "c": "前",
+         "py": "qián",
+         "hv": "tiền"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -23318,7 +29236,7 @@ window.CURRICULUM_STAGES[5] = {
          "py": "Wǒ xǐhuan chī miàntiáor"
         }
        ],
-       "qpy": "Nǐ juéde suìyuè guò dé kuài ma?"
+       "qpy": "Nǐ juéde suìyuè guò de kuài ma?"
       },
       {
        "q": "你想什么时候换工作？",
@@ -23428,26 +29346,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "⏳",
          "c": "s",
          "py": "zài zhè zhǒng júmiàn xià",
-         "hv": "tại _ chõng cục _ hạ"
+         "hv": "tại giá chủng cục diện hạ"
         },
         {
          "t": "工作归工作",
          "ico": "💼",
          "c": "v",
          "py": "gōngzuò guī gōngzuò",
-         "hv": "công tác _ công tác"
+         "hv": "công tác quy công tác"
         },
         {
          "t": "生活归生活",
          "ico": "🏠",
          "c": "o",
          "py": "shēnghuó guī shēnghuó",
-         "hv": "sinh hoạt _ sinh hoạt"
+         "hv": "sinh hoạt quy sinh hoạt"
         }
        ],
        "traceWord": "局面",
        "py": "Zài zhè zhǒng júmiàn xià gōngzuò guī gōngzuò shēnghuó guī shēnghuó",
-       "traceKey": "jumian"
+       "traceKey": "jumian",
+       "traceInfo": [
+        {
+         "c": "局",
+         "py": "jú",
+         "hv": "cục"
+        },
+        {
+         "c": "面",
+         "py": "miàn",
+         "hv": "diện"
+        }
+       ]
       },
       {
        "scene": "🌏↔️🤝",
@@ -23466,19 +29396,31 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "↔️",
          "c": "v",
          "py": "chābié guī chābié",
-         "hv": "sai _ _ sai _"
+         "hv": "sai biệt quy sai biệt"
         },
         {
          "t": "合作归合作",
          "ico": "🤝",
          "c": "o",
          "py": "hézuò guī hézuò",
-         "hv": "hợp tác _ hợp tác"
+         "hv": "hợp tác quy hợp tác"
         }
        ],
        "traceWord": "差别",
        "py": "Liǎng gè guójiā chābié guī chābié hézuò guī hézuò",
-       "traceKey": "chabie"
+       "traceKey": "chabie",
+       "traceInfo": [
+        {
+         "c": "差",
+         "py": "chā",
+         "hv": "sai"
+        },
+        {
+         "c": "别",
+         "py": "bié",
+         "hv": "biệt"
+        }
+       ]
       },
       {
        "scene": "👥📏🤝",
@@ -23490,26 +29432,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👥",
          "c": "s",
          "py": "wǒ hé tā",
-         "hv": "ngã hoà tha"
+         "hv": "ngã hòa tha"
         },
         {
          "t": "差距归差距",
          "ico": "📏",
          "c": "v",
          "py": "chājù guī chājù",
-         "hv": "sai cựa _ sai cựa"
+         "hv": "sai cự quy sai cự"
         },
         {
          "t": "朋友归朋友",
          "ico": "🧑‍🤝‍🧑",
          "c": "o",
          "py": "péngyou guī péngyou",
-         "hv": "bằng hữu _ bằng hữu"
+         "hv": "bằng hữu quy bằng hữu"
         }
        ],
        "traceWord": "差距",
        "py": "Wǒ hé tā chājù guī chājù péngyou guī péngyou",
-       "traceKey": "chaju"
+       "traceKey": "chaju",
+       "traceInfo": [
+        {
+         "c": "差",
+         "py": "chā",
+         "hv": "sai"
+        },
+        {
+         "c": "距",
+         "py": "jù",
+         "hv": "cự"
+        }
+       ]
       },
       {
        "scene": "🏢📶🏅",
@@ -23521,26 +29475,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "gōngsī lǐ yuángōng",
-         "hv": "công ti lịa viên công"
+         "hv": "công ti lý viên công"
         },
         {
          "t": "层次归层次",
          "ico": "📶",
          "c": "v",
          "py": "céngcì guī céngcì",
-         "hv": "tầng thứ _ tầng thứ"
+         "hv": "tầng thứ quy tầng thứ"
         },
         {
          "t": "等级归等级",
          "ico": "🏅",
          "c": "o",
          "py": "děngjí guī děngjí",
-         "hv": "đẳng cấp _ đẳng cấp"
+         "hv": "đẳng cấp quy đẳng cấp"
         }
        ],
        "traceWord": "层次",
        "py": "Gōngsī lǐ yuángōng céngcì guī céngcì děngjí guī děngjí",
-       "traceKey": "cengci"
+       "traceKey": "cengci",
+       "traceInfo": [
+        {
+         "c": "层",
+         "py": "céng",
+         "hv": "tầng"
+        },
+        {
+         "c": "次",
+         "py": "cì",
+         "hv": "thứ"
+        }
+       ]
       },
       {
        "scene": "💬📌🔭",
@@ -23552,26 +29518,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "💬",
          "c": "s",
          "py": "tǎolùn shí",
-         "hv": "thảo luận thì"
+         "hv": "thảo luận thời"
         },
         {
          "t": "前提归前提",
          "ico": "📌",
          "c": "v",
          "py": "qiántí guī qiántí",
-         "hv": "tiền đề _ tiền đề"
+         "hv": "tiền đề quy tiền đề"
         },
         {
          "t": "前景归前景",
          "ico": "🔭",
          "c": "o",
          "py": "qiánjǐng guī qiánjǐng",
-         "hv": "tiền cảnh _ tiền cảnh"
+         "hv": "tiền cảnh quy tiền cảnh"
         }
        ],
        "traceWord": "前提",
        "py": "Tǎolùn shí qiántí guī qiántí qiánjǐng guī qiánjǐng",
-       "traceKey": "qianti"
+       "traceKey": "qianti",
+       "traceInfo": [
+        {
+         "c": "前",
+         "py": "qián",
+         "hv": "tiền"
+        },
+        {
+         "c": "提",
+         "py": "tí",
+         "hv": "đề"
+        }
+       ]
       },
       {
        "scene": "📈📋📦",
@@ -23583,26 +29561,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📈",
          "c": "s",
          "py": "xiāoshòu",
-         "hv": "tiu _"
+         "hv": "tiêu thụ"
         },
         {
          "t": "情形归情形",
          "ico": "📋",
          "c": "v",
          "py": "qíngxing guī qíngxing",
-         "hv": "tình hình _ tình hình"
+         "hv": "tình hình quy tình hình"
         },
         {
          "t": "产品特性归特性",
          "ico": "📦",
          "c": "o",
          "py": "chǎnpǐn tèxìng guī tèxìng",
-         "hv": "_ phẩm đặc tính _ đặc tính"
+         "hv": "sản phẩm đặc tính quy đặc tính"
         }
        ],
        "traceWord": "情形",
        "py": "Xiāoshòu qíngxing guī qíngxing chǎnpǐn tèxìng guī tèxìng",
-       "traceKey": "qingxing"
+       "traceKey": "qingxing",
+       "traceInfo": [
+        {
+         "c": "情",
+         "py": "qíng",
+         "hv": "tình"
+        },
+        {
+         "c": "形",
+         "py": "xing",
+         "hv": "hình"
+        }
+       ]
       },
       {
        "scene": "🏭⚠️👤",
@@ -23614,26 +29604,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏭",
          "c": "s",
          "py": "zhè gè hángyè",
-         "hv": "_ cá hàng nghiệp"
+         "hv": "giá cá hàng nghiệp"
         },
         {
          "t": "特有问题归特有问题",
          "ico": "⚠️",
          "c": "v",
          "py": "tèyǒu wèntí guī tèyǒu wèntí",
-         "hv": "đặc hữu _ _ _ đặc hữu _ _"
+         "hv": "đặc hữu vấn đề quy đặc hữu vấn đề"
         },
         {
          "t": "特定客户归特定客户",
          "ico": "👤",
          "c": "o",
          "py": "tèdìng kèhù guī tèdìng kèhù",
-         "hv": "đặc định khách hộ _ đặc định khách hộ"
+         "hv": "đặc định khách hộ quy đặc định khách hộ"
         }
        ],
        "traceWord": "特定",
        "py": "Zhè gè hángyè tèyǒu wèntí guī tèyǒu wèntí tèdìng kèhù guī tèdìng kèhù",
-       "traceKey": "teding"
+       "traceKey": "teding",
+       "traceInfo": [
+        {
+         "c": "特",
+         "py": "tè",
+         "hv": "đặc"
+        },
+        {
+         "c": "定",
+         "py": "dìng",
+         "hv": "định"
+        }
+       ]
       },
       {
        "scene": "📖📜❗",
@@ -23645,26 +29647,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📖",
          "c": "s",
          "py": "yībānláishuō",
-         "hv": "nhất bàn lai _"
+         "hv": "nhất ban lai thuyết"
         },
         {
          "t": "规定归规定",
          "ico": "📜",
          "c": "v",
          "py": "guīdìng guī guīdìng",
-         "hv": "qui định _ qui định"
+         "hv": "quy định quy quy định"
         },
         {
          "t": "但是例外归例外",
          "ico": "❗",
          "c": "o",
          "py": "dànshì lìwài guī lìwài",
-         "hv": "_ thị lề ngoại _ lề ngoại"
+         "hv": "đãn thị lệ ngoại quy lệ ngoại"
         }
        ],
        "traceWord": "例外",
        "py": "Yībānláishuō guīdìng guī guīdìng dànshì lìwài guī lìwài",
-       "traceKey": "liwai"
+       "traceKey": "liwai",
+       "traceInfo": [
+        {
+         "c": "例",
+         "py": "lì",
+         "hv": "lệ"
+        },
+        {
+         "c": "外",
+         "py": "wài",
+         "hv": "ngoại"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -23677,7 +29691,7 @@ window.CURRICULUM_STAGES[5] = {
         {
          "txt": "没有矛盾我们合作得很好",
          "ico": "🤝",
-         "py": "Méiyǒu máodùn wǒmen hézuò dé hěn hǎo"
+         "py": "Méiyǒu máodùn wǒmen hézuò de hěn hǎo"
         },
         {
          "txt": "我下个月去北京出差",
@@ -23796,7 +29810,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō zhè cì shīwù",
-         "hv": "bất quản chẩn dạng _ _ thứ thất _"
+         "hv": "bất quản chẩm dạng thuyết giá thứ thất ngộ"
         },
         {
          "t": "是",
@@ -23810,12 +29824,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙋",
          "c": "o",
          "py": "wǒ de zérèn",
-         "hv": "ngã đích trách nhậm"
+         "hv": "ngã đích trách nhiệm"
         }
        ],
        "traceWord": "失误",
        "py": "Bùguǎn zěnyàng shuō zhè cì shīwù shì wǒ de zérèn",
-       "traceKey": "shiwu"
+       "traceKey": "shiwu",
+       "traceInfo": [
+        {
+         "c": "失",
+         "py": "shī",
+         "hv": "thất"
+        },
+        {
+         "c": "误",
+         "py": "wù",
+         "hv": "ngộ"
+        }
+       ]
       },
       {
        "scene": "🗣️🚫📁",
@@ -23827,26 +29853,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō nǐ",
-         "hv": "bất quản chẩn dạng _ nể"
+         "hv": "bất quản chẩm dạng thuyết nễ"
         },
         {
          "t": "不应",
          "ico": "🚫",
          "c": "v",
          "py": "bù yīng",
-         "hv": "bất ứng"
+         "hv": "bất ưng"
         },
         {
          "t": "把客户的资料丢了",
          "ico": "📁",
          "c": "o",
          "py": "bǎ kèhù de zīliào diū le",
-         "hv": "bã khách hộ đích _ liệu điêu liễu"
+         "hv": "bả khách hộ đích tư liệu đâu liễu"
         }
        ],
        "traceWord": "丢",
        "py": "Bùguǎn zěnyàng shuō nǐ bù yīng bǎ kèhù de zīliào diū le",
-       "traceKey": "diu"
+       "traceKey": "diu",
+       "traceInfo": [
+        {
+         "c": "丢",
+         "py": "diū",
+         "hv": "đâu"
+        }
+       ]
       },
       {
        "scene": "🏢🦺👥",
@@ -23858,7 +29891,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō gōngsī",
-         "hv": "bất quản chẩn dạng _ công ti"
+         "hv": "bất quản chẩm dạng thuyết công ti"
         },
         {
          "t": "不能不顾",
@@ -23877,7 +29910,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "不顾",
        "py": "Bùguǎn zěnyàng shuō gōngsī bù néng bùgù yuángōng de ānquán",
-       "traceKey": "bugu"
+       "traceKey": "bugu",
+       "traceInfo": [
+        {
+         "c": "不",
+         "py": "bù",
+         "hv": "bất"
+        },
+        {
+         "c": "顾",
+         "py": "gù",
+         "hv": "cố"
+        }
+       ]
       },
       {
        "scene": "🙅❓🗣️",
@@ -23889,7 +29934,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō nǐ",
-         "hv": "bất quản chẩn dạng _ nể"
+         "hv": "bất quản chẩm dạng thuyết nễ"
         },
         {
          "t": "不要回避",
@@ -23903,12 +29948,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "❓",
          "c": "o",
          "py": "zhè gè wèntí",
-         "hv": "_ cá _ _"
+         "hv": "giá cá vấn đề"
         }
        ],
        "traceWord": "回避",
        "py": "Bùguǎn zěnyàng shuō nǐ bùyào huíbì zhè gè wèntí",
-       "traceKey": "huibi"
+       "traceKey": "huibi",
+       "traceInfo": [
+        {
+         "c": "回",
+         "py": "huí",
+         "hv": "hồi"
+        },
+        {
+         "c": "避",
+         "py": "bì",
+         "hv": "tị"
+        }
+       ]
       },
       {
        "scene": "🧠📐📚",
@@ -23920,26 +29977,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō nǐ",
-         "hv": "bất quản chẩn dạng _ nể"
+         "hv": "bất quản chẩm dạng thuyết nễ"
         },
         {
          "t": "想入门就要记住",
          "ico": "🧠",
          "c": "v",
          "py": "xiǎng rùmén jiùyào jìzhù",
-         "hv": "tưởng nhập môn _ yếu kí trú"
+         "hv": "tưởng nhập môn tựu yếu ký trú"
         },
         {
          "t": "这个公式",
          "ico": "📐",
          "c": "o",
          "py": "zhè gè gōngshì",
-         "hv": "_ cá công thức"
+         "hv": "giá cá công thức"
         }
        ],
        "traceWord": "公式",
        "py": "Bùguǎn zěnyàng shuō nǐ xiǎng rùmén jiùyào jìzhù zhè gè gōngshì",
-       "traceKey": "gongshi"
+       "traceKey": "gongshi",
+       "traceInfo": [
+        {
+         "c": "公",
+         "py": "gōng",
+         "hv": "công"
+        },
+        {
+         "c": "式",
+         "py": "shì",
+         "hv": "thức"
+        }
+       ]
       },
       {
        "scene": "🏢📋⚠️",
@@ -23951,14 +30020,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🏢",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō gōngsī de zhìdù",
-         "hv": "bất quản chẩn dạng _ công ti đích chế độ"
+         "hv": "bất quản chẩm dạng thuyết công ti đích chế độ"
         },
         {
          "t": "还不够",
          "ico": "⚠️",
          "c": "v",
          "py": "hái bùgòu",
-         "hv": "hoàn bất _"
+         "hv": "hoàn bất cấu"
         },
         {
          "t": "健全",
@@ -23970,7 +30039,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "健全",
        "py": "Bùguǎn zěnyàng shuō gōngsī de zhìdù hái bùgòu jiànquán",
-       "traceKey": "jianquan"
+       "traceKey": "jianquan",
+       "traceInfo": [
+        {
+         "c": "健",
+         "py": "jiàn",
+         "hv": "kiện"
+        },
+        {
+         "c": "全",
+         "py": "quán",
+         "hv": "toàn"
+        }
+       ]
       },
       {
        "scene": "🗣️🤐📌",
@@ -23982,7 +30063,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō tā",
-         "hv": "bất quản chẩn dạng _ tha"
+         "hv": "bất quản chẩm dạng thuyết tha"
         },
         {
          "t": "不愿意提起",
@@ -23996,12 +30077,24 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "📌",
          "c": "o",
          "py": "zhè jiàn shì",
-         "hv": "_ kiện sự"
+         "hv": "giá kiện sự"
         }
        ],
        "traceWord": "提起",
        "py": "Bùguǎn zěnyàng shuō tā bú yuànyì tíqǐ zhè jiàn shì",
-       "traceKey": "tiqi"
+       "traceKey": "tiqi",
+       "traceInfo": [
+        {
+         "c": "提",
+         "py": "tí",
+         "hv": "đề"
+        },
+        {
+         "c": "起",
+         "py": "qǐ",
+         "hv": "khởi"
+        }
+       ]
       },
       {
        "scene": "🎤👥🥹",
@@ -24013,7 +30106,7 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🎤",
          "c": "s",
          "py": "bùguǎn zěnyàng shuō tā de yǎnjiǎng",
-         "hv": "bất quản chẩn dạng _ tha đích diễn giảng"
+         "hv": "bất quản chẩm dạng thuyết tha đích diễn giảng"
         },
         {
          "t": "令",
@@ -24032,7 +30125,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "在场",
        "py": "Bùguǎn zěnyàng shuō tā de yǎnjiǎng lìng zàichǎng de rén shēn shòu gǎndòng",
-       "traceKey": "zaichang"
+       "traceKey": "zaichang",
+       "traceInfo": [
+        {
+         "c": "在",
+         "py": "zài",
+         "hv": "tại"
+        },
+        {
+         "c": "场",
+         "py": "chǎng",
+         "hv": "trường"
+        }
+       ]
       }
      ],
      "qaList": [
@@ -24164,26 +30269,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👩",
          "c": "s",
          "py": "māma fú zhe wǒ shuō",
-         "hv": "má má phù trứ ngã _"
+         "hv": "ma ma phù trước ngã thuyết"
         },
         {
          "t": "看你累的",
          "ico": "😮‍💨",
          "c": "v",
          "py": "kàn nǐ lèi de",
-         "hv": "khán nể luỵ đích"
+         "hv": "khán nễ lụy đích"
         },
         {
          "t": "快坐下休息",
          "ico": "🪑",
          "c": "o",
          "py": "kuài zuò xia xiūxi",
-         "hv": "khoái _ hạ hưu tức"
+         "hv": "khoái tọa hạ hưu tức"
         }
        ],
        "traceWord": "扶",
        "py": "Māma fú zhe wǒ shuō kàn nǐ lèi de kuài zuò xia xiūxi",
-       "traceKey": "fu"
+       "traceKey": "fu",
+       "traceInfo": [
+        {
+         "c": "扶",
+         "py": "fú",
+         "hv": "phù"
+        }
+       ]
       },
       {
        "scene": "🚪👥🍵",
@@ -24195,26 +30307,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🚪",
          "c": "s",
          "py": "tóngshì qiāo le qiāo mén jìnlái shuō",
-         "hv": "đồng sự xao liễu xao môn tiến lai _"
+         "hv": "đồng sự xao liễu xao môn tiến lai thuyết"
         },
         {
          "t": "瞧你忙的",
          "ico": "💼",
          "c": "v",
          "py": "qiáo nǐ máng de",
-         "hv": "_ nể mang đích"
+         "hv": "tiều nễ mang đích"
         },
         {
          "t": "先喝杯茶吧",
          "ico": "🍵",
          "c": "o",
          "py": "xiān hē bēi chá ba",
-         "hv": "tiên hát bôi trà và"
+         "hv": "tiên hát bôi trà ba"
         }
        ],
        "traceWord": "敲门",
        "py": "Tóngshì qiāo le qiāo mén jìnlái shuō qiáo nǐ máng de xiān hē bēi chá ba",
-       "traceKey": "qiaomen"
+       "traceKey": "qiaomen",
+       "traceInfo": [
+        {
+         "c": "敲",
+         "py": "qiāo",
+         "hv": "xao"
+        },
+        {
+         "c": "门",
+         "py": "mén",
+         "hv": "môn"
+        }
+       ]
       },
       {
        "scene": "👋🤗👥",
@@ -24226,26 +30350,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👋",
          "c": "s",
          "py": "péngyou xiàng wǒ zhāoshǒu shuō",
-         "hv": "bằng hữu hướng ngã chiêu thủ _"
+         "hv": "bằng hữu hướng ngã chiêu thủ thuyết"
         },
         {
          "t": "看你瘦的",
          "ico": "😮",
          "c": "v",
          "py": "kàn nǐ shòu de",
-         "hv": "khán nể xấu đích"
+         "hv": "khán nễ sấu đích"
         },
         {
          "t": "快过来拥抱我",
          "ico": "🤗",
          "c": "o",
          "py": "kuài guòlái yōngbào wǒ",
-         "hv": "khoái quá lai dùng bão ngã"
+         "hv": "khoái quá lai ủng bão ngã"
         }
        ],
        "traceWord": "招手",
        "py": "Péngyou xiàng wǒ zhāoshǒu shuō kàn nǐ shòu de kuài guòlái yōngbào wǒ",
-       "traceKey": "zhaoshou"
+       "traceKey": "zhaoshou",
+       "traceInfo": [
+        {
+         "c": "招",
+         "py": "zhāo",
+         "hv": "chiêu"
+        },
+        {
+         "c": "手",
+         "py": "shǒu",
+         "hv": "thủ"
+        }
+       ]
       },
       {
        "scene": "🙅😰💅",
@@ -24257,26 +30393,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🙅",
          "c": "s",
          "py": "tā yáotóu shuō",
-         "hv": "tha gieo đầu _"
+         "hv": "tha dao đầu thuyết"
         },
         {
          "t": "瞧你急的",
          "ico": "😰",
          "c": "v",
          "py": "qiáo nǐ jí de",
-         "hv": "_ nể cấp đích"
+         "hv": "tiều nễ cấp đích"
         },
         {
          "t": "别咬指甲了",
          "ico": "💅",
          "c": "o",
          "py": "bié yǎo zhǐjia le",
-         "hv": "_ rao chỉ giáp liễu"
+         "hv": "biệt giảo chỉ giáp liễu"
         }
        ],
        "traceWord": "摇头",
        "py": "Tā yáotóu shuō qiáo nǐ jí de bié yǎo zhǐjia le",
-       "traceKey": "yaotou"
+       "traceKey": "yaotou",
+       "traceInfo": [
+        {
+         "c": "摇",
+         "py": "yáo",
+         "hv": "dao"
+        },
+        {
+         "c": "头",
+         "py": "tóu",
+         "hv": "đầu"
+        }
+       ]
       },
       {
        "scene": "👔👀😬",
@@ -24288,14 +30436,14 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "👔",
          "c": "s",
          "py": "jīnglǐ táitóu kàn zhe wǒ shuō",
-         "hv": "kinh lí _ đầu khán trứ ngã _"
+         "hv": "kinh lý đài đầu khán trước ngã thuyết"
         },
         {
          "t": "看你紧张的",
          "ico": "😬",
          "c": "v",
          "py": "kàn nǐ jǐnzhāng de",
-         "hv": "khán nể khẩn trương đích"
+         "hv": "khán nễ khẩn trương đích"
         },
         {
          "t": "放松一些",
@@ -24307,7 +30455,19 @@ window.CURRICULUM_STAGES[5] = {
        ],
        "traceWord": "抬头",
        "py": "Jīnglǐ táitóu kàn zhe wǒ shuō kàn nǐ jǐnzhāng de fàngsōng yīxiē",
-       "traceKey": "taitou"
+       "traceKey": "taitou",
+       "traceInfo": [
+        {
+         "c": "抬",
+         "py": "tái",
+         "hv": "đài"
+        },
+        {
+         "c": "头",
+         "py": "tóu",
+         "hv": "đầu"
+        }
+       ]
       },
       {
        "scene": "🥶✋🧤",
@@ -24319,26 +30479,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🗣️",
          "c": "s",
          "py": "tā shuō",
-         "hv": "tha _"
+         "hv": "tha thuyết"
         },
         {
          "t": "看你冷的",
          "ico": "🥶",
          "c": "v",
          "py": "kàn nǐ lěng de",
-         "hv": "khán nể lạnh đích"
+         "hv": "khán nễ lãnh đích"
         },
         {
          "t": "手都抬不起来了",
          "ico": "✋",
          "c": "o",
          "py": "shǒu dōu tái bù qǐlái le",
-         "hv": "thủ đô _ bất khởi lai liễu"
+         "hv": "thủ đô đài bất khởi lai liễu"
         }
        ],
        "traceWord": "抬",
        "py": "Tā shuō kàn nǐ lěng de shǒu dōu tái bù qǐlái le",
-       "traceKey": "tai"
+       "traceKey": "tai",
+       "traceInfo": [
+        {
+         "c": "抬",
+         "py": "tái",
+         "hv": "đài"
+        }
+       ]
       },
       {
        "scene": "🤝🥹👀",
@@ -24350,26 +30517,33 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🤝",
          "c": "s",
          "py": "tā shēn shǒu wò zhe wǒ de shǒu shuō",
-         "hv": "tha _ thủ _ trứ ngã đích thủ _"
+         "hv": "tha thân thủ ác trước ngã đích thủ thuyết"
         },
         {
          "t": "瞧你激动的",
          "ico": "🥹",
          "c": "v",
          "py": "qiáo nǐ jīdòng de",
-         "hv": "_ nể kích động đích"
+         "hv": "tiều nễ kích động đích"
         },
         {
          "t": "眼睛都红了",
          "ico": "👀",
          "c": "o",
          "py": "yǎnjing dōu hóng le",
-         "hv": "nhãn _ đô hồng liễu"
+         "hv": "nhãn tình đô hồng liễu"
         }
        ],
        "traceWord": "握",
        "py": "Tā shēn shǒu wò zhe wǒ de shǒu shuō qiáo nǐ jīdòng de yǎnjing dōu hóng le",
-       "traceKey": "wo"
+       "traceKey": "wo",
+       "traceInfo": [
+        {
+         "c": "握",
+         "py": "wò",
+         "hv": "ác"
+        }
+       ]
       },
       {
        "scene": "👣😰❓",
@@ -24381,26 +30555,38 @@ window.CURRICULUM_STAGES[5] = {
          "ico": "🛑",
          "c": "s",
          "py": "tā tíngxia jiǎobù shuō",
-         "hv": "tha đình hạ _ bộ _"
+         "hv": "tha đình hạ cước bộ thuyết"
         },
         {
          "t": "看你急的",
          "ico": "😰",
          "c": "v",
          "py": "kàn nǐ jí de",
-         "hv": "khán nể cấp đích"
+         "hv": "khán nễ cấp đích"
         },
         {
          "t": "出什么事了",
          "ico": "❓",
          "c": "o",
          "py": "chū shénme shì le",
-         "hv": "xuất thập _ sự liễu"
+         "hv": "xuất thập ma sự liễu"
         }
        ],
        "traceWord": "脚步",
        "py": "Tā tíngxia jiǎobù shuō kàn nǐ jí de chū shénme shì le",
-       "traceKey": "jiaobu"
+       "traceKey": "jiaobu",
+       "traceInfo": [
+        {
+         "c": "脚",
+         "py": "jiǎo",
+         "hv": "cước"
+        },
+        {
+         "c": "步",
+         "py": "bù",
+         "hv": "bộ"
+        }
+       ]
       }
      ],
      "qaList": [
