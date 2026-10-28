@@ -268,9 +268,10 @@
 
     let speechRate = 0.7;
     let seqTok = 0;
-    function speakText(text, customRate, onend, keepSeq) {
-      if (!('speechSynthesis' in window) || !text) return;
+    function speakText(text, customRate, onend, keepSeq, _noSprite) {
       if (!keepSeq) seqTok++;
+      if (!_noSprite && text && window.AppKit && window.AppKit.speakSprite && window.AppKit.speakSprite(text, customRate || speechRate, onend, () => speakText(text, customRate, onend, true, true))) return;   // sprite âm thanh của bài phát âm (nếu đã render)
+      if (!('speechSynthesis' in window) || !text) return;
       try {
         window.speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(String(text));
@@ -332,6 +333,7 @@
 
     function startLesson(li) {
       const l = LESSONS[li];
+      try { if (window.AppKit) window.AppKit.preloadLesson(l.id); } catch (e) {}   // nạp sprite âm thanh của bài (nếu đã render)
       S = { mode: 'lesson', li, items: l.items.slice(), i: 0, res: [], answered: false, sel: {}, ra: {}, finished: false };
       renderAll();
       main.scrollTop = 0; window.scrollTo(0, 0);
@@ -784,5 +786,7 @@
     renderAll();
   })();
   </script>
+  <script src="data/config.js"></script>
+  <script src="data/app_kit.js"></script>
 </body>
 </html>

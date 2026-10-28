@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#b91c1c" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <title>Tiếng Trung HSK cho người đi làm</title>
   <style>
     :root {
@@ -1069,13 +1073,17 @@
     </div>
   </div>
 
-  <!-- DỮ LIỆU: mỗi cấp HSK một file, gán window.CURRICULUM_STAGES[N]. Thiếu file thì bỏ qua. -->
-  <script src="data/hsk1.js"></script>
-  <script src="data/hsk2.js"></script>
-  <script src="data/hsk3.js"></script>
-  <script src="data/hsk4.js"></script>
-  <script src="data/hsk5.js"></script>
-  <script src="data/hsk6.js"></script>
+  <!-- Tiện ích + danh sách bài (nhỏ) nạp trước; dữ liệu bài nặng chỉ nạp CẤP ĐANG HỌC (vị trí cuối lưu trong localStorage), cấp khác chèn <script> khi chuyển (app_kit.js → AppKit.ensureStage). -->
+  <script src="data/config.js"></script>
+  <script src="data/meta.js"></script>
+  <script>
+    (function () {
+      var ids = ((window.COURSE_META || {}).stages || []).map(function (s) { return s.id; }), n = ids[0];
+      try { var p = JSON.parse(localStorage.getItem((window.APP_CONFIG || {}).prefix + 'kit_prog') || 'null'); if (p && p.last && ids.indexOf(p.last.stage) >= 0) n = p.last.stage; } catch (e) {}
+      window.__INIT_STAGE = n;
+      document.write('<script src="data/hsk' + n + '.js"><\/script>');
+    })();
+  </script>
   <script src="data/false_friends.js"></script>
 
   <script>
@@ -1084,7 +1092,8 @@
        Mỗi bài: grammar {formulas, tip, vn_tip}, chunks (8 câu, mỗi câu 3 toa), qaList, realTask {title, steps}
        ========================================================================= */
     const ALL_CURRICULUM = window.CURRICULUM_STAGES || {};
-    const STAGE_IDS = Object.keys(ALL_CURRICULUM).map(Number).filter(n => ALL_CURRICULUM[n] && ALL_CURRICULUM[n].modules && ALL_CURRICULUM[n].modules.length).sort((a, b) => a - b);
+    const STAGE_IDS = ((window.COURSE_META || {}).stages || []).map(s => s.id).filter(n => !!n).sort((a, b) => a - b);   // từ meta.js; dữ liệu từng cấp nạp theo nhu cầu
+    const STAGE_LABEL = {}; (((window.COURSE_META || {}).stages) || []).forEach(s => { STAGE_LABEL[s.id] = s.label; });
 
     /* ===== Tiện ích ===== */
     const LS = {
@@ -1165,7 +1174,7 @@
     /* =========================================================================
        2. TRẠNG THÁI, ÂM THANH, ĐỒNG HỒ & LƯU TRỮ
        ========================================================================= */
-    let curStage = STAGE_IDS[0];
+    let curStage = window.__INIT_STAGE || STAGE_IDS[0];
     let curMod = curStage ? ALL_CURRICULUM[curStage].modules[0].code : null;
     let curLesIdx = 0;
     let curPhase = 'p1'; // 'p1'..'p6' | 'leitner'
@@ -1284,7 +1293,8 @@
       return pool.find(v => /Google|Natural|Xiaoxiao|Huihui/i.test(v.name)) || pool[0] || null;
     }
 
-    function speakText(text, customRate) {
+    function speakText(text, customRate, _noSprite) {
+      if (!_noSprite && text && window.AppKit && window.AppKit.speakSprite && window.AppKit.speakSprite(text, customRate || speechRate, null, () => speakText(text, customRate, true))) return;   // có file âm thanh sprite của bài thì phát từ file, không thì dùng giọng trình duyệt
       if (!('speechSynthesis' in window) || !text) return;
       try {
         window.speechSynthesis.cancel();
@@ -1463,12 +1473,13 @@
        ========================================================================= */
     function renderStageSwitcher() {
       document.getElementById('stageSwitcher').innerHTML = STAGE_IDS.map(n => `
-        <button class="stg-btn ${n === curStage ? 'active' : ''}" id="btnStg${n}" onclick="switchStage(${n})">${esc(ALL_CURRICULUM[n].label || ('HSK ' + n))}</button>
+        <button class="stg-btn ${n === curStage ? 'active' : ''}" id="btnStg${n}" onclick="switchStage(${n})">${esc(STAGE_LABEL[n] || ('HSK ' + n))}</button>
       `).join('');
     }
     function resetCounters() { p4Solved = false; p4Hint = false; examSolved = false; typedCount = 0; activeCardIdx = 0; p2Idx = 0; p3Idx = 0; p4Idx = 0; trainCars = []; examQuestions = []; }
 
     function switchStage(stg) {
+      if (!ALL_CURRICULUM[stg]) { if (window.AppKit) window.AppKit.ensureStage(stg, () => switchStage(stg)); return; }   // dữ liệu cấp chưa nạp: nạp rồi chuyển
       curStage = stg;
       curMod = ALL_CURRICULUM[stg].modules[0].code;
       curLesIdx = 0;
@@ -2539,5 +2550,23 @@
   </script>
   <script src="data/anki_engine.js"></script>
   <script>try { if (window.ankiMarkOpened) window.ankiMarkOpened(); } catch (e) {}</script>
+  <script>
+    /* Khai báo cho data/app_kit.js (bộ tiện ích dùng chung, xem docs/upgrade/app_kit.js) */
+    window.APPKIT_ADAPTER = {
+      phases: [
+        { id: 'p1', name: 'Nghe & Ngữ pháp', mins: 4 }, { id: 'p2', name: 'Ghép tàu 3 toa', mins: 4 }, { id: 'p3', name: 'Hỏi đáp tranh', mins: 3 },
+        { id: 'p4', name: 'Gõ phím & Mic', mins: 4 }, { id: 'p5', name: 'Tình huống thực tế', mins: 4 }, { id: 'p6', name: 'Thi 4 kỹ năng', mins: 4 }
+      ],
+      tip: function () { var l = getLesson(), g = l && l.grammar; return g ? { tip: g.tip || '', vn: g.vn_tip || '' } : null; },
+      current: function () { var l = getLesson(); return { stage: curStage, mod: curMod, idx: curLesIdx, phase: curPhase, lessonId: l && l.id, lessonName: l && l.name }; },
+      go: function (stage, mod, idx, phase) {
+        if (stage !== curStage) switchStage(stage);
+        if (mod !== curMod) selectModule(mod);
+        if (idx !== curLesIdx) selectLesson(idx);
+        if (phase && phase !== curPhase) selectPhase(phase);
+      }
+    };
+  </script>
+  <script src="data/app_kit.js"></script>
 </body>
 </html>

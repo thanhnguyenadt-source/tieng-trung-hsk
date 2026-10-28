@@ -22,3 +22,6 @@ Link: https://thanhnguyenadt-source.github.io/tieng-trung-hsk/
 - Nội dung do AI viết, chưa có giáo viên rà soát toàn bộ.
 - "HSK" là tên kỳ thi của Chinese Testing International. Khóa học này không liên kết với và không được xác nhận bởi đơn vị tổ chức thi.
 - Khóa học không thu thập dữ liệu người học, không dùng công cụ theo dõi hay quảng cáo.
+
+## Dùng tốt trên điện thoại
+- Con đường bài học dọc, nút "Học hôm nay", 6 chặng ngắn, học offline (cài như ứng dụng khi mở qua https), sao lưu tiến độ (file/chuỗi/QR), nút báo lỗi, nghe chậm 🐢, chạm từ xem nghĩa, nói theo & nghe lại, nghe lặp khi di chuyển, thống kê trên máy.
