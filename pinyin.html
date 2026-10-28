@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giai đoạn 0: Luyện phát âm tiếng Trung</title>
+  <style>
+    :root {
+      --bg-main: #f0f9ff;
+      --sidebar-bg: #0f172a;
+      --primary: #2563eb;
+      --subj-blue: #0284c7;
+      --verb-red: #e11d48;
+      --obj-green: #16a34a;
+      --gold: #f59e0b;
+      --purple: #7c3aed;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; user-select: none; -webkit-user-select: none; }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg-main); color: var(--text-dark);
+      height: 100vh; display: flex; overflow: hidden;
+    }
+    button { font-family: inherit; }
+    button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+
+    /* === cột trái === */
+    .left-sidebar {
+      width: 300px; min-width: 300px; background: var(--sidebar-bg); color: #fff;
+      display: flex; flex-direction: column; padding: 12px; gap: 8px;
+      box-shadow: 4px 0 20px rgba(0,0,0,0.2); z-index: 30; overflow-y: auto;
+    }
+    .brand-line { font-weight: 900; font-size: 16px; color: #fde047; }
+    .back-link {
+      display: block; text-align: center; text-decoration: none;
+      background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #bae6fd;
+      border-radius: 10px; padding: 9px 8px; font-weight: 900; font-size: 13px; min-height: 40px;
+    }
+    .back-link:hover { background: rgba(56,189,248,0.3); }
+    .mod-list { display: flex; flex-direction: column; gap: 4px; }
+    .les-btn {
+      border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); color: #e2e8f0;
+      text-align: left; padding: 8px 10px; border-radius: 9px; font-weight: 800; font-size: 12.5px;
+      cursor: pointer; display: flex; justify-content: space-between; gap: 8px; align-items: center; min-height: 38px;
+    }
+    .les-btn:hover { background: rgba(255,255,255,0.12); }
+    .les-btn.active { background: #38bdf8; color: #0f172a; border-color: #38bdf8; }
+    .les-btn .sc { font-size: 11.5px; white-space: nowrap; font-weight: 900; color: #86efac; }
+    .les-btn.active .sc { color: #14532d; }
+    .prog-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 8px 10px; font-size: 12px; font-weight: 800; }
+    .bar { height: 10px; background: rgba(255,255,255,0.15); border-radius: 99px; overflow: hidden; margin-top: 5px; }
+    .bar > i { display: block; height: 100%; background: linear-gradient(90deg, #38bdf8, #22c55e); width: 0; transition: width .25s; }
+    .leitner-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 8px 10px; }
+    .leitner-head { font-size: 12px; font-weight: 900; color: #fde047; display: flex; justify-content: space-between; align-items: center; }
+    .srs-btn {
+      margin-top: 6px; width: 100%; background: linear-gradient(135deg, #f59e0b, #ea580c); color: #fff;
+      border: none; padding: 9px; border-radius: 8px; font-weight: 900; font-size: 12.5px; cursor: pointer; min-height: 38px;
+    }
+    .srs-btn:disabled { opacity: .45; cursor: default; }
+    .speed-row { display: flex; gap: 5px; background: rgba(0,0,0,0.3); padding: 4px; border-radius: 9px; }
+    .spd-btn { flex: 1; border: none; background: transparent; color: #94a3b8; padding: 8px 5px; border-radius: 7px; font-weight: 800; font-size: 11.5px; cursor: pointer; min-height: 36px; }
+    .spd-btn.active { background: #38bdf8; color: #0f172a; }
+    .about-btn { border: none; background: transparent; color: #fde047; font-weight: 800; font-size: 12.5px; padding: 8px; cursor: pointer; border-radius: 8px; border: 1px solid rgba(253,224,71,0.3); min-height: 38px; }
+
+    /* === khu chính === */
+    .main-stage { flex: 1; min-width: 0; height: 100vh; overflow-y: auto; padding: 18px 22px 40px; }
+    .wrap { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+    .voice-warn { background: #fef3c7; border: 2px solid #f59e0b; color: #92400e; border-radius: 14px; padding: 10px 14px; font-weight: 800; font-size: 14px; line-height: 1.45; }
+    .voice-warn[hidden] { display: none; }
+    h1.lesson-title { margin: 0; font-size: 24px; color: #1e3a8a; }
+    .lesson-sum { margin: 2px 0 0; color: var(--text-muted); font-size: 14.5px; }
+    .box { border-radius: var(--radius); padding: 14px 18px; border: 2px solid; font-size: 15.5px; line-height: 1.6; }
+    .box h3 { margin: 0 0 6px; font-size: 16px; }
+    .box.learn { background: #eff6ff; border-color: #93c5fd; color: #1e3a8a; }
+    .box.warn { background: #fff1f2; border-color: #fda4af; color: #9f1239; }
+    .box ul { margin: 0; padding-left: 20px; }
+    .box li { margin: 3px 0; }
+    .box p { margin: 0; }
+    .card { background: #fff; border: 2px solid #e2e8f0; border-radius: var(--radius); padding: 16px 18px; box-shadow: 0 6px 18px rgba(15,23,42,0.06); }
+    .card h2 { margin: 0 0 10px; font-size: 18px; color: #0f172a; }
+    .ex-prog { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+    .ex-prog .bar { flex: 1; background: #e2e8f0; margin: 0; }
+    .q-title { font-size: 17px; font-weight: 800; margin: 4px 0 10px; color: #1e293b; }
+    .center { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .hero-audio-btn {
+      background: linear-gradient(135deg, #2563eb, #4f46e5); color: #fff; border: none; border-radius: 99px;
+      padding: 12px 26px; font-size: 19px; font-weight: 900; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      box-shadow: 0 6px 16px rgba(37,99,235,0.3); min-height: 48px;
+    }
+    .hero-audio-btn.green { background: linear-gradient(135deg, #16a34a, #15803d); box-shadow: 0 6px 16px rgba(22,163,74,0.3); }
+    .hero-audio-btn.big { font-size: 26px; padding: 16px 36px; }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .pick-chunk-btn {
+      background: #f8fafc; border: 3px solid #cbd5e1; border-radius: 16px; padding: 12px 18px;
+      font-size: 22px; font-weight: 900; color: var(--text-dark); cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px; transition: .15s; min-width: 64px; min-height: 52px;
+    }
+    .pick-chunk-btn small { font-size: 12px; color: #64748b; font-weight: 800; }
+    .pick-chunk-btn:hover:not(:disabled) { border-color: var(--primary); background: #eff6ff; }
+    .pick-chunk-btn.sel { border-color: var(--primary); background: #dbeafe; }
+    .pick-chunk-btn.correct { background: #dcfce7 !important; border-color: #16a34a !important; color: #166534 !important; }
+    .pick-chunk-btn.wrong { background: #fee2e2 !important; border-color: #dc2626 !important; color: #991b1b !important; animation: shake .35s; }
+    .pick-chunk-btn:disabled { cursor: default; opacity: .85; }
+    .pick-chunk-btn.small { font-size: 17px; padding: 8px 12px; min-width: 48px; min-height: 44px; }
+    .pick-chunk-btn.wide { font-size: 26px; padding: 16px 26px; min-width: 130px; flex-direction: column; }
+    @keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+    .fb { margin-top: 14px; border-radius: 16px; padding: 12px 16px; font-size: 16px; font-weight: 700; line-height: 1.5; border: 2px solid; }
+    .fb.ok { background: #f0fdf4; border-color: #86efac; color: #166534; }
+    .fb.bad { background: #fff1f2; border-color: #fda4af; color: #9f1239; }
+    .fb.info { background: #f8fafc; border-color: #cbd5e1; color: #334155; }
+    .fb .big-han { font-size: 28px; font-weight: 900; }
+    .fb .acts { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .note-fixed { font-size: 13px; color: #92400e; background: #fffbeb; border: 1px dashed #f59e0b; border-radius: 10px; padding: 6px 10px; font-weight: 700; }
+    .build-row { display: flex; flex-direction: column; gap: 4px; align-items: center; width: 100%; }
+    .build-row b { font-size: 13px; color: #64748b; }
+    .kb { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    .kb-key { width: 52px; height: 48px; border-radius: 10px; border: 2px solid #94a3b8; background: #fff; font-size: 20px; font-weight: 900; cursor: pointer; }
+    .kb-key:hover { background: #eff6ff; border-color: var(--primary); }
+    .typebox {
+      width: 100%; max-width: 360px; font-size: 26px; font-weight: 900; padding: 10px 14px; border: 3px solid #94a3b8;
+      border-radius: 14px; text-align: center; user-select: text; -webkit-user-select: text; min-height: 52px; font-family: inherit;
+    }
+    .typebox:focus { border-color: var(--primary); }
+    .typebox.ok { border-color: #16a34a; background: #f0fdf4; }
+    .typebox.bad { border-color: #dc2626; background: #fff1f2; }
+    .res-card { text-align: center; }
+    .res-pct { font-size: 56px; font-weight: 900; }
+    .res-pct.ok { color: #16a34a; } .res-pct.bad { color: #dc2626; }
+    .steps { margin: 0; padding-left: 22px; font-size: 15.5px; line-height: 1.65; }
+    .steps li { margin: 4px 0; }
+    .real { background: #f0fdf4; border-color: #86efac; }
+    /* bảng pinyin */
+    .grid-wrap { overflow-x: auto; max-width: 100%; border: 2px solid #cbd5e1; border-radius: 12px; -webkit-overflow-scrolling: touch; max-height: 460px; overflow-y: auto; background: #fff; }
+    table.pgrid { border-collapse: separate; border-spacing: 0; font-size: 14px; }
+    .pgrid th, .pgrid td { border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; padding: 0; text-align: center; min-width: 54px; height: 44px; }
+    .pgrid thead th { position: sticky; top: 0; background: #1e3a8a; color: #fff; z-index: 2; font-weight: 900; padding: 4px; }
+    .pgrid tbody th { position: sticky; left: 0; background: #dbeafe; color: #1e3a8a; z-index: 1; font-weight: 900; padding: 4px 8px; }
+    .pgrid thead th:first-child { left: 0; z-index: 3; }
+    .pgrid td.cell { background: #fff; cursor: pointer; font-size: 18px; font-weight: 900; color: #1e293b; }
+    .pgrid td.cell:hover { background: #dbeafe; }
+    .pgrid td.cell.act { background: #fde68a; }
+    .pgrid td.empty { background: #e2e8f0; color: #94a3b8; font-size: 11px; cursor: not-allowed; }
+    .pgrid td.cell button { all: unset; display: flex; align-items: center; justify-content: center; width: 100%; height: 44px; cursor: pointer; }
+    .tone-bar { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    .tone-bar .pick-chunk-btn { font-size: 16px; min-height: 44px; }
+    .grid-now { font-size: 22px; font-weight: 900; min-height: 34px; color: #1e3a8a; text-align: center; }
+    /* modal */
+    .modal-back { position: fixed; inset: 0; background: rgba(15,23,42,0.6); display: none; align-items: center; justify-content: center; z-index: 100; padding: 16px; }
+    .modal-back.open { display: flex; }
+    .modal-card { background: #fff; max-width: 780px; width: 100%; max-height: 88vh; overflow-y: auto; border-radius: 20px; padding: 22px 28px; user-select: text; -webkit-user-select: text; box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+    .modal-card * { user-select: text; -webkit-user-select: text; }
+    .modal-card h2 { margin: 0 0 8px; color: #1e3a8a; }
+    .modal-card p, .modal-card li { font-size: 15px; line-height: 1.55; color: #334155; margin: 4px 0; }
+    .modal-card ul { padding-left: 20px; margin: 4px 0; }
+    .modal-card button { user-select: none; }
+
+    @media (min-width: 821px) and (max-width: 1500px) { .left-sidebar { width: 260px; min-width: 260px; } }
+    @media (max-width: 820px) {
+      body { flex-direction: column; height: auto; min-height: 100vh; overflow: auto; }
+      .main-stage { order: 1; flex: none; height: auto; overflow: visible; padding: 12px 16px 24px; }
+      .left-sidebar { order: 2; width: 100%; min-width: 0; overflow: visible; box-shadow: none; }
+      h1.lesson-title { font-size: 20px; }
+      .pick-chunk-btn { font-size: 20px; padding: 10px 12px; min-width: 56px; }
+      .pick-chunk-btn.wide { font-size: 22px; min-width: 110px; }
+      .modal-card { padding: 16px; }
+      .card { padding: 14px 12px; }
+      .box { padding: 12px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <aside class="left-sidebar">
+    <div class="brand-line">🔤 Giai đoạn 0: Phát âm</div>
+    <a class="back-link" href="index.html">← Về khóa HSK</a>
+    <div class="mod-list" id="lesList"></div>
+    <div class="prog-card">
+      <div style="display:flex;justify-content:space-between;"><span id="progTxt">Tiến độ: 0/12 bài</span><span id="uiStars">⭐ 0</span></div>
+      <div class="bar"><i id="progBar"></i></div>
+    </div>
+    <div class="leitner-card">
+      <div class="leitner-head"><span>🧠 MỤC HAY SAI</span><span id="cntLeit">0</span></div>
+      <div style="font-size:11px;color:#cbd5e1;margin-top:2px;">Mục làm sai được lưu lại để ôn.</div>
+      <button class="srs-btn" id="btnReview" data-act="review">🚀 Ôn các mục hay sai</button>
+    </div>
+    <div class="speed-row">
+      <button class="spd-btn" id="spdSlow" data-act="rate" data-v="0.7">🐢 Rõ từng âm (0.7x)</button>
+      <button class="spd-btn" id="spdNorm" data-act="rate" data-v="0.9">🐇 Tự nhiên (0.9x)</button>
+    </div>
+    <button class="about-btn" data-act="about">Giới thiệu</button>
+  </aside>
+
+  <main class="main-stage" id="main"></main>
+
+  <div class="modal-back" id="aboutModal">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Giới thiệu">
+      <h2>Giới thiệu: Giai đoạn 0 — Phát âm</h2>
+      <h3>Nguồn</h3>
+      <p>Danh sách chữ và từ lấy từ chuẩn HSK GF0025-2021, qua kho ivankra/hsk30 (giấy phép MIT).</p>
+      <h3>Giới hạn của giọng đọc</h3>
+      <p>Giọng đọc của trình duyệt cần chữ Hán nên mỗi âm tiết gắn một chữ thông dụng; một chữ đơn đôi khi bị đọc sai thanh (nhất là thanh nhẹ, biến điệu) — bài 0.9 dùng từ hai chữ để đọc đúng ngữ cảnh.</p>
+      <h3>Giới hạn của nhận dạng giọng nói</h3>
+      <p>Nhận dạng giọng nói của trình duyệt không chấm được thanh điệu. Máy chỉ cho biết có nhận ra chữ hay không; hãy tự nghe và so với giọng mẫu, hoặc nhờ người biết tiếng Trung nghe giúp.</p>
+      <h3>Về nội dung</h3>
+      <p>Nội dung do AI viết, chưa có giáo viên rà. So sánh với âm tiếng Việt chỉ là gần đúng, không hoàn toàn giống.</p>
+      <h3>Phím tắt</h3>
+      <ul><li>1–4: chọn thanh 1–4, 5: thanh nhẹ (với cặp tối thiểu: 1, 2 chọn hai đáp án)</li><li>Enter: kiểm tra / sang mục tiếp</li><li>Space: nghe lại</li></ul>
+      <div style="text-align:right;margin-top:14px;"><button class="hero-audio-btn" data-act="closeAbout">Đóng</button></div>
+    </div>
+  </div>
+
+  <script src="data/stage0_pronunciation.js"></script>
+  <script>
+  (function () {
+    'use strict';
+    /* ===== Tiện ích (sao chép từ index.html) ===== */
+    const LS = {
+      get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
+      set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+    };
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+    function hanOnly(s) { return String(s || '').replace(/[^㐀-鿿]/g, ''); }
+    function jget(k, d) { try { const v = JSON.parse(LS.get(k, '')); return v == null ? d : v; } catch (e) { return d; } }
+
+    let audioCtx = null;
+    try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {}
+    function playSFX(type) {
+      if (!audioCtx) return;
+      try {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain); gain.connect(audioCtx.destination);
+        if (type === 'ok') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(523.25, now); osc.frequency.setValueAtTime(659.25, now + 0.08); osc.frequency.setValueAtTime(1046.5, now + 0.16);
+          gain.gain.setValueAtTime(0.22, now); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.36);
+          osc.start(now); osc.stop(now + 0.36);
+        } else if (type === 'err') {
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(200, now); osc.frequency.linearRampToValueAtTime(135, now + 0.25);
+          gain.gain.setValueAtTime(0.16, now); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.28);
+          osc.start(now); osc.stop(now + 0.28);
+        } else {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(520, now); osc.frequency.exponentialRampToValueAtTime(760, now + 0.06);
+          gain.gain.setValueAtTime(0.12, now); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
+          osc.start(now); osc.stop(now + 0.07);
+        }
+      } catch (e) {}
+    }
+
+    function pickZhVoice() {
+      const voices = window.speechSynthesis.getVoices() || [];
+      const norm = v => String(v.lang || '').replace('_', '-').toLowerCase();
+      const cn = voices.filter(v => norm(v) === 'zh-cn' || norm(v).startsWith('zh-cn') || norm(v) === 'zh-hans-cn');
+      const pool = cn.length ? cn : voices.filter(v => norm(v).startsWith('zh') && !/tw|hk|hant/.test(norm(v)));
+      return pool.find(v => /Google|Natural|Xiaoxiao|Huihui/i.test(v.name)) || pool[0] || null;
+    }
+
+    let speechRate = 0.7;
+    let seqTok = 0;
+    function speakText(text, customRate, onend, keepSeq) {
+      if (!('speechSynthesis' in window) || !text) return;
+      if (!keepSeq) seqTok++;
+      try {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(String(text));
+        const v = pickZhVoice();
+        if (v) u.voice = v;
+        u.lang = 'zh-CN';
+        u.rate = customRate || speechRate;
+        u.pitch = 1;
+        if (onend) {
+          let fired = false;
+          const once = () => { if (!fired) { fired = true; onend(); } };
+          u.onend = once; u.onerror = once;
+          setTimeout(once, 3500);
+        }
+        window.speechSynthesis.speak(u);
+      } catch (e) {}
+    }
+    window.speakText = speakText;
+    function speakSeq(arr) {
+      const tok = ++seqTok; let i = 0;
+      const next = () => {
+        if (tok !== seqTok || i >= arr.length) return;
+        const t = arr[i++];
+        speakText(t, null, () => setTimeout(next, 300), true);
+      };
+      next();
+    }
+
+    /* ===== Dữ liệu ===== */
+    const D = window.ZH_STAGE0;
+    const main = document.getElementById('main');
+    if (!D || !D.lessons) {
+      main.innerHTML = '<div class="wrap"><div class="voice-warn">Không nạp được data/stage0_pronunciation.js.</div></div>';
+      return;
+    }
+    const LESSONS = D.lessons;
+    const ITEM_BY_ID = {};
+    LESSONS.forEach((l, li) => l.items.forEach(it => { ITEM_BY_ID[it.id] = { it, li }; }));
+
+    /* ===== Trạng thái lưu ===== */
+    let progress = jget('zh_s0_progress', null);
+    if (!progress || typeof progress !== 'object') progress = {};
+    if (!progress.done) progress.done = {};
+    if (!progress.score) progress.score = {};
+    let stars = parseInt(LS.get('zh_s0_stars', '0'), 10) || 0;
+    let leitner = jget('zh_s0_leitner', []);
+    if (!Array.isArray(leitner)) leitner = [];
+    const r0 = parseFloat(LS.get('zh_s0_rate', '0.7'));
+    speechRate = r0 === 0.9 ? 0.9 : 0.7;
+    function saveProgress() { LS.set('zh_s0_progress', JSON.stringify(progress)); }
+    function saveLeitner() { LS.set('zh_s0_leitner', JSON.stringify(leitner)); }
+    function saveStars() { LS.set('zh_s0_stars', String(stars)); }
+
+    /* ===== Trạng thái phiên ===== */
+    let S = null; // {mode:'lesson'|'review', li, items, i, res:[], answered, sel:{}, ra:{}, finished}
+    const TONE_LABEL = { 1: 'Thanh 1', 2: 'Thanh 2', 3: 'Thanh 3', 4: 'Thanh 4', 0: 'Thanh nhẹ' };
+    const TONE_MARK = { 1: 'ˉ', 2: 'ˊ', 3: 'ˇ', 4: 'ˋ', 0: '·' };
+    const DIFF_VI = { tone: 'khác thanh điệu', initial: 'khác thanh mẫu', final: 'khác vận mẫu', boundary: 'khác cách tách âm tiết' };
+
+    function startLesson(li) {
+      const l = LESSONS[li];
+      S = { mode: 'lesson', li, items: l.items.slice(), i: 0, res: [], answered: false, sel: {}, ra: {}, finished: false };
+      renderAll();
+      main.scrollTop = 0; window.scrollTo(0, 0);
+    }
+    function startReview() {
+      const ids = leitner.filter(id => ITEM_BY_ID[id]);
+      if (!ids.length) return;
+      S = { mode: 'review', li: -1, items: ids.map(id => ITEM_BY_ID[id].it), i: 0, res: [], answered: false, sel: {}, ra: {}, finished: false };
+      renderAll();
+      main.scrollTop = 0; window.scrollTo(0, 0);
+    }
+
+    /* ===== Vẽ cột trái ===== */
+    function renderSide() {
+      const doneN = LESSONS.filter(l => progress.done[l.id]).length;
+      document.getElementById('lesList').innerHTML = LESSONS.map((l, i) => {
+        const done = progress.done[l.id];
+        const sc = progress.score[l.id];
+        const short = l.name.replace(/^Bài\s*/, '');
+        return `<button class="les-btn ${S && S.mode === 'lesson' && S.li === i ? 'active' : ''}" data-act="lesson" data-v="${i}">
+          <span>${done ? '✓ ' : ''}${esc(short)}</span><span class="sc">${sc != null ? sc + '%' : ''}</span></button>`;
+      }).join('');
+      document.getElementById('progTxt').textContent = `Tiến độ: ${doneN}/${LESSONS.length} bài`;
+      document.getElementById('progBar').style.width = (doneN / LESSONS.length * 100) + '%';
+      document.getElementById('uiStars').textContent = '⭐ ' + stars;
+      const n = leitner.filter(id => ITEM_BY_ID[id]).length;
+      document.getElementById('cntLeit').textContent = n;
+      document.getElementById('btnReview').disabled = n === 0;
+      document.getElementById('btnReview').textContent = `🚀 Ôn các mục hay sai (${n})`;
+      document.getElementById('spdSlow').classList.toggle('active', speechRate === 0.7);
+      document.getElementById('spdNorm').classList.toggle('active', speechRate === 0.9);
+    }
+
+    /* ===== Vẽ khu chính ===== */
+    function renderAll() { renderSide(); renderMain(); }
+
+    function renderMain() {
+      let h = '<div class="wrap">';
+      h += '<div class="voice-warn" id="voiceWarn" hidden>⚠️ Trình duyệt này không có giọng đọc tiếng Trung (zh-CN), nên bạn có thể không nghe được âm mẫu. Hãy thử Chrome hoặc Edge, hoặc cài giọng Trung Quốc trong cài đặt hệ điều hành.</div>';
+      if (!S) {
+        h += `<h1 class="lesson-title">🔤 ${esc(D.label || 'Giai đoạn 0: Phát âm')}</h1>
+        <p class="lesson-sum">Luyện nghe và phát âm trước khi học HSK 1: 4 thanh, thanh mẫu, vận mẫu, biến điệu và gõ pinyin. Chọn một bài ở cột trái để bắt đầu. Dùng tai nghe và bật loa.</p>
+        <div class="box learn"><h3>📘 Cách học</h3><ul><li>Nghe âm mẫu, chọn đáp án, xem phản hồi ngay.</li><li>Mỗi mục đúng được +1 ⭐; mục sai vào hộp "mục hay sai" để ôn lại.</li><li>Đạt từ 70% là hoàn thành bài. Cuối cùng làm bài 0.12 để kiểm tra.</li></ul></div>
+        <div><button class="hero-audio-btn" data-act="lesson" data-v="${Math.max(0, LESSONS.findIndex(l => !progress.done[l.id]))}">▶ Bắt đầu / tiếp tục</button></div></div>`;
+        main.innerHTML = h;
+        checkVoice();
+        return;
+      }
+      if (S.mode === 'lesson') {
+        const l = LESSONS[S.li];
+        h += `<div><h1 class="lesson-title">${esc(l.name)}</h1><p class="lesson-sum">${esc(l.summary)}</p></div>`;
+        h += `<div class="box learn"><h3>📘 Bài này học gì</h3><p>${esc(l.intro_vi).replace(/\n/g, '<br>')}</p></div>`;
+        const tips = String(l.vn_tip || '').split('\n').filter(Boolean);
+        h += `<div class="box warn"><h3>⚠️ Người Việt hay sai</h3><ul>${tips.map(t => '<li>' + esc(t) + '</li>').join('')}</ul></div>`;
+      } else {
+        h += '<div><h1 class="lesson-title">🧠 Ôn các mục hay sai</h1><p class="lesson-sum">Làm đúng thì mục được bỏ khỏi danh sách.</p></div>';
+      }
+      h += '<div class="card" id="exCard"></div>';
+      if (S.mode === 'lesson') {
+        const rt = LESSONS[S.li].realTask;
+        if (rt) h += `<div class="card real"><h2>🏠 Thực hành ngoài máy</h2><div style="font-weight:900;margin-bottom:6px;">${esc(rt.title)}</div><ol class="steps">${(rt.steps || []).map(s => '<li>' + esc(s) + '</li>').join('')}</ol></div>`;
+      }
+      h += '</div>';
+      main.innerHTML = h;
+      renderExercise();
+      checkVoice();
+    }
+
+    function scoredCount() { return S.items.filter(it => it.type !== 'grid').length; }
+
+    function renderExercise() {
+      const card = document.getElementById('exCard');
+      if (!card) return;
+      if (S.finished) { card.innerHTML = resultHtml(); return; }
+      const it = S.items[S.i];
+      const total = S.items.length;
+      let h = `<div class="ex-prog"><span>Mục ${S.i + 1}/${total}</span><div class="bar"><i style="width:${(S.i / total) * 100}%"></i></div></div>`;
+      h += `<div id="qBody">${bodyHtml(it)}</div><div id="fbBox"></div>`;
+      card.innerHTML = h;
+      if (it.type === 'grid') initGrid(it);
+      const inp = document.getElementById('typeIn');
+      if (inp) setTimeout(() => { try { inp.focus(); } catch (e) {} }, 30);
+      if (it.type !== 'grid') setTimeout(() => replay(), 120);
+    }
+
+    function sayOf(it) {
+      if (it.type === 'minimal_pair') { const p = it[it.answer] || it.a; return p.hanzi; }
+      return it.tts || it.hanzi;
+    }
+    function replay() {
+      if (!S || S.finished) return;
+      const it = S.items[S.i];
+      if (!it || it.type === 'grid') return;
+      speakText(sayOf(it));
+    }
+
+    function toneBtns(it, answered) {
+      return [1, 2, 3, 4, 0].map(t => {
+        let c = 'pick-chunk-btn wide';
+        if (answered) { if (t === it.tone) c += ' correct'; else if (S.sel.tone === t) c += ' wrong'; }
+        return `<button class="${c}" data-act="tone" data-v="${t}" ${answered ? 'disabled' : ''}><small>${t === 0 ? '5' : t}</small>${TONE_MARK[t]} ${t === 0 ? 'nhẹ' : t}</button>`;
+      }).join('');
+    }
+
+    function bodyHtml(it) {
+      const play = '<button class="hero-audio-btn big" data-act="replay" title="Space">🔊 Nghe</button>';
+      if (it.type === 'tone_pick') {
+        const q = it.word ? `Nghe từ rồi chọn thanh của <b>âm tiết thứ ${it.pos}</b>.` : `Nghe âm tiết <b>${esc(it.syllable)}</b> rồi chọn thanh.`;
+        return `<div class="q-title">🎧 Nghe và chọn thanh</div><div class="center"><div>${q}</div>${play}<div class="row" id="opts">${toneBtns(it, false)}</div></div>`;
+      }
+      if (it.type === 'minimal_pair') {
+        const showHan = it.diff === 'boundary';
+        const btn = k => `<button class="pick-chunk-btn wide" data-act="mp" data-v="${k}"><small>${k === 'a' ? 1 : 2}</small>${esc(it[k].py)}${showHan ? '<small style="font-size:18px">' + esc(it[k].hanzi) + '</small>' : ''}</button>`;
+        return `<div class="q-title">🎧 Cặp tối thiểu: bạn nghe được âm nào?</div><div class="center">
+          <div class="row"><button class="hero-audio-btn big" data-act="replay" title="Space">🔊 Nghe lại</button><button class="hero-audio-btn" data-act="both" style="background:linear-gradient(135deg,#7c3aed,#6d28d9)">🔊🔊 Nghe cả hai</button></div>
+          <div class="row" id="opts">${btn('a')}${btn('b')}</div></div>`;
+      }
+      if (it.type === 'build') {
+        const pool = LESSONS[ITEM_BY_ID[it.id].li].build_pool || { initials: [], finals: [] };
+        const ini = pool.initials.concat(['']).map(x => `<button class="pick-chunk-btn small" data-act="bi" data-v="${esc(x)}">${x === '' ? '∅' : esc(x)}</button>`).join('');
+        const fin = pool.finals.map(x => `<button class="pick-chunk-btn small" data-act="bf" data-v="${esc(x)}">${esc(x)}</button>`).join('');
+        const ton = [1, 2, 3, 4, 0].map(t => `<button class="pick-chunk-btn small" data-act="bt" data-v="${t}">${t === 0 ? '5 nhẹ' : t}</button>`).join('');
+        return `<div class="q-title">🧩 Ghép âm tiết vừa nghe</div><div class="center">${play}
+          <div class="build-row"><b>Thanh mẫu (∅ = không có)</b><div class="row" id="rowI">${ini}</div></div>
+          <div class="build-row"><b>Vận mẫu</b><div class="row" id="rowF">${fin}</div></div>
+          <div class="build-row"><b>Thanh điệu</b><div class="row" id="rowT">${ton}</div></div>
+          <button class="hero-audio-btn green" id="btnCheck" data-act="check" disabled>Kiểm tra</button></div>`;
+      }
+      if (it.type === 'type_pinyin') {
+        const keys = [1, 2, 3, 4, 5].map(n => `<button class="kb-key" data-act="key" data-v="${n}">${n}</button>`).join('') + '<button class="kb-key" data-act="key" data-v="v" title="ü gõ là v">ü=v</button><button class="kb-key" data-act="key" data-v="&lt;">⌫</button>';
+        return `<div class="q-title">⌨️ Nghe rồi gõ pinyin kèm số thanh</div><div class="center">
+          <div style="text-align:center;">Ví dụ: <b>ma3</b>, <b>zhong1</b>, <b>ni3hao3</b>, <b>nv3</b> (ü gõ là v; 5 hoặc 0 là thanh nhẹ)</div>${play}
+          <input class="typebox" id="typeIn" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Gõ pinyin" />
+          <div class="kb">${keys}</div>
+          <button class="hero-audio-btn green" data-act="check">Kiểm tra</button></div>`;
+      }
+      if (it.type === 'read_aloud') {
+        return `<div class="q-title">🎤 Nghe mẫu rồi đọc theo</div><div class="center">
+          <div style="font-size:34px;font-weight:900;">${esc(it.hanzi)}</div><div style="font-size:20px;font-weight:800;color:#1d4ed8;">${esc(it.py)}</div>
+          ${play}<button class="hero-audio-btn" id="btnMic" data-act="mic" style="background:linear-gradient(135deg,#9333ea,#7c3aed)">🎤 Đọc theo</button>
+          <div id="raMsg" style="min-height:24px;font-weight:800;text-align:center;"></div>
+          <div class="note-fixed">Nhận dạng giọng nói của trình duyệt không chấm được thanh điệu.</div></div>`;
+      }
+      if (it.type === 'grid') {
+        return `<div class="q-title">🔠 Bảng pinyin tương tác</div><div class="center" style="align-items:stretch;">
+          <div style="text-align:center;">Bấm vào ô có chữ để nghe. Ô xám là âm không phát được.</div>
+          <div class="tone-bar" id="gTone"></div><div id="gNote" style="text-align:center;font-size:13px;color:#92400e;font-weight:700;"></div>
+          <div class="grid-now" id="gNow">&nbsp;</div>
+          <div class="grid-wrap" id="gWrap"></div>
+          <div style="text-align:center;"><button class="hero-audio-btn green" data-act="gridnext">Tiếp tục →</button></div></div>`;
+      }
+      return '<p>Dạng bài chưa hỗ trợ.</p>';
+    }
+
+    /* ===== Chấm điểm ===== */
+    function removeLeitner(id) { const n = leitner.indexOf(id); if (n >= 0) { leitner.splice(n, 1); saveLeitner(); } }
+    function addLeitner(id) { if (leitner.indexOf(id) < 0) { leitner.push(id); saveLeitner(); } }
+
+    function finish(correct, opts) {
+      if (S.answered) return;
+      S.answered = true;
+      const it = S.items[S.i];
+      S.res[S.i] = !!correct;
+      if (correct) { stars++; saveStars(); removeLeitner(it.id); playSFX('ok'); } else { addLeitner(it.id); playSFX('err'); }
+      renderSide();
+      const fb = document.getElementById('fbBox');
+      const isLast = S.i >= S.items.length - 1;
+      const title = (opts && opts.title) || (correct ? '✅ Đúng! +1 ⭐' : '❌ Chưa đúng.');
+      fb.innerHTML = `<div class="fb ${correct ? 'ok' : 'bad'}" id="fbIn"><div>${title}</div>${(opts && opts.html) || ''}
+        <div class="acts"><button class="pick-chunk-btn small" data-act="replay">🔊 Nghe lại</button>
+        <button class="hero-audio-btn" data-act="next" style="padding:8px 20px;font-size:16px;">${isLast ? 'Xem kết quả' : 'Tiếp →'} (Enter)</button></div></div>`;
+    }
+    function ansLine(it) {
+      let t = '';
+      if (it.type === 'minimal_pair') {
+        const p = it[it.answer];
+        t = `Đáp án: <b>${esc(p.py)}</b> ${esc(p.hanzi)}. Cặp này: ${esc(it.a.py)} ${esc(it.a.hanzi)} / ${esc(it.b.py)} ${esc(it.b.hanzi)}${it.diff ? ' (' + esc(DIFF_VI[it.diff] || it.diff) + ')' : ''}.`;
+      } else {
+        t = `Đáp án: <b>${esc(it.py)}</b> <span class="big-han">${esc(it.hanzi)}</span>${it.tone != null && it.type === 'tone_pick' ? ' — ' + TONE_LABEL[it.tone] : ''}`;
+      }
+      if (it.note) t += `<div style="margin-top:4px;font-weight:600;">💡 ${esc(it.note)}</div>`;
+      return '<div style="margin-top:4px;font-weight:600;">' + t + '</div>';
+    }
+
+    function answerTone(t) {
+      if (S.answered) return;
+      const it = S.items[S.i];
+      S.sel.tone = t;
+      const ok = t === it.tone;
+      finish(ok);
+      const o = document.getElementById('opts');
+      if (o) o.innerHTML = toneBtns(it, true);
+      document.querySelector('#fbIn > div').insertAdjacentHTML('afterend', ansLine(it));
+    }
+    function answerMp(k) {
+      if (S.answered) return;
+      const it = S.items[S.i];
+      const ok = k === it.answer;
+      finish(ok);
+      document.querySelectorAll('#opts [data-act="mp"]').forEach(b => {
+        b.disabled = true;
+        const v = b.dataset.v;
+        if (v === it.answer) b.classList.add('correct'); else if (v === k) b.classList.add('wrong');
+        if (it.diff !== 'boundary') b.insertAdjacentHTML('beforeend', `<small style="font-size:18px">${esc(it[v].hanzi)}</small>`);
+      });
+      document.querySelector('#fbIn > div').insertAdjacentHTML('afterend', ansLine(it));
+    }
+    function buildUpdate() {
+      const b = document.getElementById('btnCheck');
+      const ready = S.sel.i !== undefined && S.sel.f !== undefined && S.sel.t !== undefined;
+      if (b) b.disabled = !ready;
+      const mark = (rowId, attr, val) => document.querySelectorAll('#' + rowId + ' button').forEach(x => x.classList.toggle('sel', val !== undefined && x.dataset.v === String(val)));
+      mark('rowI', 'v', S.sel.i); mark('rowF', 'v', S.sel.f); mark('rowT', 'v', S.sel.t);
+    }
+    function checkBuild() {
+      if (S.answered) return;
+      const it = S.items[S.i];
+      if (S.sel.i === undefined || S.sel.f === undefined || S.sel.t === undefined) return;
+      const okI = S.sel.i === (it.initial || ''), okF = S.sel.f === it.final, okT = Number(S.sel.t) === Number(it.tone);
+      const ok = okI && okF && okT;
+      finish(ok);
+      const mk = (rowId, val, good) => document.querySelectorAll('#' + rowId + ' button').forEach(x => {
+        x.disabled = true;
+        if (x.dataset.v === String(val)) x.classList.add('correct');
+        else if (x.classList.contains('sel') && !good) x.classList.add('wrong');
+      });
+      mk('rowI', it.initial || '', okI); mk('rowF', it.final, okF); mk('rowT', it.tone, okT);
+      document.getElementById('btnCheck').disabled = true;
+      const lines = ok ? '' : `<div style="margin-top:4px;font-weight:600;">Thanh mẫu ${okI ? '✓' : '✗'} · vận mẫu ${okF ? '✓' : '✗'} · thanh ${okT ? '✓' : '✗'}</div>`;
+      document.querySelector('#fbIn > div').insertAdjacentHTML('afterend', lines + ansLine(it));
+    }
+    function normTyped(s) {
+      return String(s || '').toLowerCase().replace(/[\s　'’‘`]/g, '').replace(/ü/g, 'v').replace(/0/g, '5');
+    }
+    function checkType() {
+      if (S.answered) return;
+      const it = S.items[S.i];
+      const inp = document.getElementById('typeIn');
+      const val = inp.value;
+      if (!normTyped(val)) return;
+      const key = normTyped(it.key);
+      const ok = normTyped(val) === key || normTyped(val) === key.replace(/([ln])v(e)/g, '$1u$2');
+      finish(ok);
+      inp.readOnly = true; inp.classList.add(ok ? 'ok' : 'bad');
+      const extra = ok ? '' : `<div style="margin-top:4px;font-weight:600;">Bạn gõ: <b>${esc(val)}</b> — đáp án: <b>${esc(it.key)}</b></div>`;
+      document.querySelector('#fbIn > div').insertAdjacentHTML('afterend', extra + ansLine(it));
+    }
+
+    /* đọc theo */
+    function recAvailable() { return window.SpeechRecognition || window.webkitSpeechRecognition; }
+    function raMsg(html) { const m = document.getElementById('raMsg'); if (m) m.innerHTML = html; }
+    function selfAssessHtml() {
+      return '<div class="row" style="margin-top:6px;"><button class="pick-chunk-btn small" data-act="selfok">👍 Tôi thấy mình đọc ổn</button><button class="pick-chunk-btn small" data-act="selfno">🔁 Cần luyện thêm</button></div>';
+    }
+    function startMic() {
+      if (S.answered) return;
+      const it = S.items[S.i];
+      const SR = recAvailable();
+      if (!SR) {
+        raMsg('Trình duyệt này không có nhận dạng giọng nói. Hãy nghe mẫu, đọc to, rồi tự đánh giá.' + selfAssessHtml());
+        return;
+      }
+      let rec;
+      try { rec = new SR(); } catch (e) { raMsg('Không bật được micro. Hãy tự đánh giá.' + selfAssessHtml()); return; }
+      rec.lang = 'zh-CN'; rec.interimResults = false; rec.maxAlternatives = 5;
+      let got = false;
+      rec.onresult = ev => {
+        got = true;
+        const want = hanOnly(it.hanzi);
+        let ok = false;
+        try {
+          for (let r = 0; r < ev.results.length; r++) for (let a = 0; a < ev.results[r].length; a++) if (hanOnly(ev.results[r][a].transcript).indexOf(want) >= 0) ok = true;
+        } catch (e) {}
+        if (ok) {
+          finish(true, { title: '✅ Máy đã nhận ra chữ. +1 ⭐', html: ansLine(it) + '<div class="note-fixed" style="margin-top:6px;">Nhận dạng giọng nói của trình duyệt không chấm được thanh điệu; hãy tự nghe và so với giọng mẫu.</div>' });
+        } else {
+          raMsg('<span style="color:#b91c1c;">🔴 Máy chưa nhận ra chữ này.</span> Nghe lại mẫu rồi thử lại, hoặc tự đánh giá.' + '<div class="row" style="margin-top:6px;"><button class="pick-chunk-btn small" data-act="mic">🎤 Thử lại</button></div>' + selfAssessHtml());
+        }
+      };
+      rec.onerror = () => { if (!got && !S.answered) raMsg('Không dùng được nhận dạng giọng nói (micro bị chặn hoặc không có mạng). Hãy tự đánh giá.' + selfAssessHtml()); got = true; };
+      rec.onend = () => { if (!got && !S.answered) raMsg('Máy không nghe thấy gì. Thử lại hoặc tự đánh giá.' + '<div class="row" style="margin-top:6px;"><button class="pick-chunk-btn small" data-act="mic">🎤 Thử lại</button></div>' + selfAssessHtml()); };
+      raMsg('<span style="color:#7c3aed;">🎤 Đang nghe… hãy đọc to.</span>');
+      try { rec.start(); } catch (e) { raMsg('Không bật được micro. Hãy tự đánh giá.' + selfAssessHtml()); }
+    }
+    function selfAssess(ok) {
+      const it = S.items[S.i];
+      finish(ok, { title: ok ? '👍 Bạn tự đánh giá là đọc ổn. +1 ⭐' : '🔁 Cần luyện thêm: mục này được lưu để ôn.', html: ansLine(it) + '<div class="note-fixed" style="margin-top:6px;">Nhận dạng giọng nói của trình duyệt không chấm được thanh điệu.</div>' });
+    }
+
+    /* bảng pinyin */
+    function initGrid(it) {
+      const gt = document.getElementById('gTone');
+      const have = [it.tone || 1];
+      gt.innerHTML = [1, 2, 3, 4].map(t => `<button class="pick-chunk-btn small ${have.indexOf(t) >= 0 ? 'sel' : ''}" data-act="gtone" data-v="${t}" ${have.indexOf(t) >= 0 ? '' : 'disabled'}>Thanh ${t}</button>`).join('');
+      document.getElementById('gNote').textContent = 'Dữ liệu hiện chỉ có thanh 1; các thanh khác chưa có nên nút bị vô hiệu.';
+      const extra = [];
+      ['y', 'w'].forEach(c => { if (Object.keys(it.cells).some(k => k.indexOf(c + '|') === 0)) extra.push(c); });
+      const rows = it.initials.slice();
+      extra.forEach(c => { if (rows.indexOf(c) < 0) rows.push(c); });
+      let h = '<table class="pgrid"><thead><tr><th>Thanh mẫu \\ vận mẫu</th>' + it.finals.map(f => `<th>${esc(f)}</th>`).join('') + '</tr></thead><tbody>';
+      rows.forEach(r => {
+        const lab = r === '' ? '∅' : (r === 'y' || r === 'w') ? r + ' (∅)' : r;
+        h += `<tr><th>${esc(lab)}</th>`;
+        it.finals.forEach(f => {
+          const c = it.cells[r + '|' + f];
+          if (c) h += `<td class="cell"><button data-act="gcell" data-k="${esc(r + '|' + f)}" aria-label="${esc(c.py)}">${esc(c.hanzi)}</button></td>`;
+          else h += '<td class="empty" title="không phát được">—</td>';
+        });
+        h += '</tr>';
+      });
+      h += '</tbody></table>';
+      document.getElementById('gWrap').innerHTML = h;
+    }
+    function gridCell(btn) {
+      const it = S.items[S.i];
+      const c = it.cells[btn.dataset.k];
+      if (!c) return;
+      document.querySelectorAll('#gWrap td.act').forEach(x => x.classList.remove('act'));
+      btn.parentNode.classList.add('act');
+      document.getElementById('gNow').innerHTML = `${esc(c.py)} &nbsp; <span style="font-size:28px">${esc(c.hanzi)}</span>`;
+      speakText(c.tts || c.hanzi);
+    }
+
+    /* ===== Kết quả ===== */
+    function overallScore() {
+      const sum = LESSONS.reduce((a, l) => a + (progress.score[l.id] || 0), 0);
+      return Math.round(sum / LESSONS.length);
+    }
+    function computeFinish() {
+      const idx = S.items.map((it, i) => i).filter(i => S.items[i].type !== 'grid');
+      const ok = idx.filter(i => S.res[i]).length;
+      const tot = idx.length;
+      const pct = tot ? Math.round(ok / tot * 100) : 100;
+      S.pct = pct; S.ok = ok; S.tot = tot;
+      if (S.mode === 'lesson') {
+        const id = LESSONS[S.li].id;
+        progress.score[id] = Math.max(progress.score[id] || 0, pct);
+        if (pct >= 70) progress.done[id] = true;
+        saveProgress();
+      }
+      S.finished = true;
+    }
+    function resultHtml() {
+      const pass = S.pct >= 70;
+      let h = `<div class="res-card"><div class="q-title">${S.mode === 'review' ? 'Ôn xong' : 'Kết quả bài'}</div>
+        <div class="res-pct ${pass ? 'ok' : 'bad'}">${S.pct}%</div><div>${S.ok}/${S.tot} mục đúng</div>`;
+      if (S.mode === 'lesson') {
+        h += pass ? `<p style="font-weight:800;color:#166534;">🎉 Hoàn thành bài (cần ≥ 70%).</p>` : `<p style="font-weight:800;color:#b91c1c;">Chưa đạt 70%. Đọc lại phần "Người Việt hay sai" rồi làm lại nhé.</p>`;
+        if (LESSONS[S.li].id === '0.12') h += `<p style="font-weight:800;">🏁 Điểm tổng giai đoạn: <b>${overallScore()}%</b><br><small style="font-weight:600;color:#475569;">(trung bình điểm tốt nhất của 12 bài; bài chưa làm tính 0)</small></p>`;
+      } else {
+        const n = leitner.filter(id => ITEM_BY_ID[id]).length;
+        h += `<p style="font-weight:800;">Còn ${n} mục cần ôn.</p>`;
+      }
+      h += '<div class="row">';
+      if (S.mode === 'lesson') {
+        h += '<button class="hero-audio-btn" data-act="retry">🔄 Làm lại bài</button>';
+        if (S.li < LESSONS.length - 1) h += `<button class="hero-audio-btn green" data-act="lesson" data-v="${S.li + 1}">Bài tiếp theo →</button>`;
+      } else if (leitner.length) h += '<button class="hero-audio-btn" data-act="review">🔄 Ôn tiếp</button>';
+      h += '</div></div>';
+      return h;
+    }
+    function next() {
+      if (!S || S.finished) return;
+      const it = S.items[S.i];
+      if (!S.answered && it.type !== 'grid') return;
+      if (it.type === 'grid' && !S.answered) { S.res[S.i] = true; }
+      if (S.i >= S.items.length - 1) { computeFinish(); renderSide(); renderExercise(); return; }
+      S.i++; S.answered = false; S.sel = {}; S.ra = {};
+      renderExercise();
+    }
+
+    /* ===== Giọng zh-CN ===== */
+    function checkVoice() {
+      const w = document.getElementById('voiceWarn');
+      if (!w) return;
+      let has = false;
+      try { has = !!('speechSynthesis' in window && pickZhVoice()); } catch (e) {}
+      w.hidden = has;
+    }
+    if ('speechSynthesis' in window) {
+      try { window.speechSynthesis.getVoices(); window.speechSynthesis.onvoiceschanged = checkVoice; } catch (e) {}
+      setTimeout(checkVoice, 1500);
+    }
+
+    /* ===== Sự kiện ===== */
+    document.addEventListener('click', ev => {
+      const b = ev.target.closest('[data-act]');
+      if (!b || b.disabled) return;
+      const v = b.dataset.v;
+      switch (b.dataset.act) {
+        case 'lesson': startLesson(parseInt(v, 10)); break;
+        case 'retry': startLesson(S.li); break;
+        case 'review': startReview(); break;
+        case 'rate':
+          speechRate = parseFloat(v); LS.set('zh_s0_rate', String(speechRate)); renderSide(); playSFX('tap'); break;
+        case 'about': document.getElementById('aboutModal').classList.add('open'); break;
+        case 'closeAbout': document.getElementById('aboutModal').classList.remove('open'); break;
+        case 'replay': replay(); break;
+        case 'both': { const it = S.items[S.i]; speakSeq([it.a.hanzi, it.b.hanzi]); break; }
+        case 'tone': answerTone(parseInt(v, 10)); break;
+        case 'mp': answerMp(v); break;
+        case 'bi': if (!S.answered) { S.sel.i = v; buildUpdate(); playSFX('tap'); } break;
+        case 'bf': if (!S.answered) { S.sel.f = v; buildUpdate(); playSFX('tap'); } break;
+        case 'bt': if (!S.answered) { S.sel.t = parseInt(v, 10); buildUpdate(); playSFX('tap'); } break;
+        case 'check': if (S.items[S.i].type === 'build') checkBuild(); else checkType(); break;
+        case 'key': {
+          const inp = document.getElementById('typeIn');
+          if (inp && !S.answered) { if (v === '<') inp.value = inp.value.slice(0, -1); else inp.value += v; inp.focus(); }
+          break;
+        }
+        case 'mic': startMic(); break;
+        case 'selfok': selfAssess(true); break;
+        case 'selfno': selfAssess(false); break;
+        case 'gcell': gridCell(b); break;
+        case 'gridnext': next(); break;
+        case 'next': next(); break;
+      }
+    });
+    document.getElementById('aboutModal').addEventListener('click', ev => { if (ev.target.id === 'aboutModal') ev.currentTarget.classList.remove('open'); });
+
+    document.addEventListener('keydown', ev => {
+      if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+      const modal = document.getElementById('aboutModal');
+      if (ev.key === 'Escape') { modal.classList.remove('open'); return; }
+      if (modal.classList.contains('open')) return;
+      if (!S || S.finished) return;
+      const it = S.items[S.i];
+      const inInput = ev.target && ev.target.tagName === 'INPUT';
+      if (ev.key === 'Enter') {
+        if (ev.target && ev.target.tagName === 'BUTTON' && ev.target.dataset.act) return; // để nút tự xử lý
+        ev.preventDefault();
+        if (S.answered || it.type === 'grid') next();
+        else if (it.type === 'type_pinyin') checkType();
+        else if (it.type === 'build') checkBuild();
+        return;
+      }
+      if (inInput) return;
+      if (ev.key === ' ' || ev.code === 'Space') {
+        if (ev.target && ev.target.tagName === 'BUTTON') ev.preventDefault();
+        ev.preventDefault(); replay(); return;
+      }
+      if (/^[0-5]$/.test(ev.key)) {
+        const n = parseInt(ev.key, 10);
+        if (it.type === 'tone_pick' && n >= 1) answerTone(n === 5 ? 0 : n);
+        else if (it.type === 'minimal_pair' && (n === 1 || n === 2)) answerMp(n === 1 ? 'a' : 'b');
+        else if (it.type === 'build' && !S.answered && n >= 1) { S.sel.t = n === 5 ? 0 : n; buildUpdate(); }
+      }
+    });
+
+    renderAll();
+  })();
+  </script>
+</body>
+</html>
