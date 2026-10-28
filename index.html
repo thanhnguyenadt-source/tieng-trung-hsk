@@ -1068,18 +1068,21 @@
         <li>Giọng đọc và nhận dạng giọng nói dùng chức năng có sẵn của trình duyệt (zh-CN); chất lượng tùy trình duyệt, nhận dạng giọng nói chạy tốt nhất trên Chrome hoặc Edge.</li>
       </ul>
       <h3>Quyền riêng tư</h3>
-      <p>Khóa học không thu thập dữ liệu người học và không dùng công cụ theo dõi. Sao và hộp Leitner chỉ lưu trong trình duyệt của bạn (localStorage).</p>
+      <p>Khóa học không thu thập dữ liệu người học và không dùng công cụ theo dõi. Sao, hộp Leitner và mọi tiến độ chỉ lưu trong trình duyệt của bạn (một kho tiến độ duy nhất).</p>
       <div style="text-align:right;margin-top:14px;"><button class="hero-audio-btn" onclick="closeAbout()">Đóng</button></div>
     </div>
   </div>
 
-  <!-- Tiện ích + danh sách bài (nhỏ) nạp trước; dữ liệu bài nặng chỉ nạp CẤP ĐANG HỌC (vị trí cuối lưu trong localStorage), cấp khác chèn <script> khi chuyển (app_kit.js → AppKit.ensureStage). -->
+  <!-- Tiện ích + danh sách bài (nhỏ) nạp trước; dữ liệu bài nặng chỉ nạp CẤP ĐANG HỌC (vị trí cuối lấy từ kho tiến độ), cấp khác chèn <script> khi chuyển (app_kit.js → AppKit.ensureStage). -->
   <script src="data/config.js"></script>
   <script src="data/meta.js"></script>
+  <script src="data/srs_core.js"></script>
+  <script src="data/session_engine.js"></script>
+  <script src="data/progress_store.js"></script>
   <script>
     (function () {
       var ids = ((window.COURSE_META || {}).stages || []).map(function (s) { return s.id; }), n = ids[0];
-      try { var p = JSON.parse(localStorage.getItem((window.APP_CONFIG || {}).prefix + 'kit_prog') || 'null'); if (p && p.last && ids.indexOf(p.last.stage) >= 0) n = p.last.stage; } catch (e) {}
+      try { var p = window.CourseStore && window.CourseStore.position(); if (p && ids.indexOf(p.stage) >= 0) n = p.stage; } catch (e) {}
       window.__INIT_STAGE = n;
       document.write('<script src="data/hsk' + n + '.js"><\/script>');
     })();
@@ -1096,10 +1099,7 @@
     const STAGE_LABEL = {}; (((window.COURSE_META || {}).stages) || []).forEach(s => { STAGE_LABEL[s.id] = s.label; });
 
     /* ===== Tiện ích ===== */
-    const LS = {
-      get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
-      set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-    };
+    const CS = window.CourseStore;   // kho tiến độ duy nhất (data/progress_store.js); trang không ghi thẳng bộ nhớ trình duyệt
     function esc(s) {
       return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
@@ -1181,12 +1181,11 @@
 
     let speechRate = 0.72;
     let zenMode = false;
-    let stars = Number(LS.get('zh_stars', 0)) || 0;
-    let leitnerDB = [];
-    try { leitnerDB = JSON.parse(LS.get('zh_leitner', '[]')); if (!Array.isArray(leitnerDB)) leitnerDB = []; } catch (e) { leitnerDB = []; }
-    let showPy = LS.get('zh_showPy', '1') !== '0';
-    let showHv = LS.get('zh_showHv', '1') !== '0';
-    let displayMode = LS.get('zh_displayMode', 'full');
+    let stars = CS.getStars();
+    let leitnerDB = CS.getLeitner().slice();
+    let showPy = CS.setting('showPy', true) !== false;
+    let showHv = CS.setting('showHv', true) !== false;
+    let displayMode = CS.setting('displayMode', 'full');
     if (!['full', 'tap', 'han'].includes(displayMode)) displayMode = 'full';
 
     let sessionSec = 1800;
@@ -1198,7 +1197,7 @@
     let audioCtx = null;
     try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {}
 
-    function saveProgress() { LS.set('zh_stars', stars); LS.set('zh_leitner', JSON.stringify(leitnerDB)); }
+    function saveProgress() { CS.setStars(stars); CS.setLeitner(leitnerDB); }
     function addStars(n) { stars += n; saveProgress(); syncSidebarUI(); }
 
     function applyLayerState() {
@@ -1215,15 +1214,15 @@
       if (bh) bh.classList.toggle('on', showHv);
     }
     window.toggleLayer = function (which) {
-      if (which === 'py') { showPy = !showPy; LS.set('zh_showPy', showPy ? '1' : '0'); }
-      else { showHv = !showHv; LS.set('zh_showHv', showHv ? '1' : '0'); }
+      if (which === 'py') { showPy = !showPy; CS.setSetting('showPy', showPy); }
+      else { showHv = !showHv; CS.setSetting('showHv', showHv); }
       applyLayerState();
       playSFX('tap');
     };
     window.setDisplayMode = function (m) {
       if (!['full', 'tap', 'han'].includes(m)) return;
       displayMode = m;
-      LS.set('zh_displayMode', m);
+      CS.setSetting('displayMode', m);
       document.querySelectorAll('.revealed').forEach(e => e.classList.remove('revealed'));
       applyLayerState();
       playSFX('tap');
@@ -2568,5 +2567,6 @@
     };
   </script>
   <script src="data/app_kit.js"></script>
+  <script src="data/app_shell.js"></script>
 </body>
 </html>

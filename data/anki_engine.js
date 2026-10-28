@@ -3,39 +3,23 @@
    Cấu hình riêng từng khóa nằm trong window.ANKI_CONFIG (đặt trong index.html TRƯỚC thẻ nạp file này); xem docs/anki/ANKI_SPEC.md.
    Hình thức theo bộ thẻ kiểu "4000 Essential English Words" (hình + từ + phát âm + từ loại + nghĩa + định nghĩa đơn giản + câu ví dụ + chuỗi âm thanh);
    KHÔNG chép nội dung, hình ảnh hay âm thanh của bộ thẻ đó: hình = emoji trong dữ liệu khóa học, âm thanh = speechSynthesis của trình duyệt.
-   Lưu trữ: localStorage với tiền tố cấu hình (zh_anki_ / kids_anki_). Toàn bộ dữ liệu ở trong trình duyệt; xuất/nhập JSON chỉ qua tải file và chọn file. */
+   Lưu trữ: CHỈ qua kho tiến độ của lõi (window.CourseStore, docs/core/progress_store.js; thẻ ở cards, cài đặt ở settings.anki, nhật ký ở log); SM-2 lấy từ window.SRS (docs/core/srs_core.js).
+   Toàn bộ dữ liệu ở trong trình duyệt; xuất/nhập JSON (riêng Anki) chỉ qua tải file và chọn file. */
 (function (root) {
   'use strict';
   var CFG = root.ANKI_CONFIG || {};
   var P = CFG.prefix || 'zh_anki_';
   var APP = CFG.app || 'zh-anki';
   var DAY = 86400000, MIN5 = 300000;
-  var KEY = { cards: P + 'cards', cursor: P + 'cursor', opened: P + 'opened', daily: P + 'daily', limit: P + 'newlimit', types: P + 'types', rate: P + 'rate', log: P + 'log', looked: P + 'looked' };
   var TYPE_LABEL = { A: 'Nhận diện', B: 'Điền từ', C: 'Nghe' };
 
-  /* ---------- lưu trữ an toàn ---------- */
-  var mem = {};
-  function lsGet(k, d) { try { var v = root.localStorage.getItem(k); return v === null ? d : v; } catch (e) { return k in mem ? mem[k] : d; } }
-  function lsSet(k, v) { try { root.localStorage.setItem(k, v); } catch (e) { mem[k] = v; } }
-  function jget(k, d) { try { var v = JSON.parse(lsGet(k, 'null')); return v === null || v === undefined ? d : v; } catch (e) { return d; } }
-  function jset(k, v) { lsSet(k, JSON.stringify(v)); }
+  /* ---------- lưu trữ: chỉ qua kho tiến độ + SM-2 của lõi ---------- */
+  var CS = root.CourseStore, SRS = root.SRS;
+  if (!CS) throw new Error('anki_engine: thiếu window.CourseStore (nạp data/progress_store.js trước engine)');
+  if (!SRS) throw new Error('anki_engine: thiếu window.SRS (nạp data/srs_core.js trước engine)');
 
-  /* ---------- SM-2 rút gọn (hàm thuần; kiểm bằng tools/test_anki_sm2.js) ---------- */
-  function newCard() { return { status: 'new', interval: 0, ease: 2.5, due: 0, reps: 0, lapses: 0 }; }
-  function round2(x) { return Math.round(x * 100) / 100; }
-  function sm2(card, grade, now) {
-    var c = {}, k, base = newCard();
-    for (k in base) c[k] = card && card[k] !== undefined ? card[k] : base[k];
-    now = now === undefined ? Date.now() : now;
-    var iv = c.interval, ease = c.ease;
-    if (grade === 1) { c.interval = 0; c.ease = round2(Math.max(1.3, ease - 0.2)); c.due = now + MIN5; c.status = 'learning'; c.reps = 0; c.lapses += 1; }
-    else if (grade === 2) { c.interval = Math.max(1, Math.round(iv * 1.2)); c.ease = round2(Math.max(1.3, ease - 0.15)); c.due = now + c.interval * DAY; c.status = 'review'; c.reps += 1; }
-    else if (grade === 3) { c.interval = iv === 0 ? 1 : (iv === 1 ? 3 : Math.round(iv * ease)); c.due = now + c.interval * DAY; c.status = 'review'; c.reps += 1; }
-    else if (grade === 4) { c.interval = iv === 0 ? 4 : Math.round(iv * ease * 1.3); c.ease = round2(ease + 0.15); c.due = now + c.interval * DAY; c.status = 'review'; c.reps += 1; }
-    else throw new Error('grade phải là 1..4');
-    return c;
-  }
-  function intervalLabel(card, grade) { var c = sm2(card, grade, 0); return c.interval === 0 ? '5 phút' : c.interval + ' ngày'; }
+  /* ---------- SM-2: dùng hàm thuần của lõi (docs/core/srs_core.js) ---------- */
+  var sm2 = SRS.sm2, newCard = SRS.newCard, intervalLabel = SRS.intervalLabel;
 
   /* ---------- khóa thẻ: loại A giữ khóa cũ (id) để tương thích tiến độ bản trước; B, C thêm hậu tố ---------- */
   function ckey(id, type) { return type === 'A' ? id : id + '#' + type; }
@@ -54,38 +38,32 @@
   function wordsOfLesson(id) { return WORDS.filter(function (w) { return w.lesson === id; }); }
 
   /* ---------- trạng thái ---------- */
-  var cards = jget(KEY.cards, {});
-  if (!cards || typeof cards !== 'object' || Array.isArray(cards)) cards = {};
-  var opened = jget(KEY.opened, []);
-  if (!Array.isArray(opened)) opened = [];
-  var limit = parseInt(lsGet(KEY.limit, '20'), 10); if (!(limit >= 0 && limit <= 500)) limit = 20;
-  var types = jget(KEY.types, ['A', 'B']);
+  var cards = CS.cards();                                 // đối tượng sống của kho: khóa = id từ (+ #B / #C), giá trị = thẻ SM-2
+  var opened = CS.ankiOpened();
+  var limit = parseInt(CS.setting('anki.limit', 20), 10); if (!(limit >= 0 && limit <= 500)) limit = 20;
+  var types = CS.setting('anki.types', ['A', 'B']);
   if (!Array.isArray(types) || !types.length) types = ['A', 'B'];
   types = ['A', 'B', 'C'].filter(function (t) { return types.indexOf(t) >= 0; });
-  var looked = jget(KEY.looked, {});                      // { id từ: thời điểm } — từ người học vừa chạm xem nghĩa trong bài: được ưu tiên ôn 7 ngày
-  if (!looked || typeof looked !== 'object' || Array.isArray(looked)) looked = {};
-  function isLooked(id, now) { var t = looked[id]; return !!t && (now === undefined ? Date.now() : now) - t < 7 * DAY; }
-  function markLooked(id) { if (!WORD_BY_ID[id]) return; looked[id] = Date.now(); var ks = Object.keys(looked); if (ks.length > 300) { ks.sort(function (a, b) { return looked[a] - looked[b]; }).slice(0, ks.length - 300).forEach(function (k) { delete looked[k]; }); } jset(KEY.looked, looked); }
-  var reviewLog = jget(KEY.log, []);                      // [[thời điểm, đúng(1)/sai(0)]] — tối đa 4000 lần ôn gần nhất, để tính tỉ lệ nhớ 7 ngày
-  if (!Array.isArray(reviewLog)) reviewLog = [];
-  var rateName = lsGet(KEY.rate, 'slow') === 'normal' ? 'normal' : 'slow';
+  function isLooked(id, now) { var t = CS.looked()[id]; return !!t && (now === undefined ? Date.now() : now) - t < 7 * DAY; }   // từ người học vừa chạm xem nghĩa: ưu tiên ôn 7 ngày
+  function markLooked(id) { if (!WORD_BY_ID[id]) return; CS.markLooked(id); }
+  var rateName = CS.setting('anki.rate', 'slow') === 'normal' ? 'normal' : 'slow';
   var RATES = { slow: CFG.rateSlow || 0.72, normal: CFG.rateNormal || 0.92 };
 
-  function save() { jset(KEY.cards, cards); }
+  function save() { CS.replaceCards(cards); }
   function highestOpened() {
     var best = -1, id = null;
     opened.forEach(function (x) { if (LESSON_ORDER[x] !== undefined && LESSON_ORDER[x] > best) { best = LESSON_ORDER[x]; id = x; } });
     return id;
   }
   function cursorId() {
-    var c = lsGet(KEY.cursor, 'auto');
+    var c = CS.setting('anki.cursor', 'auto');
     if (c !== 'auto' && LESSON_ORDER[c] !== undefined) return c;
     return highestOpened() || ((RAW.lessons || [])[0] && RAW.lessons[0].id) || null;
   }
   function cursorIndex() { var id = cursorId(); return id === null ? -1 : LESSON_ORDER[id]; }
   function markOpened(id) {
     if (LESSON_ORDER[id] === undefined) return;
-    if (opened.indexOf(id) < 0) { opened.push(id); jset(KEY.opened, opened); }
+    if (opened.indexOf(id) < 0) { opened.push(id); CS.setAnkiOpened(opened); }
     refreshPanel();
   }
   function wordsUpTo(idx) { return WORDS.filter(function (w) { return LESSON_ORDER[w.lesson] <= idx; }); }
@@ -103,8 +81,8 @@
     return { new: n, due: due, known: known, total: total, words: wordsUpTo(idx).length };
   }
   function today() { var d = new Date(); return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
-  function introducedToday() { var d = jget(KEY.daily, {}); return d && d.date === today() ? (d.n || 0) : 0; }
-  function addIntroduced(k) { jset(KEY.daily, { date: today(), n: introducedToday() + k }); }
+  function introducedToday() { var d = CS.setting('anki.daily', {}); return d && d.date === today() ? (d.n || 0) : 0; }
+  function addIntroduced(k) { CS.setSetting('anki.daily', { date: today(), n: introducedToday() + k }); }
   function newAllowance() { return Math.max(0, limit * types.length - introducedToday()); }
 
   /* Hàng đợi: thẻ đến hạn trước, rồi thẻ mới theo thứ tự bài. Thẻ mới xếp theo nhóm 8 từ: hết loại A của 8 từ rồi mới tới loại B, C
@@ -286,7 +264,7 @@
     var anchor = sb.querySelector(CFG.anchor || '.speed-row');
     if (anchor) sb.insertBefore(panelEl, anchor); else sb.appendChild(panelEl);
     var sel = panelEl.querySelector('#ankiCursor');
-    sel.addEventListener('change', function () { lsSet(KEY.cursor, sel.value); refreshPanel(); });
+    sel.addEventListener('change', function () { CS.setSetting('anki.cursor', sel.value); refreshPanel(); });
     panelEl.querySelector('#ankiGo').addEventListener('click', openSession);
     panelEl.querySelector('#ankiBrowse').addEventListener('click', openBrowse);
     panelEl.querySelector('#ankiPreview').addEventListener('click', function () { var nx = nextLessonId(); if (nx) openPreview(nx); });
@@ -294,7 +272,7 @@
       cb.addEventListener('change', function () {
         var sel2 = []; panelEl.querySelectorAll('#ankiTypes input').forEach(function (x) { if (x.checked) sel2.push(x.getAttribute('data-t')); });
         if (!sel2.length) { cb.checked = true; return; }               // luôn còn ít nhất một loại thẻ
-        types = sel2; jset(KEY.types, types); refreshPanel();
+        types = sel2; CS.setSetting('anki.types', types); refreshPanel();
       });
     });
     refreshPanel();
@@ -310,7 +288,7 @@
     panelEl.querySelector('#ankiDue').textContent = c.due;
     panelEl.querySelector('#ankiKnown').textContent = c.known;
     panelEl.querySelectorAll('#ankiTypes input').forEach(function (cb) { cb.checked = types.indexOf(cb.getAttribute('data-t')) >= 0; });
-    var cur = lsGet(KEY.cursor, 'auto');
+    var cur = CS.setting('anki.cursor', 'auto');
     if (sel.options.length !== (RAW.lessons || []).length + 1) {
       sel.innerHTML = '<option value="auto">Tự động: bài cao nhất đã mở</option>' + (RAW.lessons || []).map(function (l) { return '<option value="' + esc(l.id) + '">' + esc(lessonLabel(l)) + '</option>'; }).join('');
     }
@@ -427,7 +405,7 @@
   function bindCommon() {
     var $ = function (s) { return modalEl.querySelector(s); }, b;
     if ((b = $('#ankiClose'))) b.onclick = closeSession;
-    if ((b = $('#ankiRate'))) b.onclick = function () { rateName = rateName === 'slow' ? 'normal' : 'slow'; lsSet(KEY.rate, rateName); b.textContent = rateName === 'slow' ? '🐢 Chậm' : '🐇 Tự nhiên'; };
+    if ((b = $('#ankiRate'))) b.onclick = function () { rateName = rateName === 'slow' ? 'normal' : 'slow'; CS.setSetting('anki.rate', rateName); b.textContent = rateName === 'slow' ? '🐢 Chậm' : '🐇 Tự nhiên'; };
     if ((b = $('#ankiShow'))) b.onclick = function () { reveal(null); };
     if ((b = $('#ankiCheck'))) b.onclick = checkTyped;
     if ((b = $('#ankiTyped'))) b.onkeydown = function (e) { if (e.key === 'Enter') { e.preventDefault(); checkTyped(); } };
@@ -444,7 +422,7 @@
     });
     if ((b = $('#ankiExport'))) b.onclick = exportJSON;
     if ((b = $('#ankiImport'))) b.onchange = function () { importFile(this.files && this.files[0]); this.value = ''; };
-    if ((b = $('#ankiLimit'))) b.onchange = function () { var v = parseInt(this.value, 10); if (v >= 0 && v <= 500) { limit = v; lsSet(KEY.limit, String(v)); refreshPanel(); } };
+    if ((b = $('#ankiLimit'))) b.onchange = function () { var v = parseInt(this.value, 10); if (v >= 0 && v <= 500) { limit = v; CS.setSetting('anki.limit', v); refreshPanel(); } };
   }
   function reveal(ok) {
     if (!session || session.face === 'back' || !curWord()) return;
@@ -478,7 +456,7 @@
     var wasNew = !cards[k] || cards[k].status === 'new';
     cards[k] = sm2(cards[k] || newCard(), g, Date.now());
     save();
-    reviewLog.push([Date.now(), g >= 3 ? 1 : 0]); if (reviewLog.length > 4000) reviewLog = reviewLog.slice(-4000); jset(KEY.log, reviewLog);
+    cards[k].type = splitKey(k).type; CS.addLog({ item: k, ok: g >= 3, ms: null, kind: 'anki' });          // nhật ký lượt làm của lõi (chỉ ghi thêm)
     if (wasNew) addIntroduced(1);
     session.done += 1;
     if (g === 1) { session.again += 1; session.queue.splice(Math.min(session.queue.length, session.pos + 5), 0, k); }
@@ -572,7 +550,7 @@
     return { data: d };
   }
   function exportJSON() {
-    var d = { app: APP, version: 1, exportedAt: new Date().toISOString(), cards: cards, opened: opened, cursor: lsGet(KEY.cursor, 'auto'), limit: limit, types: types };
+    var d = { app: APP, version: 1, exportedAt: new Date().toISOString(), cards: cards, opened: opened, cursor: CS.setting('anki.cursor', 'auto'), limit: limit, types: types };
     var blob = new Blob([JSON.stringify(d, null, 1)], { type: 'application/json' });
     var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = (CFG.exportName || 'anki') + '-' + today() + '.json';
     document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
@@ -587,7 +565,7 @@
       if (!loc || inc.reps + inc.lapses > loc.reps + loc.lapses) { cards[k] = inc; take++; } else keep++;
     });
     (d.opened || []).forEach(function (x) { if (LESSON_ORDER[x] !== undefined && opened.indexOf(x) < 0) opened.push(x); });
-    save(); jset(KEY.opened, opened); refreshPanel();
+    save(); CS.setAnkiOpened(opened); refreshPanel();
     if (m) m.textContent = '✅ Đã nhập: lấy ' + take + ' thẻ, giữ ' + keep + ' thẻ hiện có.';
     return { ok: true, take: take, keep: keep };
   }
@@ -608,12 +586,26 @@
       learned++; if (c.status === 'review') { known++; if (c.interval >= 21) mastered++; }
     });
     var from = now - 7 * DAY, tot = 0, okn = 0, days = {};
-    reviewLog.forEach(function (r) { if (r[0] >= from) { tot++; okn += r[1]; } var d = new Date(r[0]); days[d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)] = 1; });
+    CS.logs().forEach(function (r) { if (r.t >= from) { tot++; okn += r.ok ? 1 : 0; } var d = new Date(r.t); days[d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2)] = 1; });
     return { learned: learned, known: known, mastered: mastered, reviews7: tot, retention7: tot ? Math.round(100 * okn / tot) : null, reviewDays: Object.keys(days).sort() };
   }
 
+  /* một câu hỏi trắc nghiệm tự chứa cho thẻ (dùng ở chặng "Học hôm nay"): A chọn nghĩa, B điền từ (chọn từ), C nghe chọn từ */
+  function quiz(key) {
+    var sp = splitKey(key), w = WORD_BY_ID[sp.id]; if (!w) return null;
+    if (sp.type === 'A') return { type: 'A', word: w, options: optionsFor(w, 'meaning'), answer: w.vi };
+    if (sp.type === 'B') return { type: 'B', word: w, cloze: w.cloze || '', options: optionsFor(w, 'text'), answer: w.text };
+    return { type: 'C', word: w, options: optionsFor(w, 'text'), answer: w.text };
+  }
+  function reload() {                                      // kho vừa bị thay (nhập sao lưu / tab khác): đọc lại các tham chiếu
+    cards = CS.cards(); opened = CS.ankiOpened();
+    var l = parseInt(CS.setting('anki.limit', 20), 10); limit = l >= 0 && l <= 500 ? l : 20;
+    var t = CS.setting('anki.types', ['A', 'B']); types = ['A', 'B', 'C'].filter(function (x) { return Array.isArray(t) && t.indexOf(x) >= 0; }); if (!types.length) types = ['A', 'B'];
+    rateName = CS.setting('anki.rate', 'slow') === 'normal' ? 'normal' : 'slow';
+    refreshPanel();
+  }
   /* ---------- khởi động ---------- */
-  var api = { stats: stats, markLooked: markLooked, isLooked: isLooked, sm2: sm2, newCard: newCard, ckey: ckey, splitKey: splitKey, markOpened: markOpened, counts: counts, buildQueue: buildQueue, plainPy: plainPy, parseImport: parseImport, importText: importText,
+  var api = { quiz: quiz, reload: reload, stats: stats, markLooked: markLooked, isLooked: isLooked, sm2: sm2, newCard: newCard, ckey: ckey, splitKey: splitKey, markOpened: markOpened, counts: counts, buildQueue: buildQueue, plainPy: plainPy, parseImport: parseImport, importText: importText,
               playChain: playChain, current: function () { return session && session.mode === 'review' && curKey() ? { key: curKey(), id: splitKey(curKey()).id, type: curType(), face: session.face } : null; }, words: function () { return WORDS; }, _state: function () { return { cards: cards, opened: opened, limit: limit, types: types }; },
               open: function () { buildPanel(); openSession(); }, version: 3 };
   root.ANKI = api;

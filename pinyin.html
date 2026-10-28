@@ -215,19 +215,18 @@
   </div>
 
   <script src="data/stage0_pronunciation.js"></script>
+  <script src="data/config.js"></script>
+  <script src="data/srs_core.js"></script>
+  <script src="data/progress_store.js"></script>
   <script>
   (function () {
     'use strict';
     /* ===== Tiện ích (sao chép từ index.html) ===== */
-    const LS = {
-      get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
-      set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-    };
+    const CS = window.CourseStore, S0 = CS.stage0();   // giai đoạn 0 nằm trong kho tiến độ chung (zh_progress → stage0), trang không ghi thẳng bộ nhớ trình duyệt
     function esc(s) {
       return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
     function hanOnly(s) { return String(s || '').replace(/[^㐀-鿿]/g, ''); }
-    function jget(k, d) { try { const v = JSON.parse(LS.get(k, '')); return v == null ? d : v; } catch (e) { return d; } }
 
     let audioCtx = null;
     try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {}
@@ -312,18 +311,18 @@
     LESSONS.forEach((l, li) => l.items.forEach(it => { ITEM_BY_ID[it.id] = { it, li }; }));
 
     /* ===== Trạng thái lưu ===== */
-    let progress = jget('zh_s0_progress', null);
+    let progress = S0.progress;
     if (!progress || typeof progress !== 'object') progress = {};
     if (!progress.done) progress.done = {};
     if (!progress.score) progress.score = {};
-    let stars = parseInt(LS.get('zh_s0_stars', '0'), 10) || 0;
-    let leitner = jget('zh_s0_leitner', []);
+    let stars = S0.stars || 0;
+    let leitner = S0.leitner;
     if (!Array.isArray(leitner)) leitner = [];
-    const r0 = parseFloat(LS.get('zh_s0_rate', '0.7'));
+    const r0 = parseFloat(S0.rate || 0.7);
     speechRate = r0 === 0.9 ? 0.9 : 0.7;
-    function saveProgress() { LS.set('zh_s0_progress', JSON.stringify(progress)); }
-    function saveLeitner() { LS.set('zh_s0_leitner', JSON.stringify(leitner)); }
-    function saveStars() { LS.set('zh_s0_stars', String(stars)); }
+    function saveProgress() { CS.setStage0({ progress }); }
+    function saveLeitner() { CS.setStage0({ leitner }); }
+    function saveStars() { CS.setStage0({ stars }); }
 
     /* ===== Trạng thái phiên ===== */
     let S = null; // {mode:'lesson'|'review', li, items, i, res:[], answered, sel:{}, ra:{}, finished}
@@ -728,7 +727,7 @@
         case 'retry': startLesson(S.li); break;
         case 'review': startReview(); break;
         case 'rate':
-          speechRate = parseFloat(v); LS.set('zh_s0_rate', String(speechRate)); renderSide(); playSFX('tap'); break;
+          speechRate = parseFloat(v); CS.setStage0({ rate: speechRate }); renderSide(); playSFX('tap'); break;
         case 'about': document.getElementById('aboutModal').classList.add('open'); break;
         case 'closeAbout': document.getElementById('aboutModal').classList.remove('open'); break;
         case 'replay': replay(); break;
@@ -786,7 +785,6 @@
     renderAll();
   })();
   </script>
-  <script src="data/config.js"></script>
   <script src="data/app_kit.js"></script>
 </body>
 </html>

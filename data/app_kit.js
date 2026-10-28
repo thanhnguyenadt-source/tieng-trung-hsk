@@ -10,11 +10,8 @@
   var CFG = root.APP_CONFIG || {};
   var AD = root.APPKIT_ADAPTER || {};
   var P = CFG.prefix || 'kit_';
-  var mem = {};
-  function lsGet(k, d) { try { var v = root.localStorage.getItem(k); return v === null ? d : v; } catch (e) { return k in mem ? mem[k] : d; } }
-  function lsSet(k, v) { try { root.localStorage.setItem(k, v); } catch (e) { mem[k] = v; } }
-  function jget(k, d) { try { var v = JSON.parse(lsGet(k, 'null')); return v === null || v === undefined ? d : v; } catch (e) { return d; } }
-  function jset(k, v) { lsSet(k, JSON.stringify(v)); }
+  var CS = root.CourseStore;                       // kho tiến độ của lõi (docs/core/progress_store.js): MỌI lưu trữ đi qua đây, bộ tiện ích không ghi thẳng bộ nhớ trình duyệt
+  if (!CS) { if (root.console) root.console.error('[AppKit] thiếu CourseStore — nạp data/progress_store.js trước app_kit.js'); return; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function $(s, r) { return (r || doc).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || doc).querySelectorAll(s)); }
@@ -39,7 +36,7 @@
     '.kit-embed b{color:#92400e}.kit-embed ol{margin:6px 0 8px 20px;padding:0}.kit-embed button{min-height:44px;padding:8px 16px;border-radius:10px;border:2px solid #b45309;background:#fff;color:#78350f;font-weight:800;font-size:15px;margin-right:8px}', true);
   function showEmbedBanner() {
     var app = detectInApp();
-    if (!app || lsGet('kit_embed_skip_' + P, '') === '1' || doc.getElementById('kitEmbed')) return;
+    if (!app || CS.setting('embedSkip', false) === true || doc.getElementById('kitEmbed')) return;
     var steps = isIOS()
       ? '<li>Bấm biểu tượng <b>⋯</b> hoặc <b>chia sẻ</b> ở góc màn hình.</li><li>Chọn <b>Mở bằng Safari</b> (hoặc "Mở trong trình duyệt").</li>'
       : '<li>Bấm biểu tượng <b>⋮</b> hoặc <b>⋯</b> ở góc trên bên phải.</li><li>Chọn <b>Mở bằng Chrome</b> (hoặc "Mở bằng trình duyệt").</li>';
@@ -47,7 +44,7 @@
       '⚠️ Bạn đang mở trang trong ứng dụng <b>' + esc(app) + '</b>. Trình duyệt trong ứng dụng này thường <b>không phát được giọng đọc, không nhận giọng nói</b> và có thể mất tiến độ học.<ol>' + steps + '</ol>' +
       '<button type="button" id="kitEmbedCopy">📋 Sao chép liên kết</button><button type="button" id="kitEmbedSkip">Vẫn tiếp tục ở đây</button>');
     doc.body.appendChild(b);
-    $('#kitEmbedSkip', b).onclick = function () { lsSet('kit_embed_skip_' + P, '1'); b.remove(); };
+    $('#kitEmbedSkip', b).onclick = function () { CS.setSetting('embedSkip', true); b.remove(); };
     $('#kitEmbedCopy', b).onclick = function () { copyText(root.location.href, function (ok) { $('#kitEmbedCopy', b).textContent = ok ? '✅ Đã sao chép' : 'Hãy giữ ngón tay trên thanh địa chỉ để sao chép'; }); };
   }
   function copyText(t, cb) {
@@ -109,7 +106,7 @@
      KHỞI TẠO
      ===================================================================== */
   var api = {
-    version: 1, cfg: CFG, esc: esc, lsGet: lsGet, lsSet: lsSet, jget: jget, jset: jset, addCSS: addCSS, el: el, $: $, $$: $$, copyText: copyText,
+    version: 2, cfg: CFG, esc: esc, store: CS, addCSS: addCSS, el: el, $: $, $$: $$, copyText: copyText,
     detectInApp: detectInApp, hasViet: hasViet, telexCandidates: telexCandidates, TELEX_HINT: TELEX_HINT, hardenInputs: hardenInputs,
     _parts: []
   };
@@ -131,22 +128,20 @@
   /* =====================================================================
      B. TIẾN ĐỘ BÀI + CON ĐƯỜNG BÀI HỌC DỌC + GIAO DIỆN ĐIỆN THOẠI (ngăn kéo + thanh dưới)
      ===================================================================== */
-  var KEYP = P + 'kit_prog';
-  var prog = jget(KEYP, null);
-  if (!prog || typeof prog !== 'object' || Array.isArray(prog)) prog = {};
-  prog.done = prog.done && typeof prog.done === 'object' ? prog.done : {};
-  prog.seen = prog.seen && typeof prog.seen === 'object' ? prog.seen : {};
-  prog.days = Array.isArray(prog.days) ? prog.days : [];
-  prog.last = prog.last && typeof prog.last === 'object' ? prog.last : null;
-  function saveProg() { jset(KEYP, prog); }
   var PH = AD.phases || [];
   function phaseIdx(id) { for (var i = 0; i < PH.length; i++) if (PH[i].id === id) return i; return -1; }
-  function touchDay() { var t = todayStr(); if (prog.days.indexOf(t) < 0) { prog.days.push(t); if (prog.days.length > 800) prog.days = prog.days.slice(-800); } }
-  function addTo(map, id, ph) { var a = map[id] = Array.isArray(map[id]) ? map[id] : []; if (a.indexOf(ph) < 0) a.push(ph); }
+  function touchDay() { CS.touchDay(todayStr()); }
+  function doneOf(id) { var l = CS.lesson(id); return (l && l.done) || []; }
+  function seenOf(id) { var l = CS.lesson(id); return (l && l.seen) || []; }
   function lessonState(id) {
-    var d = prog.done[id] || [];
+    var d = doneOf(id);
     if (d.length >= PH.length && PH.length) return 'done';
-    return d.length || (prog.seen[id] || []).length ? 'doing' : 'new';
+    return CS.lessonStatus(id);
+  }
+  function progressView() {                                 // dạng tương thích cho kiểm thử/giao diện: {done, seen, days, last}
+    var v = { done: {}, seen: {}, days: CS.days(), last: CS.position() };
+    Object.keys(CS.state.lessons).forEach(function (id) { var l = CS.state.lessons[id]; if (l.done && l.done.length) v.done[id] = l.done; if (l.seen && l.seen.length) v.seen[id] = l.seen; });
+    return v;
   }
   function metaStages() { return (root.COURSE_META && root.COURSE_META.stages) || []; }
   function findLesson(id) {
@@ -163,14 +158,13 @@
     var c; try { c = AD.current && AD.current(); } catch (e) { return; }
     if (!c || !c.lessonId) return;
     var pi = phaseIdx(prevPhase), ci = phaseIdx(c.phase);
-    if (prevLesson === c.lessonId && pi >= 0 && ci === pi + 1) addTo(prog.done, c.lessonId, prevPhase);     // sang chặng kế tiếp = xong chặng trước
-    if (ci >= 0) addTo(prog.seen, c.lessonId, c.phase);
-    prog.last = { stage: c.stage, mod: c.mod, idx: c.idx, phase: c.phase, lessonId: c.lessonId, ts: Date.now() };
-    touchDay(); saveProg();
+    if (prevLesson === c.lessonId && pi >= 0 && ci === pi + 1) CS.addPhase(c.lessonId, 'done', prevPhase);     // sang chặng kế tiếp = xong chặng trước
+    if (ci >= 0) CS.markSeen(c.lessonId, c.phase);
+    CS.setPosition({ stage: c.stage, mod: c.mod, idx: c.idx, phase: c.phase, lessonId: c.lessonId, ts: Date.now() });
+    if (api.shell && api.shell.view && api.shell.view() === 'detail') touchDay();                 // chỉ học ở trang chi tiết mới tính ngày; mở trang chủ không tính
     hooks.onRecord.forEach(function (f) { try { f(c); } catch (e) {} });
-    if (pathEl && pathEl.classList.contains('open')) renderPath();
   }
-  function markPhaseDone(lessonId, ph) { addTo(prog.done, lessonId, ph); saveProg(); hooks.onRecord.forEach(function (f) { try { f(AD.current()); } catch (e) {} }); }
+  function markPhaseDone(lessonId, ph) { CS.addPhase(lessonId, 'done', ph); hooks.onRecord.forEach(function (f) { try { f(AD.current()); } catch (e) {} }); }
   function wrapNav() {
     ['switchStage', 'selectModule', 'selectLesson', 'selectPhase'].forEach(function (name) {
       var orig = root[name]; if (typeof orig !== 'function' || orig.__kit) return;
@@ -187,74 +181,21 @@
     api.ensureStage(stage, function () { AD.go(stage, mod, idx, phase || 'p1'); closePath(); closeDrawer(); });
   }
 
-  /* --- con đường dọc --- */
-  var pathEl = null, pathStage = null;
-  var ST_ICON = { done: '✅', doing: '🔵', now: '📍', 'new': '⚪' };
-  function stageProgress(s) {
-    var n = 0, d = 0; s.modules.forEach(function (m) { m.lessons.forEach(function (l) { n++; if (lessonState(l.id) === 'done') d++; }); });
-    return { n: n, d: d };
-  }
-  function renderPath() {
-    if (!pathEl) return;
-    var meta = metaStages(), cur = AD.current ? AD.current() : {};
-    if (pathStage == null || !meta.some(function (s) { return s.id === pathStage; })) pathStage = cur.stage || (meta[0] && meta[0].id);
-    var h = '<div class="kit-path-top"><div class="kit-path-title">' + esc(CFG.name || '') + '</div><button type="button" id="kitPathClose" aria-label="Đóng con đường bài học">✕</button></div>';
-    h += '<div class="kit-path-actions"><button type="button" class="kit-today" id="kitTodayBtn">🎯 Học hôm nay</button></div>';
-    h += '<div class="kit-stage-tabs" role="tablist">' + meta.map(function (s) {
-      var sp = stageProgress(s);
-      return '<button type="button" role="tab" class="' + (s.id === pathStage ? 'on' : '') + '" data-stage="' + s.id + '">' + esc(s.label) + '<small>' + sp.d + '/' + sp.n + '</small></button>';
-    }).join('') + '</div>';
-    var st = meta.filter(function (s) { return s.id === pathStage; })[0];
-    h += '<div class="kit-path-body">';
-    if (st) st.modules.forEach(function (m) {
-      h += '<section class="kit-mod"><h3><span>' + esc(m.code) + '</span> ' + esc(m.title) + '</h3><ol class="kit-lessons">';
-      m.lessons.forEach(function (l, k) {
-        var s = lessonState(l.id), isCur = cur.lessonId === l.id && cur.stage === st.id;
-        var cls = s === 'done' ? 'done' : isCur ? 'now' : s;
-        h += '<li class="' + cls + (isCur ? ' cur' : '') + '"><button type="button" class="kit-node" data-s="' + st.id + '" data-m="' + esc(m.code) + '" data-i="' + k + '" data-l="' + esc(l.id) + '"><span class="ic" aria-hidden="true">' + ST_ICON[cls] + '</span><span class="tx"><b>' + esc(l.id) + '</b> ' + esc(l.name) + '</span><span class="st">' + (cls === 'done' ? (isCur ? 'Đã học · đang xem' : 'Đã học') : cls === 'now' ? 'Đang học' : cls === 'doing' ? 'Học dở' : 'Chưa mở') + '</span></button></li>';
-      });
-      h += '</ol></section>';
-    });
-    h += '</div>';
-    pathEl.innerHTML = h;
-    $('#kitPathClose', pathEl).onclick = closePath;
-    var tb = $('#kitTodayBtn', pathEl); if (tb) tb.onclick = function () { closePath(); if (api.today) api.today(); };
-    $$('.kit-stage-tabs button', pathEl).forEach(function (b) { b.onclick = function () { pathStage = parseInt(b.getAttribute('data-stage'), 10); renderPath(); }; });
-    $$('.kit-node', pathEl).forEach(function (b) {
-      b.onclick = function () {
-        var id = b.getAttribute('data-l'), seen = prog.seen[id] || [], d = prog.done[id] || [], ph = 'p1';
-        for (var i = 0; i < PH.length; i++) if (d.indexOf(PH[i].id) < 0) { ph = PH[i].id; break; }
-        openLesson(parseInt(b.getAttribute('data-s'), 10), b.getAttribute('data-m'), parseInt(b.getAttribute('data-i'), 10), ph);
-      };
-    });
-  }
-  function openPath() {
-    if (!pathEl) { pathEl = el('div', { id: 'kitPath', class: 'kit-path', role: 'dialog', 'aria-modal': 'true' }); doc.body.appendChild(pathEl); }
-    pathStage = null; renderPath(); pathEl.classList.add('open'); closeDrawer();
-    var n = $('.kit-node:not(.x)', pathEl); var now = $('li.cur .kit-node', pathEl); if (now && now.scrollIntoView) { try { now.scrollIntoView({ block: 'center' }); } catch (e) {} }
-  }
-  function closePath() { if (pathEl) pathEl.classList.remove('open'); }
+  /* --- trang chủ / con đường dọc nay do app_shell.js đảm nhiệm (api.goHome); giữ tên cũ để mã gọi cũ không vỡ --- */
+  function openPath() { if (api.goHome) api.goHome(); }
+  function closePath() {}
   function openDrawer() { doc.body.classList.add('kit-drawer'); }
   function closeDrawer() { doc.body.classList.remove('kit-drawer'); }
   function toggleDrawer() { doc.body.classList.toggle('kit-drawer'); }
   api.openPath = openPath; api.closePath = closePath; api.openDrawer = openDrawer; api.closeDrawer = closeDrawer;
-  api.openLesson = openLesson; api.lessonState = lessonState; api.markPhaseDone = markPhaseDone; api.phaseIdx = phaseIdx;
-  api.progress = function () { return prog; }; api.saveProgress = saveProg; api.allLessons = allLessons; api.findLesson = findLesson;
+  api.openLesson = openLesson; api.openDetail = openLesson; api.lessonState = lessonState; api.markPhaseDone = markPhaseDone; api.phaseIdx = phaseIdx;
+  api.progress = progressView; api.saveProgress = function () { CS.flush(); }; api.allLessons = allLessons; api.findLesson = findLesson;
   api.hooks = hooks; api.record = record; api.touchDay = touchDay;
+  api.speakOnce = function (t, l, r) { return speakOnce(t, l, r); }; api.tipLines = function () { return tipLines(); }; api.speechVoice = function (l) { return speechVoice(l); };
 
   addCSS(
     '.kit-side-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}.kit-side-btns button:first-child{grid-column:1/-1}.kit-side-btns button:last-child:nth-child(even){grid-column:1/-1}' +
     '.kit-side-btns button{min-height:44px;border-radius:12px;border:0;font:800 14px/1.2 system-ui,sans-serif;padding:4px 6px;cursor:pointer;background:#fde68a;color:#78350f}.kit-side-btns button.alt{background:#e0f2fe;color:#0c4a6e}' +
-    '.kit-path{position:fixed;inset:0;z-index:9500;background:#f8fafc;color:#0f172a;overflow-y:auto;display:none;font-family:system-ui,sans-serif;-webkit-overflow-scrolling:touch}.kit-path.open{display:block}' +
-    '.kit-path-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#1e3a8a;color:#fff}.kit-path-title{font:900 18px system-ui,sans-serif}' +
-    '.kit-path-top button{min-width:44px;min-height:44px;border-radius:12px;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:20px;cursor:pointer}' +
-    '.kit-path-actions{padding:12px 16px 4px;max-width:720px;margin:0 auto}.kit-today{width:100%;min-height:56px;border-radius:16px;border:0;background:#f59e0b;color:#fff;font:900 20px system-ui,sans-serif;cursor:pointer;box-shadow:0 4px 0 #b45309}' +
-    '.kit-stage-tabs{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;max-width:720px;margin:0 auto}.kit-stage-tabs button{flex:0 0 auto;min-height:44px;padding:6px 14px;border-radius:99px;border:2px solid #cbd5e1;background:#fff;color:#334155;font:800 15px system-ui,sans-serif;cursor:pointer;display:flex;flex-direction:column;align-items:center;line-height:1.15}.kit-stage-tabs button small{font-weight:700;font-size:12px;color:#64748b}.kit-stage-tabs button.on{background:#1e3a8a;border-color:#1e3a8a;color:#fff}.kit-stage-tabs button.on small{color:#bfdbfe}' +
-    '.kit-path-body{max-width:720px;margin:0 auto;padding:4px 16px 90px}.kit-mod h3{margin:18px 0 8px;font:900 17px system-ui,sans-serif;color:#1e3a8a}.kit-mod h3 span{background:#dbeafe;border-radius:8px;padding:2px 8px;margin-right:4px}' +
-    '.kit-lessons{list-style:none;margin:0;padding:0 0 0 18px;border-left:4px solid #cbd5e1}.kit-lessons li{position:relative;margin:0 0 8px}.kit-lessons li.done{border-color:#16a34a}' +
-    '.kit-node{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;text-align:left;padding:8px 12px;border-radius:14px;border:2px solid #e2e8f0;background:#fff;color:#0f172a;font:600 16px/1.3 system-ui,sans-serif;cursor:pointer}' +
-    '.kit-node .ic{font-size:20px;flex:0 0 auto}.kit-node .tx{flex:1;min-width:0}.kit-node .st{flex:0 0 auto;font-size:13px;font-weight:800;color:#64748b}' +
-    '.kit-lessons li.done .kit-node{background:#f0fdf4;border-color:#86efac}.kit-lessons li.doing .kit-node{background:#eff6ff;border-color:#93c5fd}.kit-lessons li.cur .kit-node{box-shadow:0 0 0 3px rgba(245,158,11,.45)}.kit-lessons li.now .kit-node{background:#fffbeb;border-color:#f59e0b;box-shadow:0 0 0 3px rgba(245,158,11,.3)}' +
     '.kit-nav,.kit-backdrop{display:none}' +
     '@media (max-width:768px){' +
     'html{font-size:16px}body{font-size:16px;padding-bottom:68px!important}' +
@@ -278,76 +219,39 @@
   function buildSideButtons() {
     var side = $('.left-sidebar'); if (!side || $('.kit-side-btns', side)) return;
     var brand = $('.brand-line', side);
-    var box = el('div', { class: 'kit-side-btns' }, '<button type="button" id="kitSideToday">🎯 Học hôm nay</button><button type="button" id="kitSidePath" class="alt">🗺️ Con đường bài học</button>');
+    var box = el('div', { class: 'kit-side-btns' }, '<button type="button" id="kitSideHome">🏠 Trang chủ</button><button type="button" id="kitSideGear" class="alt">⚙️ Cài đặt</button>');
     if (brand && brand.parentNode) brand.parentNode.insertBefore(box, brand.nextSibling); else side.insertBefore(box, side.firstChild);
-    $('#kitSideToday', box).onclick = function () { closeDrawer(); if (api.today) api.today(); };
-    $('#kitSidePath', box).onclick = openPath;
+    $('#kitSideHome', box).onclick = function () { closeDrawer(); openPath(); };
+    $('#kitSideGear', box).onclick = function () { closeDrawer(); if (api.openGear) api.openGear(); };
   }
   function buildNav() {
     if ($('.kit-nav')) return;
     var nav = el('nav', { class: 'kit-nav', 'aria-label': 'Điều hướng nhanh' },
-      '<button type="button" id="kitNavToday" class="main"><b>🎯</b>Hôm nay</button><button type="button" id="kitNavPath"><b>🗺️</b>Đường</button><button type="button" id="kitNavAnki"><b>🗂️</b>Anki</button><button type="button" id="kitNavMenu"><b>☰</b>Menu</button>');
+      '<button type="button" id="kitNavHome" class="main"><b>🏠</b>Trang chủ</button><button type="button" id="kitNavAnki"><b>🗂️</b>Kho từ</button><button type="button" id="kitNavGear"><b>⚙️</b>Cài đặt</button><button type="button" id="kitNavMenu"><b>☰</b>Menu</button>');
     doc.body.appendChild(nav);
     var bd = el('div', { class: 'kit-backdrop' }); doc.body.appendChild(bd); bd.onclick = closeDrawer;
-    $('#kitNavToday').onclick = function () { closeDrawer(); if (api.today) api.today(); };
-    $('#kitNavPath').onclick = openPath;
+    $('#kitNavHome').onclick = function () { closeDrawer(); openPath(); };
     $('#kitNavAnki').onclick = function () { closeDrawer(); var a = root.ANKI; if (a && a.open) a.open(); };
+    $('#kitNavGear').onclick = function () { closeDrawer(); if (api.openGear) api.openGear(); };
     $('#kitNavMenu').onclick = toggleDrawer;
   }
   function isMobile() { return root.matchMedia && root.matchMedia('(max-width:768px)').matches; }
   api.isMobile = isMobile;
   api.register(function () {
     wrapNav(); buildSideButtons(); buildNav();
-    var last = prog.last;
+    var last = CS.position();
     if (root.__KIT_DEBUG && root.console) root.console.log('[kit] khởi động: last=' + JSON.stringify(last) + ' cur=' + JSON.stringify(AD.current && AD.current()));
     if (last && last.lessonId) {                                           // vào lại đúng chỗ đã học
       var c = AD.current && AD.current();
       if (c && (c.lessonId !== last.lessonId || c.phase !== last.phase)) api.ensureStage(last.stage, function () { try { AD.go(last.stage, last.mod, last.idx, last.phase); } catch (e) { if (root.console) root.console.error('[AppKit] khôi phục vị trí lỗi:', e && e.message); } });
     }
     record();
-    var flag = 'kit_home_' + P;
-    if (isMobile()) { var shown = ''; try { shown = root.sessionStorage.getItem(flag) || ''; } catch (e) {} if (!shown && !api.needTutorial()) { try { root.sessionStorage.setItem(flag, '1'); } catch (e) {} openPath(); } }
   });
 
   /* =====================================================================
      C. "HỌC HÔM NAY" + CHẶNG NGẮN (6 pha = 6 chặng 3–5 phút) + HƯỚNG DẪN 20 GIÂY
      ===================================================================== */
-  function nextLessonToStudy() {                       // bài đang học dở (theo vị trí cuối) hoặc bài đầu tiên chưa xong theo thứ tự
-    var last = prog.last, ls = allLessons(), i;
-    if (last && last.lessonId && lessonState(last.lessonId) !== 'done') { var f = findLesson(last.lessonId); if (f) return { stage: f.stage, mod: f.mod, idx: f.idx, id: last.lessonId, name: f.lesson.name }; }
-    for (i = 0; i < ls.length; i++) if (lessonState(ls[i].id) !== 'done') return ls[i];
-    return null;
-  }
-  function nextPhaseOf(lessonId) {
-    var d = prog.done[lessonId] || [], i;
-    for (i = 0; i < PH.length; i++) if (d.indexOf(PH[i].id) < 0) return PH[i];
-    return null;
-  }
-  var todayEl = null;
-  function ankiToday() {
-    var a = root.ANKI, out = { due: 0, avail: 0, ok: false };
-    try { if (a && a.counts) { var c = a.counts(); out.due = c.due; out.ok = true; out.avail = a.buildQueue ? (a.buildQueue(Date.now()) || []).length : c.due; } } catch (e) {}
-    return out;
-  }
-  function closeToday() { if (todayEl) todayEl.classList.remove('open'); }
-  api.today = function () {
-    if (!todayEl) { todayEl = el('div', { id: 'kitToday', class: 'kit-modal', role: 'dialog', 'aria-modal': 'true' }); doc.body.appendChild(todayEl); todayEl.onclick = function (e) { if (e.target === todayEl) closeToday(); }; }
-    var an = ankiToday(), nx = nextLessonToStudy(), ph = nx ? nextPhaseOf(nx.id) : null;
-    var daysTxt = prog.days.length ? 'Bạn đã học ' + prog.days.length + ' ngày.' : 'Hôm nay là buổi đầu tiên.';
-    var h = '<div class="kit-card"><h2>🎯 Học hôm nay</h2><p class="kit-sub">' + esc(daysTxt) + ' Mỗi buổi khoảng 30 phút, chia chặng ngắn 3–5 phút — dừng lúc nào cũng được.</p>';
-    var ankiBtn = '', lesBtn = '';
-    if (an.ok) ankiBtn = '<button type="button" class="kit-big ' + (an.avail > 0 ? 'hot' : '') + '" id="kitTodayAnki"><b>🗂️ Ôn thẻ Anki</b><small>' + (an.avail > 0 ? an.due + ' thẻ đến hạn · tối đa ' + an.avail + ' thẻ hôm nay' : 'Chưa có thẻ nào đến hạn — hôm nay nghỉ phần này') + '</small></button>';
-    if (nx) lesBtn = '<button type="button" class="kit-big ' + (an.avail > 0 ? '' : 'hot') + '" id="kitTodayLesson"><b>📖 Bài ' + esc(nx.id) + '</b><small>' + esc(nx.name) + (ph ? ' · chặng ' + (PH.indexOf(ph) + 1) + '/' + PH.length + ': ' + esc(ph.name) + ' (~' + (ph.mins || 4) + ' phút)' : '') + '</small></button>';
-    else lesBtn = '<div class="kit-sub">🎉 Bạn đã học xong mọi bài đang có. Hãy ôn thẻ Anki để nhớ lâu.</div>';
-    h += (an.avail > 0 ? ankiBtn + lesBtn : lesBtn + ankiBtn);
-    h += '<div class="kit-row"><button type="button" id="kitTodayPath">🗺️ Con đường bài học</button><button type="button" id="kitTodayClose">Đóng</button></div></div>';
-    todayEl.innerHTML = h; todayEl.classList.add('open');
-    var b;
-    if ((b = $('#kitTodayAnki', todayEl))) b.onclick = function () { closeToday(); var a = root.ANKI; if (a && a.open) a.open(); };
-    if ((b = $('#kitTodayLesson', todayEl))) b.onclick = function () { closeToday(); openLesson(nx.stage, nx.mod, nx.idx, ph ? ph.id : 'p1'); };
-    $('#kitTodayPath', todayEl).onclick = function () { closeToday(); openPath(); };
-    $('#kitTodayClose', todayEl).onclick = closeToday;
-  };
+  api.today = function () { if (api.shell && api.shell.start) api.shell.start('full'); };
 
   /* thanh chặng ngay dưới các tab pha */
   var changEl = null;
@@ -357,7 +261,7 @@
     var i = phaseIdx(c.phase);
     if (i < 0 || !c.lessonId) { changEl.style.display = 'none'; return; }
     changEl.style.display = '';
-    var d = prog.done[c.lessonId] || [], p = PH[i];
+    var d = doneOf(c.lessonId), p = PH[i];
     var dots = PH.map(function (x, k) { return '<i class="' + (d.indexOf(x.id) >= 0 ? 'ok' : '') + (k === i ? ' cur' : '') + '" title="' + esc(x.name) + '"></i>'; }).join('');
     var lastOne = i === PH.length - 1, nextTxt = lastOne ? '✅ Xong bài' : '✅ Xong chặng ▶';
     changEl.innerHTML = '<div class="kit-chang-dots" aria-hidden="true">' + dots + '</div><div class="kit-chang-tx"><b>Chặng ' + (i + 1) + '/' + PH.length + '</b> · ' + esc(p.name) + ' · ~' + (p.mins || 4) + ' phút</div><button type="button" id="kitChangDone">' + nextTxt + '</button><button type="button" id="kitChangFlag" class="kit-chang-flag" title="Báo lỗi màn hình này" aria-label="Báo lỗi màn hình này">⚑</button>';
@@ -365,7 +269,7 @@
     $('#kitChangDone', changEl).onclick = function () {
       markPhaseDone(c.lessonId, p.id);
       if (!lastOne) AD.go(c.stage, c.mod, c.idx, PH[i + 1].id);
-      else { renderChang(); api.today(); }
+      else { renderChang(); openPath(); }
     };
   }
   function buildChang() {
@@ -391,10 +295,10 @@
     { ic: '⏱️', t: 'Mỗi bài 6 chặng ngắn', d: 'Mỗi chặng khoảng 3–5 phút. Thoát ra lúc nào cũng được — vào lại, trang đưa bạn về đúng chặng đang học.' },
     { ic: '🔊', t: 'Nghe, nói, ôn thẻ', d: 'Bấm biểu tượng loa để nghe; thẻ Anki ở menu giúp nhớ từ cũ lâu hơn. Nên đeo tai nghe và cho phép micro nếu trình duyệt hỏi.' }
   ];
-  api.needTutorial = function () { return lsGet(P + 'kit_tut', '') !== '1'; };
+  api.needTutorial = function () { return CS.setting('tutDone', false) !== true; };
   function showTutorial() {
     var step = 0, m = el('div', { id: 'kitTut', class: 'kit-modal open', role: 'dialog', 'aria-modal': 'true' }); doc.body.appendChild(m);
-    function end() { lsSet(P + 'kit_tut', '1'); m.remove(); if (isMobile()) openPath(); }
+    function end() { CS.setSetting('tutDone', true); m.remove(); }
     function draw() {
       var s = TUT[step];
       m.innerHTML = '<div class="kit-card"><div class="kit-tut-ic">' + s.ic + '</div><h2 style="text-align:center">' + esc(s.t) + '</h2><p class="kit-sub" style="text-align:center">' + esc(s.d) + '</p>' +
@@ -460,7 +364,7 @@
     var c = AD.current ? AD.current() : {}, done = 0;
     allLessons().forEach(function (l) { if (lessonState(l.id) === 'done') done++; });
     var st = root.ANKI && root.ANKI.stats ? root.ANKI.stats() : null;
-    var dayset = {}; prog.days.forEach(function (d) { dayset[d] = 1; }); if (st) st.reviewDays.forEach(function (d) { dayset[d] = 1; });
+    var dayset = {}; CS.days().forEach(function (d) { dayset[d] = 1; }); if (st) st.reviewDays.forEach(function (d) { dayset[d] = 1; });
     return { stage: stageLabelOf(c.stage), lessonsDone: done, lessonsTotal: allLessons().length, cardsKnown: st ? st.known : 0, retention7: st ? st.retention7 : null, reviews7: st ? st.reviews7 : 0, days: Object.keys(dayset).length };
   }
   function summaryText() {
@@ -524,71 +428,23 @@
   api.register(function () {
     var ws = $('#workspace');
     if (ws && root.MutationObserver) { new root.MutationObserver(function () { decorateFlags(); }).observe(ws, { childList: true, subtree: true }); decorateFlags(); }
-    var box = $('.kit-side-btns');
-    if (box && !$('#kitSideFb')) { var b = el('button', { type: 'button', id: 'kitSideFb', class: 'alt' }, '💬 Góp ý / Báo lỗi'); box.appendChild(b); b.onclick = function () { closeDrawer(); openFeedback(null); }; }
   });
 
   /* =====================================================================
      F. SAO LƯU TIẾN ĐỘ: file .json, chuỗi nén sao chép/dán, mã QR (chỉ vị trí bài + cài đặt)
      ===================================================================== */
-  var BK_PREFIXES = CFG.BACKUP_PREFIXES || [P];
-  var BK_SETTINGS = CFG.SETTING_KEYS || [];
-  var BK_JSON_KEYS = /(cards|opened|types|log|kit_prog|leitner|daily)$/;
-  function isBackupKey(k) { return BK_PREFIXES.some(function (p) { return k.indexOf(p) === 0; }); }
-  function collectBackup() {
-    var data = {};
-    try { for (var i = 0; i < root.localStorage.length; i++) { var k = root.localStorage.key(i); if (isBackupKey(k)) data[k] = root.localStorage.getItem(k); } } catch (e) {}
-    Object.keys(mem).forEach(function (k) { if (isBackupKey(k)) data[k] = mem[k]; });
-    return { app: 'course-backup', version: 1, course: CFG.course, created: new Date().toISOString(), data: data };
-  }
+  var BK_SETTINGS = CFG.SETTING_KEYS || [];                 // đường dẫn cài đặt đưa vào mã QR (vd. 'showPy', 'anki.limit')
+  function collectBackup() { return CS.export(); }          // sao lưu = chính kho tiến độ (schema v1)
   function validateBackup(o) {
-    if (!o || typeof o !== 'object' || Array.isArray(o)) return 'Không phải file sao lưu hợp lệ.';
-    if (o.app !== 'course-backup' || o.version !== 1) return 'Không phải file sao lưu của khóa học này (sai app/phiên bản).';
-    if (o.course !== CFG.course) return 'File sao lưu này thuộc khóa "' + o.course + '", không dùng cho khóa "' + CFG.course + '".';
-    if (!o.data || typeof o.data !== 'object' || Array.isArray(o.data)) return 'Thiếu phần dữ liệu.';
-    var ks = Object.keys(o.data), total = 0;
-    if (ks.length > 400) return 'Quá nhiều khóa dữ liệu.';
-    for (var i = 0; i < ks.length; i++) {
-      var k = ks[i], v = o.data[k];
-      if (!isBackupKey(k)) return 'Có khóa lạ "' + k + '" (không thuộc khóa học này).';
-      if (typeof v !== 'string') return 'Giá trị của "' + k + '" không đúng định dạng.';
-      total += v.length; if (total > 8000000) return 'Dữ liệu quá lớn.';
-      if (BK_JSON_KEYS.test(k)) { try { var j = JSON.parse(v); if (j === null || typeof j !== 'object') return '"' + k + '" hỏng.'; } catch (e) { return '"' + k + '" hỏng (không đọc được).'; } }
-    }
-    return '';
-  }
-  function mergeCards(a, b) {                                    // thẻ Anki: giữ thẻ đã ôn nhiều hơn
-    var out = {}, k; for (k in a) out[k] = a[k];
-    for (k in b) { var x = out[k], y = b[k]; if (!x || ((y.reps || 0) + (y.lapses || 0)) > ((x.reps || 0) + (x.lapses || 0))) out[k] = y; }
-    return out;
+    if (o && o.app === 'course-backup') return o.course === CFG.course ? '' : 'File sao lưu này thuộc khóa "' + o.course + '", không dùng cho khóa "' + CFG.course + '".';   // định dạng cũ vẫn nhận
+    return CS.validate(o);
   }
   function applyBackup(o) {
     var err0 = validateBackup(o); if (err0) return { ok: false, msg: err0 };
-    var n = 0, ankiCards = null, ankiOpened = null, A = root.ANKI;
-    Object.keys(o.data).forEach(function (k) {
-      var v = o.data[k];
-      try {
-        if (/_anki_cards$/.test(k) && A && A.importText) { ankiCards = JSON.parse(v); n++; return; }        // engine tự gộp (giữ thẻ đã ôn nhiều hơn) và tự lưu
-        if (/_anki_opened$/.test(k) && A && A.importText) { ankiOpened = JSON.parse(v); n++; return; }
-        if (/_anki_cards$/.test(k)) { var cur = jget(k, {}); v = JSON.stringify(mergeCards(cur && typeof cur === 'object' ? cur : {}, JSON.parse(v))); }
-        else if (k === KEYP) {                                   // tiến độ bài: hợp hai bên
-          var b = JSON.parse(v), a = prog, m = { done: {}, seen: {}, days: [], last: null };
-          [a, b].forEach(function (src) {
-            ['done', 'seen'].forEach(function (f) { Object.keys(src[f] || {}).forEach(function (id) { (src[f][id] || []).forEach(function (ph) { addTo(m[f], id, ph); }); }); });
-            (src.days || []).forEach(function (d) { if (m.days.indexOf(d) < 0) m.days.push(d); });
-            if (src.last && (!m.last || (src.last.ts || 0) > (m.last.ts || 0))) m.last = src.last;
-          });
-          m.days.sort(); prog.done = m.done; prog.seen = m.seen; prog.days = m.days; prog.last = m.last; saveProg(); n++; return;   // cập nhật ngay trong trang, không cần tải lại
-        }
-      } catch (e) {}
-      lsSet(k, v); n++;
-    });
-    if (ankiCards && A && A.importText) {
-      try { A.importText(JSON.stringify({ app: (root.ANKI_CONFIG || {}).app, version: 1, cards: ankiCards, opened: ankiOpened || [] })); } catch (e) {}
-    }
+    var r = CS.import(o, 'merge'); if (!r.ok) return r;
+    try { if (root.ANKI && root.ANKI.reload) root.ANKI.reload(); } catch (e) {}
     hooks.onRecord.forEach(function (f) { try { f(AD.current()); } catch (e) {} });
-    if (pathEl && pathEl.classList.contains('open')) renderPath();
-    return { ok: true, msg: 'Đã khôi phục ' + n + ' mục dữ liệu. Tiến độ bài và thẻ Anki dùng được ngay; cài đặt hiển thị áp dụng khi bạn tải lại trang.' };
+    return { ok: true, msg: r.msg + ' Tiến độ bài và thẻ Anki dùng được ngay; cài đặt hiển thị áp dụng khi bạn tải lại trang.' };
   }
   /* chuỗi nén: KB1:<deflate-raw base64url> hoặc KB0:<base64url của UTF-8> khi trình duyệt không có CompressionStream */
   function b64u(bytes) { var s = ''; for (var i = 0; i < bytes.length; i++) s += String.fromCharCode(bytes[i]); return root.btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
@@ -616,7 +472,7 @@
   /* QR: chỉ vị trí bài + cài đặt (nhỏ); quét bằng camera điện thoại sẽ mở liên kết kèm #kit=... */
   function qrPayload() {
     var c = AD.current ? AD.current() : {}, set = {};
-    BK_SETTINGS.forEach(function (k) { var v = lsGet(k, null); if (v !== null) set[k] = v; });
+    BK_SETTINGS.forEach(function (k) { var v = CS.setting(k, undefined); if (v !== undefined) set[k] = v; });
     return { v: 1, c: CFG.course, s: c.stage, m: c.mod, i: c.idx, p: c.phase, set: set };
   }
   function qrText() {
@@ -626,11 +482,11 @@
   }
   function applyQrPayload(j) {
     if (!j || j.v !== 1 || j.c !== CFG.course || typeof j.s !== 'number' || typeof j.m !== 'string' || typeof j.i !== 'number') return false;
-    Object.keys(j.set || {}).forEach(function (k) { if (BK_SETTINGS.indexOf(k) >= 0 && typeof j.set[k] === 'string') lsSet(k, j.set[k]); });
+    Object.keys(j.set || {}).forEach(function (k) { var v = j.set[k]; if (BK_SETTINGS.indexOf(k) >= 0 && (typeof v === 'string' || typeof v === 'number' || typeof v === 'boolean' || (Array.isArray(v) && v.every(function (x) { return typeof x === 'string'; })))) CS.setSetting(k, v); });
     var st = metaStages().filter(function (x) { return x.id === j.s; })[0], mo = st && st.modules.filter(function (x) { return x.code === j.m; })[0], ls = mo && mo.lessons[j.i];
     if (!ls) return false;
     var f = { stage: st.id, mod: mo.code, idx: j.i, lesson: ls };
-    prog.last = { stage: f.stage, mod: f.mod, idx: f.idx, phase: phaseIdx(j.p) >= 0 ? j.p : 'p1', lessonId: f.lesson.id, ts: Date.now() }; saveProg();
+    CS.setPosition({ stage: f.stage, mod: f.mod, idx: f.idx, phase: phaseIdx(j.p) >= 0 ? j.p : 'p1', lessonId: f.lesson.id, ts: Date.now() });
     return true;
   }
   /* --- bộ tạo mã QR (byte mode, mức sửa lỗi L, phiên bản 1–10) --- */
@@ -747,15 +603,13 @@
     '.kit-qr{max-width:240px;margin:8px auto;border:2px solid #e2e8f0;border-radius:8px;overflow:hidden}.kit-qr svg{display:block;width:100%;height:auto}.kit-msg{min-height:22px;font-size:14px;line-height:1.4;margin:8px 0}.kit-msg.bad{color:#b91c1c}.kit-msg.good{color:#15803d}' +
     '#kitBackup textarea{width:100%;box-sizing:border-box;border:2px solid #cbd5e1;border-radius:12px;padding:10px;font:13px/1.3 monospace;word-break:break-all}');
   api.register(function () {
-    var box = $('.kit-side-btns');
-    if (box && !$('#kitSideBk')) { var b = el('button', { type: 'button', id: 'kitSideBk', class: 'alt' }, '💾 Sao lưu / Khôi phục'); box.appendChild(b); b.onclick = function () { closeDrawer(); openBackup(); }; }
     var m = /^#kit=([A-Za-z0-9_\-]+)$/.exec(root.location.hash || '');            // mở từ mã QR: hỏi trước khi áp dụng
     if (m) {
       var j = null; try { j = JSON.parse(new root.TextDecoder().decode(unb64u(m[1]))); } catch (e) {}
       try { root.history.replaceState(null, '', root.location.pathname + root.location.search); } catch (e) {}
       if (j && j.v === 1 && j.c === CFG.course && root.confirm('Khôi phục vị trí bài và cài đặt từ mã QR?')) {
         if (applyQrPayload(j)) {
-          var last = prog.last, hasSet = j.set && Object.keys(j.set).length > 0;
+          var last = CS.position(), hasSet = j.set && Object.keys(j.set).length > 0;
           api.ensureStage(last.stage, function () { try { AD.go(last.stage, last.mod, last.idx, last.phase); } catch (e) {} });     // vào đúng bài ngay, không cần tải lại
           if (hasSet) setTimeout(function () { root.location.reload(); }, 1200);                                                      // cài đặt (hiện pinyin…) áp dụng khi tải lại
         }
@@ -859,12 +713,12 @@
   function decorateG() {
     var ws = $('#workspace'); if (!ws) return;
     var c = AD.current ? AD.current() : null;
-    if (c && c.phase === 'p1' && c.lessonId && !(prog.tips && prog.tips[c.lessonId]) && !$('.kit-tip', ws)) {
+    if (c && c.phase === 'p1' && c.lessonId && !(CS.lesson(c.lessonId) && CS.lesson(c.lessonId).tipSeen) && !$('.kit-tip', ws)) {
       var lines = tipLines();
       if (lines.length) {
         var card = el('div', { class: 'kit-tip', role: 'note' }, '<div class="kit-tip-h">💡 Mẹo đầu bài</div><ol>' + lines.map(function (l) { return '<li>' + esc(l) + '</li>'; }).join('') + '</ol><button type="button" class="kit-tip-ok">Đã hiểu ▶</button>');
         ws.insertBefore(card, ws.firstChild);
-        $('.kit-tip-ok', card).onclick = function () { prog.tips = prog.tips || {}; prog.tips[c.lessonId] = 1; saveProg(); card.remove(); };
+        $('.kit-tip-ok', card).onclick = function () { CS.setLessonField(c.lessonId, 'tipSeen', true); card.remove(); };
       }
     }
     $$('.hero-audio-btn', ws).forEach(function (b) {
@@ -1010,7 +864,7 @@
   function loopItems() {                                  // câu của bài đang học rồi các bài đã học trước đó (chỉ cấp đã nạp)
     var cur = AD.current ? AD.current() : {}, ls = allLessons(), ids = [], out = [];
     var idxOf = {}; ls.forEach(function (l, i) { idxOf[l.id] = i; });
-    Object.keys(prog.seen).forEach(function (id) { if (id !== cur.lessonId) ids.push(id); });
+    Object.keys(CS.state.lessons).forEach(function (id) { if (id !== cur.lessonId && seenOf(id).length) ids.push(id); });
     ids.sort(function (a, b) { return idxOf[b] - idxOf[a]; });                // gần đây trước
     if (cur.lessonId) ids.unshift(cur.lessonId);
     ids.slice(0, 12).forEach(function (id) {
@@ -1058,7 +912,7 @@
   /* thống kê trên máy */
   var statEl = null, statMonth = null;
   function studiedDays() {
-    var set = {}; prog.days.forEach(function (d) { set[d] = 1; });
+    var set = {}; CS.days().forEach(function (d) { set[d] = 1; });
     var st = root.ANKI && root.ANKI.stats ? root.ANKI.stats() : null; if (st) st.reviewDays.forEach(function (d) { set[d] = 1; });
     return set;
   }
@@ -1094,11 +948,6 @@
     '.kit-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:8px 0}.kit-stats div{background:#f1f5f9;border-radius:14px;padding:10px;text-align:center}.kit-stats b{display:block;font:900 26px system-ui,sans-serif;color:#1e3a8a}.kit-stats span{font-size:13px;color:#475569;line-height:1.3}' +
     '.kit-cal-h{display:flex;align-items:center;justify-content:space-between;margin:10px 0 4px}.kit-cal-h button{min-width:44px;min-height:44px;border-radius:12px;border:2px solid #cbd5e1;background:#fff;font-size:16px;cursor:pointer}' +
     '.kit-cal{width:100%;border-collapse:separate;border-spacing:3px;text-align:center;font:600 15px system-ui,sans-serif}.kit-cal th{color:#64748b;font-size:12px}.kit-cal td{height:34px;border-radius:8px;background:#f8fafc;color:#475569}.kit-cal td.on{background:#22c55e;color:#fff;font-weight:900}.kit-cal td.today{outline:2px solid #f59e0b}');
-  api.register(function () {
-    var box = $('.kit-side-btns'); if (!box) return;
-    if (!$('#kitSideStats')) { var b = el('button', { type: 'button', id: 'kitSideStats', class: 'alt' }, '📊 Thống kê'); box.appendChild(b); b.onclick = function () { closeDrawer(); openStats(); }; }
-    if (CFG.course === 'zh' && !$('#kitSideLoop')) { var l = el('button', { type: 'button', id: 'kitSideLoop', class: 'alt' }, '🎧 Nghe lặp khi di chuyển'); box.appendChild(l); l.onclick = function () { closeDrawer(); openLoop(); }; }
-  });
 
   /* ==== PHẦN_MỞ_RỘNG (B–J được chèn bên dưới) ==== */
   if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', init); else init();
