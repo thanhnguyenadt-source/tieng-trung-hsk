@@ -8,7 +8,7 @@ window.APP_CONFIG = {
   /* AUDIO: đặt true sau khi đã render âm thanh sprite (docs/upgrade/AUDIO_RUNBOOK.md) và chép thư mục audio/ lên cùng chỗ với index.html */
   /* PUBLIC_URL: địa chỉ công khai in ở chân thẻ ảnh thành tích (để trống thì dùng địa chỉ trang khi chạy qua https) */
   PUBLIC_URL: 'https://thanhnguyenadt-source.github.io/tieng-trung-hsk/',
-  AUDIO: false,
+  AUDIO: true,
   REPORT_FORM_URL: '',
   /* tên trường của Google Form (dạng entry.123456789): khóa, mã bài, mã mục, nội dung câu, trình duyệt, ghi chú của người dùng, tóm tắt ẩn danh */
   REPORT_FIELDS: { course: "", lesson: "", item: "", text: "", browser: "", note: "", summary: "" }
