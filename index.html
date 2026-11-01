@@ -2488,6 +2488,8 @@
        11. SỰ KIỆN BÀN PHÍM VẬT LÝ
        ========================================================================= */
     window.addEventListener('keydown', e => {
+      // 1. Nếu modal Anki đang mở, nhường quyền hoàn toàn cho Anki
+      if (document.querySelector('.anki-back.open') || (document.getElementById('zh-anki') && document.getElementById('zh-anki').classList.contains('open'))) return;
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       if (document.getElementById('aboutModal').classList.contains('open')) {
         if (e.key === 'Escape') closeAbout();
