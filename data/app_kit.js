@@ -738,7 +738,24 @@
   function ankiWord(text) {
     var A = root.ANKI; if (!A || !A.words) return null;
     if (!wordIdx) { wordIdx = {}; A.words().forEach(function (w) { var k = String(w.text).toLowerCase(); if (!wordIdx[k]) wordIdx[k] = w; (w.forms || []).forEach(function (f) { var kk = String(f).toLowerCase(); if (!wordIdx[kk]) wordIdx[kk] = w; }); }); }
-    return wordIdx[String(text).toLowerCase()] || null;
+    var exact = wordIdx[String(text).toLowerCase()];
+    if (exact) return exact;
+    var str = String(text || '').trim();
+    if (str.length > 1) {
+      var parts = [], pyParts = [], hvParts = [];
+      for (var i = 0; i < str.length; i++) {
+        var ch = str[i], cw = wordIdx[ch.toLowerCase()];
+        if (cw) {
+          parts.push(cw.vi ? cw.vi.split(';')[0].replace(/^\([^)]+\)\s*/, '').trim() : '');
+          pyParts.push(cw.read || '');
+          hvParts.push(cw.hv || '');
+        }
+      }
+      if (parts.length === str.length) {
+        return { id: 'cp_' + str, text: str, read: pyParts.join(' '), hv: hvParts.join(' '), vi: parts.join(' ') + ' (ghép nghĩa: ' + parts.map(function (p, idx) { return str[idx] + ' = ' + p; }).join(', ') + ')', pos: 'cụm từ', compound: true };
+      }
+    }
+    return null;
   }
   function ankiWordIn(text, lessonId) {                  // mục từ của đúng bài (từ nhiều nghĩa như wake: danh từ/động từ); không có thì lấy mục đầu
     var A = root.ANKI, ws = A && A.words ? A.words() : [], k = String(text).toLowerCase(), i;
@@ -804,7 +821,7 @@
     if (w && w.pos) h += '<div class="kit-b-p">' + esc(w.pos) + '</div>';
     h += '<div class="kit-b-m">' + (w ? esc(w.vi) : 'Chưa có nghĩa riêng cho từ này — xem bản dịch cả câu.') + '</div>';
     h += hvFamilyHtml(text, w);
-    if (w) h += '<div class="kit-b-n">🔎 Đã đánh dấu "vừa tra": thẻ Anki của từ này được ưu tiên ôn.</div>';
+    if (w && !w.compound) h += '<div class="kit-b-n">🔎 Đã đánh dấu "vừa tra": thẻ Anki của từ này được ưu tiên ôn.</div>';
     bubble = el('div', { class: 'kit-bubble', role: 'tooltip' }, h);
     doc.body.appendChild(bubble);
     var r = pill.getBoundingClientRect(), bw = Math.min(280, (root.innerWidth || 360) - 16);
@@ -812,7 +829,7 @@
     var left = Math.max(8, Math.min((root.innerWidth || 360) - bw - 8, r.left + r.width / 2 - bw / 2)), top = r.bottom + 8;
     if (top + 140 > (root.innerHeight || 700)) top = Math.max(8, r.top - bubble.offsetHeight - 8);
     bubble.style.left = left + 'px'; bubble.style.top = top + 'px';
-    if (w && root.ANKI && root.ANKI.markLooked) root.ANKI.markLooked(w.id);
+    if (w && !w.compound && root.ANKI && root.ANKI.markLooked) root.ANKI.markLooked(w.id);
     setTimeout(function () { var h2 = function () { closeBubble(); doc.removeEventListener('click', h2, true); }; doc.addEventListener('click', h2, true); }, 50);
   }
   addCSS('.kit-tip{background:#ecfeff;border:2px solid #67e8f9;border-radius:16px;padding:10px 14px;margin:0 0 10px;color:#164e63;font:600 16px/1.45 system-ui,sans-serif}.kit-tip-h{font-weight:900;margin-bottom:4px}.kit-tip ol{margin:0 0 6px 20px;padding:0}.kit-tip li{margin:2px 0}' +

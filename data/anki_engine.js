@@ -574,6 +574,12 @@
     '.anki-col-right { flex: 1; max-width: 360px; display: flex; flex-direction: column; align-items: center; }',
 
     '/* Left Column Typography */',
+    '.anki-hanzi-front { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; flex-wrap: wrap; }',
+    '.anki-hanzi-big { font-size: 58px; font-weight: 900; color: #0f172a; font-family: "PingFang SC", "Microsoft YaHei", "STKaiti", "KaiTi", serif; line-height: 1.1; letter-spacing: 0.05em; text-shadow: 0 2px 4px rgba(0,0,0,0.05); }',
+    '.anki-hanzi-badge { background: #f0fdf4; color: #166534; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 99px; border: 1px solid #bbf7d0; display: inline-flex; align-items: center; gap: 4px; }',
+    '.anki-task-hint { font-size: 15px; color: #475569; line-height: 1.5; margin-bottom: 20px; font-weight: 500; background: #f8fafc; padding: 10px 14px; border-radius: 10px; border-left: 3px solid #3b82f6; }',
+    '.anki-target-word { font-size: 48px; font-weight: 900; color: #0f172a; font-family: "PingFang SC", "Microsoft YaHei", "STKaiti", "KaiTi", serif; margin-right: 12px; line-height: 1.1; }',
+    '.anki-vi-meaning { font-size: 22px; font-weight: 700; color: #15803d; margin: 12px 0 10px; line-height: 1.35; }',
     '.anki-vi-title { color: #1d4ed8; font-size: 22px; font-weight: 600; line-height: 1.35; margin-bottom: 12px; word-break: break-word; }',
     '.anki-letter-hint { color: #dc2626; font-size: 26px; font-weight: 700; letter-spacing: 0.18em; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; margin-bottom: 16px; min-height: 34px; }',
     '.anki-target-word-line { margin-bottom: 16px; min-height: 34px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }',
@@ -799,38 +805,50 @@
 
     // Left Column
     h += '<div class="anki-col-left">';
-    h += '<div class="anki-vi-title">' + esc(w.vi || '') + '</div>';
 
     if (session.face === 'front') {
-      var hintStr = '';
-    if (CFG.app === 'zh-anki' || CFG.checkMode === 'pinyin') {
-      hintStr = (w.hv ? '[' + w.hv.toUpperCase() + '] ' : '') + makeLetterHint(w.read || w.text);
-    } else {
-      hintStr = makeLetterHint(w.text);
-    }
-    h += '<div class="anki-letter-hint">' + esc(hintStr) + '</div>';
-      h += '<div class="anki-def-line">' + makeCloze(defText, w.text, w.forms) + '</div>';
+      // --- MẶT TRƯỚC: NHẬN DIỆN MẶT CHỮ HÁN ---
+      h += '<div class="anki-hanzi-front">' +
+        '<span class="anki-hanzi-big">' + esc(w.text) + '</span>' +
+        '<span class="anki-hanzi-badge">👁️ Nhận diện mặt chữ</span>' +
+        '</div>';
+
+      h += '<div class="anki-task-hint">' +
+        '👉 <b>Nhiệm vụ:</b> Nhìn chữ Hán ở trên và tự nhớ: <b>Cách đọc Pinyin, Âm Hán Việt, Nghĩa tiếng Việt</b>.<br>' +
+        '<small style="color:#64748b;">Nhẩm trong đầu hoặc gõ thử vào ô bên phải, rồi bấm <b>Space / Enter</b> để lật xem đáp án.</small>' +
+        '</div>';
+
       if (exText) {
-        h += '<div class="anki-ex-line">→ ' + makeCloze(exText, w.text, w.forms) +
-          ' <button type="button" class="anki-audio-mini" id="ankiFrontAudio" title="Nghe câu ví dụ">🔊 Nghe câu</button></div>';
-        if (w.ex && w.ex.read) h += '<div class="anki-ex-pinyin" style="color:#64748b;font-size:13px;margin:2px 0 0 16px;">' + makeCloze(w.ex.read, w.read) + '</div>';
-        if (exVi) h += '<div class="anki-ex-vi">(👉 ' + esc(exVi) + ')</div>';
+        h += '<div class="anki-ex-box" style="background:#f1f5f9;border-radius:10px;padding:12px 16px;margin-top:14px;">' +
+          '<div style="font-size:13px;font-weight:700;color:#64748b;margin-bottom:4px;">CÂU VÍ DỤ CHỨA TỪ NÀY:</div>' +
+          '<div style="font-size:18px;font-weight:700;color:#0f172a;">' + fillCloze(exText, w.text, w.forms) + ' ' +
+          '<button type="button" class="anki-audio-mini" id="ankiFrontAudio" title="Nghe câu ví dụ">🔊 Nghe câu</button></div>' +
+          '</div>';
       }
     } else {
-      // Back face
+      // --- MẶT SAU: KẾT QUẢ ĐẦY ĐỦ ---
       h += '<div class="anki-target-word-line">' +
         '<span class="anki-target-word">' + esc(w.text) + '</span>' +
         '<span class="anki-target-ipa">' + esc(w.read || '') + '</span>' +
-        (w.hv ? '<span class="anki-target-hv" style="color:#0284c7;font-weight:700;margin-left:8px;font-size:15px;background:#e0f2fe;padding:2px 8px;border-radius:6px;">[' + esc(w.hv.toUpperCase()) + ']</span>' : '') +
-        '<span class="anki-target-pos">' + esc(w.pos || '') + '</span>' +
+        (w.hv ? '<span class="anki-target-hv" style="color:#0284c7;font-weight:800;margin-left:10px;font-size:16px;background:#e0f2fe;padding:3px 10px;border-radius:6px;border:1px solid #bae6fd;">[' + esc(w.hv.toUpperCase()) + ']</span>' : '') +
+        (w.pos ? '<span class="anki-target-pos" style="margin-left:6px;">(' + esc(w.pos) + ')</span>' : '') +
         '</div>';
-      h += '<div class="anki-def-line">' + fillCloze(defText, w.text, w.forms) + '</div>';
-      if (exText) {
-        h += '<div class="anki-ex-line">→ ' + fillCloze(exText, w.text, w.forms) + '</div>';
-        if (w.ex && w.ex.read) h += '<div class="anki-ex-pinyin" style="color:#64748b;font-size:13px;margin:2px 0 0 16px;">' + fillCloze(w.ex.read, w.read) + '</div>';
-        if (exVi) h += '<div class="anki-ex-vi">(👉 ' + esc(exVi) + ')</div>';
+
+      h += '<div class="anki-vi-meaning">🎯 ' + esc(w.vi || '') + '</div>';
+
+      if (defText && defText !== w.vi) {
+        h += '<div class="anki-def-line" style="color:#475569;margin-bottom:10px;">' + esc(defText) + '</div>';
       }
-      h += '<div class="anki-audio-row">' +
+
+      if (exText) {
+        h += '<div class="anki-ex-box" style="background:#f8fafc;border-left:4px solid #0284c7;padding:12px 16px;border-radius:8px;margin:14px 0;">' +
+          '<div style="font-size:18px;font-weight:700;color:#0f172a;">' + fillCloze(exText, w.text, w.forms) + '</div>' +
+          (w.ex && w.ex.read ? '<div style="font-size:14px;color:#0284c7;font-weight:600;margin-top:4px;">' + esc(w.ex.read) + '</div>' : '') +
+          (exVi ? '<div style="font-size:14px;color:#334155;margin-top:4px;">👉 ' + esc(exVi) + '</div>' : '') +
+          '</div>';
+      }
+
+      h += '<div class="anki-audio-row" style="margin-top:14px;">' +
         '<button type="button" class="anki-audio-btn" data-play="word">🔊 Từ: ' + esc(w.text) + ' <span class="anki-key-badge">W</span></button>' +
         '<button type="button" class="anki-audio-btn" data-play="ex">🔊 Cả câu <span class="anki-key-badge">S</span></button>' +
         '<button type="button" class="anki-audio-btn" data-play="all">▶ Đọc cả hai (Từ + Câu) <span class="anki-key-badge">R</span></button>' +
